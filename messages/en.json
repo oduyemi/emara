@@ -1,0 +1,65 @@
+{
+  "TopHeader": {
+    "verifiedMarketplace": "Verified B2B Marketplace",
+    "transparentTrade": "Transparent Trade Data",
+    "builtForExporters": "Built for African Exporters",
+    "helpCenter": "Help Center",
+    "contact": "Contact",
+    "signIn": "Sign In"
+  },
+
+  "Header": {
+    "signIn": "Sign In",
+    "getVerified": "Get Verified",
+    "buyers": "For Buyers",
+    "exporters": "For Exporters",
+    "verifiedSuppliers": "Verified Suppliers",
+    "tradeInsights": "Trade Insights",
+    "howItWorks": "How It Works",
+    "pricing": "Pricing"
+  },
+  
+  "MegaMenu": {
+    "explore": "Explore",
+    "industry": {
+      "title": "By Industry",
+      "items": ["Agriculture", "Textiles", "Minerals", "Manufacturing", "Commodities"]
+    },
+    "country": {
+      "title": "By Country",
+      "items": ["Nigeria", "Kenya", "Ghana", "South Africa", "Egypt"]
+    },
+    "verification": {
+      "title": "Verification",
+      "items": ["Verified Exporters", "Audit Reports", "Trade History", "Compliance Data"]
+    },
+    "resources": {
+      "title": "Resources",
+      "items": ["Trade Insights", "Market Reports", "Documentation Guides", "FAQ"]
+    }
+  },
+
+  "Hero": {
+    "slide1": {
+      "highlight": "Trade With Confidence",
+      "title": "Verified Global Suppliers",
+      "description": "Connect with trusted, pre-verified exporters across multiple industries.",
+      "cta": "Explore Suppliers"
+    },
+    "slide2": {
+      "highlight": "Smarter Sourcing",
+      "title": "Built For International Buyers",
+      "description": "Discover high-quality products and streamline procurement.",
+      "cta": "Start Sourcing"
+    },
+    "slide3": {
+      "highlight": "Grow Beyond Borders",
+      "title": "Export With Global Reach",
+      "description": "Showcase your products to international buyers.",
+      "cta": "Become an Exporter"
+    },
+    "learnMore": "Learn More"
+  }
+}
+  
+  

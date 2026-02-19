@@ -1,0 +1,63 @@
+{
+  "TopHeader": {
+    "verifiedMarketplace": "Marketplace B2B vérifiée",
+    "transparentTrade": "Données commerciales transparentes",
+    "builtForExporters": "Conçu pour les exportateurs africains",
+    "helpCenter": "Centre d’aide",
+    "contact": "Contact",
+    "signIn": "Se connecter"
+  },
+  "Header": {
+    "signIn": "Connexion",
+    "getVerified": "Obtenir la vérification",
+    "buyers": "Pour les acheteurs",
+    "exporters": "Pour les exportateurs",
+    "verifiedSuppliers": "Fournisseurs vérifiés",
+    "tradeInsights": "Analyses commerciales",
+    "howItWorks": "Comment ça marche",
+    "pricing": "Tarifs"
+  },
+
+  "MegaMenu": {
+    "explore": "Explorer",
+    "industry": {
+      "title": "Par industrie",
+      "items": ["Agriculture", "Textiles", "Minéraux", "Industrie manufacturière", "Produits de base"]
+    },
+    "country": {
+      "title": "Par pays",
+      "items": ["Nigéria", "Kenya", "Ghana", "Afrique du Sud", "Égypte"]
+    },
+    "verification": {
+      "title": "Vérification",
+      "items": ["Exportateurs vérifiés", "Rapports d’audit", "Historique commercial", "Données de conformité"]
+    },
+    "resources": {
+      "title": "Ressources",
+      "items": ["Analyses commerciales", "Rapports de marché", "Guides de documentation", "FAQ"]
+    }
+  },
+
+  "Hero": {
+    "slide1": {
+      "highlight": "Commerce en toute confiance",
+      "title": "Fournisseurs mondiaux vérifiés",
+      "description": "Connectez-vous avec des exportateurs fiables et vérifiés.",
+      "cta": "Explorer les fournisseurs"
+    },
+    "slide2": {
+      "highlight": "Approvisionnement intelligent",
+      "title": "Conçu pour les acheteurs internationaux",
+      "description": "Découvrez des produits de haute qualité.",
+      "cta": "Commencer"
+    },
+    "slide3": {
+      "highlight": "Développez au-delà des frontières",
+      "title": "Exportez à l’international",
+      "description": "Présentez vos produits aux acheteurs internationaux.",
+      "cta": "Devenir exportateur"
+    },
+    "learnMore": "En savoir plus"
+  }
+}
+  
