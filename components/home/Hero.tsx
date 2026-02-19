@@ -7,15 +7,13 @@ import Image from "next/image"
 import { ArrowRight, ArrowLeft } from "lucide-react"
 import { useTranslations, useLocale } from "next-intl"
 
-
 export const Hero = () => {
   const t = useTranslations("Hero")
   const locale = useLocale()
-  const rtlLocales = ["ar"]
-  const isRTL = rtlLocales.includes(locale)
+  const isRTL = ["ar"].includes(locale)
 
   const autoplay = useRef(
-    Autoplay({ delay: 6000, stopOnInteraction: false })
+    Autoplay({ delay: 7000, stopOnInteraction: false })
   )
 
   const [emblaRef] = useEmblaCarousel(
@@ -38,15 +36,15 @@ export const Hero = () => {
   }))
 
   return (
-    <section className="relative w-full overflow-hidden bg-secondary text-white">
-      <div className="overflow-hidden" ref={emblaRef}>
+    <section className="relative w-full overflow-hidden text-white">
+      <div ref={emblaRef} className="overflow-hidden">
         <div className="flex">
           {slides.map((slide, index) => (
             <div
               key={index}
-              className="relative flex-[0_0_100%] min-h-[500px] md:min-h-[600px] flex items-center"
+              className="relative flex-[0_0_100%] min-h-[88vh] flex items-center"
             >
-              {/* Background */}
+              {/* Background Image */}
               <Image
                 src={slide.image}
                 alt={slide.title}
@@ -55,37 +53,46 @@ export const Hero = () => {
                 className="object-cover object-center"
               />
 
-              <div className="absolute inset-0 bg-black/60" />
+              {/* Secondary-toned overlay instead of black */}
+              <div
+                className="absolute inset-0"
+                style={{
+                  background:
+                    "linear-gradient(90deg, rgba(18,53,91,0.72) 0%, rgba(18,53,91,0.55) 40%, rgba(18,53,91,0.4) 100%)"
+                }}
+              />
 
               {/* Content */}
-              <div className="relative max-w-7xl mx-auto px-6 w-full grid md:grid-cols-2 gap-10 items-center">
+              <div className="relative max-w-6xl mx-auto px-6 w-full">
                 <div
-                  className={`
-                    space-y-6 max-w-xl
-                    ${isRTL ? "md:col-start-2 text-right" : ""}
-                  `}
+                  className={`max-w-2xl space-y-8 ${
+                    isRTL ? "ml-auto text-right" : ""
+                  }`}
                 >
-                  <p className="text-accent uppercase tracking-wider text-sm font-semibold">
+                  {/* Highlight */}
+                  <p className="uppercase tracking-[0.3em] text-xs font-semibold text-accent">
                     {slide.highlight}
                   </p>
 
-                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                  {/* Title */}
+                  <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold leading-[1.05]">
                     {slide.title}
                   </h1>
 
-                  <p className="text-base md:text-lg text-gray-200">
+                  {/* Description */}
+                  <p className="text-lg md:text-xl text-gray-200">
                     {slide.description}
                   </p>
 
+                  {/* CTAs */}
                   <div
-                    className={`
-                      flex flex-wrap gap-4 pt-2
-                      ${isRTL ? "justify-end" : ""}
-                    `}
+                    className={`flex flex-wrap gap-5 pt-4 ${
+                      isRTL ? "justify-end" : ""
+                    }`}
                   >
                     <Link
                       href={slide.link}
-                      className="btn-primary inline-flex items-center gap-2 px-6 py-3 rounded-lg text-sm font-semibold"
+                      className="btn-primary inline-flex items-center gap-2 px-8 py-3.5 rounded-xl font-medium shadow-lg hover:-translate-y-1 transition-all duration-300"
                     >
                       {slide.cta}
                       {isRTL ? (
@@ -97,12 +104,26 @@ export const Hero = () => {
 
                     <Link
                       href="/how-it-works"
-                      className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-white/40 hover:border-accent transition text-sm font-semibold"
+                      className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl border border-white/30 hover:border-accent hover:text-accent transition-all duration-300"
                     >
                       {t("learnMore")}
                     </Link>
                   </div>
                 </div>
+              </div>
+
+              {/* Minimal Slide Indicator */}
+              <div className="absolute bottom-10 right-10 flex gap-2">
+                {slides.map((_, dotIndex) => (
+                  <span
+                    key={dotIndex}
+                    className={`h-2 w-8 rounded-full transition-all duration-300 ${
+                      dotIndex === index
+                        ? "bg-accent"
+                        : "bg-white/30"
+                    }`}
+                  />
+                ))}
               </div>
             </div>
           ))}

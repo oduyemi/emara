@@ -40,24 +40,39 @@
 
   "Hero": {
     "slide1": {
-      "highlight": "Commerce en toute confiance",
-      "title": "Fournisseurs mondiaux vérifiés",
-      "description": "Connectez-vous avec des exportateurs fiables et vérifiés.",
-      "cta": "Explorer les fournisseurs"
+      "highlight": "Infrastructure pour un Commerce de Confiance",
+      "title": "La Couche de Vérification de l’Afrique pour le Commerce Mondial",
+      "description": "Emara connecte des exportateurs vérifiés et des acheteurs internationaux grâce à une conformité structurée, des données commerciales transparentes et une crédibilité appuyée par des audits.",
+      "cta": "Explorer le Réseau"
     },
     "slide2": {
-      "highlight": "Approvisionnement intelligent",
-      "title": "Conçu pour les acheteurs internationaux",
-      "description": "Découvrez des produits de haute qualité.",
-      "cta": "Commencer"
+      "highlight": "Approvisionnement Plus Intelligent et Moins Risqué",
+      "title": "Approvisionnez-vous auprès d’Exportateurs Vérifiés en Toute Confiance",
+      "description": "Accédez à des fournisseurs certifiés par audit, à leurs dossiers de conformité et à un historique commercial transparent — le tout au sein d’un écosystème de confiance.",
+      "cta": "Commencer l’Approvisionnement"
     },
     "slide3": {
-      "highlight": "Développez au-delà des frontières",
-      "title": "Exportez à l’international",
-      "description": "Présentez vos produits aux acheteurs internationaux.",
-      "cta": "Devenir exportateur"
+      "highlight": "Développez-vous au-delà des Frontières",
+      "title": "Devenez Prêt pour les Acheteurs Internationaux",
+      "description": "Présentez votre conformité, vos certifications et vos performances commerciales à des acheteurs internationaux sérieux à travers le monde.",
+      "cta": "Obtenir la Vérification"
     },
-    "learnMore": "En savoir plus"
-  }
+    "learnMore": "Comment ça marche"
+  },
+
+  "TheProblem": {
+    "section_label": "Défis du commerce international",
+    "section_title": "Pourquoi les entreprises ont du mal à exporter",
+    "section_description": "Les exportateurs font face à une conformité fragmentée, des approbations retardées et un manque de transparence — ralentissant la croissance et réduisant les revenus. Emara résout ces problèmes en connectant efficacement les fournisseurs vérifiés aux acheteurs internationaux.",
+    "problem1_title": "Conformité Fragmentée",
+    "problem1_description": "De multiples certifications, des documents éparpillés et des processus d'approbation opaques ralentissent votre commerce.",
+    "problem2_title": "Hésitation des Acheteurs",
+    "problem2_description": "Les acheteurs internationaux ont besoin de confiance — la vérification manuelle est lente et sujette aux erreurs.",
+    "problem3_title": "Opportunités Manquées",
+    "problem3_description": "Chaque retard ou document manquant met en danger les contrats et les revenus.",
+    "problem4_title": "Suivi Chronophage",
+    "problem4_description": "Suivre la conformité et la préparation à l'exportation sur plusieurs marchés prend des heures chaque jour."
+  } 
+   
 }
   

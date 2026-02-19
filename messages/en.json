@@ -41,25 +41,39 @@
 
   "Hero": {
     "slide1": {
-      "highlight": "Trade With Confidence",
-      "title": "Verified Global Suppliers",
-      "description": "Connect with trusted, pre-verified exporters across multiple industries.",
-      "cta": "Explore Suppliers"
+      "highlight": "Infrastructure for Trusted Trade",
+      "title": "Africa’s Verification Layer for Global Commerce",
+      "description": "Emara connects verified exporters and international buyers through structured compliance, transparent trade data, and audit-backed credibility.",
+      "cta": "Explore the Network"
     },
     "slide2": {
-      "highlight": "Smarter Sourcing",
-      "title": "Built For International Buyers",
-      "description": "Discover high-quality products and streamline procurement.",
+      "highlight": "Smarter, Risk-Reduced Sourcing",
+      "title": "Source Verified Exporters With Confidence",
+      "description": "Access audit-backed suppliers, compliance records, and transparent trade history — all within one trusted ecosystem.",
       "cta": "Start Sourcing"
     },
     "slide3": {
       "highlight": "Grow Beyond Borders",
-      "title": "Export With Global Reach",
-      "description": "Showcase your products to international buyers.",
-      "cta": "Become an Exporter"
+      "title": "Become Globally Buyer-Ready",
+      "description": "Showcase your compliance, certifications, and trade performance to serious international buyers worldwide.",
+      "cta": "Get Verified"
     },
-    "learnMore": "Learn More"
-  }
+    "learnMore": "How It Works"
+  },
+  
+  "TheProblem": {
+    "section_label": "Challenges in Global Trade",
+    "section_title": "Why Businesses Struggle to Export",
+    "section_description": "Exporters face fragmented compliance, delayed approvals, and lack of transparency — all of which slow growth and reduce revenue. Emara solves these pain points by connecting verified suppliers with global buyers efficiently.",
+    "problem1_title": "Fragmented Compliance",
+    "problem1_description": "Multiple certifications, scattered documents, and opaque approval processes slow your trade.",
+    "problem2_title": "Buyer Hesitation",
+    "problem2_description": "International buyers need trust — manual verification is slow and error-prone.",
+    "problem3_title": "Lost Opportunities",
+    "problem3_description": "Every delay or missing document risks contracts and revenue.",
+    "problem4_title": "Time-Consuming Tracking",
+    "problem4_description": "Keeping track of compliance and export readiness across markets eats hours every day."
+  }  
 }
   
   
