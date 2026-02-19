@@ -4,12 +4,14 @@ import { notFound } from "next/navigation";
 import { locales } from "../../i18n/request";
 import ClientSideLayout from "@/components/layout/ClientSideLayout";
 
-export default async function LocaleLayout(props: {
+export default async function LocaleLayout({
+  children,
+  params,
+}: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
-  const { children } = props;
-  const { locale } = await props.params;
+  const { locale } = await params;
 
   if (!locales.includes(locale as any)) notFound();
 
