@@ -57,9 +57,6 @@ export async function generateMetadata(
 export default async function LocaleLayout({
   children,
   params,
-}: {
-  children: React.ReactNode;
-  params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
 
@@ -69,12 +66,11 @@ export default async function LocaleLayout({
   const isRTL = locale === "ar";
 
   return (
-    <html lang={locale} dir={isRTL ? "rtl" : "ltr"}>
-      <body>
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          <ClientSideLayout>{children}</ClientSideLayout>
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <NextIntlClientProvider locale={locale} messages={messages}>
+      <div dir={isRTL ? "rtl" : "ltr"}>
+        <ClientSideLayout>{children}</ClientSideLayout>
+      </div>
+    </NextIntlClientProvider>
   );
 }
+
