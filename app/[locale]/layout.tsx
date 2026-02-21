@@ -1,9 +1,16 @@
+import type { ReactNode } from "react";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { locales } from "../../i18n/request";
 import ClientSideLayout from "@/components/layout/ClientSideLayout";
 import type { Metadata } from "next";
+
+type Props = {
+  children: ReactNode;
+  params: { locale: string };
+};
+
 
 const siteUrl = "https://emara.com";
 
@@ -29,9 +36,9 @@ const seoContent = {
 };
 
 export async function generateMetadata(
-  { params }: { params: Promise<{ locale: string }> }
+  { params }: { params: { locale: string } }
 ): Promise<Metadata> {
-  const { locale } = await params;
+  const { locale } = params;
 
   if (!locales.includes(locale as any)) return {};
 
@@ -57,8 +64,8 @@ export async function generateMetadata(
 export default async function LocaleLayout({
   children,
   params,
-}) {
-  const { locale } = await params;
+}: Props) {
+  const { locale } = params;
 
   if (!locales.includes(locale as any)) notFound();
 
@@ -73,4 +80,3 @@ export default async function LocaleLayout({
     </NextIntlClientProvider>
   );
 }
-
