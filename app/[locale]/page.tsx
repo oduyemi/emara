@@ -1,4 +1,6 @@
+import { GapAnalysisDemo } from "@/components/home/GapAnalysisDemo";
 import { Hero } from "@/components/home/Hero";
+import { TheEmaraSystem } from "@/components/home/TheEmaraSystem";
 import { TheProblem } from "@/components/home/TheProblem";
 
 
@@ -8,6 +10,8 @@ export default function Home() {
     <div>
       <Hero />
       <TheProblem   />
+      <TheEmaraSystem />
+      <GapAnalysisDemo />
     </div>
   );
 }

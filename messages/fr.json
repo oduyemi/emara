@@ -72,7 +72,35 @@
     "problem3_description": "Chaque retard ou document manquant met en danger les contrats et les revenus.",
     "problem4_title": "Suivi Chronophage",
     "problem4_description": "Suivre la conformité et la préparation à l'exportation sur plusieurs marchés prend des heures chaque jour."
-  } 
-   
+  },
+  "TheEmaraSystem": {
+    "section_label": "Comment ça marche",
+    "section_title": "Une plateforme fluide de vérification et de commerce",
+    "section_description": "Emara simplifie le commerce international en connectant les exportateurs vérifiés aux acheteurs mondiaux grâce au suivi de conformité, à la vérification basée sur les audits et aux informations en temps réel.",
+    "feature1_title": "Exportateurs Vérifiés",
+    "feature1_description": "Tous les fournisseurs sont pré-vérifiés, garantissant confiance et réduction des risques pour chaque transaction.",
+    "feature2_title": "Suivi de Conformité",
+    "feature2_description": "Surveillez facilement les certifications, rapports d'audit et préparation à l'export.",
+    "feature3_title": "Informations Commerciales",
+    "feature3_description": "Accédez aux tendances du marché, aux données historiques et aux informations exploitables pour prendre des décisions éclairées.",
+    "feature4_title": "Connexions Fluides",
+    "feature4_description": "Connectez instantanément acheteurs et fournisseurs pour des transactions transparentes et efficaces."
+  },
+
+  "GapAnalysisInteractive": {
+    "section_label": "Démo interactive",
+    "section_title": "Analyse instantanée des écarts",
+    "section_description": "Découvrez comment Emara évalue la préparation des exportateurs au commerce mondial. Identifiez les lacunes, les certifications manquantes et le niveau de risque en temps réel.",
+    "select_industry": "Sélectionnez l'industrie",
+    "select_market": "Sélectionnez le marché d'exportation",
+    "analyze_button": "Analyser maintenant",
+    "compliance_score": "Score de conformité",
+    "missing_certifications": "Certifications manquantes",
+    "risk_exposure": "Exposition au risque",
+    "low_risk": "Risque faible",
+    "medium_risk": "Risque moyen",
+    "high_risk": "Risque élevé",
+    "cta_full_report": "Obtenir le rapport complet"
+  }  
 }
   

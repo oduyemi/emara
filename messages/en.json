@@ -73,6 +73,35 @@
     "problem3_description": "Every delay or missing document risks contracts and revenue.",
     "problem4_title": "Time-Consuming Tracking",
     "problem4_description": "Keeping track of compliance and export readiness across markets eats hours every day."
+  },
+  "TheEmaraSystem": {
+    "section_label": "How Emara Works",
+    "section_title": "A Seamless Verification & Trade Platform",
+    "section_description": "Emara simplifies international trade by connecting verified exporters with global buyers through compliance tracking, audit-backed verification, and real-time insights.",
+    "feature1_title": "Verified Exporters",
+    "feature1_description": "All suppliers are pre-verified, ensuring trust and reducing risk in every transaction.",
+    "feature2_title": "Compliance Tracking",
+    "feature2_description": "Easily monitor certifications, audit reports, and export readiness.",
+    "feature3_title": "Trade Insights",
+    "feature3_description": "Access market trends, historical data, and actionable insights to make informed decisions.",
+    "feature4_title": "Seamless Connections",
+    "feature4_description": "Instantly connect buyers and suppliers for transparent, efficient transactions."
+  },
+  
+  "GapAnalysisInteractive": {
+    "section_label": "Interactive Demo",
+    "section_title": "Instant Gap Analysis",
+    "section_description": "See how Emara evaluates exporters’ readiness for global trade. Identify gaps, missing certifications, and risk exposure in real-time.",
+    "select_industry": "Select Industry",
+    "select_market": "Select Export Market",
+    "analyze_button": "Analyze Now",
+    "compliance_score": "Compliance Score",
+    "missing_certifications": "Missing Certifications",
+    "risk_exposure": "Risk Exposure",
+    "low_risk": "Low Risk",
+    "medium_risk": "Medium Risk",
+    "high_risk": "High Risk",
+    "cta_full_report": "Get Full Report"
   }  
 }
   

@@ -65,7 +65,7 @@ export const TheProblem: FC = () => {
             <div className="rounded-2xl overflow-hidden border border-gray-200 shadow-sm">
               <Image
                 src="/images/market.jpg"
-                alt="Compliance illustration"
+                alt="Indigenous market"
                 width={600}
                 height={500}
                 className="w-full h-auto object-cover"
