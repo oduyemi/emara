@@ -3,7 +3,28 @@ import { FC } from "react"
 import { useTranslations, useLocale } from "next-intl"
 import { CheckCircle } from "lucide-react"
 import Image from "next/image"
-import { motion } from "framer-motion"
+import { motion, Variants } from "framer-motion"
+
+
+
+const container: Variants = {
+  hidden: {},
+  show: {
+    transition: { staggerChildren: 0.12 }
+  }
+}
+
+const item: Variants = {
+  hidden: { opacity: 0, y: 30 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      ease: "easeOut"
+    }
+  }
+}
 
 export const TheProblem: FC = () => {
   const t = useTranslations("TheProblem")
@@ -29,7 +50,7 @@ export const TheProblem: FC = () => {
     show: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.5, ease: "easeOut" }
+      transition: { duration: 0.5, ease: [0.16, 1, 0.3, 1] }
     }
   }
 
