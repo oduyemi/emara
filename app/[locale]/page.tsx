@@ -1,4 +1,4 @@
-import { GapAnalysisDemo } from "@/components/home/GapAnalysisDemo";
+import { GapAnalysisInteractive } from "@/components/home/GapAnalysisDemo";
 import { Hero } from "@/components/home/Hero";
 import { TheEmaraSystem } from "@/components/home/TheEmaraSystem";
 import { TheProblem } from "@/components/home/TheProblem";
@@ -11,7 +11,7 @@ export default function Home() {
       <Hero />
       <TheProblem   />
       <TheEmaraSystem />
-      <GapAnalysisDemo />
+      <GapAnalysisInteractive />
     </div>
   );
 }
