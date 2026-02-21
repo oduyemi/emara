@@ -1,27 +1,36 @@
 "use client"
+
 import { FC } from "react"
 import { useTranslations, useLocale } from "next-intl"
 import { CheckCircle } from "lucide-react"
 import Image from "next/image"
 import { motion, Variants } from "framer-motion"
 
-
-
 const container: Variants = {
   hidden: {},
   show: {
-    transition: { staggerChildren: 0.12 }
+    transition: {
+      staggerChildren: 0.15,
+      delayChildren: 0.1
+    }
   }
 }
 
 const item: Variants = {
-  hidden: { opacity: 0, y: 30 },
+  hidden: {
+    opacity: 0,
+    y: 24,
+    filter: "blur(6px)"
+  },
   show: {
     opacity: 1,
     y: 0,
+    filter: "blur(0px)",
     transition: {
-      duration: 0.5,
-      ease: "easeOut"
+      type: "spring",
+      stiffness: 90,
+      damping: 18,
+      mass: 0.6
     }
   }
 }
@@ -29,7 +38,7 @@ const item: Variants = {
 export const TheProblem: FC = () => {
   const t = useTranslations("TheProblem")
   const locale = useLocale()
-  const isRTL = ["ar"].includes(locale)
+  const isRTL = locale === "ar"
 
   const problems = [
     { title: t("problem1_title"), description: t("problem1_description") },
@@ -38,33 +47,15 @@ export const TheProblem: FC = () => {
     { title: t("problem4_title"), description: t("problem4_description") }
   ]
 
-  const container = {
-    hidden: {},
-    show: {
-      transition: { staggerChildren: 0.12 }
-    }
-  }
-
-  const item = {
-    hidden: { opacity: 0, y: 30 },
-    show: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 0.5, ease: [0.16, 1, 0.3, 1] }
-    }
-  }
-
   return (
     <section
       className="relative w-full py-28 bg-white"
       dir={isRTL ? "rtl" : "ltr"}
     >
-      {/* Subtle Section Divider */}
       <div className="absolute inset-x-0 top-0 h-px bg-gray-200" />
 
       <div className="max-w-7xl mx-auto px-6">
 
-        {/* Section Header */}
         <div className="max-w-3xl mb-20">
           <p className="text-sm uppercase tracking-widest text-accent font-medium mb-4">
             {t("section_label")}
@@ -81,7 +72,6 @@ export const TheProblem: FC = () => {
 
         <div className="grid md:grid-cols-2 gap-20 items-start">
 
-          {/* Image Block */}
           <div className="relative">
             <div className="rounded-2xl overflow-hidden border border-gray-200 shadow-sm">
               <Image
@@ -94,7 +84,6 @@ export const TheProblem: FC = () => {
             </div>
           </div>
 
-          {/* Problem Cards */}
           <motion.div
             variants={container}
             initial="hidden"
@@ -106,27 +95,16 @@ export const TheProblem: FC = () => {
               <motion.div
                 key={idx}
                 variants={item}
-                className="
-                  group
-                  relative
-                  flex
-                  items-start
-                  gap-6
-                  p-8
-                  rounded-2xl
-                  border
-                  border-gray-200
-                  bg-white
-                  transition-all
-                  duration-300
-                  hover:shadow-md
-                  hover:border-accent/40
-                "
+                whileHover={{ y: -4 }}
+                transition={{ type: "spring", stiffness: 250, damping: 20 }}
+                className="group relative flex items-start gap-6 p-8 rounded-2xl border border-gray-200 bg-white transition-all duration-300 hover:shadow-lg hover:border-accent/40"
               >
-                {/* Left Accent Line */}
-                <div className={`absolute top-0 ${isRTL ? "right-0" : "left-0"} h-full w-[4px] bg-accent rounded-full opacity-0 group-hover:opacity-100 transition`} />
+                <div
+                  className={`absolute top-0 ${
+                    isRTL ? "right-0" : "left-0"
+                  } h-full w-[4px] bg-accent rounded-full opacity-0 group-hover:opacity-100 transition`}
+                />
 
-                {/* Icon */}
                 <div className="flex-shrink-0 w-11 h-11 rounded-xl bg-gray-100 flex items-center justify-center">
                   <CheckCircle size={20} className="text-accent" />
                 </div>
