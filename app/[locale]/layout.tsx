@@ -8,7 +8,7 @@ import type { Metadata } from "next";
 
 type Props = {
   children: ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 };
 
 
@@ -36,9 +36,9 @@ const seoContent = {
 };
 
 export async function generateMetadata(
-  { params }: { params: { locale: string } }
+  { params }: { params: Promise<{ locale: string }> }
 ): Promise<Metadata> {
-  const { locale } = params;
+  const { locale } = await params;
 
   if (!locales.includes(locale as any)) return {};
 
@@ -65,7 +65,7 @@ export default async function LocaleLayout({
   children,
   params,
 }: Props) {
-  const { locale } = params;
+  const { locale } = await params;
 
   if (!locales.includes(locale as any)) notFound();
 
