@@ -2,7 +2,7 @@
 import { Popover, Transition } from "@headlessui/react"
 import { Fragment } from "react"
 import { useTranslations, useLocale } from "next-intl"
-import Link from "next/link"
+import { Link } from "@/i18n/navigation";
 
 export default function MegaMenu() {
   const t = useTranslations("MegaMenu")

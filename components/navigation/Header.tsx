@@ -1,6 +1,6 @@
 "use client"
 import { useState, useEffect } from "react"
-import Link from "next/link"
+import { Link } from "@/i18n/navigation";
 import Image from "next/image"
 import clsx from "clsx"
 import { Menu, Search } from "lucide-react"
@@ -26,19 +26,23 @@ export const Header = () => {
   }, [])
 
   return (
-    <header className="sticky top-0 z-50">
-      {/* Main Header */}
-      <div
-        className={clsx(
-          "surface-dark text-white transition-all duration-300",
-          scrolled ? "shadow-md" : ""
-        )}
-      >
+      <header className="sticky top-0 z-50">
+
         <div
           className={clsx(
-            "max-w-7xl mx-auto px-4 flex items-center gap-6 transition-all duration-300",
-            scrolled ? "h-14" : "h-20"
+            "transition-all duration-300",
+            "backdrop-blur-xl",
+            "bg-gradient-to-r from-surface-dark/95 via-surface-dark/90 to-surface-dark/95",
+            scrolled
+              ? "shadow-lg border-b border-white/5"
+              : "border-b border-transparent"
           )}
+        >
+          <div
+            className={clsx(
+              "max-w-7xl mx-auto px-4 flex items-center gap-6 transition-all duration-300",
+              scrolled ? "h-14" : "h-20"
+            )}
         >
           {/* Mobile Menu */}
           <button
@@ -51,24 +55,41 @@ export const Header = () => {
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
             <Image
-              src="/logo.png"
+              src="/images/logo/logofix.png"
               alt="Emara"
-              width={120}
+              width={150}
               height={40}
               priority
               className={clsx(
-                "transition-transform duration-300",
+                "transition-transform duration-300 object-cover",
                 scrolled ? "scale-90" : "scale-100"
               )}
             />
+            {/* <h2 className="text-bold text-2xl">Emara</h2> */}
           </Link>
 
           {/* Desktop Search */}
-          <div className="hidden md:flex flex-1">
+          <div className="hidden md:flex flex-1 relative group">
+            <Search
+              size={18}
+              className="absolute left-4 top-1/2 -translate-y-1/2 text-white/40 group-focus-within:text-accent transition-colors"
+            />
+
             <input
               type="text"
-              placeholder="Search suppliers..."
-              className="w-full px-4 py-2 rounded-md border border-surface-border focus:outline-none focus:ring focus:ring-accent"
+              placeholder="Search suppliers, countries, HS codes..."
+              className="
+                w-full pl-12 pr-4 py-2.5
+                rounded-full
+                bg-white/5
+                border border-black/10
+                text-black
+                placeholder:text-black/40
+                focus:outline-none
+                focus:border-accent
+                focus:ring-2 focus:ring-accent/30
+                transition-all duration-200
+              "
             />
           </div>
 
@@ -102,8 +123,19 @@ export const Header = () => {
       </div>
 
       {/* Secondary Nav */}
-      <div className="hidden md:block bg-secondary text-blue-900 text-sm">
-        <div className="max-w-7xl mx-auto px-4 py-2 flex gap-8 items-center">
+      <div
+        className={clsx(
+          "hidden md:block transition-all duration-300",
+          "bg-surface-dark/60",
+          scrolled
+            ? "border-b border-white/5 shadow-sm text-black/90"
+            : "border-b border-white/5"
+        )}
+      >
+        <div className="
+        relative hover:text-accent transition-colors after:absolute after:-bottom-1 
+        after:left-0 after:h-[2px] after:w-0 after:bg-accent after:transition-all hover:after:w-full
+        max-w-7xl mx-auto px-4 py-2 flex gap-4 items-center text-sm ">
           <MegaMenu />
 
           <Link href="/buyers" className="hover:text-accent transition-colors">

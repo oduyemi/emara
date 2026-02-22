@@ -89,20 +89,109 @@
   },
   
   "GapAnalysisInteractive": {
-    "section_label": "Interactive Demo",
-    "section_title": "Instant Gap Analysis",
-    "section_description": "See how Emara evaluates exporters’ readiness for global trade. Identify gaps, missing certifications, and risk exposure in real-time.",
-    "select_industry": "Select Industry",
-    "select_market": "Select Export Market",
-    "analyze_button": "Analyze Now",
-    "compliance_score": "Compliance Score",
-    "missing_certifications": "Missing Certifications",
-    "risk_exposure": "Risk Exposure",
-    "low_risk": "Low Risk",
-    "medium_risk": "Medium Risk",
-    "high_risk": "High Risk",
-    "cta_full_report": "Get Full Report"
-  }  
+    "section_label": "Compliance Intelligence",
+    "section_title": "Instant Export Readiness Engine",
+    "section_description": "Simulate your company’s compliance profile and receive a structured readiness evaluation across certifications, operational maturity, and regulatory alignment.",
+  
+    "progress_industry": "Industry",
+    "progress_product": "Product",
+    "progress_market": "Market",
+    "progress_volume": "Volume",
+    "progress_certifications": "Certifications",
+    "progress_operations": "Operations",
+    "progress_results": "Results",
+  
+    "step1_title": "Select Industry",
+    "step1_description": "Choose the primary industry classification for your export activity.",
+  
+    "step2_title": "Define Product",
+    "step2_description": "Specify the product you intend to export.",
+  
+    "step3_title": "Target Export Market",
+    "step3_description": "Select the primary international market you are targeting.",
+  
+    "step4_title": "Annual Export Volume",
+    "step4_description": "Provide estimated annual production or export volume.",
+  
+    "step5_title": "Existing Certifications",
+    "step5_description": "Select certifications currently held by your organization.",
+  
+    "step6_title": "Operational Readiness",
+    "step6_description": "Indicate your internal quality systems and export experience level.",
+  
+    "industry_processed_food": "Processed Food",
+    "industry_agriculture": "Agriculture",
+    "industry_cosmetics": "Cosmetics",
+    "industry_pharmaceuticals": "Pharmaceuticals",
+    "industry_textiles": "Textiles",
+    "industry_industrial_equipment": "Industrial Equipment",
+  
+    "eu": "European Union",
+    "us": "United States",
+    "uk": "United Kingdom",
+    "middle_east": "Middle East",
+    "apac": "Asia-Pacific",
+  
+    "input_product_name": "Product Name",
+    "input_annual_volume": "Annual Volume",
+    "advanced_note": "For advanced regulatory analysis, HS code mapping can be integrated at a later stage.",
+
+    "input_annual_volume_description": "Estimated Annual Export Volume (Units / Metric Tons)",
+  
+    "checkbox_quality_system": "Established Quality Management System",
+    "checkbox_previous_exports": "Previous Export Experience",
+
+    "export_scale_classification": "Classification du niveau d’exportation",
+
+    "high_scale": "High-Scale Exporter",
+    "growth_stage": "Growth-Scale Exporter",
+    "emerging": "Emerging Exporter",
+  
+    "cert_haccp": "HACCP",
+    "cert_iso_22000": "ISO 22000",
+    "cert_global_gap": "GlobalG.A.P",
+    "cert_fda_registration": "FDA Registration",
+    "cert_ce_marking": "CE Marking",
+    "cert_halal": "Halal Certification",
+    "cert_gmp": "Good Manufacturing Practice (GMP)",
+
+    "button_continue": "Continue",
+    "button_back": "Back",
+    "button_run": "Run Compliance Analysis",
+  
+    "results_compliance_score": "Compliance Score",
+    "results_readiness_level": "Readiness Classification",
+    "results_missing_certifications": "Missing Certifications",
+    "results_risk_exposure": "Risk Exposure Indicator",
+  
+    "risk_low": "Low Regulatory Risk",
+    "risk_medium": "Moderate Regulatory Risk",
+    "risk_high": "High Regulatory Risk",
+  
+    "executive_summary_title": "Executive Compliance Summary",
+    "cta_full_report": "Request Full Advisory Report",
+
+    "results_export_readiness_classification": "Export Readiness Classification",
+    "results_compliance_gaps": "Compliance Gaps",
+    "results_no_gaps": "All required certifications aligned. No regulatory gaps detected.",
+    "results_required_notice": "Required for selected industry and export market.",
+    
+    "readiness_not_ready": "Not Ready",
+    "readiness_developing": "Developing",
+    "readiness_export_ready": "Export Ready",
+    "readiness_market_entry_ready": "Market Entry Ready",
+  
+    "narrative_intro": "Based on the selected industry ({industry}) and target market ({market}), the organization is classified as \"{tier}\" with a compliance score of {score}%.",
+    "narrative_gap_prefix": "Key compliance gaps include {gaps}.",
+    "narrative_no_gaps": "All core regulatory requirements are currently satisfied.",
+    "narrative_strategy": "Strategic alignment of certification acquisition and operational strengthening will significantly reduce regulatory exposure and accelerate successful market entry.",
+
+    "results_risk_exposure_index": "Risk Exposure Index",
+  
+    "risk_high_label": "High Risk",
+    "risk_moderate_label": "Moderate Risk",
+    "risk_low_label": "Low Risk"
+  } 
 }
   
   

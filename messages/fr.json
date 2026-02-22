@@ -88,19 +88,108 @@
   },
 
   "GapAnalysisInteractive": {
-    "section_label": "Démo interactive",
-    "section_title": "Analyse instantanée des écarts",
-    "section_description": "Découvrez comment Emara évalue la préparation des exportateurs au commerce mondial. Identifiez les lacunes, les certifications manquantes et le niveau de risque en temps réel.",
-    "select_industry": "Sélectionnez l'industrie",
-    "select_market": "Sélectionnez le marché d'exportation",
-    "analyze_button": "Analyser maintenant",
-    "compliance_score": "Score de conformité",
-    "missing_certifications": "Certifications manquantes",
-    "risk_exposure": "Exposition au risque",
-    "low_risk": "Risque faible",
-    "medium_risk": "Risque moyen",
-    "high_risk": "Risque élevé",
-    "cta_full_report": "Obtenir le rapport complet"
-  }  
+    "section_label": "Intelligence de Conformité",
+    "section_title": "Moteur de Diagnostic Instantané de Préparation à l’Export",
+    "section_description": "Simulez le profil de conformité de votre entreprise et obtenez un diagnostic structuré de votre niveau de préparation en matière de certifications, de maturité opérationnelle et d’exigences réglementaires du marché cible.",
+
+    "progress_industry": "Secteur d’activité",
+    "progress_product": "Produit",
+    "progress_market": "Marché cible",
+    "progress_volume": "Volume",
+    "progress_certifications": "Certifications",
+    "progress_operations": "Organisation",
+    "progress_results": "Résultats",
+
+    "step1_title": "Choisissez votre secteur d’activité",
+    "step1_description": "Sélectionnez le principal secteur dans lequel s’inscrit votre activité d’exportation.",
+
+    "step2_title": "Précisez le produit",
+    "step2_description": "Indiquez le produit que vous souhaitez exporter.",
+
+    "step3_title": "Sélectionnez le marché cible",
+    "step3_description": "Choisissez le principal marché international vers lequel vous souhaitez exporter.",
+
+    "step4_title": "Volume annuel estimé",
+    "step4_description": "Indiquez votre capacité annuelle estimée de production ou d’exportation.",
+
+    "step5_title": "Certifications détenues",
+    "step5_description": "Sélectionnez les certifications et agréments actuellement détenus par votre entreprise.",
+
+    "step6_title": "Niveau d’organisation opérationnelle",
+    "step6_description": "Précisez l’existence de systèmes internes de gestion de la qualité et votre expérience en matière d’exportation.",
+
+    "industry_processed_food": "Produits agroalimentaires transformés",
+    "industry_agriculture": "Agriculture",
+    "industry_cosmetics": "Cosmétiques",
+    "industry_pharmaceuticals": "Produits pharmaceutiques",
+    "industry_textiles": "Textiles",
+    "industry_industrial_equipment": "Équipements industriels",
+
+    "eu": "Union européenne",
+    "us": "États-Unis",
+    "uk": "Royaume-Uni",
+    "middle_east": "Moyen-Orient",
+    "apac": "Asie-Pacifique",
+
+    "input_product_name": "Nom du produit",
+    "input_annual_volume": "Volume annuel estimé",
+    "advanced_note": "Une analyse réglementaire approfondie pourra inclure la classification douanière par code SH à un stade ultérieur.",
+
+    "input_annual_volume_description": "Volume annuel estimé (Unités / Tonnes métriques)",
+    
+    "checkbox_quality_system": "Système de management de la qualité en place",
+    "checkbox_previous_exports": "Expérience antérieure à l’export",
+
+    "export_scale_classification": "Catégorie de capacité d’exportation",
+
+    "high_scale": "Exportateur à grande échelle",
+    "growth_stage": "Exportateur en phase de croissance",
+    "emerging": "Exportateur émergent",
+
+    "cert_haccp": "HACCP",
+    "cert_iso_22000": "ISO 22000",
+    "cert_global_gap": "GlobalG.A.P",
+    "cert_fda_registration": "Enregistrement FDA",
+    "cert_ce_marking": "Marquage CE",
+    "cert_halal": "Certification Halal",
+    "cert_gmp": "Bonnes Pratiques de Fabrication (BPF)",
+
+    "button_continue": "Continuer",
+    "button_back": "Retour",
+    "button_run": "Lancer le diagnostic de conformité",
+
+    "results_compliance_score": "Score de conformité",
+    "results_readiness_level": "Niveau de préparation à l’export",
+    "results_missing_certifications": "Certifications ou agréments requis manquants",
+    "results_risk_exposure": "Indicateur d’exposition aux risques réglementaires",
+
+    "risk_low": "Faible risque réglementaire",
+    "risk_medium": "Risque réglementaire modéré",
+    "risk_high": "Risque réglementaire élevé",
+
+    "executive_summary_title": "Synthèse exécutive de conformité",
+    "cta_full_report": "Demander un rapport d’accompagnement complet",
+
+    "results_export_readiness_classification": "Classification du niveau de préparation à l’export",
+    "results_compliance_gaps": "Écarts de conformité",
+    "results_no_gaps": "Toutes les certifications requises sont alignées. Aucun écart réglementaire détecté.",
+    "results_required_notice": "Exigé pour l’industrie et le marché d’exportation sélectionnés.",
+    
+    "readiness_not_ready": "Non Prêt",
+    "readiness_developing": "En Développement",
+    "readiness_export_ready": "Prêt à l’Export",
+    "readiness_market_entry_ready": "Prêt pour l’Entrée sur le Marché",
+    
+    "narrative_intro": "Sur la base de l’industrie sélectionnée ({industry}) et du marché cible ({market}), l’organisation est classée « {tier} » avec un score de conformité de {score}%.",
+    "narrative_gap_prefix": "Les principaux écarts de conformité incluent : {gaps}.",
+    "narrative_no_gaps": "Toutes les exigences réglementaires fondamentales sont actuellement satisfaites.",
+    "narrative_strategy": "Un alignement stratégique de l’acquisition des certifications et du renforcement opérationnel réduira significativement l’exposition réglementaire et accélérera l’entrée réussie sur le marché.",
+    
+    "results_risk_exposure_index": "Indice d’exposition au risque",
+    
+    "risk_high_label": "Risque Élevé",
+    "risk_moderate_label": "Risque Modéré",
+    "risk_low_label": "Risque Faible"
+  }
 }
   
