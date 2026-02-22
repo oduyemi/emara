@@ -4,7 +4,6 @@ import { useTranslations, useLocale } from "next-intl"
 import { AnimatePresence, motion } from "framer-motion";
 import { runGapAnalysis } from "./engine/ComplianceEngine";
 import { CompanyProfile, GapAnalysisResult } from "./engine/types";
-import { generateNarrative } from "./result/GenerateNarrative";
 import ProgressBar from "./ProgressBar";
 import ResultsPanel from "./result/ResultPanel";
 import StepIndustry from "./steps/StepIndustry";
@@ -13,6 +12,7 @@ import StepMarket from "./steps/StepMarket";
 import StepVolume from "./steps/StepVolume";
 import StepCertifications from "./steps/StepCertifications";
 import StepOperations from "./steps/StepOperations";
+import ExecutiveSummary from "./result/ExecutiveSummary";
 
 export default function InstantGapAnalysis() {
   const t = useTranslations("GapAnalysisInteractive")
@@ -153,24 +153,3 @@ export default function InstantGapAnalysis() {
   );
 }
 
-function ExecutiveSummary({
-  profile,
-  result,
-}: {
-  profile: CompanyProfile;
-  result: GapAnalysisResult;
-}) {
-  const narrative = generateNarrative();
-
-  return (
-    <div className="mt-14 p-10 bg-red-950 border border-red-950 rounded-3xl">
-      <h4 className="text-xl font-semibold mb-6 text-white">
-        Executive Compliance Summary
-      </h4>
-      <p className="text-neutral-400 whitespace-pre-line leading-relaxed">
-      <ExecutiveSummary profile={profile} result={result} />
-        {narrative}
-      </p>
-    </div>
-  );
-}

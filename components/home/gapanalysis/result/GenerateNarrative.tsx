@@ -10,7 +10,7 @@ interface NarrativeParams {
   gaps: string[];
 }
 
-export function generateNarrative() {
+export function useGenerateNarrative() {
   const t = useTranslations("GapAnalysisInteractive");
 
   return ({
@@ -19,7 +19,7 @@ export function generateNarrative() {
     tier,
     score,
     gaps,
-  }: NarrativeParams) => {
+  }: NarrativeParams): string => {
     const intro = t("narrative_intro", {
       industry,
       market,

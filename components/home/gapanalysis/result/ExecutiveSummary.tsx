@@ -1,4 +1,5 @@
 "use client";
+
 import { useGenerateNarrative } from "./GenerateNarrative";
 import { CompanyProfile, GapAnalysisResult } from "../engine/types";
 
@@ -20,8 +21,10 @@ export default function ExecutiveSummary({
   });
 
   return (
-    <div className="space-y-4">
-      <h4 className="text-xl font-semibold">Executive Compliance Summary</h4>
+    <div className="mt-14 p-10 bg-red-950 border border-red-950 rounded-3xl">
+      <h4 className="text-xl font-semibold mb-6 text-white">
+        Executive Compliance Summary
+      </h4>
       <p className="text-neutral-400 whitespace-pre-line leading-relaxed">
         {narrativeText}
       </p>
