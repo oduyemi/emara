@@ -73,11 +73,3 @@ export default function StepCertifications({
   );
 }
 
-function toggleCertification(cert: string) {
-    setProfile((prev) => ({
-      ...prev,
-      certifications: prev.certifications.includes(cert)
-        ? prev.certifications.filter((c) => c !== cert)
-        : [...prev.certifications, cert],
-    }));
-  }
