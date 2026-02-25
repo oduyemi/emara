@@ -469,6 +469,51 @@
     "privacyPolicy": "Politique de confidentialité",
   
     "rightsReserved": "Tous droits réservés."
+  },
+  
+  "about": {
+    "hero": {
+      "badge": "À propos d’Emara",
+      "title": "Emara : Une passerelle transparente vers l’excellence africaine",
+      "subtitle": "Une place de marché B2B spécialisée et un écosystème de vérification dédiés à combler le « fossé de confiance » dans l’exportation alimentaire africaine."
+    },
+    "intro": {
+      "paragraph1": "Emara agit comme une passerelle professionnalisée, transformant le « E » d’Export d’un défi logistique en un avantage concurrentiel pour le continent.",
+      "paragraph2": "Nous construisons l’infrastructure numérique qui transforme le potentiel brut en commerce fiable et de classe mondiale."
+    },
+    "vision": {
+      "title": "Notre Vision",
+      "text": "Notre vision pour une « Afrique Transparente » est de créer une infrastructure numérique où la transparence sert de monnaie principale. Nous aspirons à être l’objectif haute définition qui amène la réalité de l’excellence africaine au bout des doigts du monde entier, garantissant que « Fabriqué en Afrique » devienne synonyme de « Classe Mondiale »."
+    },
+    "mission": {
+      "title": "Notre Mission",
+      "text": "Emara existe pour combler le « fossé de confiance » qui a historiquement empêché la richesse immense de l’Afrique d’atteindre son plein potentiel mondial. En intégrant des données rigoureuses avec des preuves visuelles immersives, nous fournissons l’infrastructure standardisée nécessaire pour transformer le potentiel brut en commerce fiable et professionnalisé."
+    },
+    "values": {
+      "title": "Nos Valeurs Fondamentales",
+      "items": [
+        {
+          "title": "Transparence avant les suppositions",
+          "description": "Nous éloignons l’industrie des approvisionnements basés sur l’espoir vers un futur de commerce basé sur les preuves."
+        },
+        {
+          "title": "Intégrité et Fiabilité",
+          "description": "Ancrés dans le mot swahili Imara, nous privilégions la fermeté et la stabilité dans chaque connexion que nous facilitons."
+        },
+        {
+          "title": "Croissance par la Connaissance",
+          "description": "Nous agissons comme partenaire de renforcement des capacités, fournissant aux producteurs le « moteur intellectuel » nécessaire pour atteindre les standards mondiaux."
+        },
+        {
+          "title": "Équité et Inclusion",
+          "description": "Nous nous engageons à faire progresser les producteurs locaux dans la chaîne de valeur et à mettre l’accent stratégique sur la vérification des entreprises dirigées par des femmes."
+        },
+        {
+          "title": "Traçabilité Éthique",
+          "description": "Nous soutenons un système alimentaire mondial durable en fournissant une « piste papier numérique » qui prouve l’origine et respecte les normes environnementales et du travail."
+        }
+      ]
+    }
   }
 }
   

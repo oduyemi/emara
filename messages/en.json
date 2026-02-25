@@ -470,6 +470,51 @@
     "privacyPolicy": "Privacy Policy",
 
     "rightsReserved": "All rights reserved."
+  },
+
+  "about": {
+    "hero": {
+      "badge": "About Emara",
+      "title": "Emara: A Transparent Gateway to African Excellence",
+      "subtitle": "A specialized B2B marketplace and verification ecosystem dedicated to dismantling the \"Trust Gap\" in African food exportation."
+    },
+    "intro": {
+      "paragraph1": "Emara serves as a professionalized gateway, moving the \"E\" in Export from a logistical challenge to a competitive advantage for the continent.",
+      "paragraph2": "We are building the digital infrastructure that transforms raw potential into reliable, world-class trade."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "text": "Our vision for a \"Transparent Africa\" is to create a digital infrastructure where transparency serves as the primary currency. We aim to be the high-definition lens that brings the reality of African excellence to the world's fingertips, ensuring that \"Made in Africa\" becomes synonymous with \"World-Class\"."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "text": "Emara exists to dismantle the \"Trust Gap\" that has historically prevented Africa’s immense resource wealth from reaching its full global potential. By integrating rigorous data with immersive visual proof, we provide the standardized infrastructure required to turn raw potential into reliable, professionalized trade."
+    },
+    "values": {
+      "title": "Our Core Values",
+      "items": [
+        {
+          "title": "Transparency over Assumption",
+          "description": "We move the industry away from \"hope-based\" sourcing and into a future of \"evidence-based\" commerce."
+        },
+        {
+          "title": "Integrity & Reliability",
+          "description": "Rooted in the Swahili word Imara, we prioritize firmness and stability in every connection we facilitate."
+        },
+        {
+          "title": "Growth through Knowledge",
+          "description": "We act as a capacity-building partner, providing producers with the \"Intellectual Engine\" needed to reach global standards."
+        },
+        {
+          "title": "Equity & Inclusion",
+          "description": "We are committed to moving local producers up the value chain and placing a strategic emphasis on verifying women-led enterprises."
+        },
+        {
+          "title": "Ethical Traceability",
+          "description": "We support a sustainable global food system by providing a \"digital paper trail\" that proves origin and adheres to environmental and labor standards."
+        }
+      ]
+    }
   }
 }
   
