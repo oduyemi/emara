@@ -40,6 +40,16 @@
     }
   },
 
+  "error": {
+    "code": "404",
+    "headline": "Cette cargaison n’a pas passé la douane.",
+    "description": "La page que vous recherchez semble avoir pris la mauvaise route d’exportation. Elle pourrait être bloquée à l’inspection, mal étiquetée ou simplement non conforme aux autorités du web.",
+    "reassurance": "Ne vous inquiétez pas — aucun produit agricole n’a été endommagé dans le processus.",
+    "primaryButton": "Retour au port (Accueil)",
+    "secondaryButton": "Commencer un nouvel export",
+    "footerNote": "Code d’erreur : EXPORT-404 | Destination : Territoire inconnu 🌍"
+  },
+  
   "Hero": {
     "slide1": {
       "highlight": "Infrastructure pour un Commerce de Confiance",

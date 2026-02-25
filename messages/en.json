@@ -40,6 +40,16 @@
     }
   },
 
+  "error": {
+    "code": "404",
+    "headline": "This shipment didn’t clear customs.",
+    "description": "The page you're looking for seems to have taken the wrong export route. It might be stuck at inspection, mislabeled, or simply not compliant with the internet authorities.",
+    "reassurance": "Don’t worry — no agricultural products were harmed in the process.",
+    "primaryButton": "Return to Port (Home)",
+    "secondaryButton": "Start a New Export",
+    "footerNote": "Error Code: EXPORT-404 | Destination: Unknown Territory 🌍"
+  },
+
   "Hero": {
     "slide1": {
       "highlight": "Infrastructure for Trusted Trade",
