@@ -1,5 +1,4 @@
 "use client"
-
 import { motion } from "framer-motion"
 import { useTranslations } from "next-intl"
 import { X, Check } from "lucide-react"

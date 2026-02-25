@@ -427,6 +427,12 @@
     ],
     "ctaText": "Vous évaluez encore votre préparation à l’export ?",
     "ctaButton": "Créer votre profil de conformité"
+  },
+
+  "homeCTA": {
+    "headline": "Soyez prêt à exporter avant que l’opportunité n’arrive.",
+    "subtext": "Exploitez la conformité alignée sur les normes ISO, les cadres réglementaires et l’intégrité des données pour entrer sur les marchés mondiaux avec confiance et efficacité.",
+    "ctaButton": "Commencer l’évaluation de conformité"
   }
 }
   

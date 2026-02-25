@@ -428,6 +428,12 @@
     ],
     "ctaText": "Still evaluating your export readiness?",
     "ctaButton": "Create Your Compliance Profile"
+  },
+
+  "homeCTA": {
+    "headline": "Be Export-Ready. Before the Opportunity Arrives.",
+    "subtext": "Leverage ISO-aligned compliance, regulatory frameworks, and data integrity to enter global markets confidently and efficiently.",
+    "ctaButton": "Start Compliance Review"
   }
 }
   

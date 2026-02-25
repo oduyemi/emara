@@ -1,4 +1,5 @@
 import AuthorityStrip from "@/components/home/AuthorityStrip";
+import { HomeCTA } from "@/components/home/CTA";
 import { ExporterIndustries } from "@/components/home/ExporterIndustries";
 import { FAQ } from "@/components/home/FAQ";
 import InstantGapAnalysis from "@/components/home/gapanalysis/InstantGapAnalysis";
@@ -22,6 +23,7 @@ export default function Home() {
       <HowItWorks />
       <Outcome />
       <FAQ />
+      <HomeCTA />
     </div>
   );
 }
