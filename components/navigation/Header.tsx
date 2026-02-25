@@ -151,7 +151,7 @@ export const Header = () => {
           </Link>
 
           <Link href="/directory" className="hover:text-accent transition-colors">
-            {t("supplierDirectory")}
+            {t("supplier_directory")}
           </Link>
 
           <Link href="/about" className="hover:text-accent transition-colors">

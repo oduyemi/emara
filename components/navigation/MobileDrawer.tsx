@@ -60,25 +60,22 @@ export function MobileDrawer({ open, setOpen }: any) {
                   {t("buyers")}
                 </Link>
 
-                <Link href="/exporters" onClick={close} className="hover:text-accent transition">
-                  {t("exporters")}
+                <Link href="/supliers" onClick={close} className="hover:text-accent transition">
+                  {t("suppliers")}
                 </Link>
 
                 <Link href="/verified-suppliers" onClick={close} className="hover:text-accent transition">
                   {t("verifiedSuppliers")}
                 </Link>
 
-                <Link href="/trade-insights" onClick={close} className="hover:text-accent transition">
-                  {t("tradeInsights")}
+                <Link href="/directory" onClick={close} className="hover:text-accent transition">
+                  {t("supplier_directory")}
                 </Link>
 
-                <Link href="/how-it-works" onClick={close} className="hover:text-accent transition">
-                  {t("howItWorks")}
+                <Link href="/about" onClick={close} className="hover:text-accent transition">
+                  {t("about")}
                 </Link>
 
-                <Link href="/pricing" onClick={close} className="hover:text-accent transition">
-                  {t("pricing")}
-                </Link>
               </div>
 
               <div className="border-t border-white/10 pt-6 flex flex-col gap-4">

@@ -14,9 +14,10 @@
     "buyers": "Pour les acheteurs",
     "suppliers": "Pour les fournisseurs",
     "verifiedSuppliers": "Fournisseurs vérifiés",
-    "supplierDirectory": "Répertoire des fournisseurs",
+    "supplier_directory": "Répertoire des fournisseurs",
     "about": "À propos d’Emara",
-    "search_placeholder": "Rechercher un fournisseur, un pays ou une catégorie"
+    "search_placeholder": "Rechercher un fournisseur, un pays ou une catégorie",
+    "buyerCta": "Pour les acheteurs"
   },
 
   "MegaMenu": {
@@ -58,7 +59,7 @@
       "description": "Présentez votre conformité, vos certifications et vos performances commerciales à des acheteurs internationaux sérieux à travers le monde.",
       "cta": "Obtenir la Vérification"
     },
-    "learnMore": "Comment ça marche"
+    "buyerCta": "Acheteurs"
   },
 
   "TheProblem": {
@@ -349,6 +350,83 @@
     ],
       
     "operational_statement": "Structuré opérationnellement pour les environnements d’exportation alimentaire contrôlés nécessitant un séquençage des certifications, une préparation aux inspections et une supervision réglementaire multi-juridictionnelle."
+  },
+
+  "howItWorks": {
+    "eyebrow": "Cadre d’exécution de conformité",
+    "title": "Institutionnaliser la préparation des acheteurs",
+    "subtitle": "Emara applique une méthodologie réglementaire structurée pour transformer la documentation opérationnelle en crédibilité transfrontalière vérifiée.",
+
+    "steps": {
+      "connect": {
+        "label": "Étape I du cadre",
+        "title": "Consolidation structurée des données",
+        "description": "Les références institutionnelles, les spécifications produits, les certifications et les déclarations sont consolidées dans une architecture de conformité gouvernée, alignée sur les normes du commerce international."
+      },
+      "identify": {
+        "label": "Étape II du cadre",
+        "title": "Analyse d’alignement réglementaire",
+        "description": "Les exigences juridictionnelles, l’intégrité documentaire et la couverture des certifications sont évaluées de manière systématique afin d’identifier des écarts d’alignement mesurables."
+      },
+      "ready": {
+        "label": "Étape III du cadre",
+        "title": "Positionnement vérifié sur le marché",
+        "description": "Un profil formel de préparation est généré, attestant de la maturité procédurale, de la transparence réglementaire et de la fiabilité structurée auprès des acheteurs institutionnels."
+      }
+    },
+
+    "bottomNote": "Conçu pour les écosystèmes commerciaux réglementés. Structuré pour une assurance transfrontalière."
+  },
+
+  "outcome": {
+    "eyebrow": "Transformation opérationnelle",
+    "title": "Des processus fragmentés à une préparation institutionnelle",
+    "subtitle": "Emara restructure les opérations de conformité en un cadre commercial gouverné et reconnu par les acheteurs.",
+
+    "before": {
+      "label": "Friction opérationnelle",
+      "points": [
+        "Documentation dispersée entre systèmes et équipes",
+        "Suivi manuel de la conformité et gestion des versions",
+        "Hésitation des acheteurs due à une visibilité limitée sur la vérification"
+      ]
+    },
+
+    "after": {
+      "label": "Alignement institutionnel",
+      "points": [
+        "Architecture centralisée de gouvernance de la conformité",
+        "Préparation à l’export vérifiée dans les juridictions applicables",
+        "Accélération des validations par les acheteurs institutionnels"
+      ]
+    },
+
+    "bottomNote": "La maturité structurée en matière de conformité influence directement la confiance des acheteurs transfrontaliers."
+  },
+
+  "faq": {
+    "headline": "Questions fréquentes — Réponses claires",
+    "subtext": "Réponses directes pour les responsables conformité, les gestionnaires export et les équipes réglementaires.",
+    "items": [
+      {
+        "question": "Comment fonctionne l’analyse des écarts (Gap Analysis) ?",
+        "answer": "La plateforme évalue la documentation soumise par rapport à des cadres réglementaires structurés et à des normes de certification reconnues internationalement. Elle identifie les contrôles manquants, les preuves incomplètes et les procédures non alignées. Chaque constat est priorisé selon son impact sur la préparation à l’export et les exigences de diligence des acheteurs. Il s’agit d’un moteur structuré de cartographie de conformité — et non d’une simple liste de contrôle."
+      },
+      {
+        "question": "Quelles certifications et normes sont prises en charge ?",
+        "answer": "Nous prenons en charge des normes de systèmes de management reconnues mondialement, des certifications de conformité produit et des cadres régionaux de conformité à l’exportation. La bibliothèque de normes est continuellement mise à jour afin de refléter l’évolution des exigences réglementaires et des contrôles du commerce transfrontalier."
+      },
+      {
+        "question": "Est-ce reconnu par les autorités réglementaires ?",
+        "answer": "Nous ne sommes pas un organisme de certification. Toutefois, la plateforme est structurée autour de normes reconnues par les autorités et d’architectures documentaires alignées sur les audits. Les livrables sont conçus pour répondre aux exigences des processus d’achat, aux revues de conformité des acheteurs et aux attentes des inspections réglementaires."
+      },
+      {
+        "question": "Comment nos données sont-elles protégées ?",
+        "answer": "Toute la documentation est chiffrée en transit et au repos. L’accès est strictement basé sur les rôles et entièrement journalisé à des fins d’audit. L’infrastructure suit des pratiques de sécurité de niveau entreprise adaptées aux environnements commerciaux transfrontaliers réglementés."
+      }
+    ],
+    "ctaText": "Vous évaluez encore votre préparation à l’export ?",
+    "ctaButton": "Créer votre profil de conformité"
   }
 }
   

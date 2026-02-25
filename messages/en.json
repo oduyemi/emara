@@ -14,9 +14,10 @@
     "buyers": "For Buyers",
     "suppliers": "For Suppliers",
     "verifiedSuppliers": "Verified Suppliers",
-    "supplierDirectory": "Supplier Directory",
+    "supplier_directory": "Supplier Directory",
     "about": "About Emara",
-    "search_placeholder": "Search supplier, country and category"
+    "search_placeholder": "Search supplier, country and category",
+    "buyerCta": "For Buyers"
   },
   
   "MegaMenu": {
@@ -348,8 +349,85 @@
       "Audit-Trace Documentation Architecture",
       "Secure Cross-Border Data Environment"
     ],
-    
+
     "operational_statement": "Operationally structured for controlled food export environments requiring certification sequencing, inspection readiness, and cross-jurisdiction regulatory oversight."
+  },
+
+  "howItWorks": {
+    "eyebrow": "Compliance Execution Framework",
+    "title": "Institutionalizing Buyer Readiness",
+    "subtitle": "Emara applies a structured regulatory methodology to transform operational documentation into verified cross-border credibility.",
+
+    "steps": {
+      "connect": {
+        "label": "Framework Stage I",
+        "title": "Structured Data Consolidation",
+        "description": "Corporate credentials, product specifications, certifications, and declarations are consolidated into a governed compliance architecture aligned with international trade standards."
+      },
+      "identify": {
+        "label": "Framework Stage II",
+        "title": "Regulatory Alignment Analysis",
+        "description": "Jurisdictional requirements, documentation integrity, and certification coverage are systematically evaluated to surface measurable alignment gaps."
+      },
+      "ready": {
+        "label": "Framework Stage III",
+        "title": "Verified Market Positioning",
+        "description": "A formal readiness profile is generated, signaling procedural maturity, regulatory transparency, and structured reliability to institutional buyers."
+      }
+    },
+
+    "bottomNote": "Designed for regulated trade ecosystems. Structured for cross-border assurance."
+  },
+
+  "outcome": {
+    "eyebrow": "Operational Transformation",
+    "title": "From Fragmented Processes to Institutional Readiness",
+    "subtitle": "Emara restructures compliance operations into a governed, buyer-trusted trade framework.",
+
+    "before": {
+      "label": "Operational Friction",
+      "points": [
+        "Dispersed documentation across systems and teams",
+        "Manual compliance tracking and version control",
+        "Buyer hesitation due to limited verification visibility"
+      ]
+    },
+
+    "after": {
+      "label": "Institutional Alignment",
+      "points": [
+        "Centralized compliance governance architecture",
+        "Verified export readiness across applicable jurisdictions",
+        "Accelerated institutional buyer approvals"
+      ]
+    },
+
+    "bottomNote": "Structured compliance maturity directly influences cross-border buyer confidence."
+  },
+
+  "faq": {
+    "headline": "Frequently Asked — Clearly Answered",
+    "subtext": "Direct answers for compliance leaders, export managers, and regulatory teams.",
+    "items": [
+      {
+        "question": "How does the Gap Analysis work?",
+        "answer": "The platform evaluates your submitted documentation against structured regulatory frameworks and internationally recognized certification standards. It identifies missing controls, incomplete evidence, and non-aligned procedures. Each finding is prioritized based on export-readiness impact and buyer due diligence expectations."
+      },
+      {
+        "question": "Which certifications and standards are supported?",
+        "answer": "We support globally recognized management system standards, product conformity certifications, and regional export compliance frameworks. The standards library is continuously updated to reflect evolving regulatory requirements and cross-border trade controls."
+      },
+      {
+        "question": "Is this recognized by regulators?",
+        "answer": "We are not a certification body. However, the platform is built around regulator-recognized standards and audit-aligned documentation structures. Outputs are designed to meet procurement scrutiny, buyer compliance reviews, and regulatory inspection expectations."
+      },
+      {
+        "question": "How is our data protected?",
+        "answer": "All documentation is encrypted in transit and at rest. Access is strictly role-based and fully audit-logged. Infrastructure follows enterprise-grade security practices appropriate for regulated cross-border trade environments."
+      }
+    ],
+    "ctaText": "Still evaluating your export readiness?",
+    "ctaButton": "Create Your Compliance Profile"
   }
 }
   
