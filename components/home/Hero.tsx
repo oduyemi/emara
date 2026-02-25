@@ -30,8 +30,8 @@ export const Hero = () => {
       key === "slide1"
         ? "/verified-suppliers"
         : key === "slide2"
-        ? "/buyers"
-        : "/exporters",
+        ? "/suppliers"
+        : "/buyers",
     image: `/images/hero${index + 1}.jpg`
   }))
 
@@ -103,10 +103,10 @@ export const Hero = () => {
                     </Link>
 
                     <Link
-                      href="/how-it-works"
+                      href="/buyers"
                       className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl border border-white/30 hover:border-accent hover:text-accent transition-all duration-300"
                     >
-                      {t("learnMore")}
+                      {t("buyerCta")}
                     </Link>
                   </div>
                 </div>

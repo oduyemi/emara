@@ -57,11 +57,11 @@ export const Header = () => {
             <Image
               src="/images/logo/logofix.png"
               alt="Emara"
-              width={150}
+              width={280}
               height={40}
               priority
               className={clsx(
-                "transition-transform duration-300 object-cover",
+                "transition-transform duration-300 object-cover pt-3",
                 scrolled ? "scale-90" : "scale-100"
               )}
             />
@@ -77,7 +77,7 @@ export const Header = () => {
 
             <input
               type="text"
-              placeholder="Search suppliers, countries, HS codes..."
+              placeholder={t("search_placeholder")}
               className="
                 w-full pl-12 pr-4 py-2.5
                 rounded-full
@@ -126,7 +126,7 @@ export const Header = () => {
       <div
         className={clsx(
           "hidden md:block transition-all duration-300",
-          "bg-surface-dark/60",
+          "bg-surface-dark/60 backdrop-blur-xl",
           scrolled
             ? "border-b border-white/5 shadow-sm text-black/90"
             : "border-b border-white/5"
@@ -135,7 +135,7 @@ export const Header = () => {
         <div className="
         relative hover:text-accent transition-colors after:absolute after:-bottom-1 
         after:left-0 after:h-[2px] after:w-0 after:bg-accent after:transition-all hover:after:w-full
-        max-w-7xl mx-auto px-4 py-2 flex gap-4 items-center text-sm ">
+        max-w-7xl mx-auto px-4 py-2 flex gap-8 items-center text-sm ">
           <MegaMenu />
 
           <Link href="/buyers" className="hover:text-accent transition-colors">
@@ -143,24 +143,21 @@ export const Header = () => {
           </Link>
 
           <Link href="/exporters" className="hover:text-accent transition-colors">
-            {t("exporters")}
+            {t("suppliers")}
           </Link>
 
           <Link href="/verified-suppliers" className="hover:text-accent transition-colors">
             {t("verifiedSuppliers")}
           </Link>
 
-          <Link href="/trade-insights" className="hover:text-accent transition-colors">
-            {t("tradeInsights")}
+          <Link href="/directory" className="hover:text-accent transition-colors">
+            {t("supplierDirectory")}
           </Link>
 
-          <Link href="/how-it-works" className="hover:text-accent transition-colors">
-            {t("howItWorks")}
+          <Link href="/about" className="hover:text-accent transition-colors">
+            {t("about")}
           </Link>
 
-          <Link href="/pricing" className="hover:text-accent transition-colors">
-            {t("pricing")}
-          </Link>
         </div>
       </div>
 

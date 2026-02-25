@@ -7,15 +7,16 @@
     "contact": "Contact",
     "signIn": "Se connecter"
   },
+
   "Header": {
-    "signIn": "Connexion",
+    "signIn": "Se connecter",
     "getVerified": "Obtenir la vérification",
     "buyers": "Pour les acheteurs",
-    "exporters": "Pour les exportateurs",
+    "suppliers": "Pour les fournisseurs",
     "verifiedSuppliers": "Fournisseurs vérifiés",
-    "tradeInsights": "Analyses commerciales",
-    "howItWorks": "Comment ça marche",
-    "pricing": "Tarifs"
+    "supplierDirectory": "Répertoire des fournisseurs",
+    "about": "À propos d’Emara",
+    "search_placeholder": "Rechercher un fournisseur, un pays ou une catégorie"
   },
 
   "MegaMenu": {
@@ -190,6 +191,106 @@
     "risk_high_label": "Risque Élevé",
     "risk_moderate_label": "Risque Modéré",
     "risk_low_label": "Risque Faible"
+  },
+
+  "ExporterIndustries": {
+    "section_label": "Sector Focus",
+    "section_title": "Engineered for Regulated Food Exports",
+    "section_description": "Emara operates at the intersection of food production and international regulatory compliance. Our compliance intelligence framework is built for exporters navigating certification regimes, border inspections, and multi-market standards across regulated jurisdictions.",
+  
+    "metrics": {
+      "markets": {
+        "value": "42+",
+        "label": "Regulated Markets Covered"
+      },
+      "frameworks": {
+        "value": "120+",
+        "label": "Certification Frameworks Mapped"
+      },
+      "risk": {
+        "value": "<2%",
+        "label": "Border Rejection Risk Modeling"
+      },
+      "monitoring": {
+        "value": "24/7",
+        "label": "Regulatory Monitoring"
+      }
+    },
+  
+    "maturity_index": {
+      "title": "Compliance Maturity Index",
+      "description": "A structured assessment of your organization’s regulatory readiness across documentation, certification alignment, audit preparedness, and cross-market control.",
+      "levels": {
+        "reactive": {
+          "label": "Reactive",
+          "description": "Compliance addressed only after inspection failures or shipment disruption."
+        },
+        "structured": {
+          "label": "Structured",
+          "description": "Documented processes exist but lack cross-market harmonization."
+        },
+        "controlled": {
+          "label": "Controlled",
+          "description": "Standardized compliance controls with periodic internal validation."
+        },
+        "optimized": {
+          "label": "Optimized",
+          "description": "Proactive alignment across certification bodies and destination markets."
+        },
+        "intelligent": {
+          "label": "Intelligence-Driven",
+          "description": "Predictive regulatory modeling with continuous monitoring and risk mitigation."
+        }
+      }
+    },
+  
+    "badges": {
+      "compliance": "Regulatory Compliance",
+      "certification": "Certification Mapping",
+      "risk": "Risk Intelligence",
+      "audit": "Audit Preparedness"
+    },
+  
+    "cta": {
+      "primary": "Assess Your Compliance Position",
+      "secondary": "Explore Sector Requirements"
+    },
+  
+    "manufacturers": {
+      "title": "Food Processing Manufacturers",
+      "subtitle": "Multi-market certification alignment",
+      "pain_label": "Industry Challenge",
+      "solution_label": "How Emara Resolves It",
+      "pain": "Food manufacturers exporting internationally must comply with overlapping certification regimes, technical production standards, hygiene controls, and audit structures that differ by jurisdiction.",
+      "solution": "Emara evaluates your production architecture against destination-market requirements, identifies certification gaps, and structures a regulatory compliance pathway before goods enter export circulation."
+    },
+  
+    "agribusiness": {
+      "title": "Agricultural & Primary Producers",
+      "subtitle": "Phytosanitary and traceability control",
+      "pain_label": "Industry Challenge",
+      "solution_label": "How Emara Resolves It",
+      "pain": "Agricultural exports are governed by strict sanitary, phytosanitary, pesticide residue, and traceability obligations that trigger immediate shipment rejection when misaligned.",
+      "solution": "Emara maps inspection protocols, certification prerequisites, and documentary controls to reduce regulatory exposure prior to shipment and port entry."
+    },
+  
+    "fmcg": {
+      "title": "Food & Beverage FMCG",
+      "subtitle": "Labeling and ingredient compliance",
+      "pain_label": "Industry Challenge",
+      "solution_label": "How Emara Resolves It",
+      "pain": "Ingredient restrictions, labeling directives, allergen declarations, and packaging standards shift across markets, exposing exporters to recall risk and border refusal.",
+      "solution": "Emara simulates regulatory alignment across jurisdictions, flags ingredient and labeling inconsistencies, and identifies compliance gaps before product launch."
+    },
+  
+    "industrial": {
+      "title": "Food-Grade Equipment Exporters",
+      "subtitle": "Directive and safety standard clarity",
+      "pain_label": "Industry Challenge",
+      "solution_label": "How Emara Resolves It",
+      "pain": "Machinery and processing equipment used in food production must align with hygiene directives, safety certifications, and harmonized technical standards specific to each export market.",
+      "solution": "Emara clarifies applicable directives, conformity assessment routes, and regulatory obligations prior to capital deployment and market entry."
+    }
   }
 }
   

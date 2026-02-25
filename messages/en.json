@@ -12,11 +12,11 @@
     "signIn": "Sign In",
     "getVerified": "Get Verified",
     "buyers": "For Buyers",
-    "exporters": "For Exporters",
+    "suppliers": "For Suppliers",
     "verifiedSuppliers": "Verified Suppliers",
-    "tradeInsights": "Trade Insights",
-    "howItWorks": "How It Works",
-    "pricing": "Pricing"
+    "supplierDirectory": "Supplier Directory",
+    "about": "About Emara",
+    "search_placeholder": "Search supplier, country and category"
   },
   
   "MegaMenu": {
@@ -42,23 +42,23 @@
   "Hero": {
     "slide1": {
       "highlight": "Infrastructure for Trusted Trade",
-      "title": "Africa’s Verification Layer for Global Commerce",
-      "description": "Emara connects verified exporters and international buyers through structured compliance, transparent trade data, and audit-backed credibility.",
-      "cta": "Explore the Network"
+      "title": "Africa’s Verification Gateway for Global Commerce",
+      "description": "Emara serves as the trusted portal connecting international buyers to verified African suppliers. We eliminate sourcing risk by turning performance data into proven credibility.",
+      "cta": "Suppliers"
     },
     "slide2": {
       "highlight": "Smarter, Risk-Reduced Sourcing",
       "title": "Source Verified Exporters With Confidence",
       "description": "Access audit-backed suppliers, compliance records, and transparent trade history — all within one trusted ecosystem.",
-      "cta": "Start Sourcing"
+      "cta": "Suppliers"
     },
     "slide3": {
       "highlight": "Grow Beyond Borders",
-      "title": "Become Globally Buyer-Ready",
-      "description": "Showcase your compliance, certifications, and trade performance to serious international buyers worldwide.",
-      "cta": "Get Verified"
+      "title": "Scale Your Business Beyond Borders",
+      "description": "Showcase your products in front of retail and foodservice buyers actively searching for unique African product.",
+      "cta": "Suppliers"
     },
-    "learnMore": "How It Works"
+    "buyerCta": "Buyers"
   },
   
   "TheProblem": {
@@ -88,11 +88,11 @@
     "feature4_description": "Instantly connect buyers and suppliers for transparent, efficient transactions."
   },
   
-  "GapAnalysisInteractive": {
+    "GapAnalysisInteractive": {
     "section_label": "Compliance Intelligence",
     "section_title": "Instant Export Readiness Engine",
     "section_description": "Simulate your company’s compliance profile and receive a structured readiness evaluation across certifications, operational maturity, and regulatory alignment.",
-  
+
     "progress_industry": "Industry",
     "progress_product": "Product",
     "progress_market": "Market",
@@ -100,44 +100,44 @@
     "progress_certifications": "Certifications",
     "progress_operations": "Operations",
     "progress_results": "Results",
-  
+
     "step1_title": "Select Industry",
     "step1_description": "Choose the primary industry classification for your export activity.",
-  
+
     "step2_title": "Define Product",
     "step2_description": "Specify the product you intend to export.",
-  
+
     "step3_title": "Target Export Market",
     "step3_description": "Select the primary international market you are targeting.",
-  
+
     "step4_title": "Annual Export Volume",
     "step4_description": "Provide estimated annual production or export volume.",
-  
+
     "step5_title": "Existing Certifications",
     "step5_description": "Select certifications currently held by your organization.",
-  
+
     "step6_title": "Operational Readiness",
     "step6_description": "Indicate your internal quality systems and export experience level.",
-  
+
     "industry_processed_food": "Processed Food",
     "industry_agriculture": "Agriculture",
     "industry_cosmetics": "Cosmetics",
     "industry_pharmaceuticals": "Pharmaceuticals",
     "industry_textiles": "Textiles",
     "industry_industrial_equipment": "Industrial Equipment",
-  
+
     "eu": "European Union",
     "us": "United States",
     "uk": "United Kingdom",
     "middle_east": "Middle East",
     "apac": "Asia-Pacific",
-  
+
     "input_product_name": "Product Name",
     "input_annual_volume": "Annual Volume",
     "advanced_note": "For advanced regulatory analysis, HS code mapping can be integrated at a later stage.",
 
     "input_annual_volume_description": "Estimated Annual Export Volume (Units / Metric Tons)",
-  
+
     "checkbox_quality_system": "Established Quality Management System",
     "checkbox_previous_exports": "Previous Export Experience",
 
@@ -146,7 +146,7 @@
     "high_scale": "High-Scale Exporter",
     "growth_stage": "Growth-Scale Exporter",
     "emerging": "Emerging Exporter",
-  
+
     "cert_haccp": "HACCP",
     "cert_iso_22000": "ISO 22000",
     "cert_global_gap": "GlobalG.A.P",
@@ -158,16 +158,16 @@
     "button_continue": "Continue",
     "button_back": "Back",
     "button_run": "Run Compliance Analysis",
-  
+
     "results_compliance_score": "Compliance Score",
     "results_readiness_level": "Readiness Classification",
     "results_missing_certifications": "Missing Certifications",
     "results_risk_exposure": "Risk Exposure Indicator",
-  
+
     "risk_low": "Low Regulatory Risk",
     "risk_medium": "Moderate Regulatory Risk",
     "risk_high": "High Regulatory Risk",
-  
+
     "executive_summary_title": "Executive Compliance Summary",
     "cta_full_report": "Request Full Advisory Report",
 
@@ -175,23 +175,123 @@
     "results_compliance_gaps": "Compliance Gaps",
     "results_no_gaps": "All required certifications aligned. No regulatory gaps detected.",
     "results_required_notice": "Required for selected industry and export market.",
-    
+
     "readiness_not_ready": "Not Ready",
     "readiness_developing": "Developing",
     "readiness_export_ready": "Export Ready",
     "readiness_market_entry_ready": "Market Entry Ready",
-  
+
     "narrative_intro": "Based on the selected industry ({industry}) and target market ({market}), the organization is classified as \"{tier}\" with a compliance score of {score}%.",
     "narrative_gap_prefix": "Key compliance gaps include {gaps}.",
     "narrative_no_gaps": "All core regulatory requirements are currently satisfied.",
     "narrative_strategy": "Strategic alignment of certification acquisition and operational strengthening will significantly reduce regulatory exposure and accelerate successful market entry.",
 
     "results_risk_exposure_index": "Risk Exposure Index",
-  
+
     "risk_high_label": "High Risk",
     "risk_moderate_label": "Moderate Risk",
     "risk_low_label": "Low Risk"
-  } 
+    },
+
+  "ExporterIndustries": {
+    "section_label": "Sector Focus",
+    "section_title": "Engineered for Regulated Food Exports",
+    "section_description": "Emara operates at the intersection of food production and international regulatory compliance. Our compliance intelligence framework is built for exporters navigating certification regimes, border inspections, and multi-market standards across regulated jurisdictions.",
+  
+    "metrics": {
+      "markets": {
+        "value": "42+",
+        "label": "Regulated Markets Covered"
+      },
+      "frameworks": {
+        "value": "120+",
+        "label": "Certification Frameworks Mapped"
+      },
+      "risk": {
+        "value": "<2%",
+        "label": "Border Rejection Risk Modeling"
+      },
+      "monitoring": {
+        "value": "24/7",
+        "label": "Regulatory Monitoring"
+      }
+    },
+  
+    "maturity_index": {
+      "title": "Compliance Maturity Index",
+      "description": "A structured assessment of your organization’s regulatory readiness across documentation, certification alignment, audit preparedness, and cross-market control.",
+      "levels": {
+        "reactive": {
+          "label": "Reactive",
+          "description": "Compliance addressed only after inspection failures or shipment disruption."
+        },
+        "structured": {
+          "label": "Structured",
+          "description": "Documented processes exist but lack cross-market harmonization."
+        },
+        "controlled": {
+          "label": "Controlled",
+          "description": "Standardized compliance controls with periodic internal validation."
+        },
+        "optimized": {
+          "label": "Optimized",
+          "description": "Proactive alignment across certification bodies and destination markets."
+        },
+        "intelligent": {
+          "label": "Intelligence-Driven",
+          "description": "Predictive regulatory modeling with continuous monitoring and risk mitigation."
+        }
+      }
+    },
+  
+    "badges": {
+      "compliance": "Regulatory Compliance",
+      "certification": "Certification Mapping",
+      "risk": "Risk Intelligence",
+      "audit": "Audit Preparedness"
+    },
+  
+    "cta": {
+      "primary": "Assess Your Compliance Position",
+      "secondary": "Explore Sector Requirements"
+    },
+  
+    "manufacturers": {
+      "title": "Food Processing Manufacturers",
+      "subtitle": "Multi-market certification alignment",
+      "pain_label": "Industry Challenge",
+      "solution_label": "How Emara Resolves It",
+      "pain": "Food manufacturers exporting internationally must comply with overlapping certification regimes, technical production standards, hygiene controls, and audit structures that differ by jurisdiction.",
+      "solution": "Emara evaluates your production architecture against destination-market requirements, identifies certification gaps, and structures a regulatory compliance pathway before goods enter export circulation."
+    },
+  
+    "agribusiness": {
+      "title": "Agricultural & Primary Producers",
+      "subtitle": "Phytosanitary and traceability control",
+      "pain_label": "Industry Challenge",
+      "solution_label": "How Emara Resolves It",
+      "pain": "Agricultural exports are governed by strict sanitary, phytosanitary, pesticide residue, and traceability obligations that trigger immediate shipment rejection when misaligned.",
+      "solution": "Emara maps inspection protocols, certification prerequisites, and documentary controls to reduce regulatory exposure prior to shipment and port entry."
+    },
+  
+    "fmcg": {
+      "title": "Food & Beverage FMCG",
+      "subtitle": "Labeling and ingredient compliance",
+      "pain_label": "Industry Challenge",
+      "solution_label": "How Emara Resolves It",
+      "pain": "Ingredient restrictions, labeling directives, allergen declarations, and packaging standards shift across markets, exposing exporters to recall risk and border refusal.",
+      "solution": "Emara simulates regulatory alignment across jurisdictions, flags ingredient and labeling inconsistencies, and identifies compliance gaps before product launch."
+    },
+  
+    "industrial": {
+      "title": "Food-Grade Equipment Exporters",
+      "subtitle": "Directive and safety standard clarity",
+      "pain_label": "Industry Challenge",
+      "solution_label": "How Emara Resolves It",
+      "pain": "Machinery and processing equipment used in food production must align with hygiene directives, safety certifications, and harmonized technical standards specific to each export market.",
+      "solution": "Emara clarifies applicable directives, conformity assessment routes, and regulatory obligations prior to capital deployment and market entry."
+    }
+  }
 }
   
   
