@@ -291,6 +291,65 @@
       "pain": "Machinery and processing equipment used in food production must align with hygiene directives, safety certifications, and harmonized technical standards specific to each export market.",
       "solution": "Emara clarifies applicable directives, conformity assessment routes, and regulatory obligations prior to capital deployment and market entry."
     }
+  },
+
+  "AuthorityStrip": {
+    "section_label": "Institutional Alignment",
+    "section_title": "Structured Around Global Regulatory Architecture",
+    "section_description": "Emara is built within the framework of internationally recognized food safety authorities, certification systems, and cross-border trade regulations. Our regulatory intelligence model reflects the operational realities of controlled export environments.",
+  
+    "pillars": [
+      {
+        "icon": "scale",
+        "title": "Regulatory Authority Referencing",
+        "description": "Compliance models structured in reference to international food safety authorities, customs administrations, and multilateral regulatory bodies governing cross-border food trade."
+      },
+      {
+        "icon": "fileCheck",
+        "title": "Certification & Standards Intelligence",
+        "description": "Comprehensive mapping across globally recognized certification frameworks and destination-specific regulatory standards applicable to food exporters."
+      },
+      {
+        "icon": "shield",
+        "title": "Enterprise Data Governance",
+        "description": "Controlled documentation environments, role-based access architecture, and secure regulatory data handling aligned with enterprise compliance expectations."
+      },
+      {
+        "icon": "globe",
+        "title": "Built for Cross-Border B2B Trade",
+        "description": "Engineered specifically for regulated export corridors requiring structured certification sequencing, inspection readiness, and multi-jurisdiction oversight."
+      }
+    ],
+  
+    "references_label": "Regulatory Bodies & Multilateral Frameworks Referenced",
+    "standards_label": "Certification Standards & Compliance Systems",
+    "security_label": "Security & Governance Controls",
+  
+    "regulatory_bodies": [
+      "European Commission – Directorate-General for Health and Food Safety",
+      "U.S. FDA – Food Safety Modernization Act (FSMA)",
+      "Codex Alimentarius Commission",
+      "GCC Standardization Organization (GSO)",
+      "African Continental Free Trade Area (AfCFTA)"
+    ],
+  
+    "standards_covered": [
+      "ISO 22000 Food Safety Management",
+      "HACCP Systems",
+      "BRCGS Global Food Safety Standard",
+      "IFS Food Standard",
+      "GlobalG.A.P.",
+      "Halal Certification Systems"
+    ],
+  
+    "security_badges": [
+      "Structured Regulatory Data Handling",
+      "Access-Controlled Compliance Workflows",
+      "Audit-Trace Documentation Architecture",
+      "Secure Cross-Border Data Environment"
+    ],
+    
+    "operational_statement": "Operationally structured for controlled food export environments requiring certification sequencing, inspection readiness, and cross-jurisdiction regulatory oversight."
   }
 }
   

@@ -1,3 +1,4 @@
+import AuthorityStrip from "@/components/home/AuthorityStrip";
 import { ExporterIndustries } from "@/components/home/ExporterIndustries";
 import InstantGapAnalysis from "@/components/home/gapanalysis/InstantGapAnalysis";
 import { Hero } from "@/components/home/Hero";
@@ -14,6 +15,7 @@ export default function Home() {
       <TheEmaraSystem />
       {/* <InstantGapAnalysis /> */}
       <ExporterIndustries />
+      <AuthorityStrip />
     </div>
   );
 }

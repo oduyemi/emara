@@ -291,6 +291,64 @@
       "pain": "Machinery and processing equipment used in food production must align with hygiene directives, safety certifications, and harmonized technical standards specific to each export market.",
       "solution": "Emara clarifies applicable directives, conformity assessment routes, and regulatory obligations prior to capital deployment and market entry."
     }
+  },
+  "AuthorityStrip": {
+    "section_label": "Alignement Institutionnel",
+    "section_title": "Structuré autour de l’architecture réglementaire mondiale",
+    "section_description": "Emara est conçu dans le cadre des autorités internationales reconnues en matière de sécurité alimentaire, des systèmes de certification et des réglementations du commerce transfrontalier. Notre modèle d’intelligence réglementaire reflète les réalités opérationnelles des environnements d’exportation contrôlés.",
+    
+    "pillars": [
+      {
+        "icon": "scale",
+        "title": "Référencement des autorités réglementaires",
+        "description": "Modèles de conformité structurés en référence aux autorités internationales de sécurité alimentaire, aux administrations douanières et aux organismes réglementaires multilatéraux régissant le commerce alimentaire transfrontalier."
+      },
+      {
+        "icon": "fileCheck",
+        "title": "Intelligence des certifications et des normes",
+        "description": "Cartographie complète des cadres de certification reconnus mondialement et des normes réglementaires spécifiques aux marchés de destination applicables aux exportateurs alimentaires."
+      },
+      {
+        "icon": "shield",
+        "title": "Gouvernance des données d’entreprise",
+        "description": "Environnements documentaires contrôlés, architecture d’accès basée sur les rôles et gestion sécurisée des données réglementaires alignées sur les exigences de conformité des entreprises."
+      },
+      {
+        "icon": "globe",
+        "title": "Conçu pour le commerce B2B transfrontalier",
+        "description": "Développé spécifiquement pour les corridors d’exportation réglementés nécessitant un séquençage structuré des certifications, une préparation aux inspections et une supervision multi-juridictionnelle."
+      }
+    ],
+    
+    "references_label": "Autorités réglementaires et cadres multilatéraux référencés",
+    "standards_label": "Normes de certification et systèmes de conformité",
+    "security_label": "Contrôles de sécurité et de gouvernance",
+    
+    "regulatory_bodies": [
+      "Commission européenne – Direction générale de la santé et de la sécurité alimentaire",
+      "U.S. FDA – Food Safety Modernization Act (FSMA)",
+      "Commission du Codex Alimentarius",
+      "Organisation de normalisation du CCG (GSO)",
+      "Zone de libre-échange continentale africaine (ZLECAf)"
+    ],
+    
+    "standards_covered": [
+      "ISO 22000 – Management de la sécurité des denrées alimentaires",
+      "Systèmes HACCP",
+      "Norme mondiale BRCGS pour la sécurité alimentaire",
+      "Norme IFS Food",
+      "GlobalG.A.P.",
+      "Systèmes de certification Halal"
+    ],
+    
+    "security_badges": [
+      "Gestion structurée des données réglementaires",
+      "Flux de conformité à accès contrôlé",
+      "Architecture documentaire avec traçabilité d’audit",
+      "Environnement de données transfrontalier sécurisé"
+    ],
+      
+    "operational_statement": "Structuré opérationnellement pour les environnements d’exportation alimentaire contrôlés nécessitant un séquençage des certifications, une préparation aux inspections et une supervision réglementaire multi-juridictionnelle."
   }
 }
   
