@@ -406,11 +406,11 @@
 
   "faq": {
     "headline": "Questions fréquentes — Réponses claires",
-    "subtext": "Réponses directes pour les responsables conformité, les gestionnaires export et les équipes réglementaires.",
+    "subtext": "Réponses directes pour les responsables conformité, les gestionnaires export et les équipes réglementaires opérant sur des marchés transfrontaliers réglementés.",
     "items": [
       {
         "question": "Comment fonctionne l’analyse des écarts (Gap Analysis) ?",
-        "answer": "La plateforme évalue la documentation soumise par rapport à des cadres réglementaires structurés et à des normes de certification reconnues internationalement. Elle identifie les contrôles manquants, les preuves incomplètes et les procédures non alignées. Chaque constat est priorisé selon son impact sur la préparation à l’export et les exigences de diligence des acheteurs. Il s’agit d’un moteur structuré de cartographie de conformité — et non d’une simple liste de contrôle."
+        "answer": "La plateforme évalue la documentation soumise par rapport à des cadres réglementaires structurés et à des normes de certification reconnues internationalement. Elle identifie les contrôles manquants, les preuves incomplètes et les procédures non alignées. Chaque constat est priorisé selon son impact sur la préparation à l’export et les exigences de diligence des acheteurs."
       },
       {
         "question": "Quelles certifications et normes sont prises en charge ?",
@@ -426,6 +426,7 @@
       }
     ],
     "ctaText": "Vous évaluez encore votre préparation à l’export ?",
+    "ctaDesc": "Commencez dès aujourd’hui l’alignement structuré de votre conformité.",
     "ctaButton": "Créer votre profil de conformité"
   },
 
@@ -433,6 +434,31 @@
     "headline": "Soyez prêt à exporter avant que l’opportunité n’arrive.",
     "subtext": "Exploitez la conformité alignée sur les normes ISO, les cadres réglementaires et l’intégrité des données pour entrer sur les marchés mondiaux avec confiance et efficacité.",
     "ctaButton": "Commencer l’évaluation de conformité"
+  },
+
+  "Footer": {
+    "brand": "Emara",
+    "description": "Emara connecte les exportateurs africains vérifiés aux acheteurs mondiaux, en simplifiant la conformité, la certification et la préparation au commerce.",
+    "address": "New York, USA",
+    "email": "info@emara.com",
+    "phone": "+1 800 123 4567",
+  
+    "company": "Entreprise",
+    "platform": "Plateforme",
+    "support": "Support",
+  
+    "home": "Accueil",
+    "about": "À propos d’Emara",
+    "getVerified": "Obtenir la vérification",
+    "forSuppliers": "Pour les fournisseurs",
+    "supplierDirectory": "Répertoire des fournisseurs",
+    "forBuyers": "Pour les acheteurs",
+  
+    "helpCenter": "Centre d’aide",
+    "contact": "Contact",
+    "privacyPolicy": "Politique de confidentialité",
+  
+    "rightsReserved": "Tous droits réservés."
   }
 }
   

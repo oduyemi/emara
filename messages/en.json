@@ -407,7 +407,7 @@
 
   "faq": {
     "headline": "Frequently Asked — Clearly Answered",
-    "subtext": "Direct answers for compliance leaders, export managers, and regulatory teams.",
+    "subtext": "Direct answers for compliance leaders, export managers, and regulatory teams operating in regulated cross-border markets.",
     "items": [
       {
         "question": "How does the Gap Analysis work?",
@@ -427,6 +427,7 @@
       }
     ],
     "ctaText": "Still evaluating your export readiness?",
+    "ctaDesc": "Begin structured compliance alignment today.",
     "ctaButton": "Create Your Compliance Profile"
   },
 
@@ -434,6 +435,31 @@
     "headline": "Be Export-Ready. Before the Opportunity Arrives.",
     "subtext": "Leverage ISO-aligned compliance, regulatory frameworks, and data integrity to enter global markets confidently and efficiently.",
     "ctaButton": "Start Compliance Review"
+  },
+
+  "Footer": {
+    "brand": "Emara",
+    "description": "Emara connects verified African exporters to global buyers, streamlining compliance, certification, and trade readiness.",
+    "address": "New York, USA",
+    "email": "info@emara.com",
+    "phone": "+1 800 123 4567",
+
+    "company": "Company",
+    "platform": "Platform",
+    "support": "Support",
+
+    "home": "Homepage",
+    "about": "About Emara",
+    "getVerified": "Get Verified",
+    "forSuppliers": "For Suppliers",
+    "supplierDirectory": "Supplier Directory",
+    "forBuyers": "For Buyers",
+
+    "helpCenter": "Help Center",
+    "contact": "Contact",
+    "privacyPolicy": "Privacy Policy",
+
+    "rightsReserved": "All rights reserved."
   }
 }
   
