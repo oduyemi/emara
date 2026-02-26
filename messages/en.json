@@ -11,13 +11,13 @@
   "Header": {
     "signIn": "Sign In",
     "getVerified": "Get Verified",
-    "buyers": "For Buyers",
-    "suppliers": "For Suppliers",
-    "verifiedSuppliers": "Verified Suppliers",
-    "supplier_directory": "Supplier Directory",
+    "buyers": "For Importers",
+    "suppliers": "For Exporters",
+    "verifiedSuppliers": "Verified Exporters",
+    "supplier_directory": "Exporter Directory",
     "about": "About Emara",
     "search_placeholder": "Search supplier, country and category",
-    "buyerCta": "For Buyers"
+    "buyerCta": "For Exporters"
   },
   
   "MegaMenu": {
@@ -69,7 +69,7 @@
       "description": "Showcase your products in front of retail and foodservice buyers actively searching for unique African product.",
       "cta": "Suppliers"
     },
-    "buyerCta": "Buyers"
+    "buyerCta": "Importers"
   },
   
   "TheProblem": {
@@ -463,7 +463,7 @@
     "getVerified": "Get Verified",
     "forSuppliers": "For Suppliers",
     "supplierDirectory": "Supplier Directory",
-    "forBuyers": "For Buyers",
+    "forBuyers": "For Importers",
 
     "helpCenter": "Help Center",
     "contact": "Contact",
@@ -553,6 +553,54 @@
         }
       ],
       "footnote": "All verification data is supported by structured scoring and documented audit processes."
+    }
+  },
+
+  "exportHero": {
+    "badge": "The Gateway to Export Excellence",
+    "headline": "The Gateway to Verified African Exporters",
+    "subheadline": "Join a data-backed ecosystem engineered to move you from local production to global trade.",
+    "primaryCta": "Apply for Verification",
+    "secondaryCta": "See How the Emara Score Works",
+    "verificationStrip": "Audited. Documented. Verified.",
+    "bronze": "Bronze",
+    "silver": "Silver",
+    "gold": "Gold",
+    "gold_elite": "Gold Elite"
+  },
+
+  "trust_gap": {
+    "label": "THE STRUCTURAL PROBLEM",
+    "title": "Why Emara Exists",
+
+    "stats": {
+      "arable_land": {
+        "value": "60%",
+        "description": "of the world’s uncultivated arable land is in Africa."
+      },
+      "lost_producers": {
+        "value": "Thousands",
+        "description": "of export-ready producers lose deals due to verification friction."
+      },
+      "audit_delays": {
+        "value": "Weeks",
+        "description": "of preventable audit delays stall cross-border trade."
+      }
+    },
+
+    "problems": {
+      "verification_vacuum": {
+        "title": "Verification Vacuum",
+        "description": "Export markets require structured proof — documentation, traceability, compliance scoring. Most producers operate without a unified verification infrastructure."
+      },
+      "information_asymmetry": {
+        "title": "Information Asymmetry",
+        "description": "Global buyers lack standardized, trusted datasets to assess African suppliers. Fragmented records increase perceived risk and reduce deal velocity."
+      },
+      "operational_friction": {
+        "title": "Operational Friction",
+        "description": "Manual audits, repeated compliance checks, and disconnected logistics systems introduce costly delays across the export lifecycle."
+      }
     }
   }
 }

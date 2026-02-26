@@ -11,13 +11,13 @@
   "Header": {
     "signIn": "Se connecter",
     "getVerified": "Obtenir la vérification",
-    "buyers": "Pour les acheteurs",
-    "suppliers": "Pour les fournisseurs",
-    "verifiedSuppliers": "Fournisseurs vérifiés",
-    "supplier_directory": "Répertoire des fournisseurs",
+    "buyers": "Pour les importateurs",
+    "suppliers": "Pour les exportateurs",
+    "verifiedSuppliers": "Exportateurs vérifiés",
+    "supplier_directory": "Répertoire des exportateurs",
     "about": "À propos d’Emara",
     "search_placeholder": "Rechercher un fournisseur, un pays ou une catégorie",
-    "buyerCta": "Pour les acheteurs"
+    "buyerCta": "Pour les importateurs"
   },
 
   "MegaMenu": {
@@ -460,9 +460,9 @@
     "home": "Accueil",
     "about": "À propos d’Emara",
     "getVerified": "Obtenir la vérification",
-    "forSuppliers": "Pour les fournisseurs",
-    "supplierDirectory": "Répertoire des fournisseurs",
-    "forBuyers": "Pour les acheteurs",
+    "forSuppliers": "Pour les exportateurs",
+    "supplierDirectory": "Répertoire des exportateurs",
+    "forBuyers": "Pour les importateurs",
   
     "helpCenter": "Centre d’aide",
     "contact": "Contact",
@@ -514,7 +514,7 @@
         }
       ]
     },
-    
+
     "founder": {
       "badge": "Perspective du Fondateur",
       "headline": "Construire l’infrastructure d’un commerce transparent",
@@ -553,6 +553,53 @@
         }
       ],
       "footnote": "Toutes les données de vérification sont soutenues par un système de notation structuré et des processus d’audit documentés."
+    }
+  },
+
+  "exportHero": {
+    "badge": "La passerelle vers l’excellence à l’exportation",
+    "headline": "La passerelle vers des exportateurs africains vérifiés",
+    "subheadline": "Rejoignez un écosystème fondé sur les données, conçu pour vous faire passer de la production locale au commerce mondial.",
+    "primaryCta": "Demander la vérification",
+    "secondaryCta": "Découvrir le fonctionnement du Score Emara",
+    "verificationStrip": "Audité. Documenté. Vérifié.",
+    "bronze": "Bronze",
+    "silver": "Argent",
+    "gold": "Or",
+    "gold_elite": "Or Élite"
+  },
+  "trust_gap": {
+    "label": "LE PROBLÈME STRUCTUREL",
+    "title": "Pourquoi Emara existe",
+  
+    "stats": {
+      "arable_land": {
+        "value": "60 %",
+        "description": "des terres arables non cultivées du monde se trouvent en Afrique."
+      },
+      "lost_producers": {
+        "value": "Des milliers",
+        "description": "de producteurs prêts à exporter perdent des contrats en raison de frictions liées à la vérification."
+      },
+      "audit_delays": {
+        "value": "Semaines",
+        "description": "de retards d’audit évitables ralentissent le commerce transfrontalier."
+      }
+    },
+  
+    "problems": {
+      "verification_vacuum": {
+        "title": "Vide de vérification",
+        "description": "Les marchés d’exportation exigent des preuves structurées — documentation, traçabilité, notation de conformité. La plupart des producteurs opèrent sans infrastructure de vérification unifiée."
+      },
+      "information_asymmetry": {
+        "title": "Asymétrie d’information",
+        "description": "Les acheteurs mondiaux ne disposent pas de jeux de données standardisés et fiables pour évaluer les fournisseurs africains. Des dossiers fragmentés augmentent le risque perçu et ralentissent la conclusion des accords."
+      },
+      "operational_friction": {
+        "title": "Friction opérationnelle",
+        "description": "Les audits manuels, les contrôles de conformité répétés et les systèmes logistiques déconnectés entraînent des retards coûteux tout au long du cycle d’exportation."
+      }
     }
   }
 }

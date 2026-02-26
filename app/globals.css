@@ -48,6 +48,15 @@
   }
 }
 
+@keyframes shimmer {
+  0% { transform: translateX(-150%); }
+  100% { transform: translateX(250%); }
+}
+
+.animate-shimmer {
+  animation: shimmer 2.8s infinite;
+}
+
 html {
   background-color: var(--color-bg);
   color: var(--color-fg);
