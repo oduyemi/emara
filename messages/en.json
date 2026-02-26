@@ -514,6 +514,45 @@
           "description": "We support a sustainable global food system by providing a \"digital paper trail\" that proves origin and adheres to environmental and labor standards."
         }
       ]
+    },
+    "founder": {
+      "badge": "Founder’s Perspective",
+      "headline": "Building the Infrastructure for Transparent Trade",
+      "salutation": "To our Global Partners, Buyers, and the Visionary Producers of Africa,",
+      "paragraphs": [
+        "For decades, the narrative surrounding African trade has been defined by two conflicting realities: the continent’s undeniable, immense resource wealth and the persistent \"Trust Gap\" that prevents that wealth from reaching its full global potential.",
+        "When I look at the landscape of African agro-commodities and food production, I don’t just see products; I see world-class facilities, passionate founders, and untapped excellence. Yet, for an international procurement officer in London, Dubai, or New York, the distance between curiosity and a signed contract is often filled with anxiety.",
+        "Emara was born to answer those questions with a resounding \"Yes.\"",
+        "Our vision for a \"Transparent Africa\" is not about listing companies in a directory. It is about building digital infrastructure where transparency becomes the primary currency.",
+        "By professionalizing the gateway to the continent, we are not merely facilitating transactions — we are building a more equitable trade ecosystem where merit is visible, risk is mitigated, and \"Made in Africa\" becomes synonymous with \"World-Class.\"",
+        "The gateway is open. We invite you to trade with certainty."
+      ],
+      "quote": "We are moving the \"E\" in Export from a logistical challenge to a competitive advantage.",
+      "signature": {
+        "name": "Jacques Epangue",
+        "title": "Founder & CEO",
+        "company": "Emara"
+      }
+    },
+  
+    "metrics": {
+      "badge": "Trust Infrastructure",
+      "headline": "Verified Trade. Measurable Impact.",
+      "items": [
+        {
+          "value": "250+",
+          "label": "Verified Producers"
+        },
+        {
+          "value": "18",
+          "label": "Countries Represented"
+        },
+        {
+          "value": "1,200+",
+          "label": "Audits & Facility Reviews Completed"
+        }
+      ],
+      "footnote": "All verification data is supported by structured scoring and documented audit processes."
     }
   }
 }

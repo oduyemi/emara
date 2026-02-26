@@ -513,6 +513,46 @@
           "description": "Nous soutenons un système alimentaire mondial durable en fournissant une « piste papier numérique » qui prouve l’origine et respecte les normes environnementales et du travail."
         }
       ]
+    },
+    
+    "founder": {
+      "badge": "Perspective du Fondateur",
+      "headline": "Construire l’infrastructure d’un commerce transparent",
+      "salutation": "À nos partenaires mondiaux, acheteurs et producteurs visionnaires d’Afrique,",
+      "paragraphs": [
+        "Depuis des décennies, le récit entourant le commerce africain est défini par deux réalités contradictoires : l’immense richesse en ressources du continent et le « fossé de confiance » persistant qui empêche cette richesse d’atteindre son plein potentiel mondial.",
+        "Lorsque j’observe le paysage des agro-commodités et de la production alimentaire en Afrique, je ne vois pas seulement des produits ; je vois des installations de classe mondiale, des fondateurs passionnés et une excellence inexploitée. Pourtant, pour un responsable des achats internationaux à Londres, Dubaï ou New York, la distance entre la curiosité et un contrat signé est souvent remplie d’incertitude.",
+        "Emara est née pour répondre à ces questions par un « Oui » retentissant.",
+        "Notre vision d’une « Afrique Transparente » ne consiste pas à répertorier des entreprises dans un annuaire. Il s’agit de construire une infrastructure numérique où la transparence devient la monnaie principale.",
+        "En professionnalisant la passerelle vers le continent, nous ne facilitons pas simplement des transactions — nous construisons un écosystème commercial plus équitable où le mérite est visible, le risque est atténué et « Fabriqué en Afrique » devient synonyme de « Classe Mondiale ».",
+        "La passerelle est ouverte. Nous vous invitons à commercer en toute certitude."
+      ],
+      "quote": "Nous transformons le « E » d’Export d’un défi logistique en un avantage concurrentiel.",
+      "signature": {
+        "name": "Jacques Epangue",
+        "title": "Fondateur & PDG",
+        "company": "Emara"
+      }
+    },
+    
+    "metrics": {
+      "badge": "Infrastructure de Confiance",
+      "headline": "Commerce Vérifié. Impact Mesurable.",
+      "items": [
+        {
+          "value": "250+",
+          "label": "Producteurs Vérifiés"
+        },
+        {
+          "value": "18",
+          "label": "Pays Représentés"
+        },
+        {
+          "value": "1 200+",
+          "label": "Audits et évaluations d’installations réalisés"
+        }
+      ],
+      "footnote": "Toutes les données de vérification sont soutenues par un système de notation structuré et des processus d’audit documentés."
     }
   }
 }
