@@ -49,7 +49,7 @@ export const Content = () => {
   }, [slides.length])
 
   return (
-    <section className="relative w-full overflow-hidden min-h-[95vh] flex items-center">
+    <section className="relative w-full overflow-hidden min-h-screen flex items-center">
       
       {/* Background Fade */}
       <AnimatePresence mode="wait">
