@@ -5,14 +5,14 @@ import Image from "next/image"
 import clsx from "clsx"
 import { Menu, Search } from "lucide-react"
 import { useTranslations } from "next-intl"
-import { MobileDrawer } from "./MobileDrawer"
-import { MobileSearch } from "./MobileSearch"
-import { LanguageSwitcher } from "./LanguageSwitcher"
+import { MobileDrawer } from "../MobileDrawer"
+import { MobileSearch } from "../MobileSearch"
+import { LanguageSwitcher } from "../LanguageSwitcher"
 import dynamic from "next/dynamic"
 
-const MegaMenu = dynamic(() => import("./MegaMenu"), { ssr: false })
+const MegaMenu = dynamic(() => import("../MegaMenu"), { ssr: false })
 
-export const Header = () => {
+export const SupplierHeader = () => {
   const t = useTranslations("Header")
 
   const [scrolled, setScrolled] = useState(false)
@@ -27,15 +27,12 @@ export const Header = () => {
 
   return (
     <header className="sticky top-0 z-50">
-
       {/* Main Bar */}
       <div
         className={clsx(
           "transition-all duration-300 backdrop-blur-2xl",
           "bg-gradient-to-r from-surface-dark/95 via-surface-dark/90 to-surface-dark/95",
-          scrolled
-            ? "shadow-xl border-b border-white/5"
-            : "border-b border-white/5"
+          scrolled ? "shadow-xl border-b border-white/5" : "border-b border-white/5"
         )}
       >
         <div
@@ -53,7 +50,7 @@ export const Header = () => {
           </button>
 
           {/* Logo */}
-          <Link href="/" className="flex-shrink-0">
+          <Link href="/suppliers" className="flex-shrink-0">
             <Image
               src="/images/logo/logofix.png"
               alt="Emara"
@@ -73,7 +70,6 @@ export const Header = () => {
               size={18}
               className="absolute left-4 top-1/2 -translate-y-1/2 text-black/40 group-focus-within:text-accent transition-colors"
             />
-
             <input
               type="text"
               placeholder={t("search_placeholder")}
@@ -105,7 +101,7 @@ export const Header = () => {
             <LanguageSwitcher />
 
             <Link
-              href="/login"
+              href="/suppliers/login"
               className="text-black/80 hover:text-accent transition-colors"
             >
               {t("signIn")}
@@ -117,6 +113,13 @@ export const Header = () => {
             >
               {t("getVerified")}
             </Link>
+
+            <Link
+              href="/suppliers/dashboard"
+              className="text-black/80 hover:text-accent transition-colors"
+            >
+              {t("dashboard")}
+            </Link>
           </div>
         </div>
       </div>
@@ -124,13 +127,13 @@ export const Header = () => {
       {/* Secondary Navigation */}
       <div className="hidden md:block bg-surface-dark/70 backdrop-blur-2xl border-b border-black/5">
         <div className="max-w-7xl mx-auto px-6 py-3 flex gap-8 items-center text-sm font-medium text-black/80">
-
           <MegaMenu />
-
           {[
-            { href: "/buyers", label: t("buyers") },
-            { href: "/suppliers", label: t("suppliers") },
-            { href: "/suppliers/directory", label: t("supplier_directory") },
+            { href: "/suppliers/profile", label: t("profile") },
+            { href: "/suppliers/onboarding", label: t("onboarding") },
+            { href: "/suppliers/academy", label: t("academy") },
+            { href: "/suppliers/analytics", label: t("analytics") },
+            { href: "/suppliers/support", label: t("support") },
             { href: "/about", label: t("about") },
           ].map((item) => (
             <Link
@@ -146,7 +149,6 @@ export const Header = () => {
               {item.label}
             </Link>
           ))}
-
         </div>
       </div>
 

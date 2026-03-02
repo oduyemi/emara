@@ -17,7 +17,12 @@
     "supplier_directory": "دليل المصدرين",
     "about": "حول إمارة",
     "search_placeholder": "ابحث عن مورد أو دولة أو فئة",
-    "buyerCta": "للموردين"
+    "buyerCta": "للموردين",
+    "profile": "الملف الشخصي",
+    "onboarding": "الإعداد",
+    "academy": "الأكاديمية",
+    "analytics": "التحليلات",
+    "support": "الدعم"
   },
 
   "MegaMenu": {
@@ -73,7 +78,7 @@
       "secondaryCta": "ابدأ رحلتك في التصدير"
     }
   },
-  
+
   "TheProblem": {
     "section_label": "تحديات التجارة العالمية",
     "section_title": "لماذا تواجه الشركات صعوبة في التصدير",

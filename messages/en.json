@@ -17,7 +17,12 @@
     "supplier_directory": "Exporter Directory",
     "about": "About Emara",
     "search_placeholder": "Search supplier, country and category",
-    "buyerCta": "For Suppliers"
+    "buyerCta": "For Suppliers",
+    "profile": "Profile",
+    "onboarding": "Onboarding",
+    "academy": "Academy",
+    "analytics": "Analytics",
+    "support": "Support"
   },
   
   "MegaMenu": {

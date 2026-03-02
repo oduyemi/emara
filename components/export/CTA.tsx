@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { CheckCircle, ShieldCheck } from "lucide-react";
 
-export const HomeCTA = () => {
+export const ExportCTA = () => {
   const t = useTranslations("homeCTA");
 
   const pillars = [
@@ -36,7 +36,7 @@ export const HomeCTA = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-3xl md:text-5xl font-semibold text-neutral-900 tracking-tight leading-tight"
+          className="text-3xl md:text-5xl font-semibold text-secondary tracking-tight leading-tight"
         >
           {t("headline")}
         </motion.h2>
@@ -80,7 +80,7 @@ export const HomeCTA = () => {
           className="pt-4"
         >
           <Link
-            href="/register"
+            href="/suppliers/compliance-review"
             className="inline-flex items-center justify-center bg-red-900 hover:bg-red-800 text-white font-semibold text-sm md:text-base px-8 py-3 rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
           >
             {t("ctaButton")}

@@ -17,7 +17,7 @@ export default function Outcome() {
         </p>
 
         {/* Title */}
-        <h2 className="text-6xl font-semibold text-gray-900 leading-tight max-w-4xl mx-auto">
+        <h2 className="text-6xl font-semibold text-secondary leading-tight max-w-4xl mx-auto">
           {t("title")}
         </h2>
 

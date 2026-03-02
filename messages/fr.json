@@ -17,7 +17,12 @@
     "supplier_directory": "Répertoire des exportateurs",
     "about": "À propos d’Emara",
     "search_placeholder": "Rechercher un fournisseur, un pays ou une catégorie",
-    "buyerCta": "Pour les fournisseurs"
+    "buyerCta": "Pour les fournisseurs",
+    "profile": "Profil",
+    "onboarding": "Intégration",
+    "academy": "Académie",
+    "analytics": "Analytique",
+    "support": "Support"
   },
 
   "MegaMenu": {

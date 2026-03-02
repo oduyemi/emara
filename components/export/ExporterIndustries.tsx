@@ -77,7 +77,7 @@ export const ExporterIndustries = () => {
             <div className="h-px flex-1 bg-neutral-200" />
           </div>
 
-          <h2 className="text-5xl font-semibold tracking-tight leading-[1.05]">
+          <h2 className="text-5xl font-semibold text-secondary tracking-tight leading-[1.05]">
             {t("section_title")}
           </h2>
 

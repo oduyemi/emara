@@ -26,7 +26,7 @@ export const TheEmaraSystem: FC = () => {
             {t("section_label")}
           </p>
 
-          <h2 className="text-4xl md:text-5xl font-semibold text-gray-900 tracking-tight leading-tight">
+          <h2 className="text-4xl md:text-5xl font-semibold text-secondary tracking-tight leading-tight">
             {t("section_title")}
           </h2>
 
