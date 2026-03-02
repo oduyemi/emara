@@ -129,7 +129,7 @@ export const SupplierHeader = () => {
         <div className="max-w-7xl mx-auto px-6 py-3 flex gap-8 items-center text-sm font-medium text-black/80">
           <MegaMenu />
           {[
-            { href: "/suppliers/profile", label: t("profile") },
+            { href: "/suppliers/directory", label: t("directory") },
             { href: "/suppliers/onboarding", label: t("onboarding") },
             { href: "/suppliers/academy", label: t("academy") },
             { href: "/suppliers/analytics", label: t("analytics") },
