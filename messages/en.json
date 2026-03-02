@@ -55,21 +55,23 @@
       "highlight": "Infrastructure for Trusted Trade",
       "title": "Africa’s Verification Gateway for Global Commerce",
       "description": "Emara serves as the trusted portal connecting international buyers to verified African suppliers. We eliminate sourcing risk by turning performance data into proven credibility.",
-      "cta": "Suppliers"
+      "primaryCta": "Buyers",
+      "secondaryCta": "Suppliers"
     },
     "slide2": {
       "highlight": "Smarter, Risk-Reduced Sourcing",
       "title": "Source Verified Exporters With Confidence",
       "description": "Access audit-backed suppliers, compliance records, and transparent trade history — all within one trusted ecosystem.",
-      "cta": "Suppliers"
+      "primaryCta": "Start Sourcing",
+      "secondaryCta": "Get Verified"
     },
     "slide3": {
       "highlight": "Grow Beyond Borders",
       "title": "Scale Your Business Beyond Borders",
-      "description": "Showcase your products in front of retail and foodservice buyers actively searching for unique African product.",
-      "cta": "Suppliers"
-    },
-    "buyerCta": "Buyers"
+      "description": "Showcase your products in front of retail and foodservice buyers actively searching for unique African products.",
+      "primaryCta": "Browse Directory",
+      "secondaryCta": "Start Your Export Journey"
+    }
   },
   
   "TheProblem": {

@@ -13,7 +13,7 @@ export default function ClientSideLayout({
 
   // Exclude footer on landing page and /buyers routes
   const hideDefaultFooter =
-    pathname === "/" || pathname.startsWith("/buyers");
+    pathname === "/" || pathname === "/en" || pathname === "/fr" || pathname === "/ar" || pathname.startsWith("/buyers");
 
   return (
     <div className="min-h-screen flex flex-col">

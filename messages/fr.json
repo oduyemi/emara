@@ -52,24 +52,26 @@
   
   "Hero": {
     "slide1": {
-      "highlight": "Infrastructure pour un Commerce de Confiance",
-      "title": "La Couche de Vérification de l’Afrique pour le Commerce Mondial",
-      "description": "Emara connecte des exportateurs vérifiés et des acheteurs internationaux grâce à une conformité structurée, des données commerciales transparentes et une crédibilité appuyée par des audits.",
-      "cta": "Explorer le Réseau"
+      "highlight": "Infrastructure pour un commerce de confiance",
+      "title": "La passerelle africaine de vérification pour le commerce mondial",
+      "description": "Emara est le portail de confiance reliant les acheteurs internationaux aux fournisseurs africains vérifiés. Nous éliminons le risque d’approvisionnement en transformant les données de performance en crédibilité démontrée.",
+      "primaryCta": "Acheteurs",
+      "secondaryCta": "Fournisseurs"
     },
     "slide2": {
-      "highlight": "Approvisionnement Plus Intelligent et Moins Risqué",
-      "title": "Approvisionnez-vous auprès d’Exportateurs Vérifiés en Toute Confiance",
-      "description": "Accédez à des fournisseurs certifiés par audit, à leurs dossiers de conformité et à un historique commercial transparent — le tout au sein d’un écosystème de confiance.",
-      "cta": "Commencer l’Approvisionnement"
+      "highlight": "Approvisionnement plus intelligent et à risque réduit",
+      "title": "Approvisionnez-vous auprès d’exportateurs vérifiés en toute confiance",
+      "description": "Accédez à des fournisseurs appuyés par des audits, à des dossiers de conformité et à un historique commercial transparent — le tout au sein d’un écosystème de confiance unique.",
+      "primaryCta": "Commencer l’approvisionnement",
+      "secondaryCta": "Obtenir la vérification"
     },
     "slide3": {
-      "highlight": "Développez-vous au-delà des Frontières",
-      "title": "Devenez Prêt pour les Acheteurs Internationaux",
-      "description": "Présentez votre conformité, vos certifications et vos performances commerciales à des acheteurs internationaux sérieux à travers le monde.",
-      "cta": "Obtenir la Vérification"
-    },
-    "buyerCta": "Acheteurs"
+      "highlight": "Grandir au-delà des frontières",
+      "title": "Développez votre entreprise au-delà des frontières",
+      "description": "Présentez vos produits à des acheteurs du commerce de détail et de la restauration activement à la recherche de produits africains uniques.",
+      "primaryCta": "Parcourir le répertoire",
+      "secondaryCta": "Commencer votre parcours d’exportation"
+    }
   },
 
   "TheProblem": {
