@@ -11,13 +11,13 @@
   "Header": {
     "signIn": "Se connecter",
     "getVerified": "Obtenir la vérification",
-    "buyers": "Pour les importateurs",
-    "suppliers": "Pour les exportateurs",
-    "verifiedSuppliers": "Exportateurs vérifiés",
+    "buyers": "Pour les acheteurs",
+    "suppliers": "Pour les fournisseurs",
+    "verifiedSuppliers": "Fournisseurs vérifiés",
     "supplier_directory": "Répertoire des exportateurs",
     "about": "À propos d’Emara",
     "search_placeholder": "Rechercher un fournisseur, un pays ou une catégorie",
-    "buyerCta": "Pour les importateurs"
+    "buyerCta": "Pour les fournisseurs"
   },
 
   "MegaMenu": {
@@ -540,15 +540,15 @@
       "headline": "Commerce Vérifié. Impact Mesurable.",
       "items": [
         {
-          "value": "250+",
+          "value": "100+",
           "label": "Producteurs Vérifiés"
         },
         {
-          "value": "18",
+          "value": "54",
           "label": "Pays Représentés"
         },
         {
-          "value": "1 200+",
+          "value": "400+",
           "label": "Audits et évaluations d’installations réalisés"
         }
       ],

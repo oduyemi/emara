@@ -1,29 +1,12 @@
-import AuthorityStrip from "@/components/home/AuthorityStrip";
-import { HomeCTA } from "@/components/home/CTA";
-import { ExporterIndustries } from "@/components/home/ExporterIndustries";
-import { FAQ } from "@/components/home/FAQ";
-import InstantGapAnalysis from "@/components/home/gapanalysis/InstantGapAnalysis";
-import { Hero } from "@/components/home/Hero";
-import HowItWorks from "@/components/home/HowItWorks";
-import Outcome from "@/components/home/Outcome";
-import { TheEmaraSystem } from "@/components/home/TheEmaraSystem";
-import { TheProblem } from "@/components/home/TheProblem";
+import { Content } from "@/components/home/Hero";
+
 
 
 
 export default function Home() {
   return (
     <div>
-      <Hero />
-      <TheProblem   />
-      <TheEmaraSystem />
-      {/* <InstantGapAnalysis /> */}
-      <ExporterIndustries />
-      <AuthorityStrip />
-      <HowItWorks />
-      <Outcome />
-      <FAQ />
-      <HomeCTA />
+      <Content />
     </div>
   );
 }

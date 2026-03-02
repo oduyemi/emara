@@ -146,10 +146,6 @@ export const Header = () => {
             {t("suppliers")}
           </Link>
 
-          <Link href="/verified-suppliers" className="hover:text-accent transition-colors">
-            {t("verifiedSuppliers")}
-          </Link>
-
           <Link href="/directory" className="hover:text-accent transition-colors">
             {t("supplier_directory")}
           </Link>

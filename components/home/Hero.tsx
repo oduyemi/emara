@@ -1,134 +1,163 @@
 "use client"
-import { useRef } from "react"
-import useEmblaCarousel from "embla-carousel-react"
-import Autoplay from "embla-carousel-autoplay"
-import Link from "next/link"
+
+import { useEffect, useState } from "react"
 import Image from "next/image"
+import Link from "next/link"
+import { motion, AnimatePresence } from "framer-motion"
 import { ArrowRight, ArrowLeft } from "lucide-react"
 import { useTranslations, useLocale } from "next-intl"
 
-export const Hero = () => {
+export const Content = () => {
   const t = useTranslations("Hero")
   const locale = useLocale()
   const isRTL = ["ar"].includes(locale)
 
-  const autoplay = useRef(
-    Autoplay({ delay: 7000, stopOnInteraction: false })
-  )
+  const slides = [
+    {
+      highlight: t("slide1.highlight"),
+      title: t("slide1.title"),
+      description: t("slide1.description"),
+      primary: { label: "Buyers", href: "/buyers" },
+      secondary: { label: "Suppliers", href: "/suppliers" },
+      image: "/images/hero1.jpg",
+    },
+    {
+      highlight: t("slide2.highlight"),
+      title: t("slide2.title"),
+      description: t("slide2.description"),
+      primary: { label: "Start Sourcing", href: "/buyers/register" },
+      secondary: { label: "Get Verified", href: "/suppliers/register" },
+      image: "/images/hero2.jpg",
+    },
+    {
+      highlight: t("slide3.highlight"),
+      title: t("slide3.title"),
+      description: t("slide3.description"),
+      primary: { label: "Browse Directory", href: "/suppliers/directory" },
+      secondary: {
+        label: "Start Your Export Journey",
+        href: "/suppliers/register",
+      },
+      image: "/images/hero3.jpg",
+    },
+  ]
 
-  const [emblaRef] = useEmblaCarousel(
-    { loop: true, direction: isRTL ? "rtl" : "ltr" },
-    [autoplay.current]
-  )
+  const [index, setIndex] = useState(0)
 
-  const slides = ["slide1", "slide2", "slide3"].map((key, index) => ({
-    highlight: t(`${key}.highlight`),
-    title: t(`${key}.title`),
-    description: t(`${key}.description`),
-    cta: t(`${key}.cta`),
-    link:
-      key === "slide1"
-        ? "/verified-suppliers"
-        : key === "slide2"
-        ? "/suppliers"
-        : "/buyers",
-    image: `/images/hero${index + 1}.jpg`
-  }))
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % slides.length)
+    }, 7500)
+    return () => clearInterval(interval)
+  }, [slides.length])
 
   return (
-    <section className="relative w-full overflow-hidden text-white">
-      <div ref={emblaRef} className="overflow-hidden">
-        <div className="flex">
-          {slides.map((slide, index) => (
-            <div
-              key={index}
-              className="relative flex-[0_0_100%] min-h-[88vh] flex items-center"
+    <section className="relative w-full overflow-hidden">
+    {/* Background Fade */}
+    <AnimatePresence mode="wait">
+      <motion.div
+        key={index}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 1.1, ease: "easeInOut" }}
+        className="absolute inset-0"
+      >
+        <Image
+          src={slides[index].image}
+          alt={slides[index].title}
+          fill
+          priority
+          className="object-cover scale-105"
+        />
+
+        {/* Premium Gradient */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background: `
+              radial-gradient(circle at 15% 40%, rgba(255,87,10,0.07) 0%, transparent 45%),
+              linear-gradient(
+                115deg,
+                rgba(18,53,91,0.97) 0%,
+                rgba(18,53,91,0.92) 50%,
+                rgba(18,53,91,0.80) 80%,
+                rgba(18,53,91,0.70) 100%
+              )
+            `,
+          }}
+        />
+      </motion.div>
+    </AnimatePresence>
+
+    {/* Content */}
+    <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 md:py-24 lg:py-28">
+
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={index + "-content"}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -20 }}
+          transition={{ duration: 0.8 }}
+          className={`max-w-3xl text-white space-y-7 ${
+            isRTL ? "ml-auto text-right" : ""
+          }`}
+        >
+          {/* Highlight */}
+          <div className="relative inline-block">
+            <p className="uppercase tracking-[0.5em] text-xs font-semibold text-accent">
+              {slides[index].highlight}
+            </p>
+            <span className="absolute -bottom-2 left-0 w-14 h-[2px] bg-accent/70 rounded-full"></span>
+          </div>
+
+          {/* Title (slightly reduced scale for balance) */}
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-semibold leading-[1.08] tracking-tight">
+            {slides[index].title}
+          </h1>
+
+          {/* Description */}
+          <p className="text-base md:text-lg text-white/80 leading-relaxed max-w-2xl">
+            {slides[index].description}
+          </p>
+
+          {/* CTAs */}
+          <div className={`flex flex-col sm:flex-row gap-5 pt-4 ${isRTL ? "justify-end" : ""}`}>
+            <Link
+              href={slides[index].primary.href}
+              className="btn-primary inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-xl font-medium shadow-xl hover:-translate-y-1 hover:shadow-2xl transition-all duration-300"
             >
-              {/* Background Image */}
-              <Image
-                src={slide.image}
-                alt={slide.title}
-                fill
-                priority={index === 0}
-                className="object-cover object-center"
-              />
+              {slides[index].primary.label}
+              {isRTL ? <ArrowLeft size={18} /> : <ArrowRight size={18} />}
+            </Link>
 
-              {/* Secondary-toned overlay instead of black */}
-              <div
-                className="absolute inset-0"
-                style={{
-                  background:
-                    "linear-gradient(90deg, rgba(18,53,91,0.72) 0%, rgba(18,53,91,0.55) 40%, rgba(18,53,91,0.4) 100%)"
-                }}
-              />
+            <Link
+              href={slides[index].secondary.href}
+              className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-xl font-medium backdrop-blur-md bg-white/10 border border-white/25 hover:bg-white/20 hover:border-accent transition-all duration-300"
+            >
+              {slides[index].secondary.label}
+            </Link>
+          </div>
+        </motion.div>
+      </AnimatePresence>
+    </div>
 
-              {/* Content */}
-              <div className="relative max-w-6xl mx-auto px-6 w-full">
-                <div
-                  className={`max-w-2xl space-y-8 ${
-                    isRTL ? "ml-auto text-right" : ""
-                  }`}
-                >
-                  {/* Highlight */}
-                  <p className="uppercase tracking-[0.3em] text-xs font-semibold text-accent">
-                    {slide.highlight}
-                  </p>
+    {/* Indicators */}
+    <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3">
+      {slides.map((_, i) => (
+        <button
+          key={i}
+          onClick={() => setIndex(i)}
+          className={`h-2 rounded-full transition-all duration-300 ${
+            i === index
+              ? "w-10 bg-accent"
+              : "w-4 bg-white/40 hover:bg-white/70"
+          }`}
+        />
+      ))}
+    </div>
 
-                  {/* Title */}
-                  <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold leading-[1.05]">
-                    {slide.title}
-                  </h1>
-
-                  {/* Description */}
-                  <p className="text-lg md:text-xl text-gray-200">
-                    {slide.description}
-                  </p>
-
-                  {/* CTAs */}
-                  <div
-                    className={`flex flex-wrap gap-5 pt-4 ${
-                      isRTL ? "justify-end" : ""
-                    }`}
-                  >
-                    <Link
-                      href={slide.link}
-                      className="btn-primary inline-flex items-center gap-2 px-8 py-3.5 rounded-xl font-medium shadow-lg hover:-translate-y-1 transition-all duration-300"
-                    >
-                      {slide.cta}
-                      {isRTL ? (
-                        <ArrowLeft size={18} />
-                      ) : (
-                        <ArrowRight size={18} />
-                      )}
-                    </Link>
-
-                    <Link
-                      href="/buyers"
-                      className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl border border-white/30 hover:border-accent hover:text-accent transition-all duration-300"
-                    >
-                      {t("buyerCta")}
-                    </Link>
-                  </div>
-                </div>
-              </div>
-
-              {/* Minimal Slide Indicator */}
-              <div className="absolute bottom-10 right-10 flex gap-2">
-                {slides.map((_, dotIndex) => (
-                  <span
-                    key={dotIndex}
-                    className={`h-2 w-8 rounded-full transition-all duration-300 ${
-                      dotIndex === index
-                        ? "bg-accent"
-                        : "bg-white/30"
-                    }`}
-                  />
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
+  </section>
   )
 }

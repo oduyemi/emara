@@ -11,13 +11,13 @@
   "Header": {
     "signIn": "تسجيل الدخول",
     "getVerified": "الحصول على التحقق",
-    "buyers": "للمستوردين",
-    "suppliers": "للمصدرين",
-    "verifiedSuppliers": "للمصدرين المعتمدون",
-    "supplier_directory": "دليل للمصدرين",
+    "buyers": "للمشترين",
+    "suppliers": "للموردين",
+    "verifiedSuppliers": "الموردون المُتحقق منهم",
+    "supplier_directory": "دليل المصدرين",
     "about": "حول إمارة",
     "search_placeholder": "ابحث عن مورد أو دولة أو فئة",
-    "buyerCta": "للمشترين"
+    "buyerCta": "للموردين"
   },
 
   "MegaMenu": {
@@ -539,15 +539,15 @@
       "headline": "تجارة موثقة. أثر قابل للقياس.",
       "items": [
         {
-          "value": "250+",
+          "value": "100+",
           "label": "منتج مُتحقق منه"
         },
         {
-          "value": "18",
+          "value": "54",
           "label": "دولة ممثلة"
         },
         {
-          "value": "1,200+",
+          "value": "400+",
           "label": "عمليات تدقيق ومراجعات منشآت مكتملة"
         }
       ],

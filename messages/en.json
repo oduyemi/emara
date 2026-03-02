@@ -11,13 +11,13 @@
   "Header": {
     "signIn": "Sign In",
     "getVerified": "Get Verified",
-    "buyers": "For Importers",
-    "suppliers": "For Exporters",
-    "verifiedSuppliers": "Verified Exporters",
+    "buyers": "For Buyers",
+    "suppliers": "For Suppliers",
+    "verifiedSuppliers": "Verified Suppliers",
     "supplier_directory": "Exporter Directory",
     "about": "About Emara",
     "search_placeholder": "Search supplier, country and category",
-    "buyerCta": "For Exporters"
+    "buyerCta": "For Suppliers"
   },
   
   "MegaMenu": {
@@ -69,7 +69,7 @@
       "description": "Showcase your products in front of retail and foodservice buyers actively searching for unique African product.",
       "cta": "Suppliers"
     },
-    "buyerCta": "Importers"
+    "buyerCta": "Buyers"
   },
   
   "TheProblem": {
@@ -540,15 +540,15 @@
       "headline": "Verified Trade. Measurable Impact.",
       "items": [
         {
-          "value": "250+",
+          "value": "100+",
           "label": "Verified Producers"
         },
         {
-          "value": "18",
+          "value": "54",
           "label": "Countries Represented"
         },
         {
-          "value": "1,200+",
+          "value": "400+",
           "label": "Audits & Facility Reviews Completed"
         }
       ],

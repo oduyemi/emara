@@ -15,7 +15,7 @@ export default function AboutPage() {
       <VisionMission />
       <TrustMetrics />
       <CoreValues />
-      <FounderPerspective />
+      {/* <FounderPerspective /> */}
       <FAQ />
       <HomeCTA />
     </main>
