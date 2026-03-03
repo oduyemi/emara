@@ -20,13 +20,14 @@ export default function ClientSideLayout({
     pathname === "/ar" ||
     pathname.startsWith("/buyers");
 
-  // Determine which header to show
-  const renderHeader = pathname.startsWith("/suppliers") ? (
-    <SupplierHeader />
-  ) : (
-    <Header />
-  );
 
+    const isSupplierRoute = pathname.startsWith(`/${pathname.split("/")[1]}/suppliers`);    
+    const renderHeader = isSupplierRoute ? (
+      <SupplierHeader />
+    ) : (
+      <Header />
+    );
+    
   return (
     <div className="min-h-screen flex flex-col">
       <TopHeader />
