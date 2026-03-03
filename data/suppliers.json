@@ -1,0 +1,90 @@
+[
+    {
+      "id": "sup-001",
+      "name": "Kano Agro Export Ltd",
+      "logo": "/images/logo/dummy.webp",
+      "media": "/images/agro.jpg",
+      "tier": "goldElite",
+      "emaraScore": 94,
+      "certifications": ["iso22000", "haccp", "organic", "globalgap"],
+      "capacity": "2,500 MT / Month",
+      "topProducts": ["Sesame Seeds", "Ginger", "Hibiscus"]
+    },
+    {
+      "id": "sup-002",
+      "name": "Savanna Grains Cooperative",
+      "logo": "/images/logo/dummy.webp",
+      "media": "/images/grain.jpg",
+      "tier": "gold",
+      "emaraScore": 88,
+      "certifications": ["iso9001", "haccp"],
+      "capacity": "4,200 MT / Month",
+      "topProducts": ["Maize", "Sorghum", "Millet"]
+    },
+    {
+      "id": "sup-003",
+      "name": "Nile Valley Oils",
+      "logo": "/images/logo/dummy.webp",
+      "media": "/images/oils.jpg",
+      "tier": "silver",
+      "emaraScore": 81,
+      "certifications": ["iso22000", "organic"],
+      "capacity": "1,800 MT / Month",
+      "topProducts": ["Palm Oil", "Shea Butter", "Groundnut Oil"]
+    },
+    {
+      "id": "sup-004",
+      "name": "Baobab Specialty Exports",
+      "logo": "/images/logo/dummy.webp",
+      "media": "/images/baobab.jpg",
+      "tier": "goldElite",
+      "emaraScore": 96,
+      "certifications": ["iso22000", "haccp", "globalgap"],
+      "capacity": "1,200 MT / Month",
+      "topProducts": ["Baobab Powder", "Moringa", "Dried Mango"]
+    },
+    {
+      "id": "sup-005",
+      "name": "Sahara Nuts & Seeds",
+      "logo": "/images/logo/dummy.webp",
+      "media": "/images/saharanuts.jpg",
+      "tier": "bronze",
+      "emaraScore": 74,
+      "certifications": ["haccp"],
+      "capacity": "950 MT / Month",
+      "topProducts": ["Cashew", "Groundnut", "Tiger Nuts"]
+    },
+    {
+      "id": "sup-006",
+      "name": "East Africa Commodities Hub",
+      "logo": "/images/logo/dummy.webp",
+      "media": "/images/coffeebeans.jpg",
+      "tier": "gold",
+      "emaraScore": 90,
+      "certifications": ["iso9001", "iso22000", "globalgap"],
+      "capacity": "3,600 MT / Month",
+      "topProducts": ["Coffee Beans", "Green Mung Beans", "Avocado Oil"]
+    },
+    {
+      "id": "sup-007",
+      "name": "Lagos Agro Processing Group",
+      "logo": "/images/logo/dummy.webp",
+      "media": "/images/cassava.jpg",
+      "tier": "silver",
+      "emaraScore": 83,
+      "certifications": ["iso22000", "haccp"],
+      "capacity": "2,100 MT / Month",
+      "topProducts": ["Cocoa Beans", "Cassava Flour", "Garri"]
+    },
+    {
+      "id": "sup-008",
+      "name": "Horn of Africa Spices",
+      "logo": "/images/logo/dummy.webp",
+      "media": "/images/spice.jpg",
+      "tier": "goldElite",
+      "emaraScore": 97,
+      "certifications": ["iso22000", "organic", "fairTrade"],
+      "capacity": "1,050 MT / Month",
+      "topProducts": ["Turmeric", "Cardamom", "Black Pepper"]
+    }
+  ]

@@ -22,7 +22,8 @@
     "onboarding": "الإعداد",
     "academy": "الأكاديمية",
     "analytics": "التحليلات",
-    "support": "الدعم"
+    "support": "الدعم",
+    "dashboard": "لوحة التحكم"
   },
 
   "MegaMenu": {
@@ -607,6 +608,183 @@
         "title": "الاحتكاك التشغيلي",
         "description": "تؤدي عمليات التدقيق اليدوية، وفحوصات الامتثال المتكررة، وأنظمة الخدمات اللوجستية غير المترابطة إلى تأخيرات مكلفة عبر دورة التصدير."
       }
+    }
+  },
+  "DirectoryHero": {
+    "headline": {
+      "prefix": "دليل الصادرات الزراعية الموثوق في أفريقيا",
+      "highlight": ""
+    },
+    "description": "تواصل مع موردين مُتحقق منهم، واستكشف فئات متميزة، وابنِ شراكات تجارية موثوقة عبر أفريقيا.",
+    "search": {
+      "placeholder": "ابحث عن موردين أو منتجات أو مواقع",
+      "button": "بحث"
+    },
+    "stats": {
+      "verifiedSuppliers": "الموردون المُتحقق منهم",
+      "goldMembers": "أعضاء الفئة الذهبية",
+      "eliteExporters": "المصدرون النخبة",
+      "productCategories": "فئات المنتجات"
+    },
+    "imageAlt": "موردو الصادرات الزراعية"
+  },
+
+  "DirectoryFilters": {
+    "header": {
+      "title": "فلاتر الموردين المتقدمة",
+      "description": "قم بتصفية المصدرين الزراعيين الأفارقة المُتحقق منهم باستخدام نظام تصفية سوقي مُنظم."
+    },
+  
+    "results": {
+      "label": "النتائج",
+      "suffix": "مورد تم العثور عليهم"
+    },
+  
+    "sections": {
+      "commodities": "السلع الزراعية",
+      "certifications": "الشهادات",
+      "tier": "فئة المورد"
+    },
+  
+    "categories": {
+      "nuts": "المكسرات والبذور",
+      "oils": "الزيوت",
+      "grains": "الحبوب",
+      "specialty": "منتجات متخصصة"
+    },
+  
+    "certificationsList": {
+      "iso": "ISO",
+      "haccp": "HACCP",
+      "organic": "عضوي",
+      "globalgap": "GlobalGAP"
+    },
+  
+    "tiers": {
+      "bronze": "برونزي",
+      "silver": "فضي",
+      "gold": "ذهبي",
+      "goldElite": "ذهبي النخبة"
+    },
+  
+    "location": {
+      "label": "الدولة / المنطقة",
+      "allAfrica": "كل أفريقيا",
+  
+      "regions": {
+        "westAfrica": "غرب أفريقيا",
+        "eastAfrica": "شرق أفريقيا",
+        "southernAfrica": "الجنوب الأفريقي",
+        "northAfrica": "شمال أفريقيا",
+        "centralAfrica": "وسط أفريقيا"
+      },
+  
+      "countries": {
+        "nigeria": "نيجيريا",
+        "ghana": "غانا",
+        "senegal": "السنغال",
+        "ivoryCoast": "ساحل العاج",
+        "mali": "مالي",
+        "burkinaFaso": "بوركينا فاسو",
+        "togo": "توغو",
+        "benin": "بنين",
+        "sierraLeone": "سيراليون",
+        "liberia": "ليبيريا",
+        "gambia": "غامبيا",
+        "niger": "النيجر",
+        "guinea": "غينيا",
+  
+        "kenya": "كينيا",
+        "ethiopia": "إثيوبيا",
+        "tanzania": "تنزانيا",
+        "uganda": "أوغندا",
+        "rwanda": "رواندا",
+        "burundi": "بوروندي",
+        "somalia": "الصومال",
+        "southSudan": "جنوب السودان",
+  
+        "southAfrica": "جنوب أفريقيا",
+        "zambia": "زامبيا",
+        "zimbabwe": "زيمبابوي",
+        "botswana": "بوتسوانا",
+        "namibia": "ناميبيا",
+        "mozambique": "موزمبيق",
+        "angola": "أنغولا",
+        "lesotho": "ليسوتو",
+        "eswatini": "إسواتيني",
+        "malawi": "مالاوي",
+  
+        "egypt": "مصر",
+        "morocco": "المغرب",
+        "algeria": "الجزائر",
+        "tunisia": "تونس",
+        "libya": "ليبيا",
+  
+        "cameroon": "الكاميرون",
+        "chad": "تشاد",
+        "car": "جمهورية أفريقيا الوسطى",
+        "equatorialGuinea": "غينيا الاستوائية",
+        "gabon": "الغابون",
+        "republicOfCongo": "جمهورية الكونغو",
+        "drCongo": "الكونغو الديمقراطية"
+      }
+    },
+  
+    "actions": {
+      "reset": "إعادة تعيين",
+      "apply": "تطبيق"
+    }
+  },
+
+  "SupplierCard": {
+    "badges": {
+      "verified": "مُتحقق منه"
+    },
+  
+    "score": {
+      "label": "درجة Emara"
+    },
+  
+    "metrics": {
+      "certifications": "الشهادات",
+      "capacity": "الطاقة الإنتاجية الشهرية",
+      "exports": "أهم الصادرات"
+    },
+  
+    "actions": {
+      "viewProfile": "عرض الملف التعريفي",
+      "requestQuote": "طلب عرض سعر"
+    },
+  
+    "tiers": {
+      "bronze": "برونزي",
+      "silver": "فضي",
+      "gold": "ذهبي",
+      "goldElite": "ذهبي النخبة"
+    },
+  
+    "certificationsList": {
+      "iso9001": "ISO 9001",
+      "iso22000": "ISO 22000",
+      "haccp": "HACCP",
+      "organic": "عضوي",
+      "globalgap": "GlobalGAP",
+      "fairTrade": "تجارة عادلة"
+    }
+  },
+
+  "TierUpCTA": {
+    "header": "ارتقِ بمستوى التحقق الخاص بك",
+    "description": "عزز ثقة المشترين، وافتح عقود توريد أكبر، وزِد من ظهورك من خلال التقدم في فئة المورد الخاصة بك.",
+    "current": "(الحالي)",
+    "ctaAdvance": "انتقل إلى فئة {nextTier} لفتح فرص عقود أكبر وزيادة الظهور أمام المشترين.",
+    "ctaMax": "لقد وصلت إلى أعلى مستوى تحقق. أنت في القمة.",
+    "upgradeButton": "الترقية إلى {nextTier}",
+    "tiers": {
+      "bronze": "برونزي",
+      "silver": "فضي",
+      "gold": "ذهبي",
+      "goldElite": "ذهبي النخبة"
     }
   }
 }

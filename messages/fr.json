@@ -22,7 +22,8 @@
     "onboarding": "Intégration",
     "academy": "Académie",
     "analytics": "Analytique",
-    "support": "Support"
+    "support": "Support",
+    "dashboard": "Tableau de bord"
   },
 
   "MegaMenu": {
@@ -607,6 +608,184 @@
         "title": "Friction opérationnelle",
         "description": "Les audits manuels, les contrôles de conformité répétés et les systèmes logistiques déconnectés entraînent des retards coûteux tout au long du cycle d’exportation."
       }
+    }
+  },
+
+  "DirectoryHero": {
+    "headline": {
+      "prefix": "Le répertoire agro-export de confiance d’Afrique",
+      "highlight": ""
+    },
+    "description": "Entrez en relation avec des fournisseurs vérifiés, explorez des catégories premium et développez des partenariats commerciaux fiables à travers l’Afrique.",
+    "search": {
+      "placeholder": "Rechercher des fournisseurs, produits ou localisations",
+      "button": "Rechercher"
+    },
+    "stats": {
+      "verifiedSuppliers": "Fournisseurs vérifiés",
+      "goldMembers": "Membres Gold",
+      "eliteExporters": "Exportateurs Élite",
+      "productCategories": "Catégories de produits"
+    },
+    "imageAlt": "Fournisseurs agro-export"
+  },
+
+  "DirectoryFilters": {
+    "header": {
+      "title": "Filtres avancés des fournisseurs",
+      "description": "Affinez votre recherche d’agro-exportateurs africains vérifiés grâce à un filtrage structuré du marché."
+    },
+  
+    "results": {
+      "label": "Résultats",
+      "suffix": "fournisseurs trouvés"
+    },
+  
+    "sections": {
+      "commodities": "Produits agricoles",
+      "certifications": "Certifications",
+      "tier": "Niveau du fournisseur"
+    },
+  
+    "categories": {
+      "nuts": "Noix & graines",
+      "oils": "Huiles",
+      "grains": "Céréales",
+      "specialty": "Produits spécialisés"
+    },
+  
+    "certificationsList": {
+      "iso": "ISO",
+      "haccp": "HACCP",
+      "organic": "Biologique",
+      "globalgap": "GlobalGAP"
+    },
+  
+    "tiers": {
+      "bronze": "Bronze",
+      "silver": "Argent",
+      "gold": "Or",
+      "goldElite": "Or Élite"
+    },
+  
+    "location": {
+      "label": "Pays / Région",
+      "allAfrica": "Toute l’Afrique",
+  
+      "regions": {
+        "westAfrica": "Afrique de l’Ouest",
+        "eastAfrica": "Afrique de l’Est",
+        "southernAfrica": "Afrique australe",
+        "northAfrica": "Afrique du Nord",
+        "centralAfrica": "Afrique centrale"
+      },
+  
+      "countries": {
+        "nigeria": "Nigéria",
+        "ghana": "Ghana",
+        "senegal": "Sénégal",
+        "ivoryCoast": "Côte d’Ivoire",
+        "mali": "Mali",
+        "burkinaFaso": "Burkina Faso",
+        "togo": "Togo",
+        "benin": "Bénin",
+        "sierraLeone": "Sierra Leone",
+        "liberia": "Libéria",
+        "gambia": "Gambie",
+        "niger": "Niger",
+        "guinea": "Guinée",
+  
+        "kenya": "Kenya",
+        "ethiopia": "Éthiopie",
+        "tanzania": "Tanzanie",
+        "uganda": "Ouganda",
+        "rwanda": "Rwanda",
+        "burundi": "Burundi",
+        "somalia": "Somalie",
+        "southSudan": "Soudan du Sud",
+  
+        "southAfrica": "Afrique du Sud",
+        "zambia": "Zambie",
+        "zimbabwe": "Zimbabwe",
+        "botswana": "Botswana",
+        "namibia": "Namibie",
+        "mozambique": "Mozambique",
+        "angola": "Angola",
+        "lesotho": "Lesotho",
+        "eswatini": "Eswatini",
+        "malawi": "Malawi",
+  
+        "egypt": "Égypte",
+        "morocco": "Maroc",
+        "algeria": "Algérie",
+        "tunisia": "Tunisie",
+        "libya": "Libye",
+  
+        "cameroon": "Cameroun",
+        "chad": "Tchad",
+        "car": "République centrafricaine",
+        "equatorialGuinea": "Guinée équatoriale",
+        "gabon": "Gabon",
+        "republicOfCongo": "République du Congo",
+        "drCongo": "RD Congo"
+      }
+    },
+  
+    "actions": {
+      "reset": "Réinitialiser",
+      "apply": "Appliquer"
+    }
+  },
+
+  "SupplierCard": {
+    "badges": {
+      "verified": "Vérifié"
+    },
+  
+    "score": {
+      "label": "Score Emara"
+    },
+  
+    "metrics": {
+      "certifications": "Certifications",
+      "capacity": "Capacité mensuelle",
+      "exports": "Principales exportations"
+    },
+  
+    "actions": {
+      "viewProfile": "Voir le profil",
+      "requestQuote": "Demander un devis"
+    },
+  
+    "tiers": {
+      "bronze": "Bronze",
+      "silver": "Argent",
+      "gold": "Or",
+      "goldElite": "Or Élite"
+    },
+  
+    "certificationsList": {
+      "iso9001": "ISO 9001",
+      "iso22000": "ISO 22000",
+      "haccp": "HACCP",
+      "organic": "Biologique",
+      "globalgap": "GlobalGAP",
+      "fairTrade": "Commerce équitable"
+    }
+  },
+
+  "TierUpCTA": {
+    "header": "Augmentez votre niveau de vérification",
+    "description": "Renforcez la confiance des acheteurs, accédez à des contrats d’approvisionnement plus importants et améliorez votre visibilité en progressant dans votre niveau fournisseur.",
+    "current": "(Actuel)",
+    "ctaAdvance": "Passez au niveau {nextTier} pour débloquer de plus grandes opportunités de contrats et une meilleure visibilité auprès des acheteurs.",
+    "ctaMax": "Vous avez atteint le niveau de vérification le plus élevé. Vous êtes au sommet.",
+    "upgradeButton": "Passer au niveau {nextTier}",
+    "tiers": {
+      "bronze": "Bronze",
+      "silver": "Argent",
+      "gold": "Or",
+      "goldElite": "Or Élite"
     }
   }
 }

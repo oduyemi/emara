@@ -4,13 +4,14 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 import { Search } from "lucide-react"
 import { useEffect, useState } from "react"
+import { useTranslations } from "next-intl"
 
 const CountUp = ({ value }: { value: number }) => {
   const [count, setCount] = useState(0)
 
   useEffect(() => {
     let start = 0
-    const duration = 1200
+    const duration = 900
     const increment = value / (duration / 16)
 
     const counter = setInterval(() => {
@@ -30,114 +31,105 @@ const CountUp = ({ value }: { value: number }) => {
 }
 
 export const DirectoryHero = () => {
+  const t = useTranslations("DirectoryHero")
+
   const stats = [
-    { value: 214, label: "Verified Suppliers" },
-    { value: 120, label: "Gold Members" },
-    { value: 25, label: "Gold Elite" },
-    { value: 18, label: "Product Categories" },
+    { value: 400, label: t("stats.verifiedSuppliers") },
+    { value: 220, label: t("stats.goldMembers") },
+    { value: 115, label: t("stats.eliteExporters") },
+    { value: 18, label: t("stats.productCategories") },
   ]
 
   return (
-    <section className="relative w-full min-h-[65vh] lg:min-h-[75vh] flex items-center overflow-hidden">
+    <section className="relative w-full min-h-[60vh] flex items-center overflow-hidden">
 
-      {/* Background Image */}
-      <div className="absolute inset-0 -z-30">
+      {/* Blurred Background */}
+      <div className="absolute inset-0 -z-30 overflow-hidden">
         <Image
-          src="/images/directoryHero.jpg"
-          alt="African suppliers overview"
+          src="/images/bb1.jpg"
+          alt={t("imageAlt")}
           fill
           priority
-          className="object-cover scale-110 brightness-[0.45] contrast-125"
+          className="object-cover scale-110 blur-[10px] brightness-[0.45]"
         />
       </div>
 
-      {/* Strong Dark Overlay */}
-      <div className="absolute inset-0 -z-20 bg-gradient-to-br from-black/95 via-[#050B14]/95 to-black/98" />
+      {/* Soft Overlay */}
+      <div className="absolute inset-0 -z-20 bg-gradient-to-b from-black/60 via-[#0A0F18]/70 to-black/85" />
 
-      {/* Subtle Accent Motion Layer */}
-      <div className="absolute inset-0 -z-10 opacity-20">
-        <motion.div
-          animate={{ backgroundPosition: ["0% 50%", "100% 50%"] }}
-          transition={{ duration: 25, repeat: Infinity, repeatType: "reverse" }}
-          className="w-full h-full bg-[radial-gradient(circle_at_20%_30%,rgba(52,138,167,0.25),transparent_40%),radial-gradient(circle_at_80%_70%,rgba(255,87,10,0.18),transparent_40%)] bg-[length:200%_200%]"
-        />
-      </div>
-
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-12 py-24">
+      <div className="relative z-10 w-full max-w-6xl mx-auto px-6 lg:px-12 py-20">
 
         {/* Headline */}
         <motion.h1
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9 }}
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-[1.05] tracking-tight max-w-4xl"
+          transition={{ duration: 0.7 }}
+          className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight max-w-3xl"
         >
-          Explore Africa’s{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2E7C99] to-[#C24E00]">
-            Verified Agro-Exporters
+          {t("headline.prefix")}{" "}
+          <span className="bg-gradient-to-r from-[#2E7C99] to-[#C24E00] bg-clip-text text-transparent">
+            {t("headline.highlight")}
           </span>
         </motion.h1>
 
-        {/* Tagline */}
+        {/* Description */}
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2, duration: 0.8 }}
-          className="mt-6 text-white/75 text-lg md:text-xl max-w-2xl"
+          transition={{ delay: 0.15, duration: 0.6 }}
+          className="mt-5 text-white text-lg max-w-xl"
         >
-          Discover trusted suppliers, explore premium product categories, and connect with Africa’s leading agro-export businesses.
+          {t("description")}
         </motion.p>
-
-        {/* Stats */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4, duration: 0.8 }}
-          className="mt-14 grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-4xl"
-        >
-          {stats.map((stat, i) => (
-            <div
-              key={i}
-              className="group relative p-[1px] rounded-2xl bg-gradient-to-br from-white/10 to-white/5"
-            >
-              <div className="rounded-2xl backdrop-blur-2xl bg-black/60 px-6 py-6 text-center transition-all duration-300 border border-white/10 group-hover:border-[#2E7C99]/40 group-hover:shadow-xl group-hover:shadow-[#2E7C99]/20">
-                <div className="text-3xl md:text-4xl font-extrabold text-white">
-                  <CountUp value={stat.value} />+
-                </div>
-                <div className="mt-2 text-sm text-white/60 tracking-wide">
-                  {stat.label}
-                </div>
-              </div>
-            </div>
-          ))}
-        </motion.div>
 
         {/* Search */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6, duration: 0.8 }}
-          className="mt-16 max-w-3xl"
+          transition={{ delay: 0.3, duration: 0.6 }}
+          className="mt-10 max-w-2xl"
         >
           <form className="relative">
-            <div className="flex items-center bg-black/70 backdrop-blur-2xl border border-white/10 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.6)] overflow-hidden focus-within:ring-2 focus-within:ring-[#2E7C99]/40 transition-all duration-300">
-              
-              <Search className="ml-5 text-white/40" size={20} />
+            <div className="flex items-center bg-white/5 backdrop-blur-xl border border-white/10 rounded-xl overflow-hidden focus-within:border-[#2E7C99]/50 transition-all">
+
+              <Search className="ml-4 text-white/40" size={18} />
 
               <input
                 type="text"
-                placeholder="Search suppliers, products or locations..."
-                className="flex-1 px-4 py-4 bg-transparent text-white placeholder-white/40 focus:outline-none text-base"
+                placeholder={t("search.placeholder")}
+                className="flex-1 px-4 py-4 bg-transparent text-white placeholder-white/40 focus:outline-none text-sm"
               />
 
               <button
                 type="submit"
-                className="m-2 px-6 py-3 rounded-xl bg-gradient-to-r from-[#2E7C99] to-[#C24E00] text-white font-semibold shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all duration-300"
+                className="px-6 py-4 bg-gradient-to-r from-[#2E7C99] to-[#C24E00] text-white text-sm font-semibold hover:opacity-90 transition"
               >
-                Search
+                {t("search.button")}
               </button>
             </div>
           </form>
+        </motion.div>
+
+        {/* KPI Stats */}
+        <motion.div
+          initial={{ opacity: 0, y: 15 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.45, duration: 0.6 }}
+          className="mt-14 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl"
+        >
+          {stats.map((stat, i) => (
+            <div
+              key={i}
+              className="border border-white/10 bg-white/5 backdrop-blur-xl rounded-xl p-6"
+            >
+              <div className="text-3xl font-semibold text-white">
+                <CountUp value={stat.value} />+
+              </div>
+              <div className="mt-1 text-xs uppercase tracking-wider text-white/50">
+                {stat.label}
+              </div>
+            </div>
+          ))}
         </motion.div>
 
       </div>

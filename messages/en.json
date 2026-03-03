@@ -22,7 +22,8 @@
     "onboarding": "Onboarding",
     "academy": "Academy",
     "analytics": "Analytics",
-    "support": "Support"
+    "support": "Support",
+    "dashboard": "Dashboard"
   },
   
   "MegaMenu": {
@@ -608,6 +609,183 @@
         "title": "Operational Friction",
         "description": "Manual audits, repeated compliance checks, and disconnected logistics systems introduce costly delays across the export lifecycle."
       }
+    }
+  },
+  "DirectoryHero": {
+    "headline": {
+      "prefix": "Africa’s Trusted",
+      "highlight": "Agro-Export Directory"
+    },
+    "description": "Connect with verified suppliers, explore premium categories, and build reliable trade partnerships across Africa.",
+    "search": {
+      "placeholder": "Search suppliers, products, or locations",
+      "button": "Search"
+    },
+    "stats": {
+      "verifiedSuppliers": "Verified Suppliers",
+      "goldMembers": "Gold Members",
+      "eliteExporters": "Elite Exporters",
+      "productCategories": "Product Categories"
+    },
+    "imageAlt": "Agro export suppliers"
+  },
+
+  "DirectoryFilters": {
+    "header": {
+      "title": "Advanced Supplier Filters",
+      "description": "Refine verified African agro-exporters using structured marketplace filtering."
+    },
+
+    "results": {
+      "label": "Results",
+      "suffix": "Suppliers Found"
+    },
+
+    "sections": {
+      "commodities": "Agro-Commodities",
+      "certifications": "Certifications",
+      "tier": "Supplier Tier"
+    },
+
+    "categories": {
+      "nuts": "Nuts & Seeds",
+      "oils": "Oils",
+      "grains": "Grains",
+      "specialty": "Specialty Products"
+    },
+
+    "certificationsList": {
+      "iso": "ISO",
+      "haccp": "HACCP",
+      "organic": "Organic",
+      "globalgap": "GlobalGAP"
+    },
+
+    "tiers": {
+      "bronze": "Bronze",
+      "silver": "Silver",
+      "gold": "Gold",
+      "goldElite": "Gold Elite"
+    },
+
+    "location": {
+      "label": "Country / Region",
+      "allAfrica": "All Africa",
+
+      "regions": {
+        "westAfrica": "West Africa",
+        "eastAfrica": "East Africa",
+        "southernAfrica": "Southern Africa",
+        "northAfrica": "North Africa",
+        "centralAfrica": "Central Africa"
+      },
+
+      "countries": {
+        "nigeria": "Nigeria",
+        "ghana": "Ghana",
+        "senegal": "Senegal",
+        "ivoryCoast": "Ivory Coast",
+        "mali": "Mali",
+        "burkinaFaso": "Burkina Faso",
+        "togo": "Togo",
+        "benin": "Benin",
+        "sierraLeone": "Sierra Leone",
+        "liberia": "Liberia",
+        "gambia": "The Gambia",
+        "niger": "Niger",
+        "guinea": "Guinea",
+
+        "kenya": "Kenya",
+        "ethiopia": "Ethiopia",
+        "tanzania": "Tanzania",
+        "uganda": "Uganda",
+        "rwanda": "Rwanda",
+        "burundi": "Burundi",
+        "somalia": "Somalia",
+        "southSudan": "South Sudan",
+
+        "southAfrica": "South Africa",
+        "zambia": "Zambia",
+        "zimbabwe": "Zimbabwe",
+        "botswana": "Botswana",
+        "namibia": "Namibia",
+        "mozambique": "Mozambique",
+        "angola": "Angola",
+        "lesotho": "Lesotho",
+        "eswatini": "Eswatini",
+        "malawi": "Malawi",
+
+        "egypt": "Egypt",
+        "morocco": "Morocco",
+        "algeria": "Algeria",
+        "tunisia": "Tunisia",
+        "libya": "Libya",
+
+        "cameroon": "Cameroon",
+        "chad": "Chad",
+        "car": "Central African Republic",
+        "equatorialGuinea": "Equatorial Guinea",
+        "gabon": "Gabon",
+        "republicOfCongo": "Republic of Congo",
+        "drCongo": "DR Congo"
+      }
+    },
+
+    "actions": {
+      "reset": "Reset",
+      "apply": "Apply"
+    }
+  },
+
+  "SupplierCard": {
+    "badges": {
+      "verified": "Verified"
+    },
+
+    "score": {
+      "label": "Emara Score"
+    },
+
+    "metrics": {
+      "certifications": "Certifications",
+      "capacity": "Monthly Capacity",
+      "exports": "Top Exports"
+    },
+
+    "actions": {
+      "viewProfile": "View Profile",
+      "requestQuote": "Request Quote"
+    },
+
+    "tiers": {
+      "bronze": "Bronze",
+      "silver": "Silver",
+      "gold": "Gold",
+      "goldElite": "Gold Elite"
+    },
+
+    "certificationsList": {
+      "iso9001": "ISO 9001",
+      "iso22000": "ISO 22000",
+      "haccp": "HACCP",
+      "organic": "Organic",
+      "globalgap": "GlobalGAP",
+      "fairTrade": "Fair Trade"
+    }
+  },
+
+  "TierUpCTA": {
+    "header": "Grow Your Verification Level",
+    "description": "Increase buyer trust, unlock larger procurement contracts, and boost your visibility by advancing your supplier tier.",
+    "current": "(Current)",
+    "ctaAdvance": "Advance to {nextTier} to unlock larger contract opportunities and higher buyer visibility.",
+    "ctaMax": "You've reached the highest verification level. You're at the top.",
+    "upgradeButton": "Upgrade to {nextTier}",
+    "tiers": {
+      "bronze": "Bronze",
+      "silver": "Silver",
+      "gold": "Gold",
+      "goldElite": "Gold Elite"
     }
   }
 }
