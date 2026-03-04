@@ -5,9 +5,12 @@ import { useTranslations } from "next-intl";
 
 type Tier = "bronze" | "silver" | "gold" | "goldElite";
 
-export const TierUpCTA = ({ currentTier }: { currentTier: Tier }) => {
+export const TierUpCTA = ({
+  currentTier = "bronze",
+  }: {
+    currentTier?: Tier
+  }) => {
   const t = useTranslations("TierUpCTA");
-
   const tiers: Tier[] = ["bronze", "silver", "gold", "goldElite"];
   const currentIndex = tiers.indexOf(currentTier);
   const nextTier = tiers[currentIndex + 1];
