@@ -20,18 +20,12 @@ export default function ClientSideLayout({
     pathname === "/ar" ||
     pathname.startsWith("/buyers");
 
+  const isSupplierRoute = pathname.includes("/suppliers");
 
-    const isSupplierRoute = pathname.startsWith(`/${pathname.split("/")[1]}/suppliers`);    
-    const renderHeader = isSupplierRoute ? (
-      <SupplierHeader />
-    ) : (
-      <Header />
-    );
-    
-  return (
+    return (
     <div className="min-h-screen flex flex-col">
       <TopHeader />
-      {renderHeader}
+      {isSupplierRoute ? <SupplierHeader /> : <Header />}
       {children}
       {!hideDefaultFooter && <Footer />}
     </div>

@@ -1,27 +1,8 @@
 "use client"
-
 import { motion } from "framer-motion"
 import { ShieldCheck, Star } from "lucide-react"
 import { useTranslations } from "next-intl"
-
-export type Supplier = {
-  id: string
-  name: string
-  logo: string
-  media: string
-  tier: "bronze" | "silver" | "gold" | "goldElite"
-  emaraScore: number
-  certifications: (
-    | "iso9001"
-    | "iso22000"
-    | "haccp"
-    | "organic"
-    | "globalgap"
-    | "fairTrade"
-  )[]
-  capacity: string
-  topProducts: string[]
-}
+import { Supplier } from "@/types/supplier"
 
 export const SupplierCard = ({ supplier }: { supplier: Supplier }) => {
   const t = useTranslations("SupplierCard")

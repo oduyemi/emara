@@ -1,9 +1,12 @@
 import { DirectoryFilters } from "@/components/export/directory/Filters";
 import { DirectoryHero } from "@/components/export/directory/Hero";
-import suppliers from "@/data/suppliers.json";
+import rawSuppliers from "@/data/suppliers.json";
+import { Supplier } from "@/types/supplier"
 import { SupplierGrid } from "@/components/export/directory/SupplierGrid";
 import { TierUpCTA } from "@/components/export/directory/TierUpCTA";
 
+
+const suppliers = rawSuppliers as Supplier[];
 
 
 
