@@ -786,5 +786,83 @@
       "gold": "ذهبي",
       "goldElite": "ذهبي النخبة"
     }
+  },
+
+  "supplierHero": {
+    "eyebrow": "برنامج الموردين المُتحقق منهم",
+    "titlePrefix": "كن",
+    "titleHighlight": "مصدّرًا مُتحققًا منه",
+    "description": "قدّم مستندات الامتثال بأمان، وابنِ مصداقية عالمية، وافتح الوصول إلى مشترين دوليين مُدققين في جميع أنحاء أفريقيا وخارجها.",
+    "primaryCta": "الحصول على التحقق",
+    "secondaryCta": "اعرف المزيد",
+    "trust": {
+      "completion": "إكمال خلال 5–10 دقائق",
+      "security": "حماية SSL بتشفير 256 بت",
+      "compliance": "تمت مراجعة الامتثال"
+    },
+    "dashboard": {
+      "company": "ملف الشركة",
+      "license": "رخصة التصدير",
+      "documents": "مستندات الامتثال",
+      "complete": "مكتمل",
+      "verified": "مُتحقق منه",
+      "pending": "قيد المراجعة"
+    }
+  },
+
+  "supplierHeader": {
+    "title": "انضمام موردي Emara",
+    "saveExit": "حفظ والخروج"
+  },
+
+  "onboardProgress": {
+    "stepLabel": "الخطوة {current} من {total}",
+    "complete": "مكتمل بنسبة {percent}%"
+  },
+
+  "help": {
+    "cta": "هل تحتاج إلى مساعدة؟"
+  },
+
+  "stepOne": {
+    "title": "معلومات الشركة",
+    "description": "ستظهر هذه المعلومات في ملف المورد الخاص بك وتساعد المشترين الدوليين على تقييم مصداقية أعمالك.",
+    "sections": {
+      "identity": "هوية الشركة",
+      "business": "تفاصيل النشاط التجاري",
+      "location": "موقع التشغيل الرئيسي"
+    },
+    "fields": {
+      "registeredName": "الاسم القانوني المسجل",
+      "tradingName": "الاسم التجاري (إن وجد)",
+      "registrationNumber": "رقم التسجيل",
+      "yearEstablished": "سنة التأسيس",
+      "website": "الموقع الإلكتروني للشركة",
+      "region": "المنطقة",
+      "country": "الدولة",
+      "city": "المدينة / المنطقة",
+      "address": "العنوان المسجل"
+    },
+    "actions": {
+      "back": "رجوع",
+      "continue": "متابعة"
+    }
+  },
+
+  "stepTwo": {
+    "title": "الامتثال والشهادات",
+    "description": "قم برفع شهاداتك ومستنداتك التنظيمية لزيادة ثقة المشترين والتأهل لمستويات تحقق أعلى.",
+    "sections": {
+      "certifications": "اختر الشهادات المناسبة",
+      "documents": "رفع المستندات الداعمة"
+    },
+    "upload": {
+      "placeholder": "اسحب وأفلت الملفات هنا أو انقر للتحميل",
+      "helper": "PDF، JPG، PNG حتى 10 ميغابايت لكل ملف"
+    },
+    "actions": {
+      "back": "رجوع",
+      "continue": "متابعة"
+    }
   }
 }

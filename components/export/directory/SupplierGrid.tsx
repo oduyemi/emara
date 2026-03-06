@@ -1,5 +1,5 @@
 import { SupplierCard } from "./SupplierCard";
-import { Supplier } from "@/types/supplier";
+import { Supplier } from "@/components/export/directory/types/supplier";
 
 
   export const SupplierGrid = ({

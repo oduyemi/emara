@@ -787,6 +787,84 @@
       "gold": "Gold",
       "goldElite": "Gold Elite"
     }
+  },
+
+  "supplierHero": {
+    "eyebrow": "Verified Supplier Program",
+    "titlePrefix": "Become a",
+    "titleHighlight": "Verified Export Supplier",
+    "description": "Securely submit compliance documents, build global credibility, and unlock access to vetted international buyers across Africa and beyond.",
+    "primaryCta": "Get Verified",
+    "secondaryCta": "Learn More",
+    "trust": {
+      "completion": "5–10 min completion",
+      "security": "256-bit SSL security",
+      "compliance": "Compliance reviewed"
+    },
+    "dashboard": {
+      "company": "Company Profile",
+      "license": "Export License",
+      "documents": "Compliance Documents",
+      "complete": "Complete",
+      "verified": "Verified",
+      "pending": "Pending Review"
+    }
+  },
+
+  "supplierHeader": {
+    "title": "Emara Supplier Onboarding",
+    "saveExit": "Save & Exit"
+  },
+
+  "onboardProgress": {
+    "stepLabel": "Step {current} of {total}",
+    "complete": "{percent}% Complete"
+  },
+
+  "help": {
+    "cta": "Need Help?"
+  },
+
+  "stepOne": {
+    "title": "Company Information",
+    "description": "This information will appear on your supplier profile and helps international buyers evaluate your business credibility.",
+    "sections": {
+      "identity": "Company Identity",
+      "business": "Business Details",
+      "location": "Primary Operating Location"
+    },
+    "fields": {
+      "registeredName": "Registered Company Name",
+      "tradingName": "Trading Name (if different)",
+      "registrationNumber": "Registration Number",
+      "yearEstablished": "Year Established",
+      "website": "Company Website",
+      "region": "Region",
+      "country": "Country",
+      "city": "City / Region",
+      "address": "Registered Address"
+    },
+    "actions": {
+      "back": "Back",
+      "continue": "Continue"
+    }
+  },
+
+  "stepTwo": {
+    "title": "Compliance & Certifications",
+    "description": "Upload your certifications and regulatory documents to increase buyer trust and qualify for higher verification tiers.",
+    "sections": {
+      "certifications": "Select Applicable Certifications",
+      "documents": "Upload Supporting Documents"
+    },
+    "upload": {
+      "placeholder": "Drag & drop files here or click to upload",
+      "helper": "PDF, JPG, PNG up to 10MB each"
+    },
+    "actions": {
+      "back": "Back",
+      "continue": "Continue"
+    }
   }
 }
   

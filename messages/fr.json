@@ -787,6 +787,83 @@
       "gold": "Or",
       "goldElite": "Or Élite"
     }
+  },
+
+  "supplierHero": {
+    "eyebrow": "Programme Fournisseur Vérifié",
+    "titlePrefix": "Devenez un",
+    "titleHighlight": "Exportateur Vérifié",
+    "description": "Soumettez vos documents de conformité en toute sécurité, renforcez votre crédibilité internationale et accédez à des acheteurs internationaux qualifiés à travers l’Afrique et au-delà.",
+    "primaryCta": "Obtenir la vérification",
+    "secondaryCta": "En savoir plus",
+    "trust": {
+      "completion": "5–10 min pour compléter",
+      "security": "Sécurité SSL 256 bits",
+      "compliance": "Conformité examinée"
+    },
+    "dashboard": {
+      "company": "Profil de l’entreprise",
+      "license": "Licence d’exportation",
+      "documents": "Documents de conformité",
+      "complete": "Complet",
+      "verified": "Vérifié",
+      "pending": "En cours d’examen"
+    }
+  },
+
+  "supplierHeader": {
+    "title": "Intégration des fournisseurs Emara",
+    "saveExit": "Enregistrer et quitter"
+  },
+
+  "onboardProgress": {
+    "stepLabel": "Étape {current} sur {total}",
+    "complete": "{percent}% terminé"
+  },
+
+  "help": {
+    "cta": "Besoin d’aide ?"
+  },
+  "stepOne": {
+    "title": "Informations sur l’entreprise",
+    "description": "Ces informations apparaîtront sur votre profil fournisseur et aideront les acheteurs internationaux à évaluer la crédibilité de votre entreprise.",
+    "sections": {
+      "identity": "Identité de l’entreprise",
+      "business": "Détails de l’entreprise",
+      "location": "Lieu principal d’exploitation"
+    },
+    "fields": {
+      "registeredName": "Raison sociale",
+      "tradingName": "Nom commercial (si différent)",
+      "registrationNumber": "Numéro d’enregistrement",
+      "yearEstablished": "Année de création",
+      "website": "Site web de l’entreprise",
+      "region": "Région",
+      "country": "Pays",
+      "city": "Ville / Région",
+      "address": "Adresse enregistrée"
+    },
+    "actions": {
+      "back": "Retour",
+      "continue": "Continuer"
+    }
+  },
+
+  "stepTwo": {
+    "title": "Conformité & Certifications",
+    "description": "Téléchargez vos certifications et documents réglementaires afin de renforcer la confiance des acheteurs et d’accéder à des niveaux de vérification supérieurs.",
+    "sections": {
+      "certifications": "Sélectionnez les certifications applicables",
+      "documents": "Télécharger les documents justificatifs"
+    },
+    "upload": {
+      "placeholder": "Glissez-déposez les fichiers ici ou cliquez pour téléverser",
+      "helper": "PDF, JPG, PNG jusqu’à 10 Mo chacun"
+    },
+    "actions": {
+      "back": "Retour",
+      "continue": "Continuer"
+    }
   }
 }
   

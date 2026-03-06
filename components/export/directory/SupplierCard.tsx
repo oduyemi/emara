@@ -2,7 +2,7 @@
 import { motion } from "framer-motion"
 import { ShieldCheck, Star } from "lucide-react"
 import { useTranslations } from "next-intl"
-import { Supplier } from "@/types/supplier"
+import { Supplier } from "@/components/export/directory/types/supplier"
 
 export const SupplierCard = ({ supplier }: { supplier: Supplier }) => {
   const t = useTranslations("SupplierCard")
