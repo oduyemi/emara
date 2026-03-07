@@ -108,7 +108,7 @@ export const FAQ = () => {
               </div>
 
               <Link
-                href="/register"
+                href="/suppliers/register"
                 className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-red-900 hover:bg-red-800 text-white font-semibold text-sm shadow-md hover:shadow-lg transition-all duration-300 whitespace-nowrap"
               >
                 {t("ctaButton")}

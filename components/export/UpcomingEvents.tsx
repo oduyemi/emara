@@ -41,9 +41,9 @@ export const UpcomingEvents = () => {
             Upcoming Learning Events
           </p>
 
-          <h2 className="text-3xl md:text-4xl font-semibold text-secondary leading-tight">
+          {/* <h2 className="text-3xl md:text-4xl font-semibold text-secondary leading-tight">
             Webinars and seminars for exporters
-          </h2>
+          </h2> */}
 
         </div>
 

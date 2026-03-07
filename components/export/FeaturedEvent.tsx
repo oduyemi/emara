@@ -6,7 +6,7 @@ import Link from "next/link"
 
 export const FeaturedEvent = () => {
   return (
-    <section className="relative py-24 px-6 bg-[var(--color-surface)] overflow-hidden">
+    <section className="relative py-24 px-6 overflow-hidden">
 
       {/* ambient lighting */}
       <div className="absolute -top-40 -right-40 w-[700px] h-[700px] bg-[var(--color-accent-soft)]/10 blur-[160px] rounded-full" />
