@@ -52,7 +52,7 @@ export const SupplierOnboardingHero = () => {
               className="text-4xl md:text-5xl lg:text-6xl text-secondary font-semibold leading-[1.1] mb-6"
             >
               {t("supplierHero.titlePrefix")}{" "}
-              <span className="bg-gradient-to-r from-accent to-accent-soft bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-accent to-accent-soft bg-clip-text text-white">
                 {t("supplierHero.titleHighlight")}
               </span>
             </motion.h1>
