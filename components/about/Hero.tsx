@@ -11,7 +11,7 @@ export default function AboutHero() {
 
       {/* Background Image */}
       <Image
-        src="/images/abthero.jpg"
+        src="/images/abt.jpg"
         alt="African food export logistics"
         fill
         priority
@@ -29,7 +29,7 @@ export default function AboutHero() {
       {/* Content */}
       <div className="relative z-10 max-w-5xl px-6 text-center text-white space-y-8">
 
-        <span className="text-sm uppercase tracking-[0.3em] text-white/70">
+        <span className="text-sm text-accent uppercase tracking-[0.3em] text-white/70">
           {t("badge")}
         </span>
 

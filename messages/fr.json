@@ -3,8 +3,9 @@
     "verifiedMarketplace": "Marketplace B2B vérifiée",
     "transparentTrade": "Données commerciales transparentes",
     "builtForExporters": "Conçu pour les exportateurs africains",
-    "helpCenter": "Centre d’aide",
-    "contact": "Contact",
+    "support": "Support",
+    "about": "À propos d’Emara",
+    "home": "Accueil",
     "signIn": "Se connecter"
   },
 
@@ -23,13 +24,15 @@
     "academy": "Académie",
     "analytics": "Analytique",
     "support": "Support",
-    "dashboard": "Tableau de bord"
+    "dashboard": "Tableau de bord",
+    "start_journey": "Commencez votre parcours d’exportation",
+    "readiness": "Préparation à l’export"
   },
 
   "MegaMenu": {
     "explore": "Explorer",
     "industry": {
-      "title": "Par industrie",
+      "title": "Programmes",
       "items": ["Agriculture", "Textiles", "Minéraux", "Industrie manufacturière", "Produits de base"]
     },
     "country": {
@@ -46,6 +49,47 @@
     }
   },
 
+  "ExploreMenu": {
+    "explore": "Explorer",
+    "industry": {
+      "title": "Explorer",
+      "items": [
+        "Nos programmes",
+        "Préparation à l’export",
+        "Webinaires",
+        "Séminaires",
+        "Histoires de réussite"
+      ]
+    },
+    "country": {
+      "title": "Académie",
+      "items": [
+        "Formation des exportateurs",
+        "Les bases de l’export en ligne",
+        "Qualification des prospects",
+        "US Foodlink",
+        "Feuille de route pour l’export"
+      ]
+    },
+    "verification": {
+      "title": "Vérification",
+      "items": [
+        "Exportateurs vérifiés",
+        "Rapports d’audit",
+        "Historique commercial",
+        "Données de conformité"
+      ]
+    },
+    "resources": {
+      "title": "Ressources",
+      "items": [
+        "Analyses commerciales",
+        "Rapports de marché",
+        "FAQ"
+      ]
+    }
+  },
+
   "error": {
     "code": "404",
     "headline": "Cette cargaison n’a pas passé la douane.",
@@ -58,12 +102,13 @@
   
   "Hero": {
     "slide1": {
-      "highlight": "Infrastructure pour un commerce de confiance",
-      "title": "La passerelle africaine de vérification pour le commerce mondial",
-      "description": "Emara est le portail de confiance reliant les acheteurs internationaux aux fournisseurs africains vérifiés. Nous éliminons le risque d’approvisionnement en transformant les données de performance en crédibilité démontrée.",
+      "highlight": "Infrastructure numérique pour un commerce de confiance",
+      "title": "La passerelle de vérification de l’Afrique pour le commerce mondial",
+      "description": "Emara est le portail de confiance qui relie les acheteurs internationaux aux fournisseurs africains vérifiés. Nous éliminons les risques d’approvisionnement en transformant les données de performance en crédibilité prouvée.",
       "primaryCta": "Acheteurs",
       "secondaryCta": "Fournisseurs"
     },
+
     "slide2": {
       "highlight": "Approvisionnement plus intelligent et à risque réduit",
       "title": "Approvisionnez-vous auprès d’exportateurs vérifiés en toute confiance",
@@ -483,42 +528,42 @@
     "hero": {
       "badge": "À propos d’Emara",
       "title": "Emara : Une passerelle transparente vers l’excellence africaine",
-      "subtitle": "Une place de marché B2B spécialisée et un écosystème de vérification dédiés à combler le « fossé de confiance » dans l’exportation alimentaire africaine."
+      "subtitle": "Une place de marché B2B spécialisée et un écosystème de vérification dédiés à réduire le déficit de confiance dans l’exportation des produits alimentaires africains."
     },
     "intro": {
-      "paragraph1": "Emara agit comme une passerelle professionnalisée, transformant le « E » d’Export d’un défi logistique en un avantage concurrentiel pour le continent.",
-      "paragraph2": "Nous construisons l’infrastructure numérique qui transforme le potentiel brut en commerce fiable et de classe mondiale."
+      "paragraph1": "Emara agit comme une passerelle professionnalisée, transformant le « E » d’Exportation d’un défi logistique en un avantage compétitif pour le continent.",
+      "paragraph2": "Nous construisons l’infrastructure numérique qui transforme le potentiel brut en un commerce fiable et de classe mondiale."
     },
     "vision": {
-      "title": "Notre Vision",
-      "text": "Notre vision pour une « Afrique Transparente » est de créer une infrastructure numérique où la transparence sert de monnaie principale. Nous aspirons à être l’objectif haute définition qui amène la réalité de l’excellence africaine au bout des doigts du monde entier, garantissant que « Fabriqué en Afrique » devienne synonyme de « Classe Mondiale »."
+      "title": "Notre vision",
+      "text": "Notre vision pour une Afrique transparente est de créer une infrastructure numérique où la transparence devient la principale monnaie d’échange. Nous voulons être la lentille haute définition qui met l’excellence africaine à portée de main du monde, afin que « Made in Africa » devienne synonyme de « classe mondiale »."
     },
     "mission": {
-      "title": "Notre Mission",
-      "text": "Emara existe pour combler le « fossé de confiance » qui a historiquement empêché la richesse immense de l’Afrique d’atteindre son plein potentiel mondial. En intégrant des données rigoureuses avec des preuves visuelles immersives, nous fournissons l’infrastructure standardisée nécessaire pour transformer le potentiel brut en commerce fiable et professionnalisé."
+      "title": "Notre mission",
+      "text": "Emara existe pour combler le déficit de confiance qui a historiquement empêché l’immense richesse en ressources de l’Afrique d’atteindre son plein potentiel mondial. En combinant des données rigoureuses avec des preuves visuelles immersives, nous fournissons l’infrastructure standardisée nécessaire pour transformer le potentiel brut en commerce fiable et professionnalisé."
     },
     "values": {
-      "title": "Nos Valeurs Fondamentales",
+      "title": "Nos valeurs fondamentales",
       "items": [
         {
-          "title": "Transparence avant les suppositions",
-          "description": "Nous éloignons l’industrie des approvisionnements basés sur l’espoir vers un futur de commerce basé sur les preuves."
+          "title": "La transparence plutôt que les suppositions",
+          "description": "Nous faisons évoluer l’industrie d’un approvisionnement basé sur l’espoir vers un futur de commerce fondé sur des preuves."
         },
         {
-          "title": "Intégrité et Fiabilité",
-          "description": "Ancrés dans le mot swahili Imara, nous privilégions la fermeté et la stabilité dans chaque connexion que nous facilitons."
+          "title": "Intégrité et fiabilité",
+          "description": "Inspiré du mot swahili « Imara », qui signifie ferme, stable et fiable. Nous privilégions la solidité et la stabilité dans chaque relation que nous facilitons."
         },
         {
-          "title": "Croissance par la Connaissance",
-          "description": "Nous agissons comme partenaire de renforcement des capacités, fournissant aux producteurs le « moteur intellectuel » nécessaire pour atteindre les standards mondiaux."
+          "title": "Croissance par le savoir",
+          "description": "Nous agissons comme un partenaire de renforcement des capacités, en fournissant aux producteurs les outils intellectuels nécessaires pour atteindre les standards internationaux."
         },
         {
-          "title": "Équité et Inclusion",
-          "description": "Nous nous engageons à faire progresser les producteurs locaux dans la chaîne de valeur et à mettre l’accent stratégique sur la vérification des entreprises dirigées par des femmes."
+          "title": "Équité et inclusion",
+          "description": "Nous nous engageons à faire progresser les producteurs locaux dans la chaîne de valeur et accordons une importance stratégique à la vérification des entreprises dirigées par des femmes."
         },
         {
-          "title": "Traçabilité Éthique",
-          "description": "Nous soutenons un système alimentaire mondial durable en fournissant une « piste papier numérique » qui prouve l’origine et respecte les normes environnementales et du travail."
+          "title": "Traçabilité éthique",
+          "description": "Nous soutenons un système alimentaire mondial durable en fournissant une traçabilité numérique qui prouve l’origine et respecte les normes environnementales et sociales."
         }
       ]
     },
@@ -574,8 +619,10 @@
     "bronze": "Bronze",
     "silver": "Argent",
     "gold": "Or",
-    "gold_elite": "Or Élite"
+    "gold_elite": "Or Élite",
+    "checkReadiness": "Vérifier la préparation à l’export"
   },
+
   "trust_gap": {
     "label": "LE PROBLÈME STRUCTUREL",
     "title": "Pourquoi Emara existe",
@@ -863,6 +910,170 @@
     "actions": {
       "back": "Retour",
       "continue": "Continuer"
+    }
+  },
+
+  "stepThree": {
+    "title": "Capacité de production et opérations",
+    "description": "Aidez les acheteurs à comprendre votre capacité opérationnelle et votre niveau de préparation à l’exportation.",
+    
+    "fields": {
+      "capacity": {
+        "label": "Capacité de production mensuelle",
+        "placeholder": "ex. 50 tonnes / mois"
+      },
+  
+      "leadTime": {
+        "label": "Délai moyen de traitement des commandes",
+        "placeholder": "ex. 14–21 jours"
+      },
+  
+      "workforce": {
+        "label": "Taille de la main-d’œuvre",
+        "placeholder": "Sélectionnez une tranche d’effectif"
+      },
+  
+      "facility": {
+        "label": "Type d’installation",
+        "placeholder": "Sélectionnez le type d’installation"
+      },
+  
+      "exportExperience": {
+        "label": "Expérience à l’export",
+        "placeholder": "Sélectionnez votre expérience à l’export"
+      },
+  
+      "logistics": {
+        "label": "Nous disposons d’une logistique interne ou de partenaires de fret",
+        "helper": "Indiquez si vous gérez l’expédition en interne ou via des partenaires logistiques dédiés."
+      }
+    },
+  
+    "options": {
+      "ownedFactory": "Usine détenue",
+      "leasedFactory": "Usine louée",
+      "cooperative": "Installation coopérative",
+      "homeProduction": "Production à domicile / petite unité de production",
+      "noExport": "Aucune expérience d’exportation",
+      "regionalExport": "Exportation régionale (Afrique uniquement)",
+      "internationalExport": "Exportation internationale (Europe / États-Unis / Asie)"
+    },
+  
+    "actions": {
+      "back": "Retour",
+      "continue": "Continuer"
+    }
+  },
+
+  "stepFour": {
+    "title": "Préparation au marché",
+    "description": "Complétez votre profil afin que les acheteurs puissent consulter votre marque et effectuer des transactions en toute sécurité.",
+  
+    "sections": {
+      "media": "Portfolio de produits et médias de marque",
+      "banking": "Préparation bancaire et aux paiements"
+    },
+  
+    "fields": {
+      "logo": "Logo de l’entreprise",
+      "productImage": "Image principale du produit",
+      "bankName": "Nom de la banque",
+      "accountName": "Nom du titulaire du compte",
+      "accountNumber": "Numéro de compte",
+      "usdPayments": "Nous pouvons recevoir des paiements en USD / internationaux"
+    },
+  
+    "upload": {
+      "logo": "Téléchargez le logo de votre entreprise",
+      "product": "Téléchargez l’image principale du produit"
+    },
+  
+    "placeholders": {
+      "bank": "ex. Zenith Bank",
+      "accountName": "Nom commercial enregistré",
+      "accountNumber": "Numéro de compte bancaire"
+    },
+  
+    "helper": {
+      "bankSecurity": "Vos informations bancaires sont chiffrées et sécurisées.",
+      "usd": "Indiquez si votre compte peut recevoir des virements internationaux."
+    },
+  
+    "actions": {
+      "back": "Retour",
+      "continue": "Continuer"
+    }
+  },
+
+  "stepFive": {
+    "title": "Choisissez votre plan d’abonnement",
+    "subtitle": "Sélectionnez le plan qui soutient le mieux votre croissance à l’export et votre visibilité sur la marketplace.",
+  
+    "recommended": "Recommandé",
+  
+    "bronzePrice": "Gratuit",
+    "bronzeDescription": "Listing de fournisseur de base et visibilité auprès des acheteurs.",
+    "bronzeFeature1": "Listing dans l’annuaire des fournisseurs",
+    "bronzeFeature2": "Demandes d’acheteurs basiques",
+    "bronzeFeature3": "Gestion du profil",
+  
+    "silverPrice": "49 $ / mois",
+    "silverDescription": "Pour les exportateurs en croissance cherchant plus de visibilité.",
+    "silverFeature1": "Placement prioritaire dans l’annuaire",
+    "silverFeature2": "Demandes illimitées des acheteurs",
+    "silverFeature3": "Badges de certification",
+    "silverFeature4": "Analyses de base",
+  
+    "goldPrice": "149 $ / mois",
+    "goldDescription": "Exposition maximale et crédibilité entreprise.",
+    "goldFeature1": "Placement en tête de l’annuaire",
+    "goldFeature2": "Accès aux acheteurs d’entreprise",
+    "goldFeature3": "Priorité de vérification",
+    "goldFeature4": "Analyses avancées",
+    "goldFeature5": "Badge de fournisseur mis en avant",
+  
+    "back": "Retour",
+    "continue": "Continuer"
+  },
+
+  "stepSix": {
+    "title": "Vérification et soumission",
+    "description": "Vous êtes presque prêt à recevoir des demandes d’acheteurs. Vérifiez votre profil et soumettez-le pour vérification.",
+  
+    "tierLabel": "Niveau estimé du fournisseur",
+  
+    "tiers": {
+      "Bronze": "Niveau Bronze",
+      "Silver": "Niveau Argent",
+      "Gold": "Niveau Or"
+    },
+  
+    "completion": "Complétion du profil : {percent} %",
+  
+    "tierDescription": "Les fournisseurs de niveaux supérieurs bénéficient d’une meilleure visibilité et d’un placement prioritaire dans les résultats de recherche des acheteurs.",
+  
+    "summary": {
+      "title": "Résumé du profil",
+      "company": "Informations sur l’entreprise",
+      "compliance": "Conformité et certifications",
+      "operations": "Opérations et capacité",
+      "market": "Préparation au marché"
+    },
+  
+    "status": {
+      "completed": "Complété",
+      "documents": "Documents téléchargés",
+      "pending": "Vérification en attente"
+    },
+  
+    "submit": {
+      "title": "Soumettre pour vérification",
+      "description": "Une fois soumis, notre équipe examinera le profil de votre entreprise, vos certifications et vos détails opérationnels. Vous serez informé lorsque la vérification sera terminée."
+    },
+  
+    "actions": {
+      "back": "Retour",
+      "submit": "Soumettre et accéder au tableau de bord"
     }
   }
 }

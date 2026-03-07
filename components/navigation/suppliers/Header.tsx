@@ -10,7 +10,7 @@ import { MobileSearch } from "../MobileSearch"
 import { LanguageSwitcher } from "../LanguageSwitcher"
 import dynamic from "next/dynamic"
 
-const MegaMenu = dynamic(() => import("../MegaMenu"), { ssr: false })
+const ExploreMenu = dynamic(() => import("./ExploreMenu"), { ssr: false })
 
 export const SupplierHeader = () => {
   const t = useTranslations("Header")
@@ -111,7 +111,7 @@ export const SupplierHeader = () => {
               href="/suppliers/verify"
               className="btn-primary px-5 py-2.5 rounded-lg shadow-md hover:shadow-lg transition-all duration-300"
             >
-              {t("getVerified")}
+              {t("start_journey")}
             </Link>
 
             <Link
@@ -127,14 +127,13 @@ export const SupplierHeader = () => {
       {/* Secondary Navigation */}
       <div className="hidden md:block bg-surface-dark/70 backdrop-blur-2xl border-b border-black/5">
         <div className="max-w-7xl mx-auto px-6 py-3 flex gap-8 items-center text-sm font-medium text-black/80">
-          <MegaMenu />
+          <ExploreMenu />
           {[
-            { href: "/suppliers/directory", label: t("directory") },
+            // { href: "/suppliers/directory", label: t("directory") },
+            { href: "/suppliers/export-readiness", label: t("readiness") },
             { href: "/suppliers/onboarding", label: t("onboarding") },
             { href: "/suppliers/academy", label: t("academy") },
-            { href: "/suppliers/analytics", label: t("analytics") },
-            { href: "/suppliers/support", label: t("support") },
-            { href: "/about", label: t("about") },
+            // { href: "/about", label: t("about") },
           ].map((item) => (
             <Link
               key={item.href}

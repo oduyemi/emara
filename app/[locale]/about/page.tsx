@@ -5,10 +5,12 @@ import CoreValues from "@/components/about/CoreValues";
 import { FAQ } from "@/components/export/FAQ";
 import { ExportCTA } from "@/components/export/CTA";
 import TrustMetrics from "@/components/about/Metrics";
+import { Header } from "@/components/navigation/Header";
 
 export default function AboutPage() {
   return (
     <main className="bg-white">
+      <Header />
       <AboutHero />
       <AboutIntro />
       <VisionMission />

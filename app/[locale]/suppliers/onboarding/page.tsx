@@ -6,8 +6,11 @@ import { StepOneCompanyInfo } from "@/components/export/onboarding/StepOneCompan
 import { StepTwoCompliance } from "@/components/export/onboarding/StepTwoCompliance";
 import { StepThreeOperations } from "@/components/export/onboarding/StepThreeOperations";
 import { StepFourMarketReadiness } from "@/components/export/onboarding/StepFourMarketReadiness";
-import { StepFiveFinalReview } from "@/components/export/onboarding/StepFiveFinalReview";
+import { StepSixFinalReview } from "@/components/export/onboarding/StepSixFinalReview";
 import { useRouter } from "next/navigation";
+import { StepFiveSubscriptionPlan } from "@/components/export/onboarding/StepFiveSubscriptionPlan";
+import { SupplierTopHeader } from "@/components/navigation/suppliers/TopHeader";
+import { SupplierHeader } from "@/components/navigation/suppliers/Header";
 
 export default function OnboardingPage() {
   const router = useRouter()
@@ -15,11 +18,13 @@ export default function OnboardingPage() {
 
   return (
     <>
+      <SupplierTopHeader />
+      <SupplierHeader />
       <SupplierOnboardingHero />
 
       <OnboardingLayout
         currentStep={step}
-        totalSteps={5}
+        totalSteps={6}
       >
         {step === 1 && (
           <StepOneCompanyInfo onNext={() => setStep(2)} />
@@ -47,8 +52,15 @@ export default function OnboardingPage() {
         )}
 
         {step === 5 && (
-          <StepFiveFinalReview
+          <StepFiveSubscriptionPlan
             onBack={() => setStep(4)}
+            onNext={() => setStep(6)}
+          />
+        )}
+
+        {step === 6 && (
+          <StepSixFinalReview
+            onBack={() => setStep(5)}
             onSubmit={() => router.push("/suppliers/dashboard")}
           />
         )}

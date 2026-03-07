@@ -1,7 +1,8 @@
 "use client"
 
 import { useState } from "react"
-import { UploadCloud } from "lucide-react"
+import { UploadCloud, Trash2, Image as ImageIcon } from "lucide-react"
+import { useTranslations } from "next-intl"
 
 type Props = {
   onNext: () => void
@@ -12,6 +13,8 @@ export const StepFourMarketReadiness = ({
   onNext,
   onBack,
 }: Props) => {
+  const t = useTranslations("stepFour")
+
   const [logo, setLogo] = useState<File | null>(null)
   const [productImage, setProductImage] = useState<File | null>(null)
 
@@ -24,165 +27,237 @@ export const StepFourMarketReadiness = ({
     e: React.ChangeEvent<HTMLInputElement>,
     type: "logo" | "product"
   ) => {
-    if (e.target.files && e.target.files[0]) {
-      type === "logo"
-        ? setLogo(e.target.files[0])
-        : setProductImage(e.target.files[0])
-    }
+    if (!e.target.files?.[0]) return
+    const file = e.target.files[0]
+
+    type === "logo" ? setLogo(file) : setProductImage(file)
   }
 
+  const preview = (file: File | null) =>
+    file ? URL.createObjectURL(file) : null
+
   return (
-    <div className="space-y-14">
+    <div className="space-y-12">
+
       {/* HEADER */}
-      <div>
-        <h2 className="text-2xl font-semibold text-[#0F233F] mb-2">
-          Market Readiness
+      <div className="space-y-3">
+        <h2 className="text-2xl font-semibold text-secondary tracking-tight">
+          {t("title")}
         </h2>
-        <p className="text-gray-600 text-sm max-w-2xl">
-          Complete your profile so buyers can view your brand and transact securely.
+
+        <p className="text-sm text-muted max-w-2xl">
+          {t("description")}
         </p>
       </div>
 
       {/* ========================= */}
-      {/* SECTION A — MEDIA */}
+      {/* MEDIA CARD */}
       {/* ========================= */}
 
-      <div className="space-y-8">
-        <h3 className="text-lg font-semibold text-[#0F233F] border-b pb-2">
-          Product Portfolio & Brand Media
-        </h3>
+      <div className="bg-white border rounded-3xl p-8 shadow-sm space-y-8">
 
-        {/* Logo Upload */}
-        <div className="space-y-2">
-          <label className="text-sm font-medium text-gray-700">
-            Company Logo
-          </label>
-
-          <label className="block border-2 border-dashed border-gray-300 rounded-2xl p-8 text-center cursor-pointer hover:border-[#0F233F] transition">
-            <UploadCloud className="mx-auto mb-3 text-gray-400" size={28} />
-            <p className="text-sm text-gray-600">
-              Upload your company logo
-            </p>
-            <input
-              type="file"
-              accept="image/*"
-              onChange={(e) => handleFile(e, "logo")}
-              className="hidden"
-            />
-          </label>
-
-          {logo && (
-            <p className="text-xs text-gray-600 mt-2">
-              Uploaded: {logo.name}
-            </p>
-          )}
+        <div className="flex items-center justify-between">
+          <h3 className="text-lg font-semibold text-secondary">
+            {t("sections.media")}
+          </h3>
         </div>
 
-        {/* Product Image Upload */}
-        <div className="space-y-2">
-          <label className="text-sm font-medium text-gray-700">
-            Primary Product Image
-          </label>
+        <div className="grid md:grid-cols-2 gap-8">
 
-          <label className="block border-2 border-dashed border-gray-300 rounded-2xl p-8 text-center cursor-pointer hover:border-[#0F233F] transition">
-            <UploadCloud className="mx-auto mb-3 text-gray-400" size={28} />
-            <p className="text-sm text-gray-600">
-              Upload one main product image
-            </p>
-            <input
-              type="file"
-              accept="image/*"
-              onChange={(e) => handleFile(e, "product")}
-              className="hidden"
-            />
-          </label>
+          {/* LOGO */}
+          <div className="space-y-3">
+            <label className="text-sm font-medium text-secondary">
+              {t("fields.logo")}
+            </label>
 
-          {productImage && (
-            <p className="text-xs text-gray-600 mt-2">
-              Uploaded: {productImage.name}
-            </p>
-          )}
+            <div className="relative border-2 border-dashed border-gray-300 rounded-2xl p-6 text-center hover:border-accent transition bg-surface">
+
+              {logo ? (
+                <div className="space-y-3">
+                  <img
+                    src={preview(logo)!}
+                    className="mx-auto max-h-24 object-contain"
+                  />
+
+                  <button
+                    onClick={() => setLogo(null)}
+                    className="text-xs text-red-500 flex items-center gap-1 justify-center hover:text-red-600"
+                  >
+                    <Trash2 size={14} />
+                    Remove
+                  </button>
+                </div>
+              ) : (
+                <label className="cursor-pointer block">
+                  <UploadCloud
+                    className="mx-auto mb-3 text-muted"
+                    size={28}
+                  />
+
+                  <p className="text-sm text-muted">
+                    {t("upload.logo")}
+                  </p>
+
+                  <input
+                    type="file"
+                    accept="image/*"
+                    onChange={(e) => handleFile(e, "logo")}
+                    className="hidden"
+                  />
+                </label>
+              )}
+            </div>
+          </div>
+
+          {/* PRODUCT IMAGE */}
+          <div className="space-y-3">
+            <label className="text-sm font-medium text-secondary">
+              {t("fields.productImage")}
+            </label>
+
+            <div className="relative border-2 border-dashed border-gray-300 rounded-2xl p-6 text-center hover:border-accent transition bg-surface">
+
+              {productImage ? (
+                <div className="space-y-3">
+                  <img
+                    src={preview(productImage)!}
+                    className="mx-auto max-h-24 object-contain"
+                  />
+
+                  <button
+                    onClick={() => setProductImage(null)}
+                    className="text-xs text-red-500 flex items-center gap-1 justify-center hover:text-red-600"
+                  >
+                    <Trash2 size={14} />
+                    Remove
+                  </button>
+                </div>
+              ) : (
+                <label className="cursor-pointer block">
+                  <ImageIcon
+                    className="mx-auto mb-3 text-muted"
+                    size={28}
+                  />
+
+                  <p className="text-sm text-muted">
+                    {t("upload.product")}
+                  </p>
+
+                  <input
+                    type="file"
+                    accept="image/*"
+                    onChange={(e) => handleFile(e, "product")}
+                    className="hidden"
+                  />
+                </label>
+              )}
+            </div>
+          </div>
         </div>
       </div>
 
       {/* ========================= */}
-      {/* SECTION B — BANKING */}
+      {/* BANKING CARD */}
       {/* ========================= */}
 
-      <div className="space-y-8">
-        <h3 className="text-lg font-semibold text-[#0F233F] border-b pb-2">
-          Banking & Payment Readiness
+      <div className="bg-white border rounded-3xl p-8 shadow-sm space-y-6">
+
+        <h3 className="text-lg font-semibold text-secondary">
+          {t("sections.banking")}
         </h3>
 
-        <div className="space-y-4">
-          <div>
-            <label className="text-sm font-medium text-gray-700">
-              Bank Name
+        <div className="grid md:grid-cols-2 gap-6">
+
+          {/* Bank */}
+          <div className="space-y-2">
+            <label className="text-sm font-medium text-secondary">
+              {t("fields.bankName")}
             </label>
+
             <input
-              type="text"
               value={bankName}
               onChange={(e) => setBankName(e.target.value)}
-              className="w-full border border-gray-300 rounded-xl px-4 py-3 mt-1"
-              placeholder="e.g. Zenith Bank"
+              placeholder={t("placeholders.bank")}
+              className="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm
+              focus:ring-2 focus:ring-accent outline-none"
             />
           </div>
 
-          <div>
-            <label className="text-sm font-medium text-gray-700">
-              Account Name
+          {/* Account Name */}
+          <div className="space-y-2">
+            <label className="text-sm font-medium text-secondary">
+              {t("fields.accountName")}
             </label>
+
             <input
-              type="text"
               value={accountName}
               onChange={(e) => setAccountName(e.target.value)}
-              className="w-full border border-gray-300 rounded-xl px-4 py-3 mt-1"
-              placeholder="Registered business name"
+              placeholder={t("placeholders.accountName")}
+              className="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm
+              focus:ring-2 focus:ring-accent outline-none"
             />
           </div>
 
-          <div>
-            <label className="text-sm font-medium text-gray-700">
-              Account Number
+          {/* Account Number */}
+          <div className="space-y-2 md:col-span-2">
+            <label className="text-sm font-medium text-secondary">
+              {t("fields.accountNumber")}
             </label>
+
             <input
-              type="text"
               value={accountNumber}
               onChange={(e) => setAccountNumber(e.target.value)}
-              className="w-full border border-gray-300 rounded-xl px-4 py-3 mt-1"
-              placeholder="Bank account number"
+              placeholder={t("placeholders.accountNumber")}
+              autoComplete="off"
+              className="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm
+              focus:ring-2 focus:ring-accent outline-none"
             />
-          </div>
 
-          <div className="flex items-center gap-3 pt-2">
-            <input
-              type="checkbox"
-              checked={supportsUSD}
-              onChange={() => setSupportsUSD(!supportsUSD)}
-              className="w-4 h-4"
-            />
-            <span className="text-sm text-gray-700">
-              We can receive USD / international payments
-            </span>
+            <p className="text-xs text-muted">
+              {t("helper.bankSecurity")}
+            </p>
+          </div>
+        </div>
+
+        {/* USD SUPPORT */}
+        <div className="flex items-start gap-3 bg-surface border rounded-2xl p-4">
+
+          <input
+            type="checkbox"
+            checked={supportsUSD}
+            onChange={() => setSupportsUSD(!supportsUSD)}
+            className="mt-1 w-4 h-4"
+          />
+
+          <div>
+            <p className="text-sm font-medium text-secondary">
+              {t("fields.usdPayments")}
+            </p>
+
+            <p className="text-xs text-muted">
+              {t("helper.usd")}
+            </p>
           </div>
         </div>
       </div>
 
       {/* NAVIGATION */}
-      <div className="flex justify-between pt-6 border-t">
+      <div className="flex justify-between items-center pt-6 border-t border-gray-200">
+
         <button
           onClick={onBack}
-          className="text-gray-500 hover:text-gray-700 text-sm"
+          className="text-sm text-muted hover:text-secondary transition"
         >
-          Back
+          {t("actions.back")}
         </button>
 
         <button
           onClick={onNext}
-          className="bg-[#0F233F] text-white px-8 py-3 rounded-xl font-medium hover:shadow-md transition"
+          className="btn-primary px-8 py-3 rounded-2xl text-sm font-medium shadow-sm hover:shadow-md transition-all"
         >
-          Continue
+          {t("actions.continue")}
         </button>
+
       </div>
     </div>
   )

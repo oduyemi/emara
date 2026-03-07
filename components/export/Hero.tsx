@@ -16,13 +16,6 @@ export default function ExportHero() {
 
   const y = useTransform(scrollYProgress, [0, 1], [-60, 60]);
 
-  const tiers = [
-    { name: t("bronze"), color: "text-muted" },
-    { name: t("silver"), color: "text-secondary" },
-    { name: t("gold"), color: "text-primary" },
-    { name: t("gold_elite"), color: "text-accent font-semibold" }
-  ];
-
   return (
     <section className="relative py-24 md:py-32 px-6 overflow-hidden bg-[var(--color-bg)]">
 
@@ -48,10 +41,6 @@ export default function ExportHero() {
 
           {/* Heading Block */}
           <div className="space-y-6 max-w-xl">
-            <span className="text-xs uppercase tracking-[0.35em] text-muted font-medium">
-              {t("badge")}
-            </span>
-
             <h1 className="text-4xl md:text-6xl xl:text-7xl font-semibold tracking-[-0.02em] text-secondary leading-[1.05]">
               {t("headline")}
             </h1>
@@ -65,11 +54,11 @@ export default function ExportHero() {
           <div className="flex flex-col sm:flex-row gap-4">
 
             <Link
-              href="/suppliers/verifiy"
+              href="/suppliers/export-readiness"
               className="relative btn-primary px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 text-center overflow-hidden group"
             >
               <span className="relative z-10">
-                {t("primaryCta")}
+                {t("checkReadiness")}
               </span>
 
               {/* Premium shimmer */}
@@ -84,36 +73,6 @@ export default function ExportHero() {
             >
               {t("secondaryCta")}
             </Link>
-          </div>
-
-          {/* Tier Strip */}
-          <div className="pt-10 space-y-5">
-
-            <div className="flex flex-wrap items-center gap-4 text-sm">
-              {tiers.map((tier, index) => (
-                <motion.div
-                  key={tier.name}
-                  initial={{ opacity: 0.6 }}
-                  animate={{ opacity: 1 }}
-                  transition={{
-                    delay: index * 0.3,
-                    duration: 0.6
-                  }}
-                  className={`flex items-center gap-4 ${tier.color}`}
-                >
-                  <span>{tier.name}</span>
-
-                  {index !== tiers.length - 1 && (
-                    <span className="w-8 h-px bg-[var(--color-surface-border)]" />
-                  )}
-                </motion.div>
-              ))}
-            </div>
-
-            <p className="uppercase tracking-[0.25em] text-[10px] text-muted">
-              {t("verificationStrip")}
-            </p>
-
           </div>
         </div>
 

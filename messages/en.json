@@ -3,8 +3,9 @@
     "verifiedMarketplace": "Verified B2B Marketplace",
     "transparentTrade": "Transparent Trade Data",
     "builtForExporters": "Built for African Exporters",
-    "helpCenter": "Help Center",
-    "contact": "Contact",
+    "support": "Support",
+    "about": "About Emara",
+    "home": "Homepage",
     "signIn": "Sign In"
   },
 
@@ -23,7 +24,9 @@
     "academy": "Academy",
     "analytics": "Analytics",
     "support": "Support",
-    "dashboard": "Dashboard"
+    "dashboard": "Dashboard",
+    "start_journey": "Start Your Export Journey",
+    "readiness": "Export Readiness"
   },
   
   "MegaMenu": {
@@ -46,6 +49,26 @@
     }
   },
 
+  "ExploreMenu": {
+    "explore": "Explore",
+    "industry": {
+      "title": "Programs",
+      "items": ["Our Programs", "Export Readiness", "Webinars", "Seminars", "Success Stories"]
+    },
+    "country": {
+      "title": "Academy",
+      "items": ["Exporter Education", "Export Essentials Online", "Lead Qualifications", "US Foodlink", "Export Roadmap"]
+    },
+    "verification": {
+      "title": "Verification",
+      "items": ["Verified Exporters", "Audit Reports", "Trade History", "Compliance Data"]
+    },
+    "resources": {
+      "title": "Resources",
+      "items": ["Trade Insights", "Market Reports", "FAQs"]
+    }
+  },
+
   "error": {
     "code": "404",
     "headline": "This shipment didn’t clear customs.",
@@ -58,7 +81,7 @@
 
   "Hero": {
     "slide1": {
-      "highlight": "Infrastructure for Trusted Trade",
+      "highlight": "Digital Infrastructure for Trusted Trade",
       "title": "Africa’s Verification Gateway for Global Commerce",
       "description": "Emara serves as the trusted portal connecting international buyers to verified African suppliers. We eliminate sourcing risk by turning performance data into proven credibility.",
       "primaryCta": "Buyers",
@@ -484,7 +507,7 @@
     "hero": {
       "badge": "About Emara",
       "title": "Emara: A Transparent Gateway to African Excellence",
-      "subtitle": "A specialized B2B marketplace and verification ecosystem dedicated to dismantling the \"Trust Gap\" in African food exportation."
+      "subtitle": "A specialized B2B marketplace and verification ecosystem dedicated to dismantling the Trust Gap in African food exportation."
     },
     "intro": {
       "paragraph1": "Emara serves as a professionalized gateway, moving the \"E\" in Export from a logistical challenge to a competitive advantage for the continent.",
@@ -492,26 +515,26 @@
     },
     "vision": {
       "title": "Our Vision",
-      "text": "Our vision for a \"Transparent Africa\" is to create a digital infrastructure where transparency serves as the primary currency. We aim to be the high-definition lens that brings the reality of African excellence to the world's fingertips, ensuring that \"Made in Africa\" becomes synonymous with \"World-Class\"."
+      "text": "Our vision for a Transparent Africa is to create a digital infrastructure where transparency serves as the primary currency. We aim to be the high-definition lens that brings the reality of African excellence to the world's fingertips, ensuring that \"Made in Africa\" becomes synonymous with \"World-Class\"."
     },
     "mission": {
       "title": "Our Mission",
-      "text": "Emara exists to dismantle the \"Trust Gap\" that has historically prevented Africa’s immense resource wealth from reaching its full global potential. By integrating rigorous data with immersive visual proof, we provide the standardized infrastructure required to turn raw potential into reliable, professionalized trade."
+      "text": "Emara exists to dismantle the Trust Gap that has historically prevented Africa’s immense resource wealth from reaching its full global potential. By integrating rigorous data with immersive visual proof, we provide the standardized infrastructure required to turn raw potential into reliable, professionalized trade."
     },
     "values": {
       "title": "Our Core Values",
       "items": [
         {
           "title": "Transparency over Assumption",
-          "description": "We move the industry away from \"hope-based\" sourcing and into a future of \"evidence-based\" commerce."
+          "description": "We move the industry away from hope-based sourcing and into a future of evidence-based commerce."
         },
         {
           "title": "Integrity & Reliability",
-          "description": "Rooted in the Swahili word Imara, we prioritize firmness and stability in every connection we facilitate."
+          "description": "Rooted in the Swahili word Imara, a Swahili word meaning firm, stable, and reliable. We prioritize firmness and stability in every connection we facilitate."
         },
         {
           "title": "Growth through Knowledge",
-          "description": "We act as a capacity-building partner, providing producers with the \"Intellectual Engine\" needed to reach global standards."
+          "description": "We act as a capacity-building partner, providing producers with the Intellectual Engine needed to reach global standards."
         },
         {
           "title": "Equity & Inclusion",
@@ -519,7 +542,7 @@
         },
         {
           "title": "Ethical Traceability",
-          "description": "We support a sustainable global food system by providing a \"digital paper trail\" that proves origin and adheres to environmental and labor standards."
+          "description": "We support a sustainable global food system by providing a digital paper trail that proves origin and adheres to environmental and labor standards."
         }
       ]
     },
@@ -528,11 +551,11 @@
       "headline": "Building the Infrastructure for Transparent Trade",
       "salutation": "To our Global Partners, Buyers, and the Visionary Producers of Africa,",
       "paragraphs": [
-        "For decades, the narrative surrounding African trade has been defined by two conflicting realities: the continent’s undeniable, immense resource wealth and the persistent \"Trust Gap\" that prevents that wealth from reaching its full global potential.",
+        "For decades, the narrative surrounding African trade has been defined by two conflicting realities: the continent’s undeniable, immense resource wealth and the persistent Trust Gap that prevents that wealth from reaching its full global potential.",
         "When I look at the landscape of African agro-commodities and food production, I don’t just see products; I see world-class facilities, passionate founders, and untapped excellence. Yet, for an international procurement officer in London, Dubai, or New York, the distance between curiosity and a signed contract is often filled with anxiety.",
         "Emara was born to answer those questions with a resounding \"Yes.\"",
         "Our vision for a \"Transparent Africa\" is not about listing companies in a directory. It is about building digital infrastructure where transparency becomes the primary currency.",
-        "By professionalizing the gateway to the continent, we are not merely facilitating transactions — we are building a more equitable trade ecosystem where merit is visible, risk is mitigated, and \"Made in Africa\" becomes synonymous with \"World-Class.\"",
+        "By professionalizing the gateway to the continent, we are not merely facilitating transactions — we are building a more equitable trade ecosystem where merit is visible, risk is mitigated, and Made in Africa becomes synonymous with World-Class.",
         "The gateway is open. We invite you to trade with certainty."
       ],
       "quote": "We are moving the \"E\" in Export from a logistical challenge to a competitive advantage.",
@@ -574,7 +597,8 @@
     "bronze": "Bronze",
     "silver": "Silver",
     "gold": "Gold",
-    "gold_elite": "Gold Elite"
+    "gold_elite": "Gold Elite",
+    "checkReadiness": "Check Export Readiness"
   },
 
   "trust_gap": {
@@ -864,6 +888,170 @@
     "actions": {
       "back": "Back",
       "continue": "Continue"
+    }
+  },
+
+  "stepThree": {
+    "title": "Production Capacity & Operations",
+    "description": "Help buyers understand your operational capability and export readiness.",
+  
+    "fields": {
+      "capacity": {
+        "label": "Monthly Production Capacity",
+        "placeholder": "e.g. 50 Tons / Month"
+      },
+  
+      "leadTime": {
+        "label": "Average Order Lead Time",
+        "placeholder": "e.g. 14–21 days"
+      },
+  
+      "workforce": {
+        "label": "Workforce Size",
+        "placeholder": "Select workforce range"
+      },
+  
+      "facility": {
+        "label": "Facility Type",
+        "placeholder": "Select facility type"
+      },
+  
+      "exportExperience": {
+        "label": "Export Experience",
+        "placeholder": "Select export experience"
+      },
+  
+      "logistics": {
+        "label": "We have in-house logistics or freight partnerships",
+        "helper": "Indicate if you manage shipping internally or through dedicated partners."
+      }
+    },
+  
+    "options": {
+      "ownedFactory": "Owned Factory",
+      "leasedFactory": "Leased Factory",
+      "cooperative": "Cooperative Facility",
+      "homeProduction": "Home-Based / Small Production Unit",
+      "noExport": "No Export Experience",
+      "regionalExport": "Regional Export (Africa Only)",
+      "internationalExport": "International Export (Europe / US / Asia)"
+    },
+  
+    "actions": {
+      "back": "Back",
+      "continue": "Continue"
+    }
+  },
+
+  "stepFour": {
+    "title": "Market Readiness",
+    "description": "Complete your profile so buyers can view your brand and transact securely.",
+  
+    "sections": {
+      "media": "Product Portfolio & Brand Media",
+      "banking": "Banking & Payment Readiness"
+    },
+  
+    "fields": {
+      "logo": "Company Logo",
+      "productImage": "Primary Product Image",
+      "bankName": "Bank Name",
+      "accountName": "Account Name",
+      "accountNumber": "Account Number",
+      "usdPayments": "We can receive USD / international payments"
+    },
+  
+    "upload": {
+      "logo": "Upload your company logo",
+      "product": "Upload a main product image"
+    },
+  
+    "placeholders": {
+      "bank": "e.g. Zenith Bank",
+      "accountName": "Registered business name",
+      "accountNumber": "Bank account number"
+    },
+  
+    "helper": {
+      "bankSecurity": "Your banking details are securely encrypted.",
+      "usd": "Indicate if your account can receive international transfers."
+    },
+  
+    "actions": {
+      "back": "Back",
+      "continue": "Continue"
+    }
+  },
+
+  "stepFive": {
+    "title": "Choose Your Subscription Plan",
+    "subtitle": "Select the plan that best supports your export growth and marketplace visibility.",
+
+    "recommended": "Recommended",
+
+    "bronzePrice": "Free",
+    "bronzeDescription": "Basic supplier listing and buyer visibility.",
+    "bronzeFeature1": "Supplier directory listing",
+    "bronzeFeature2": "Basic buyer inquiries",
+    "bronzeFeature3": "Profile management",
+
+    "silverPrice": "$49 / month",
+    "silverDescription": "For growing exporters seeking more visibility.",
+    "silverFeature1": "Priority directory placement",
+    "silverFeature2": "Unlimited buyer inquiries",
+    "silverFeature3": "Certification badges",
+    "silverFeature4": "Basic analytics",
+
+    "goldPrice": "$149 / month",
+    "goldDescription": "Maximum exposure and enterprise credibility.",
+    "goldFeature1": "Top supplier placement",
+    "goldFeature2": "Enterprise buyer access",
+    "goldFeature3": "Verification priority",
+    "goldFeature4": "Advanced analytics",
+    "goldFeature5": "Featured supplier badge",
+
+    "back": "Back",
+    "continue": "Continue"
+  },
+
+  "stepSix": {
+    "title": "Review & Submit",
+    "description": "You are almost ready to start receiving buyer inquiries. Review your profile and submit for verification.",
+  
+    "tierLabel": "Estimated Supplier Tier",
+  
+    "tiers": {
+      "Bronze": "Bronze Tier",
+      "Silver": "Silver Tier",
+      "Gold": "Gold Tier"
+    },
+  
+    "completion": "Profile Completion: {percent}%",
+  
+    "tierDescription": "Higher tier suppliers receive better visibility and priority placement in buyer search results.",
+  
+    "summary": {
+      "title": "Profile Summary",
+      "company": "Company Information",
+      "compliance": "Compliance & Certifications",
+      "operations": "Operations & Capacity",
+      "market": "Market Readiness"
+    },
+  
+    "status": {
+      "completed": "Completed",
+      "documents": "Documents Uploaded",
+      "pending": "Verification Pending"
+    },
+  
+    "submit": {
+      "title": "Submit for Verification",
+      "description": "Once submitted, our team will review your company profile, certifications and operational details. You will be notified when verification is complete."
+    },
+  
+    "actions": {
+      "back": "Back",
+      "submit": "Submit & Go to Dashboard"
     }
   }
 }

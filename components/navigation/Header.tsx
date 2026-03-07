@@ -104,18 +104,18 @@ export const Header = () => {
           <div className="hidden md:flex items-center gap-6 text-sm font-medium">
             <LanguageSwitcher />
 
-            <Link
+            {/* <Link
               href="/login"
               className="text-black/80 hover:text-accent transition-colors"
             >
               {t("signIn")}
-            </Link>
+            </Link> */}
 
             <Link
-              href="/suppliers/verify"
+              href="/suppliers/register"
               className="btn-primary px-5 py-2.5 rounded-lg shadow-md hover:shadow-lg transition-all duration-300"
             >
-              {t("getVerified")}
+              {t("start_journey")}
             </Link>
           </div>
         </div>
@@ -131,7 +131,7 @@ export const Header = () => {
             { href: "/buyers", label: t("buyers") },
             { href: "/suppliers", label: t("suppliers") },
             { href: "/suppliers/directory", label: t("supplier_directory") },
-            { href: "/about", label: t("about") },
+            // { href: "/about", label: t("about") },
           ].map((item) => (
             <Link
               key={item.href}

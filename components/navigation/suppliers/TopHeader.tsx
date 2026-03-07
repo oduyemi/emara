@@ -1,10 +1,10 @@
 "use client"
 import { Link } from "@/i18n/navigation";
-import { ShieldCheck } from "lucide-react"
+import { ShieldCheck, Phone } from "lucide-react"
 import { useTranslations, useLocale } from "next-intl"
 
 
-export function TopHeader() {
+export function SupplierTopHeader() {
   const t = useTranslations("TopHeader")
   const locale = useLocale()
   const rtlLocales = ["ar"]
@@ -51,9 +51,15 @@ export function TopHeader() {
             ${isRTL ? "flex-row-reverse" : ""}
           `}
         >
+            <Link
+                href={`/${locale}/`}
+                className="hover:text-accent transition"
+            >
+                {t("home")}
+          </Link>
           <Link
-            href={`/${locale}/about`}
-            className="hover:text-[#ccc] text-accent transition"
+            href={`/${locale}/home`}
+            className="hover:text-accent transition"
           >
             {t("about")}
           </Link>
@@ -67,13 +73,6 @@ export function TopHeader() {
           >
             {/* <Phone size={14} /> */}
             {t("support")}
-          </Link>
-
-          <Link
-            href={`/${locale}/login`}
-            className="hover:text-accent transition"
-          >
-            {t("signIn")}
           </Link>
         </div>
       </div>

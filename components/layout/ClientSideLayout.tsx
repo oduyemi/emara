@@ -1,9 +1,11 @@
 "use client";
 import { TopHeader } from "../navigation/TopHeader";
-import { Header } from "../navigation/Header";
 import Footer from "../navigation/Footer";
 import { usePathname } from "next/navigation";
 import { SupplierHeader } from "../navigation/suppliers/Header";
+import { SupplierTopHeader } from "../navigation/suppliers/TopHeader";
+
+
 
 export default function ClientSideLayout({
   children,
@@ -12,22 +14,31 @@ export default function ClientSideLayout({
 }) {
   const pathname = usePathname();
 
-  // Exclude footer on landing page and /buyers routes
-  const hideDefaultFooter =
-    pathname === "/" ||
-    pathname === "/en" ||
-    pathname === "/fr" ||
-    pathname === "/ar" ||
-    pathname.startsWith("/buyers");
+  const isSupplierRoute = pathname.startsWith("/suppliers");
 
-  const isSupplierRoute = pathname.includes("/suppliers");
+  const hideAllLayout =
+    pathname === "/login" ||
+    pathname === "/suppliers/login" ||
+    pathname === "/suppliers/register" ||
+    pathname === "/buyers/login" ||
+    pathname === "/buyers/register" ||
+    pathname === "/suppliers/onboarding";
 
-    return (
+  if (hideAllLayout) {
+    return <>{children}</>;
+  }
+
+  return (
     <div className="min-h-screen flex flex-col">
-      <TopHeader />
-      {isSupplierRoute ? <SupplierHeader /> : <Header />}
+      {/* Top Headers */}
+      {isSupplierRoute ? <SupplierTopHeader /> : <TopHeader />}
+
+      {/* Supplier navigation */}
+      {isSupplierRoute && <SupplierHeader />}
+
       {children}
-      {!hideDefaultFooter && <Footer />}
+
+      <Footer />
     </div>
   );
 }

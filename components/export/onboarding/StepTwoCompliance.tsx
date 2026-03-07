@@ -1,6 +1,12 @@
-"use client"
-import { useState } from "react"
-import { UploadCloud, CheckCircle2, Trash2 } from "lucide-react"
+"use client";
+import { useState, useCallback } from "react";
+import {
+  UploadCloud,
+  CheckCircle2,
+  Trash2,
+  FileText,
+  Image as ImageIcon
+} from "lucide-react"
 import { useTranslations } from "next-intl"
 
 type Props = {
@@ -8,11 +14,16 @@ type Props = {
   onBack: () => void
 }
 
+const MAX_FILE_SIZE = 10 * 1024 * 1024
+const ACCEPTED_TYPES = ["application/pdf", "image/png", "image/jpeg"]
+
 export const StepTwoCompliance = ({ onNext, onBack }: Props) => {
   const t = useTranslations("stepTwo")
 
   const [selectedCerts, setSelectedCerts] = useState<string[]>([])
   const [documents, setDocuments] = useState<File[]>([])
+  const [isDragging, setIsDragging] = useState(false)
+  const [error, setError] = useState<string | null>(null)
 
   const certifications = [
     "ISO 9001",
@@ -33,13 +44,58 @@ export const StepTwoCompliance = ({ onNext, onBack }: Props) => {
     )
   }
 
+  const validateFiles = (files: File[]) => {
+    const validFiles: File[] = []
+
+    for (const file of files) {
+      if (!ACCEPTED_TYPES.includes(file.type)) {
+        setError("Invalid file type")
+        continue
+      }
+
+      if (file.size > MAX_FILE_SIZE) {
+        setError("File exceeds 10MB")
+        continue
+      }
+
+      const duplicate = documents.some((doc) => doc.name === file.name)
+
+      if (!duplicate) validFiles.push(file)
+    }
+
+    return validFiles
+  }
+
+  const addFiles = (files: File[]) => {
+    const valid = validateFiles(files)
+
+    if (valid.length > 0) {
+      setDocuments((prev) => [...prev, ...valid])
+      setError(null)
+    }
+  }
+
   const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (!e.target.files) return
-    setDocuments((prev) => [...prev, ...Array.from(e.target.files!)])
+    addFiles(Array.from(e.target.files))
   }
+
+  const handleDrop = useCallback((e: React.DragEvent) => {
+    e.preventDefault()
+    setIsDragging(false)
+
+    const files = Array.from(e.dataTransfer.files)
+    addFiles(files)
+  }, [documents])
 
   const removeFile = (index: number) => {
     setDocuments((prev) => prev.filter((_, i) => i !== index))
+  }
+
+  const getFileIcon = (file: File) => {
+    if (file.type === "application/pdf") return <FileText size={18} />
+    if (file.type.startsWith("image")) return <ImageIcon size={18} />
+    return <FileText size={18} />
   }
 
   return (
@@ -94,25 +150,47 @@ export const StepTwoCompliance = ({ onNext, onBack }: Props) => {
           {t("sections.documents")}
         </h3>
 
-        <label className="block border-2 border-dashed border-gray-300 rounded-3xl p-12 text-center cursor-pointer hover:border-accent transition-all bg-white hover:bg-gray-50">
+        <div
+          onDragOver={(e) => {
+            e.preventDefault()
+            setIsDragging(true)
+          }}
+          onDragLeave={() => setIsDragging(false)}
+          onDrop={handleDrop}
+          className={`border-2 border-dashed rounded-3xl p-12 text-center transition-all bg-white
+          ${
+            isDragging
+              ? "border-secondary bg-secondary/5"
+              : "border-gray-300 hover:border-accent hover:bg-gray-50"
+          }`}
+        >
+          <label className="cursor-pointer block">
+            <UploadCloud
+              className="mx-auto mb-4 text-muted"
+              size={36}
+            />
 
-          <UploadCloud className="mx-auto mb-4 text-muted" size={36} />
+            <p className="text-sm text-secondary font-medium mb-2">
+              {t("upload.placeholder")}
+            </p>
 
-          <p className="text-sm text-secondary font-medium mb-2">
-            {t("upload.placeholder")}
-          </p>
+            <p className="text-xs text-muted">
+              {t("upload.helper")}
+            </p>
 
-          <p className="text-xs text-muted">
-            {t("upload.helper")}
-          </p>
+            <input
+              type="file"
+              multiple
+              onChange={handleFileUpload}
+              className="hidden"
+              accept=".pdf,.png,.jpg,.jpeg"
+            />
+          </label>
+        </div>
 
-          <input
-            type="file"
-            multiple
-            onChange={handleFileUpload}
-            className="hidden"
-          />
-        </label>
+        {error && (
+          <p className="text-sm text-red-500">{error}</p>
+        )}
 
         {/* Uploaded Files */}
         {documents.length > 0 && (
@@ -122,13 +200,18 @@ export const StepTwoCompliance = ({ onNext, onBack }: Props) => {
                 key={index}
                 className="flex items-center justify-between bg-surface rounded-2xl px-4 py-3 text-sm border"
               >
-                <div>
-                  <p className="text-secondary font-medium">
-                    {doc.name}
-                  </p>
-                  <p className="text-xs text-muted">
-                    {(doc.size / 1024 / 1024).toFixed(2)} MB
-                  </p>
+                <div className="flex items-center gap-3">
+                  {getFileIcon(doc)}
+
+                  <div>
+                    <p className="text-secondary font-medium">
+                      {doc.name}
+                    </p>
+
+                    <p className="text-xs text-muted">
+                      {(doc.size / 1024 / 1024).toFixed(2)} MB
+                    </p>
+                  </div>
                 </div>
 
                 <button

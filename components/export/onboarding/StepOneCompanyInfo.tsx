@@ -10,7 +10,6 @@ const regions = Object.keys(africaRegions)
 
 export const StepOneCompanyInfo = ({ onNext }: { onNext: () => void }) => {
   const t = useTranslations("stepOne")
-
   const [selectedRegion, setSelectedRegion] = useState("")
   const [selectedCountry, setSelectedCountry] = useState("")
 
