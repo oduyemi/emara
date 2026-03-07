@@ -1,13 +1,11 @@
-import AuthorityStrip from "@/components/export/AuthorityStrip";
 import { ExportCTA } from "@/components/export/CTA";
-import { ExporterIndustries } from "@/components/export/ExporterIndustries";
 import { FAQ } from "@/components/export/FAQ";
+import { FeaturedEvent } from "@/components/export/FeaturedEvent";
 import ExportHero from "@/components/export/Hero";
-import HowItWorks from "@/components/export/HowItWorks";
-import Outcome from "@/components/export/Outcome";
-import { TheEmaraSystem } from "@/components/export/TheEmaraSystem";
-import { TheProblem } from "@/components/export/TheProblem";
-import { TrustGap } from "@/components/export/TrustGap";
+import { SuppliersIntro } from "@/components/export/Intro";
+import { SuppliersPathways } from "@/components/export/Pathways";
+import { UpcomingEvents } from "@/components/export/UpcomingEvents";
+
 
 
 
@@ -16,14 +14,11 @@ export default function Exporters() {
   return (
     <div>
       <ExportHero />
-      <TheProblem />
-      <TheEmaraSystem />
-      <HowItWorks />
-      <TrustGap />
-      <Outcome />
-      <ExporterIndustries />
+      <SuppliersIntro />
+      <SuppliersPathways />
+      <FeaturedEvent />
+      <UpcomingEvents />
       <FAQ />
-      <AuthorityStrip />
       <ExportCTA />
     </div>
   );
