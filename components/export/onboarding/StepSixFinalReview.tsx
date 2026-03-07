@@ -41,7 +41,7 @@ export const StepSixFinalReview = ({ onBack, onSubmit }: Props) => {
       </div>
 
       {/* Tier Card */}
-      <div className="rounded-2xl border bg-gradient-to-r from-[#0F233F] to-[#132B4A] text-black p-8 shadow-lg">
+      <div className="rounded-2xl border bg-gradient-to-r from-[#0F233F] to-[#132B4A] text-gray-300 p-8 shadow-lg">
         <div className="flex items-center gap-2 mb-4">
           <Sparkles size={18} />
           <p className="text-sm uppercase text-accent opacity-80">

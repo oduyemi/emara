@@ -1075,6 +1075,152 @@
       "back": "Retour",
       "submit": "Soumettre et accéder au tableau de bord"
     }
+  },
+
+  "exportJourney": {
+    "sectionLabel": "Parcours d’exportation",
+    "title": "Où en êtes-vous dans votre parcours d’exportation ?",
+    "subtitle": "Que vous vous prépariez à exporter pour la première fois ou que vous développiez des opérations commerciales existantes, Emara propose des parcours adaptés pour soutenir une croissance mondiale durable.",
+    "newExporters": {
+      "title": "Nouveaux exportateurs",
+      "desc": "Développez votre préparation à l’export grâce à un accompagnement structuré couvrant la conformité, la logistique, la documentation et la préparation aux marchés internationaux.",
+      "cta": "Commencer votre feuille de route d’exportation"
+    },
+    "experiencedExporters": {
+      "title": "Exportateurs expérimentés",
+      "desc": "Renforcez vos opérations internationales, accédez à de nouveaux acheteurs et développez votre présence sur de nouveaux marchés grâce à l’écosystème Emara.",
+      "cta": "Faire évoluer votre stratégie d’exportation"
+    }
+  },
+
+  "featuredEvent": {
+    "label": "Événement à la une",
+    "title": "Mission commerciale ciblée vers Taïwan pour le commerce de détail et la restauration",
+    "date": "18—20 août 2026",
+    "location": "Nairobi, Kenya",
+    "description": "Le Kenya offre d'importantes opportunités de marché pour les exportateurs de produits agricoles et alimentaires. Cette mission commerciale met en relation des fournisseurs qualifiés avec des acheteurs, distributeurs et partenaires de vente au détail à la recherche de nouvelles relations d’approvisionnement.",
+    "cta": "Voir les détails de l’événement"
+  },
+
+  "successStories": {
+    "label": "Histoires de réussite",
+    "title": "Des exportateurs qui se développent grâce au commerce mondial",
+    "exportMarkets": "Marchés d’exportation",
+    "stories": [
+      {
+        "company": "Savanna Foods",
+        "country": "Nigéria",
+        "markets": "Allemagne, France, Pays-Bas",
+        "story": "Savanna Foods s’est développée sur plusieurs marchés européens après avoir complété le programme de préparation à l’export d’Emara.",
+        "image": "/images/success/naija.jpg"
+      },
+      {
+        "company": "Kilimanjaro Spices",
+        "country": "Tanzanie",
+        "markets": "Émirats arabes unis, Singapour",
+        "story": "Grâce aux programmes commerciaux d’Emara, Kilimanjaro Spices a obtenu des accords d’approvisionnement à long terme avec des distributeurs internationaux.",
+        "image": "/images/success/tanzania.jpg"
+      },
+      {
+        "company": "Golden Harvest Farms",
+        "country": "Kenya",
+        "markets": "Japon, Corée du Sud",
+        "story": "Golden Harvest Farms est entrée sur les marchés de détail asiatiques après avoir participé aux missions commerciales d’Emara.",
+        "image": "/images/success/kenya.jpg"
+      }
+    ]
+  },
+
+  "upcomingEvents": {
+    "label": "Événements de formation à venir",
+    "cta": "S’inscrire",
+    "events": [
+      {
+        "title": "Masterclass sur la documentation d’exportation",
+        "type": "Webinaire",
+        "date": "12 septembre 2026",
+        "link": "/suppliers/events/export-documentation-masterclass"
+      },
+      {
+        "title": "Préparer les marques alimentaires africaines pour la grande distribution européenne",
+        "type": "Séminaire",
+        "date": "3 octobre 2026",
+        "link": "/suppliers/events/eu-retail-preparation"
+      },
+      {
+        "title": "Stratégies d’entrée sur les marchés alimentaires asiatiques",
+        "type": "Webinaire",
+        "date": "21 octobre 2026",
+        "link": "/suppliers/events/asian-market-entry"
+      }
+    ]
+  },
+
+  "suppliersPathways": {
+    "label": "Parcours fournisseurs",
+    "title": "Trois façons de commencer votre parcours d’exportation",
+    "description": "Que vous développiez votre préparation à l’export, exploriez des opportunités internationales ou découvriez la plateforme Emara, ces parcours vous aident à franchir la prochaine étape vers le commerce international.",
+  
+    "academy": {
+      "title": "Apprendre l’exportation",
+      "desc": "Développez les connaissances nécessaires pour accéder aux marchés internationaux grâce à la formation à l’export, aux orientations réglementaires et à la préparation commerciale.",
+      "cta": "Visiter l’Académie de l’export"
+    },
+  
+    "events": {
+      "title": "Trouver un événement",
+      "desc": "Participez à des missions commerciales, des expositions et des rencontres dédiées à l’export pour connecter les producteurs africains avec des acheteurs internationaux.",
+      "cta": "Explorer les événements"
+    },
+  
+    "platform": {
+      "title": "Découvrir comment fonctionne Emara",
+      "desc": "Comprenez comment les fournisseurs renforcent leur crédibilité, présentent leurs produits et se connectent avec des acheteurs internationaux vérifiés grâce à la plateforme.",
+      "cta": "Découvrir la plateforme"
+    }
+  },
+
+  "suppliersIntro": {
+    "label": "Infrastructure d’exportation africaine",
+    "title": "Transformer l’exportation d’un défi en avantage compétitif",
+    "paragraph1": "Emara se consacre à renforcer la réussite des producteurs alimentaires africains sur les marchés internationaux. La plateforme offre une visibilité aux fournisseurs vérifiés, des outils de préparation à l’export et des connexions directes avec des acheteurs internationaux.",
+    "paragraph2": "Notre objectif est de professionnaliser la manière dont les exportateurs africains participent au commerce mondial. En renforçant la crédibilité, la conformité et la découverte des fournisseurs, Emara transforme le « E » d’Exportation d’un obstacle logistique en un avantage stratégique pour le continent.",
+    "promise": "Conçu pour soutenir la nouvelle génération d’exportateurs africains entrant dans les chaînes d’approvisionnement alimentaires mondiales.",
+    "pillars": {
+      "buyerAccess": {
+        "title": "Accès aux acheteurs internationaux",
+        "desc": "Connectez-vous avec des importateurs, distributeurs et équipes d’approvisionnement vérifiés sur les marchés internationaux."
+      },
+      "exportReadiness": {
+        "title": "Préparation à l’export",
+        "desc": "Améliorez la conformité, la documentation et la préparation aux certifications afin de répondre aux normes internationales."
+      },
+      "tradePartnerships": {
+        "title": "Partenariats commerciaux",
+        "desc": "Établissez des relations durables avec des acheteurs internationaux à la recherche de fournisseurs fiables."
+      },
+      "exportGrowth": {
+        "title": "Croissance des exportations",
+        "desc": "Allez au-delà des marchés régionaux et développez des opportunités de commerce international durables."
+      }
+    }
+  },
+
+  "newExporters": {
+    "badge": "Nouveau dans l’exportation ?",
+    "title": "Commencez votre parcours d’exportation mondiale",
+    "description": "Inscrivez-vous en tant que fournisseur et accédez à des acheteurs internationaux, à des ressources d’exportation et aux outils nécessaires pour vous développer à l’échelle mondiale.",
+    "cta": "Devenir exportateur",
+    "features": {
+      "expand": {
+        "title": "Se développer à l’international",
+        "desc": "Connectez-vous avec des acheteurs internationaux vérifiés activement à la recherche de fournisseurs."
+      },
+      "roadmap": {
+        "title": "Une feuille de route claire pour l’export",
+        "desc": "Suivez un guide structuré conçu pour les exportateurs débutants."
+      }
+    }
   }
 }
   

@@ -102,7 +102,7 @@ export const SupplierHeader = () => {
 
             <Link
               href="/suppliers/login"
-              className="text-black/80 hover:text-accent transition-colors"
+              className="text-accent hover:text-black transition-colors"
             >
               {t("signIn")}
             </Link>

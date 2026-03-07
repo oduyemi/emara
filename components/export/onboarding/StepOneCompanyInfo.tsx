@@ -65,7 +65,7 @@ export const StepOneCompanyInfo = ({ onNext }: { onNext: () => void }) => {
             />
 
             <InputField
-              label={t("stepOne.fields.tradingName")}
+              label={t("fields.tradingName")}
               value={form.tradingName}
               onChange={(v) => updateField("tradingName", v)}
             />

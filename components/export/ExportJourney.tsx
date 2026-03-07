@@ -1,139 +1,91 @@
 "use client"
 
+import { useTranslations } from "next-intl"
 import Link from "next/link"
-import { motion } from "framer-motion"
-import { Compass, TrendingUp, ArrowRight } from "lucide-react"
+import { CheckCircle2, Compass, TrendingUp } from "lucide-react"
+
+const stepsData = [
+  {
+    id: 1,
+    key: "newExporters",
+    icon: <Compass size={20} />,
+    link: "/suppliers/roadmap/new-exporters",
+  },
+  {
+    id: 2,
+    key: "experiencedExporters",
+    icon: <TrendingUp size={20} />,
+    link: "/suppliers/roadmap/exporters",
+  },
+]
 
 export const ExportJourney = () => {
+  const t = useTranslations("exportJourney")
+
   return (
-    <section className="relative py-40 px-6 overflow-hidden bg-[var(--color-bg)]">
+    <section className="py-16 px-6 bg-gray-50">
+      <div className="max-w-5xl mx-auto">
 
-      {/* Ambient Lights */}
-      <div className="absolute -top-48 left-[-200px] w-[800px] h-[800px] bg-[var(--color-accent-soft)]/20 blur-[220px] rounded-full"/>
-      <div className="absolute bottom-[-260px] right-[-200px] w-[800px] h-[800px] bg-[var(--color-primary)]/10 blur-[240px] rounded-full"/>
+        {/* Header */}
+        <div className="text-center mb-12">
+          <p className="text-xs uppercase tracking-widest text-accent font-medium">
+            {t("sectionLabel")}
+          </p>
+          <h2 className="text-3xl font-bold text-secondary mt-2">
+            {t("title")}
+          </h2>
+          <p className="text-gray-600 mt-3 max-w-xl mx-auto">
+            {t("subtitle")}
+          </p>
+        </div>
 
-      {/* subtle grid texture */}
-      <div className="absolute inset-0 opacity-[0.035] bg-[radial-gradient(circle_at_1px_1px,#000_1px,transparent_0)] bg-[size:38px_38px]" />
+        {/* Stepper */}
+        <div className="flex flex-col md:flex-row md:space-x-6 relative">
+          {stepsData.map((step, idx) => {
 
-      <div className="relative max-w-7xl mx-auto">
+            const isLast = idx === stepsData.length - 1
 
-        {/* Section Shell */}
-        <div className="border border-[var(--color-surface-border)] rounded-[32px] px-14 py-20 bg-white/40 backdrop-blur-xl">
+            return (
+              <div key={step.id} className="relative flex-1 mb-8 md:mb-0">
+                
+                {/* Connector Line */}
+                {!isLast && (
+                  <div className="hidden md:block absolute top-10 right-0 w-full h-0.5 bg-gray-300 z-0" />
+                )}
 
-          {/* Header */}
-          <div className="max-w-2xl mb-24">
+                {/* Step Card */}
+                <div className="relative z-10 bg-white border rounded-2xl p-6 shadow-sm hover:shadow-md transition duration-300 group">
+                  
+                  {/* Icon */}
+                  <div className="flex items-center justify-center w-12 h-12 bg-accent/10 rounded-full text-accent mb-4 group-hover:scale-105 transition-transform">
+                    {step.icon}
+                  </div>
 
-            <p className="text-xs uppercase tracking-[0.35em] text-accent mb-6 font-medium">
-              Export Journey
-            </p>
+                  {/* Title */}
+                  <h3 className="font-semibold text-secondary text-lg mb-2">
+                    {t(`${step.key}.title`)}
+                  </h3>
 
-            <h2 className="text-[40px] font-semibold text-secondary leading-tight mb-6">
-              Where are you in your export journey?
-            </h2>
+                  {/* Description */}
+                  <p className="text-gray-600 text-sm mb-4">
+                    {t(`${step.key}.desc`)}
+                  </p>
 
-            <p className="text-muted leading-relaxed text-[16px]">
-              Whether you are preparing to export for the first time or expanding
-              existing trade operations, Emara provides tailored pathways
-              designed to support sustainable global growth.
-            </p>
-
-          </div>
-
-          {/* Journey Flow */}
-          <div className="relative grid md:grid-cols-2 gap-16">
-
-            {/* progression line */}
-            <div className="hidden md:block absolute top-1/2 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[var(--color-surface-border)] to-transparent"/>
-
-            <JourneyCard
-              icon={<Compass size={24} />}
-              title="New Exporters"
-              desc="Build export readiness through structured guidance covering compliance, logistics, documentation, and global market preparation."
-              link="/suppliers/roadmap/new-exporters"
-              cta="Start Your Export Roadmap"
-            />
-
-            <JourneyCard
-              icon={<TrendingUp size={24} />}
-              title="Experienced Exporters"
-              desc="Strengthen your international operations, access new buyers, and expand into additional markets through the Emara ecosystem."
-              link="/suppliers/roadmap/exporters"
-              cta="Advance Your Export Strategy"
-            />
-
-          </div>
-
+                  {/* CTA */}
+                  <Link
+                    href={step.link}
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-white btn-primary px-4 py-2 rounded-lg hover:bg-accent/90 transition"
+                  >
+                    {t(`${step.key}.cta`)}
+                    <CheckCircle2 size={16} />
+                  </Link>
+                </div>
+              </div>
+            )
+          })}
         </div>
 
       </div>
-
     </section>
-  )
-}
-
-const JourneyCard = ({
-  icon,
-  title,
-  desc,
-  link,
-  cta
-}: any) => {
-
-  return (
-
-    <motion.div
-      whileHover={{ y: -16 }}
-      transition={{ duration: .45, ease: [0.22,1,0.36,1] }}
-      className="group relative rounded-3xl"
-    >
-
-      {/* gradient border */}
-      <div className="absolute inset-0 rounded-3xl p-[1px] bg-gradient-to-br from-[var(--color-accent-soft)]/50 via-white/40 to-transparent">
-
-        {/* card surface */}
-        <div className="relative rounded-3xl bg-white/70 backdrop-blur-xl p-12 overflow-hidden transition-all duration-500 group-hover:bg-white/80">
-
-          {/* spotlight */}
-          <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-700 bg-[radial-gradient(circle_at_20%_20%,rgba(255,255,255,0.45),transparent_60%)]"/>
-
-          {/* floating orb */}
-          <motion.div
-            animate={{ y: [0, -8, 0] }}
-            transition={{ duration: 6, repeat: Infinity }}
-            className="absolute -top-6 -right-6 w-24 h-24 bg-[var(--color-accent-soft)]/20 blur-2xl rounded-full"
-          />
-
-          <div className="relative">
-
-            {/* icon */}
-            <div className="w-16 h-16 rounded-2xl flex items-center justify-center bg-gradient-to-br from-[var(--color-surface)] to-[var(--color-accent-soft)]/30 text-secondary mb-8 shadow-sm transition group-hover:scale-105">
-              {icon}
-            </div>
-
-            <h3 className="text-2xl font-semibold text-secondary mb-4">
-              {title}
-            </h3>
-
-            <p className="text-muted leading-relaxed mb-10 text-[15.5px] max-w-md">
-              {desc}
-            </p>
-
-            {/* CTA */}
-            <Link
-              href={link}
-              className="inline-flex items-center text-sm font-semibold text-secondary bg-[var(--color-accent-soft)] px-6 py-3 rounded-lg hover:bg-[var(--color-accent-soft)]/80 transition"
-            >
-              {cta}
-              <ArrowRight className="ml-2 transition-transform group-hover:translate-x-1" size={18}/>
-            </Link>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </motion.div>
-
   )
 }

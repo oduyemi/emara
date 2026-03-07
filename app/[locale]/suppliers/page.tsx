@@ -8,6 +8,7 @@ import NewExporters from "@/components/export/NewExporters";
 import { SuppliersPathways } from "@/components/export/Pathways";
 import { SuccessStories } from "@/components/export/SuccessStories";
 import { UpcomingEvents } from "@/components/export/UpcomingEvents";
+import { SupplierHeader } from "@/components/navigation/suppliers/Header";
 
 
 
@@ -16,6 +17,7 @@ import { UpcomingEvents } from "@/components/export/UpcomingEvents";
 export default function Exporters() {
   return (
     <div>
+      <SupplierHeader />
       <ExportHero />
       <SuppliersIntro />
       <SuppliersPathways />

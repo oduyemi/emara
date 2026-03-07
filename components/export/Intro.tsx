@@ -1,7 +1,7 @@
-"use client"
-
-import { Globe, GraduationCap, Handshake, TrendingUp } from "lucide-react"
-import { motion } from "framer-motion"
+"use client";
+import { Globe, GraduationCap, Handshake, TrendingUp } from "lucide-react";
+import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 const container = {
   hidden: { opacity: 0 },
@@ -27,6 +27,8 @@ const item = {
 }
 
 export const SuppliersIntro = () => {
+  const t = useTranslations("suppliersIntro")
+
   return (
     <section className="relative py-28 px-6 overflow-hidden">
 
@@ -56,34 +58,22 @@ export const SuppliersIntro = () => {
             variants={item}
             className="text-xs text-accent uppercase tracking-[0.2em] mb-5"
           >
-            African Export Infrastructure
+            {t("label")}
           </motion.p>
 
           <motion.h2
             variants={item}
             className="text-3xl md:text-4xl font-semibold text-[#0F233F] leading-tight mb-6"
           >
-            Turning export from a challenge into a competitive advantage
+            {t("title")}
           </motion.h2>
 
           <motion.div
             variants={item}
             className="space-y-5 text-gray-600 leading-relaxed text-[15px] max-w-xl"
           >
-            <p>
-              Emara is dedicated to expanding the success of African food
-              producers in international markets. The platform provides
-              verified supplier visibility, export readiness tools, and
-              direct connections to global buyers.
-            </p>
-
-            <p>
-              Our goal is to professionalize the way African exporters
-              participate in global trade. By strengthening credibility,
-              compliance, and supplier discovery, Emara transforms the
-              <strong> E in Export </strong> from a logistical hurdle into
-              a strategic advantage for the continent.
-            </p>
+            <p>{t("paragraph1")}</p>
+            <p>{t("paragraph2")}</p>
           </motion.div>
 
           {/* Promise card */}
@@ -94,8 +84,7 @@ export const SuppliersIntro = () => {
             className="mt-12 surface border border-gray-200 rounded-xl p-6 shadow-sm max-w-sm backdrop-blur-sm"
           >
             <p className="text-sm text-gray-600">
-              Built to support the next generation of African exporters
-              entering global food supply chains.
+              {t("promise")}
             </p>
           </motion.div>
 
@@ -109,26 +98,26 @@ export const SuppliersIntro = () => {
 
           <Pillar
             icon={<Globe size={22} />}
-            title="Global Buyer Access"
-            desc="Connect with verified importers, distributors, and procurement teams across international markets."
+            title={t("pillars.buyerAccess.title")}
+            desc={t("pillars.buyerAccess.desc")}
           />
 
           <Pillar
             icon={<GraduationCap size={22} />}
-            title="Export Readiness"
-            desc="Improve compliance, documentation, and certification readiness to meet global standards."
+            title={t("pillars.exportReadiness.title")}
+            desc={t("pillars.exportReadiness.desc")}
           />
 
           <Pillar
             icon={<Handshake size={22} />}
-            title="Trade Partnerships"
-            desc="Establish long-term relationships with international buyers seeking trusted suppliers."
+            title={t("pillars.tradePartnerships.title")}
+            desc={t("pillars.tradePartnerships.desc")}
           />
 
           <Pillar
             icon={<TrendingUp size={22} />}
-            title="Export Growth"
-            desc="Expand beyond regional markets and build sustainable international trade opportunities."
+            title={t("pillars.exportGrowth.title")}
+            desc={t("pillars.exportGrowth.desc")}
           />
 
         </motion.div>
@@ -155,7 +144,6 @@ const Pillar = ({
       className="group relative bg-white border border-gray-200 rounded-xl p-6 overflow-hidden"
     >
 
-      {/* animated gradient border */}
       <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-gradient-to-br from-accent/20 via-transparent to-[#0F233F]/10" />
 
       <div className="relative">

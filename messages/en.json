@@ -1053,6 +1053,152 @@
       "back": "Back",
       "submit": "Submit & Go to Dashboard"
     }
+  },
+
+  "exportJourney": {
+    "sectionLabel": "Export Journey",
+    "title": "Where are you in your export journey?",
+    "subtitle": "Whether you are preparing to export for the first time or expanding existing trade operations, Emara provides tailored pathways designed to support sustainable global growth.",
+    "newExporters": {
+      "title": "New Exporters",
+      "desc": "Build export readiness through structured guidance covering compliance, logistics, documentation, and global market preparation.",
+      "cta": "Start Your Export Roadmap"
+    },
+    "experiencedExporters": {
+      "title": "Experienced Exporters",
+      "desc": "Strengthen your international operations, access new buyers, and expand into additional markets through the Emara ecosystem.",
+      "cta": "Advance Your Export Strategy"
+    }
+  },
+
+  "featuredEvent": {
+    "label": "Featured Event",
+    "title": "Focused Trade Mission to Taiwan for Retail and Foodservice",
+    "date": "August 18—20, 2026",
+    "location": "Nairobi, Kenya",
+    "description": "Kenya offers significant market opportunities for exporters of agricultural and food products. This trade mission connects qualified suppliers with buyers, distributors, and retail partners exploring new sourcing relationships.",
+    "cta": "View Event Details"
+  },
+
+  "successStories": {
+    "label": "Success Stories",
+    "title": "Exporters growing through global trade",
+    "exportMarkets": "Export markets",
+    "stories": [
+      {
+        "company": "Savanna Foods",
+        "country": "Nigeria",
+        "markets": "Germany, France, Netherlands",
+        "story": "Savanna Foods expanded into multiple European markets after completing Emara's export readiness program.",
+        "image": "/images/success/naija.jpg"
+      },
+      {
+        "company": "Kilimanjaro Spices",
+        "country": "Tanzania",
+        "markets": "UAE, Singapore",
+        "story": "Through Emara's trade programs, Kilimanjaro Spices secured long-term supply agreements with international distributors.",
+        "image": "/images/success/tanzania.jpg"
+      },
+      {
+        "company": "Golden Harvest Farms",
+        "country": "Kenya",
+        "markets": "Japan, South Korea",
+        "story": "Golden Harvest Farms entered Asian retail markets after participating in Emara’s trade missions.",
+        "image": "/images/success/kenya.jpg"
+      }
+    ]
+  },
+
+  "upcomingEvents": {
+    "label": "Upcoming Learning Events",
+    "cta": "Register",
+    "events": [
+      {
+        "title": "Export Documentation Masterclass",
+        "type": "Webinar",
+        "date": "September 12, 2026",
+        "link": "/suppliers/events/export-documentation-masterclass"
+      },
+      {
+        "title": "Preparing African Food Brands for EU Retail",
+        "type": "Seminar",
+        "date": "October 3, 2026",
+        "link": "/suppliers/events/eu-retail-preparation"
+      },
+      {
+        "title": "Market Entry Strategies for Asian Food Markets",
+        "type": "Webinar",
+        "date": "October 21, 2026",
+        "link": "/suppliers/events/asian-market-entry"
+      }
+    ]
+  },
+
+  "suppliersPathways": {
+    "label": "Supplier Pathways",
+    "title": "Three ways to begin your export journey",
+    "description": "Whether you are building export readiness, exploring global opportunities, or understanding the Emara platform, these pathways help you take the next step toward international trade.",
+
+    "academy": {
+      "title": "Learn About Exporting",
+      "desc": "Develop the knowledge required to enter international markets through export education, regulatory guidance, and trade preparation.",
+      "cta": "Visit Export Academy"
+    },
+
+    "events": {
+      "title": "Find an Event",
+      "desc": "Participate in trade missions, exhibitions, and export-focused gatherings designed to connect African producers with global buyers.",
+      "cta": "Explore Events"
+    },
+
+    "platform": {
+      "title": "See How Emara Works",
+      "desc": "Understand how suppliers build credibility, present products, and connect with verified international buyers through the platform.",
+      "cta": "Learn the Platform"
+    }
+  },
+
+  "suppliersIntro": {
+    "label": "African Export Infrastructure",
+    "title": "Turning export from a challenge into a competitive advantage",
+    "paragraph1": "Emara is dedicated to expanding the success of African food producers in international markets. The platform provides verified supplier visibility, export readiness tools, and direct connections to global buyers.",
+    "paragraph2": "Our goal is to professionalize the way African exporters participate in global trade. By strengthening credibility, compliance, and supplier discovery, Emara transforms the E in Export from a logistical hurdle into a strategic advantage for the continent.",
+    "promise": "Built to support the next generation of African exporters entering global food supply chains.",
+    "pillars": {
+      "buyerAccess": {
+        "title": "Global Buyer Access",
+        "desc": "Connect with verified importers, distributors, and procurement teams across international markets."
+      },
+      "exportReadiness": {
+        "title": "Export Readiness",
+        "desc": "Improve compliance, documentation, and certification readiness to meet global standards."
+      },
+      "tradePartnerships": {
+        "title": "Trade Partnerships",
+        "desc": "Establish long-term relationships with international buyers seeking trusted suppliers."
+      },
+      "exportGrowth": {
+        "title": "Export Growth",
+        "desc": "Expand beyond regional markets and build sustainable international trade opportunities."
+      }
+    }
+  },
+
+  "newExporters": {
+    "badge": "New to Exporting?",
+    "title": "Start Your Global Export Journey",
+    "description": "Register as a supplier and access international buyers, export resources, and the tools needed to grow globally.",
+    "cta": "Become an Exporter",
+    "features": {
+      "expand": {
+        "title": "Expand Internationally",
+        "desc": "Connect with verified global buyers actively looking for suppliers."
+      },
+      "roadmap": {
+        "title": "Clear Export Roadmap",
+        "desc": "Follow a structured guide designed for first-time exporters."
+      }
+    }
   }
 }
   

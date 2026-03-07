@@ -3,35 +3,21 @@
 import { useEffect, useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { ChevronLeft, ChevronRight } from "lucide-react"
+import { useTranslations } from "next-intl"
 
-const stories = [
-  {
-    company: "Savanna Foods",
-    country: "Nigeria",
-    markets: "Germany, France, Netherlands",
-    story:
-      "Savanna Foods expanded into multiple European markets after completing Emara's export readiness program.",
-    image: "/images/success/naija.jpg"
-  },
-  {
-    company: "Kilimanjaro Spices",
-    country: "Tanzania",
-    markets: "UAE, Singapore",
-    story:
-      "Through Emara's trade programs, Kilimanjaro Spices secured long-term supply agreements with international distributors.",
-    image: "/images/success/tanzania.jpg"
-  },
-  {
-    company: "Golden Harvest Farms",
-    country: "Kenya",
-    markets: "Japan, South Korea",
-    story:
-      "Golden Harvest Farms entered Asian retail markets after participating in Emara’s trade missions.",
-    image: "/images/success/kenya.jpg"
-  }
-]
+type Story = {
+  company: string
+  country: string
+  markets: string
+  story: string
+  image: string
+}
 
 export const SuccessStories = () => {
+
+  const t = useTranslations("successStories")
+
+  const stories = t.raw("stories") as Story[]
 
   const [index, setIndex] = useState(0)
   const [paused, setPaused] = useState(false)
@@ -62,7 +48,6 @@ export const SuccessStories = () => {
 
     <section className="relative py-28 px-6 bg-[var(--color-surface)] overflow-hidden">
 
-      {/* ambient glow */}
       <div className="absolute -top-40 left-0 w-[700px] h-[700px] bg-[var(--color-accent-soft)]/10 blur-[160px] rounded-full"/>
 
       <div className="max-w-7xl mx-auto">
@@ -71,11 +56,11 @@ export const SuccessStories = () => {
         <div className="max-w-xl mb-20">
 
           <p className="text-xs uppercase tracking-[0.25em] text-accent mb-4">
-            Success Stories
+            {t("label")}
           </p>
 
           <h2 className="text-3xl md:text-4xl font-semibold text-secondary">
-            Exporters growing through global trade
+            {t("title")}
           </h2>
 
         </div>
@@ -104,6 +89,7 @@ export const SuccessStories = () => {
                 <img
                   src={story.image}
                   className="absolute inset-0 w-full h-full object-cover"
+                  alt={story.company}
                 />
 
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"/>
@@ -128,7 +114,7 @@ export const SuccessStories = () => {
                   </p>
 
                   <p className="text-sm text-accent mt-1">
-                    Export markets: {story.markets}
+                    {t("exportMarkets")}: {story.markets}
                   </p>
 
                 </div>

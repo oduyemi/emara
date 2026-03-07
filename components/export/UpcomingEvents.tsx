@@ -3,34 +3,23 @@
 import { motion } from "framer-motion"
 import { CalendarDays, Video } from "lucide-react"
 import Link from "next/link"
+import { useTranslations } from "next-intl"
 
-const events = [
-  {
-    title: "Export Documentation Masterclass",
-    type: "Webinar",
-    date: "September 12, 2026",
-    link: "/suppliers/events/export-documentation-masterclass"
-  },
-  {
-    title: "Preparing African Food Brands for EU Retail",
-    type: "Seminar",
-    date: "October 3, 2026",
-    link: "/suppliers/events/eu-retail-preparation"
-  },
-  {
-    title: "Market Entry Strategies for Asian Food Markets",
-    type: "Webinar",
-    date: "October 21, 2026",
-    link: "/suppliers/events/asian-market-entry"
-  }
-]
+type Event = {
+  title: string
+  type: string
+  date: string
+  link: string
+}
 
 export const UpcomingEvents = () => {
+
+  const t = useTranslations("upcomingEvents")
+
+  const events = t.raw("events") as Event[]
+
   return (
     <section className="relative py-24 px-6 bg-[var(--color-bg)] overflow-hidden">
-
-      {/* ambient background */}
-      {/* <div className="absolute -top-32 left-0 w-[500px] h-[500px] bg-[var(--color-accent-soft)]/10 rounded-full blur-[140px]" /> */}
 
       <div className="max-w-6xl mx-auto relative">
 
@@ -38,12 +27,8 @@ export const UpcomingEvents = () => {
         <div className="mb-16 max-w-xl">
 
           <p className="text-xs uppercase tracking-[0.2em] text-accent mb-4">
-            Upcoming Learning Events
+            {t("label")}
           </p>
-
-          {/* <h2 className="text-3xl md:text-4xl font-semibold text-secondary leading-tight">
-            Webinars and seminars for exporters
-          </h2> */}
 
         </div>
 
@@ -62,7 +47,6 @@ export const UpcomingEvents = () => {
               className="group relative rounded-xl border border-[var(--color-surface-border)] bg-[var(--color-surface)] p-7 shadow-sm hover:shadow-lg transition-all duration-500 overflow-hidden"
             >
 
-              {/* hover lighting */}
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-700 bg-gradient-to-br from-[var(--color-accent-soft)]/10 to-transparent" />
 
               <div className="relative">
@@ -92,7 +76,7 @@ export const UpcomingEvents = () => {
                   href={event.link}
                   className="inline-flex items-center text-sm font-medium text-accent group-hover:translate-x-1 transition"
                 >
-                  Register
+                  {t("cta")}
                   <span className="ml-2 transition group-hover:translate-x-1">
                     →
                   </span>

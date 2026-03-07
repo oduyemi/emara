@@ -1,8 +1,8 @@
-"use client"
-
-import Link from "next/link"
-import { motion } from "framer-motion"
-import { GraduationCap, CalendarDays, Compass } from "lucide-react"
+"use client";
+import Link from "next/link";
+import { motion } from "framer-motion";
+import { GraduationCap, CalendarDays, Compass } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 const container = {
   hidden: { opacity: 0 },
@@ -25,10 +25,12 @@ const item = {
 }
 
 export const SuppliersPathways = () => {
+
+  const t = useTranslations("suppliersPathways")
+
   return (
     <section className="relative py-28 px-6 bg-[var(--color-bg)] overflow-hidden">
 
-      {/* ambient gradient lights */}
       <div className="absolute -top-40 -left-40 w-[600px] h-[600px] bg-[var(--color-accent-soft)]/10 blur-[140px] rounded-full" />
       <div className="absolute bottom-[-200px] right-[-200px] w-[700px] h-[700px] bg-[var(--color-primary)]/10 blur-[160px] rounded-full" />
 
@@ -44,17 +46,15 @@ export const SuppliersPathways = () => {
         <motion.div variants={item} className="max-w-2xl mb-20">
 
           <p className="text-xs uppercase tracking-[0.25em] text-accent mb-5">
-            Supplier Pathways
+            {t("label")}
           </p>
 
           <h2 className="text-3xl md:text-4xl font-semibold text-secondary mb-5 leading-tight">
-            Three ways to begin your export journey
+            {t("title")}
           </h2>
 
           <p className="text-muted text-[15px] leading-relaxed">
-            Whether you are building export readiness, exploring global
-            opportunities, or understanding the Emara platform, these
-            pathways help you take the next step toward international trade.
+            {t("description")}
           </p>
 
         </motion.div>
@@ -67,26 +67,26 @@ export const SuppliersPathways = () => {
 
           <PathCard
             icon={<GraduationCap size={26} />}
-            title="Learn About Exporting"
-            desc="Develop the knowledge required to enter international markets through export education, regulatory guidance, and trade preparation."
+            title={t("academy.title")}
+            desc={t("academy.desc")}
             link="/suppliers/academy"
-            cta="Visit Export Academy"
+            cta={t("academy.cta")}
           />
 
           <PathCard
             icon={<CalendarDays size={26} />}
-            title="Find an Event"
-            desc="Participate in trade missions, exhibitions, and export-focused gatherings designed to connect African producers with global buyers."
+            title={t("events.title")}
+            desc={t("events.desc")}
             link="/suppliers/events"
-            cta="Explore Events"
+            cta={t("events.cta")}
           />
 
           <PathCard
             icon={<Compass size={26} />}
-            title="See How Emara Works"
-            desc="Understand how suppliers build credibility, present products, and connect with verified international buyers through the platform."
+            title={t("platform.title")}
+            desc={t("platform.desc")}
             link="/suppliers/how-it-works"
-            cta="Learn the Platform"
+            cta={t("platform.cta")}
           />
 
         </motion.div>
@@ -118,15 +118,12 @@ const PathCard = ({
       className="group relative rounded-2xl border border-[var(--color-surface-border)] bg-white p-10 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500"
     >
 
-      {/* subtle glow on hover */}
       <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-700 bg-gradient-to-br from-[var(--color-accent-soft)]/10 to-transparent" />
 
-      {/* hover border glow */}
       <div className="absolute inset-0 rounded-2xl ring-1 ring-transparent group-hover:ring-[var(--color-accent)]/20 transition duration-500" />
 
       <div className="relative">
 
-        {/* Icon */}
         <motion.div
           whileHover={{ scale: 1.1 }}
           transition={{ type: "spring", stiffness: 280 }}
@@ -148,11 +145,9 @@ const PathCard = ({
           className="inline-flex items-center text-sm font-medium text-accent group-hover:translate-x-1 transition"
         >
           {cta}
-
           <span className="ml-2 transition group-hover:translate-x-1">
             →
           </span>
-
         </Link>
 
       </div>

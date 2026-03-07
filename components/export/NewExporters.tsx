@@ -2,9 +2,11 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight, Globe, TrendingUp } from "lucide-react";
-
+import { useTranslations } from "next-intl";
 
 export default function NewExporters() {
+  const t = useTranslations("newExporters");
+
   return (
     <section className="relative py-20 overflow-hidden bg-gradient-to-b from-slate-50 to-white">
       
@@ -25,23 +27,22 @@ export default function NewExporters() {
             <div>
               <span className="inline-flex items-center gap-2 text-accent font-medium text-sm mb-5">
                 <Globe size={16} />
-                New to Exporting?
+                {t("badge")}
               </span>
 
               <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-6">
-                Start Your Global Export Journey
+                {t("title")}
               </h2>
 
               <p className="text-slate-600 text-lg mb-8 max-w-xl">
-                Register as a supplier and access international buyers,
-                export resources, and the tools needed to grow globally.
+                {t("description")}
               </p>
 
               <Link
                 href="/suppliers/register"
                 className="inline-flex items-center gap-3 btn-primary font-semibold px-7 py-4 rounded-xl hover:bg-indigo-700 transition-all shadow-md hover:shadow-lg"
               >
-                Become an Exporter
+                {t("cta")}
                 <ArrowRight size={18} />
               </Link>
             </div>
@@ -53,10 +54,10 @@ export default function NewExporters() {
                 <TrendingUp className="text-secondary mt-1" />
                 <div>
                   <h4 className="font-semibold text-slate-900">
-                    Expand Internationally
+                    {t("features.expand.title")}
                   </h4>
                   <p className="text-sm text-slate-600">
-                    Connect with verified global buyers actively looking for suppliers.
+                    {t("features.expand.desc")}
                   </p>
                 </div>
               </div>
@@ -65,10 +66,10 @@ export default function NewExporters() {
                 <Globe className="text-secondary mt-1" />
                 <div>
                   <h4 className="font-semibold text-slate-900">
-                    Clear Export Roadmap
+                    {t("features.roadmap.title")}
                   </h4>
                   <p className="text-sm text-slate-600">
-                    Follow a structured guide designed for first-time exporters.
+                    {t("features.roadmap.desc")}
                   </p>
                 </div>
               </div>
