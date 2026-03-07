@@ -23,7 +23,7 @@ export const SupplierOnboardingHero = () => {
       </div>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#071423]/95 via-[#0E2A47]/90 to-[#0E2A47]/70" />
+      {/* <div className="absolute inset-0 bg-gradient-to-r from-[#071423]/95 via-[#0E2A47]/90 to-[#0E2A47]/70" /> */}
 
       {/* Accent glow */}
       <div className="absolute -top-40 right-0 w-[500px] h-[500px] bg-accent/20 blur-[120px] rounded-full" />
