@@ -52,13 +52,13 @@ export function SupplierTopHeader() {
           `}
         >
             <Link
-                href={`/${locale}/`}
+                href={`/`}
                 className="hover:text-accent transition"
             >
                 {t("home")}
           </Link>
           <Link
-            href={`/${locale}/home`}
+            href={`/${locale}/about`}
             className="hover:text-accent transition"
           >
             {t("about")}
