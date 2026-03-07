@@ -4,7 +4,7 @@ import { Check, Crown } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 type Props = {
-  onNext: (plan: string) => void
+  onNext: () => void
   onBack: () => void
 }
 

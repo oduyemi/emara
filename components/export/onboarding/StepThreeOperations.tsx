@@ -10,7 +10,6 @@ type Props = {
 
 export const StepThreeOperations = ({ onNext, onBack }: Props) => {
   const t = useTranslations("stepThree")
-
   const [capacity, setCapacity] = useState("")
   const [leadTime, setLeadTime] = useState("")
   const [workforce, setWorkforce] = useState("")
