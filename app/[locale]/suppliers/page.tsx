@@ -17,7 +17,6 @@ import { SupplierHeader } from "@/components/navigation/suppliers/Header";
 export default function Exporters() {
   return (
     <div>
-      <SupplierHeader />
       <ExportHero />
       <SuppliersIntro />
       <SuppliersPathways />

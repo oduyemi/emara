@@ -53,11 +53,11 @@
     "explore": "Explore",
     "industry": {
       "title": "Programs",
-      "items": ["Our Programs", "Export Readiness", "Webinars", "Seminars", "Success Stories"]
+      "items": ["Our Programs", "Export Readiness", "Virtual Consultation", "Trade Missions", "International Showcases"]
     },
     "country": {
       "title": "Academy",
-      "items": ["Exporter Education", "Export Essentials Online", "Lead Qualifications", "US Foodlink", "Export Roadmap"]
+      "items": ["Webinars", "Workshops", "Export Essentials Online", "Market & Country Profiles", "Foodcast", "Export Roadmap"]
     },
     "verification": {
       "title": "Verification",

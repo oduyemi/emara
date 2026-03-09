@@ -52,22 +52,23 @@
   "ExploreMenu": {
     "explore": "Explorer",
     "industry": {
-      "title": "Explorer",
+      "title": "Programmes",
       "items": [
         "Nos programmes",
         "Préparation à l’export",
-        "Webinaires",
-        "Séminaires",
-        "Histoires de réussite"
+        "Consultation virtuelle",
+        "Missions commerciales",
+        "Vitrines internationales"
       ]
     },
     "country": {
       "title": "Académie",
       "items": [
-        "Formation des exportateurs",
+        "Webinaires",
+        "Ateliers",
         "Les bases de l’export en ligne",
-        "Qualification des prospects",
-        "US Foodlink",
+        "Profils de marchés et de pays",
+        "Foodcast",
         "Feuille de route pour l’export"
       ]
     },
