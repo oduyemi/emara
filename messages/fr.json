@@ -1336,6 +1336,117 @@
         "text": "Selon vos résultats, Emara vous recommandera des programmes, des formations et des actions spécifiques pour renforcer votre préparation à l’export."
       }
     }
+  },
+
+  "webinars": {
+    "hero": {
+      "badge": "Académie d’export",
+      "title": "Apprenez à exporter en toute confiance",
+      "description": "Participez à des webinaires animés par des experts pour aider les exportateurs à naviguer sur les marchés internationaux, comprendre les exigences de conformité et saisir les opportunités commerciales mondiales.",
+      "primaryCTA": "Parcourir les webinaires",
+      "secondaryCTA": "Voir les enregistrements",
+  
+      "nextWebinar": {
+        "label": "Prochain webinaire en direct",
+        "title": "Entrer sur le marché alimentaire de l’UE",
+        "date": "24 mai • 60 minutes"
+      }
+    },
+  
+    "featured": {
+      "label": "Webinaire en vedette",
+      "title": "Entrer sur le marché alimentaire de l’UE",
+      "description": "Découvrez les réglementations, la conformité et les attentes des acheteurs nécessaires pour exporter avec succès des produits alimentaires vers l’Union européenne.",
+      "date": "28 mars",
+      "duration": "60 minutes",
+      "cta": "Inscrivez-vous maintenant"
+    },
+  
+    "upcoming": {
+      "title": "Webinaires à venir",
+      "items": {
+        "exportEU": {
+          "title": "Exporter des produits biologiques vers l’Europe"
+        },
+        "compliance": {
+          "title": "Comprendre la conformité alimentaire mondiale"
+        },
+        "supplyChain": {
+          "title": "Construire des chaînes d’approvisionnement prêtes pour l’export"
+        }
+      }
+    },
+  
+    "library": {
+      "title": "Bibliothèque de webinaires",
+      "items": {
+        "docs": {
+          "title": "Introduction à la documentation d’export"
+        },
+        "pricing": {
+          "title": "Comment fixer le prix pour les marchés internationaux"
+        }
+      }
+    },
+  
+    "cta": {
+      "title": "Ne manquez jamais un webinaire",
+      "description": "Abonnez-vous pour recevoir des notifications sur les prochaines sessions de formation à l’export et les nouveaux webinaires.",
+      "button": "S’abonner aux mises à jour"
+    }
+  },
+
+  "workshops": {
+    "hero": {
+      "badge": "Académie d’export",
+      "title": "Ateliers pratiques sur l’export",
+      "subtitle": "Des sessions de formation pratiques conçues pour doter les exportateurs des outils, des connaissances et des stratégies nécessaires pour réussir sur les marchés internationaux.",
+      "primaryCTA": "Voir les ateliers à venir",
+      "secondaryCTA": "Explorer les parcours de formation",
+      "smallGroup": "Formation en petits groupes",
+      "smallGroupDesc": "Nos ateliers sont volontairement organisés en petits groupes afin de garantir un accompagnement personnalisé et des échanges constructifs."
+    },
+    "highlights": {
+      "items": {
+        "interactive": {
+          "title": "Apprentissage interactif",
+          "desc": "Participez à des sessions pratiques, des études de cas et des exercices collaboratifs conçus pour développer de véritables compétences en export."
+        },
+        "global": {
+          "title": "Perspectives des marchés mondiaux",
+          "desc": "Obtenez des informations sur les marchés internationaux, les attentes des acheteurs et les opportunités commerciales."
+        },
+        "compliance": {
+          "title": "Conformité et certification",
+          "desc": "Comprenez les exigences réglementaires, les certifications et la documentation nécessaires pour réussir à l’export."
+        }
+      }
+    },
+    "tracks": {
+      "title": "Parcours d’ateliers",
+      "items": {
+        "export": "Préparation à l’export et stratégie",
+        "market": "Entrée sur le marché et engagement des acheteurs",
+        "compliance": "Conformité et certification"
+      }
+    },
+    "upcoming": {
+      "title": "Ateliers à venir",
+      "items": {
+        "readiness": "Bootcamp de préparation à l’export",
+        "market": "Entrer sur les marchés mondiaux",
+        "compliance": "Masterclass sur la conformité à l’export"
+      }
+    },
+    "benefits": {
+      "title": "Pourquoi participer à nos ateliers",
+      "description": "Nos ateliers combinent l’expertise d’instructeurs, des exercices pratiques et des analyses réelles du commerce international pour doter les exportateurs des outils nécessaires pour réussir à l’échelle mondiale."
+    },
+    "cta": {
+      "title": "Prêt à développer vos compétences en export ?",
+      "subtitle": "Participez à notre prochain atelier et acquérez des connaissances pratiques auprès d’experts du secteur.",
+      "button": "S’inscrire à un atelier"
+    }
   }
 }
   

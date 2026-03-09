@@ -51,21 +51,43 @@
 
   "ExploreMenu": {
     "explore": "Explore",
-    "industry": {
+    "programs": {
       "title": "Programs",
-      "items": ["Our Programs", "Export Readiness", "Virtual Consultation", "Trade Missions", "International Showcases"]
+      "items": [
+        { "label": "Our Programs", "slug": "our-programs" },
+        { "label": "Export Readiness", "slug": "export-readiness" },
+        { "label": "Virtual Consultation", "slug": "virtual-consultation" },
+        { "label": "Trade Missions", "slug": "trade-missions" },
+        { "label": "International Showcases", "slug": "international-showcases" }
+      ]
     },
-    "country": {
+    "academy": {
       "title": "Academy",
-      "items": ["Webinars", "Workshops", "Export Essentials Online", "Market & Country Profiles", "Foodcast", "Export Roadmap"]
+      "items": [
+        { "label": "Webinars", "slug": "webinars" },
+        { "label": "Workshops", "slug": "workshops" },
+        { "label": "Export Essentials Online", "slug": "export-essentials-online" },
+        { "label": "Market & Country Profiles", "slug": "market-country-profiles" },
+        { "label": "Foodcast", "slug": "foodcast" },
+        { "label": "Export Roadmap", "slug": "export-roadmap" }
+      ]
     },
     "verification": {
       "title": "Verification",
-      "items": ["Verified Exporters", "Audit Reports", "Trade History", "Compliance Data"]
+      "items": [
+        { "label": "Verified Exporters", "slug": "verified-exporters" },
+        { "label": "Audit Reports", "slug": "audit-reports" },
+        { "label": "Trade History", "slug": "trade-history" },
+        { "label": "Compliance Data", "slug": "compliance-data" }
+      ]
     },
     "resources": {
       "title": "Resources",
-      "items": ["Trade Insights", "Market Reports", "FAQs"]
+      "items": [
+        { "label": "Trade Insights", "slug": "trade-insights" },
+        { "label": "Market Reports", "slug": "market-reports" },
+        { "label": "FAQs", "slug": "faqs" }
+      ]
     }
   },
 
@@ -1312,6 +1334,118 @@
         "title": "Get recommended next steps",
         "text": "Based on your results, Emara will recommend specific programs, courses, and actions to strengthen your export readiness."
       }
+    }
+  },
+
+  "webinars": {
+    "hero": {
+      "badge": "Export Academy",
+      "title": "Learn How to Export with Confidence",
+      "description": "Join expert-led webinars designed to help exporters navigate international markets, compliance requirements, and global trade opportunities.",
+      
+      "primaryCTA": "Browse Webinars",
+      "secondaryCTA": "View Recordings",
+
+      "nextWebinar": {
+        "label": "Next Live Webinar",
+        "title": "Entering the EU Food Market",
+        "date": "24 May • 60 minutes"
+      }
+    },
+
+    "featured": {
+      "label": "Featured Webinar",
+      "title": "Entering the EU Food Market",
+      "description": "Discover the regulatory, compliance, and buyer expectations required to successfully export food products to the European Union.",
+      "date": "March 28",
+      "duration": "60 minutes",
+      "cta": "Register Now"
+    },
+
+    "upcoming": {
+      "title": "Upcoming Webinars",
+      "items": {
+        "exportEU": {
+          "title": "Exporting Organic Products to Europe"
+        },
+        "compliance": {
+          "title": "Understanding Global Food Compliance"
+        },
+        "supplyChain": {
+          "title": "Building Export-Ready Supply Chains"
+        }
+      }
+    },
+
+    "library": {
+      "title": "Webinar Library",
+      "items": {
+        "docs": {
+          "title": "Introduction to Export Documentation"
+        },
+        "pricing": {
+          "title": "How to Price for International Markets"
+        }
+      }
+    },
+
+    "cta": {
+      "title": "Never Miss a Webinar",
+      "description": "Subscribe to receive notifications about upcoming export training sessions and new webinar releases.",
+      "button": "Subscribe for Updates"
+    }
+  },
+
+  "workshops": {
+    "hero": {
+      "badge": "Export Academy",
+      "title": "Practical Export Workshops",
+      "subtitle": "Hands-on training sessions designed to equip exporters with the tools, knowledge, and strategies needed to succeed in international markets.",
+      "primaryCTA": "View Upcoming Workshops",
+      "secondaryCTA": "Explore Training Tracks",
+      "smallGroup": "Small Group Training",
+      "smallGroupDesc": "Our workshops are intentionally designed for smaller groups to ensure personalized guidance and meaningful interaction."
+    },
+    "highlights": {
+      "items": {
+        "interactive": {
+          "title": "Interactive Learning",
+          "desc": "Participate in practical sessions, case studies, and collaborative exercises designed to build real export skills."
+        },
+        "global": {
+          "title": "Global Market Insights",
+          "desc": "Gain insights into international markets, buyer expectations, and trade opportunities."
+        },
+        "compliance": {
+          "title": "Compliance & Certification",
+          "desc": "Understand regulatory requirements, certifications, and documentation needed for successful exports."
+        }
+      }
+    },
+    "tracks": {
+      "title": "Workshop Tracks",
+      "items": {
+        "export": "Export Readiness & Strategy",
+        "market": "Market Entry & Buyer Engagement",
+        "compliance": "Compliance & Certification"
+      }
+    },
+    "upcoming": {
+      "title": "Upcoming Workshops",
+      "items": {
+        "readiness": "Export Readiness Bootcamp",
+        "market": "Entering Global Markets",
+        "compliance": "Export Compliance Masterclass"
+      }
+    },
+    "benefits": {
+      "title": "Why Attend Our Workshops",
+      "description": "Our workshops combine expert instruction, practical exercises, and real-world trade insights to equip exporters with the tools needed to succeed globally."
+    },
+    "cta": {
+      "title": "Ready to Build Your Export Skills?",
+      "subtitle": "Join our next workshop and gain practical knowledge from industry experts.",
+      "button": "Register for a Workshop"
     }
   }
 }

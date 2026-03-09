@@ -12,25 +12,13 @@ export default function ExploreMenu() {
   const isRTL = rtlLocales.includes(locale)
 
   const categories = [
-    {
-      key: "industry",
-      data: t.raw("industry")
-    },
-    {
-      key: "country",
-      data: t.raw("country")
-    },
-    {
-      key: "verification",
-      data: t.raw("verification")
-    },
-    {
-      key: "resources",
-      data: t.raw("resources")
-    }
+    { key: "programs", data: t.raw("programs") },
+    { key: "academy", data: t.raw("academy") },
+    { key: "verification", data: t.raw("verification") },
+    { key: "resources", data: t.raw("resources") }
   ] as {
     key: string
-    data: { title: string; items: string[] }
+    data: { title: string; items: { label: string; slug: string }[] }
   }[]
 
   return (
@@ -55,15 +43,16 @@ export default function ExploreMenu() {
           `}
         >
           <div className="grid grid-cols-4 gap-10 text-sm">
-            {categories.map((category) => (
-              <Category
-                key={category.key}
-                title={category.data.title}
-                items={category.data.items}
-                locale={locale}
-                isRTL={isRTL}
-              />
-            ))}
+          {categories.map((category) => (
+            <Category
+              key={category.key}
+              title={category.data.title}
+              items={category.data.items}
+              locale={locale}
+              isRTL={isRTL}
+              category={category.key}
+            />
+          ))}
           </div>
         </Popover.Panel>
       </Transition>
@@ -75,12 +64,14 @@ function Category({
   title,
   items,
   locale,
-  isRTL
+  isRTL,
+  category
 }: {
   title: string
-  items: string[]
+  items: { label: string; slug: string }[]
   locale: string
   isRTL: boolean
+  category: string
 }) {
   return (
     <div>
@@ -88,15 +79,14 @@ function Category({
 
       <ul className="space-y-2 text-gray-600">
         {items.map((item) => (
-          <li key={item}>
+          <li key={item.slug}>
             <Link
-              href={`/${locale}`}
-              className={`
-                hover:text-blue-600 transition
-                ${isRTL ? "block text-right" : "block"}
-              `}
+              href={`/suppliers/${category}/${item.slug}`}
+              className={`hover:text-blue-600 transition ${
+                isRTL ? "block text-right" : "block"
+              }`}
             >
-              {item}
+              {item.label}
             </Link>
           </li>
         ))}
