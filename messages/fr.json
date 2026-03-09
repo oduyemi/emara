@@ -1447,6 +1447,54 @@
       "subtitle": "Participez à notre prochain atelier et acquérez des connaissances pratiques auprès d’experts du secteur.",
       "button": "S’inscrire à un atelier"
     }
+  },
+
+  "essentials": {
+    "hero": {
+      "badge": "Centre de connaissances sur l’export",
+      "title": "Les bases de l’export",
+      "subtitle": "Un guide complet pour les exportateurs qui naviguent sur les marchés internationaux — des fondamentaux de la préparation à l’export aux stratégies avancées du commerce mondial."
+    },
+    "navigation": {
+      "title": "Parcours d’exportation",
+      "basics": "Fondamentaux de l’export",
+      "marketResearch": "Étude de marché et analyse des opportunités",
+      "compliance": "Conformité réglementaire",
+      "logistics": "Expédition et logistique",
+      "buyers": "Trouver des acheteurs internationaux",
+      "scaling": "Développer le commerce mondial"
+    },
+    "sections": {
+      "fundamentals": {
+        "title": "Comprendre les fondamentaux de l’export",
+        "desc": "Exporter commence par la compréhension des cadres réglementaires, des exigences documentaires et des dynamiques de marché qui façonnent le commerce international."
+      },
+      "compliance": {
+        "title": "Naviguer dans la conformité et la certification",
+        "desc": "Les exportateurs performants comprennent l’importance des certifications, de la traçabilité et de l’assurance qualité exigées par les marchés internationaux."
+      },
+      "logistics": {
+        "title": "Gérer la logistique et la distribution",
+        "desc": "De la gestion de la chaîne du froid au transport international, la logistique joue un rôle essentiel pour garantir que les produits arrivent en toute sécurité et efficacement."
+      }
+    },
+    "insights": {
+      "title": "Principales perspectives d’exportation",
+      "documentation": "Comprendre la documentation d’export et les procédures douanières.",
+      "buyers": "Identifier des acheteurs et distributeurs internationaux crédibles.",
+      "pricing": "Développer des stratégies de prix compétitives pour les marchés internationaux.",
+      "tradeFinance": "Comprendre le financement des exportations et la protection des paiements."
+    },
+    "expert": {
+      "title": "Analyses d’experts du commerce international",
+      "description": "Export Essentials s’appuie sur des décennies d’expérience de praticiens du commerce international et de conseillers en exportation travaillant sur les marchés africains et mondiaux."
+    },
+    "book": {
+      "comingSoon": "Bientôt disponible",
+      "title": "Exporter des produits alimentaires africains vers le marché américain",
+      "description": "Un livre à paraître offrant des perspectives pratiques pour naviguer dans les cadres réglementaires, les stratégies d’entrée sur le marché et la réussite à l’export pour les producteurs alimentaires africains entrant sur le marché américain.",
+      "button": "Rejoindre la liste de diffusion"
+    }
   }
 }
   

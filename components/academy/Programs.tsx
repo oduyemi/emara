@@ -25,12 +25,12 @@ const programs = [
   {
     key: "exportEssentials",
     icon: <BookOpen size={22} />,
-    link: "/suppliers/academy/export-essentials"
+    link: "/suppliers/academy/export-essentials-online"
   },
   {
     key: "marketProfiles",
     icon: <Globe size={22} />,
-    link: "/suppliers/academy/market-country-profile"
+    link: "/suppliers/academy/market-country-profiles"
   },
   {
     key: "foodcast",
