@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import {
   Video,
   Presentation,
@@ -10,89 +11,111 @@ import {
   Map
 } from "lucide-react";
 
-
 const programs = [
   {
-    title: "Webinars",
-    desc: "Expert-led sessions covering export compliance, logistics, and market opportunities.",
-    icon: <Video size={22}/>,
+    key: "webinars",
+    icon: <Video size={22} />,
     link: "/suppliers/academy/webinars"
   },
   {
-    title: "Workshops",
-    desc: "Interactive learning programs designed to build export capabilities.",
-    icon: <Presentation size={22}/>,
+    key: "workshops",
+    icon: <Presentation size={22} />,
     link: "/suppliers/academy/workshops"
   },
   {
-    title: "Export Essentials Online",
-    desc: "Structured courses guiding exporters from foundational knowledge to advanced trade strategies.",
-    icon: <BookOpen size={22}/>,
+    key: "exportEssentials",
+    icon: <BookOpen size={22} />,
     link: "/suppliers/academy/export-essentials"
   },
   {
-    title: "Market & Country Profiles",
-    desc: "Explore market intelligence and country-specific export insights.",
-    icon: <Globe size={22}/>,
+    key: "marketProfiles",
+    icon: <Globe size={22} />,
     link: "/suppliers/academy/market-country-profile"
   },
   {
-    title: "Foodcast",
-    desc: "Industry conversations and interviews with exporters and trade experts.",
-    icon: <Mic size={22}/>,
+    key: "foodcast",
+    icon: <Mic size={22} />,
     link: "/suppliers/academy/foodcast"
   },
   {
-    title: "Export Roadmap",
-    desc: "A step-by-step framework to prepare, launch, and scale your export journey.",
-    icon: <Map size={22}/>,
+    key: "roadmap",
+    icon: <Map size={22} />,
     link: "/suppliers/academy/roadmap"
   }
-]
+];
+
 
 export const AcademyPrograms = () => {
+  const t = useTranslations("academyPrograms");
+
   return (
     <section className="py-24 px-6 bg-white">
 
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="max-w-7xl mx-auto">
 
-        {programs.map((p,i)=>(
-          <motion.div
-            key={i}
-            initial={{opacity:0,y:25}}
-            whileInView={{opacity:1,y:0}}
-            transition={{delay:i*0.1}}
-            viewport={{once:true}}
-          >
+        {/* Section header */}
+        <div className="text-center mb-16 max-w-2xl mx-auto">
+          <p className="text-xs uppercase tracking-[0.25em] text-accent mb-4">
+            {t("label")}
+          </p>
 
-            <Link
-              href={p.link}
-              className="group block border border-gray-200 rounded-2xl p-8 bg-[#F9FBFD] hover:shadow-md transition"
+          <h2 className="text-3xl md:text-4xl font-semibold text-[#0F233F] mb-4">
+            {t("title")}
+          </h2>
+
+          <p className="text-gray-600 leading-relaxed">
+            {t("description")}
+          </p>
+        </div>
+
+        {/* Program grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          {programs.map((p, i) => (
+            <motion.div
+              key={p.key}
+              initial={{ opacity: 0, y: 25 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: i * 0.08 }}
+              viewport={{ once: true }}
             >
 
-              <div className="w-11 h-11 rounded-lg bg-white border flex items-center justify-center mb-5 text-[#0F233F]">
-                {p.icon}
-              </div>
+              <Link
+                href={p.link}
+                className="group relative block rounded-2xl border border-gray-200 bg-[#F9FBFD] p-8 hover:shadow-lg transition duration-300 overflow-hidden"
+              >
 
-              <h3 className="text-lg font-semibold text-[#0F233F] mb-2">
-                {p.title}
-              </h3>
+                {/* subtle hover glow */}
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition bg-gradient-to-br from-accent/5 to-transparent" />
 
-              <p className="text-sm text-gray-600 mb-4">
-                {p.desc}
-              </p>
+                {/* icon */}
+                <div className="relative w-12 h-12 rounded-xl bg-white border flex items-center justify-center mb-6 text-[#0F233F] group-hover:scale-105 transition">
+                  {p.icon}
+                </div>
 
-              <span className="text-sm text-accent font-medium group-hover:underline">
-                Explore →
-              </span>
+                {/* title */}
+                <h3 className="relative text-lg font-semibold text-[#0F233F] mb-2">
+                  {t(`items.${p.key}.title`)}
+                </h3>
 
-            </Link>
+                {/* description */}
+                <p className="relative text-sm text-gray-600 mb-5 leading-relaxed">
+                  {t(`items.${p.key}.desc`)}
+                </p>
 
-          </motion.div>
-        ))}
+                {/* link */}
+                <span className="relative text-sm text-accent font-medium group-hover:underline">
+                  {t("explore")}
+                </span>
+
+              </Link>
+
+            </motion.div>
+          ))}
+
+        </div>
 
       </div>
-
     </section>
-  )
-}
+  );
+};

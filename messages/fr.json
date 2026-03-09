@@ -1222,6 +1222,92 @@
         "desc": "Suivez un guide structuré conçu pour les exportateurs débutants."
       }
     }
+  },
+
+  "academyHero": {
+    "label": "Académie d’exportation Emara",
+    "title": "Apprenez à exporter avec succès",
+    "description": "L’Académie Emara offre aux producteurs alimentaires africains les connaissances, les outils et les analyses de marché nécessaires pour accéder aux marchés internationaux. Découvrez des webinaires, des ateliers, des analyses de marché et des parcours d’apprentissage structurés conçus pour aider les exportateurs à se développer à l’échelle mondiale.",
+  
+    "primaryCTA": "Vérifiez votre préparation à l’export",
+    "secondaryCTA": "Les bases de l’export en ligne",
+  
+    "stats": {
+      "resources": {
+        "value": "20+",
+        "label": "Ressources pédagogiques"
+      },
+      "topics": {
+        "value": "10+",
+        "label": "Sujets d’exportation"
+      },
+      "insights": {
+        "value": "Global",
+        "label": "Analyses de marché"
+      }
+    }
+  },
+
+  "academyPrograms": {
+    "label": "Programmes de formation à l’export",
+    "title": "Explorez l’Académie Emara",
+    "description": "L’Académie d’Export Emara propose des ressources d’apprentissage pratiques conçues pour aider les producteurs à comprendre le commerce international, renforcer leur préparation à l’export et se développer sur les marchés mondiaux.",
+  
+    "explore": "Explorer →",
+  
+    "items": {
+      "webinars": {
+        "title": "Webinaires",
+        "desc": "Sessions animées par des experts couvrant la conformité à l’export, la logistique et les opportunités sur les marchés internationaux."
+      },
+      "workshops": {
+        "title": "Ateliers",
+        "desc": "Programmes d’apprentissage interactifs conçus pour renforcer les capacités d’export grâce à un accompagnement pratique."
+      },
+      "exportEssentials": {
+        "title": "Les bases de l’export en ligne",
+        "desc": "Cours structurés guidant les exportateurs des connaissances fondamentales aux stratégies commerciales avancées."
+      },
+      "marketProfiles": {
+        "title": "Profils de marchés et de pays",
+        "desc": "Explorez des analyses de marché et des informations spécifiques par pays pour le commerce international."
+      },
+      "foodcast": {
+        "title": "Foodcast",
+        "desc": "Conversations et interviews avec des exportateurs, acheteurs et experts du commerce international."
+      },
+      "roadmap": {
+        "title": "Feuille de route pour l’export",
+        "desc": "Un cadre structuré étape par étape pour préparer, lancer et développer votre parcours à l’export."
+      }
+    }
+  },
+
+  "learningApproach": {
+    "label": "Parcours d’apprentissage à l’export",
+    "title": "Du premier export à la croissance mondiale",
+  
+    "steps": {
+      "fundamentals": {
+        "title": "Apprendre les fondamentaux",
+        "text": "Comprenez les bases de l’export, y compris la documentation, la logistique, la conformité et la structure des marchés internationaux."
+      },
+      "readiness": {
+        "title": "Renforcer la préparation à l’export",
+        "text": "Participez à des ateliers, webinaires et formations pratiques pour préparer votre entreprise au commerce international."
+      },
+      "markets": {
+        "title": "Entrer sur les marchés mondiaux",
+        "text": "Utilisez l’intelligence de marché et les stratégies d’exportation pour vous développer sur les marchés internationaux."
+      }
+    }
+  },
+  
+  "academyCTA": {
+    "title": "Commencez votre parcours d’exportation",
+    "description": "Explorez des cours structurés, des webinaires animés par des experts et des analyses de marché conçus pour aider les exportateurs alimentaires africains à développer les compétences nécessaires pour réussir sur les marchés internationaux.",
+    "primaryCTA": "Commencer avec les bases de l’export",
+    "secondaryCTA": "Rejoindre le Foodcast"
   }
 }
   

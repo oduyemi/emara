@@ -1199,6 +1199,92 @@
         "desc": "Follow a structured guide designed for first-time exporters."
       }
     }
+  },
+
+  "academyHero": {
+    "label": "Emara Export Academy",
+    "title": "Learn how to export successfully",
+    "description": "The Emara Academy equips African food producers with the knowledge, tools, and market insights required to enter international markets. Explore webinars, workshops, market intelligence, and structured learning pathways designed to help exporters grow globally.",
+
+    "primaryCTA": "Check Your Export Readiness",
+    "secondaryCTA": "Export Essentials Online",
+
+    "stats": {
+      "resources": {
+        "value": "20+",
+        "label": "Learning Resources"
+      },
+      "topics": {
+        "value": "10+",
+        "label": "Export Topics"
+      },
+      "insights": {
+        "value": "Global",
+        "label": "Market Insights"
+      }
+    }
+  },
+
+  "academyPrograms": {
+    "label": "Export Learning Programs",
+    "title": "Explore the Emara Academy",
+    "description": "The Emara Export Academy provides practical learning resources designed to help producers understand international trade, build export readiness, and expand into global markets.",
+
+    "explore": "Explore →",
+
+    "items": {
+      "webinars": {
+        "title": "Webinars",
+        "desc": "Expert-led sessions covering export compliance, logistics, and international market opportunities."
+      },
+      "workshops": {
+        "title": "Workshops",
+        "desc": "Interactive learning programs designed to strengthen export capabilities through hands-on guidance."
+      },
+      "exportEssentials": {
+        "title": "Export Essentials Online",
+        "desc": "Structured courses guiding exporters from foundational knowledge to advanced trade strategies."
+      },
+      "marketProfiles": {
+        "title": "Market & Country Profiles",
+        "desc": "Explore market intelligence and country-specific export insights for global trade."
+      },
+      "foodcast": {
+        "title": "Foodcast",
+        "desc": "Industry conversations and interviews with exporters, buyers, and global trade experts."
+      },
+      "roadmap": {
+        "title": "Export Roadmap",
+        "desc": "A structured step-by-step framework to prepare, launch, and scale your export journey."
+      }
+    }
+  },
+
+  "learningApproach": {
+    "label": "Export Learning Path",
+    "title": "From first export to global growth",
+
+    "steps": {
+      "fundamentals": {
+        "title": "Learn the fundamentals",
+        "text": "Understand export basics including documentation, logistics, compliance, and global market structures."
+      },
+      "readiness": {
+        "title": "Build export readiness",
+        "text": "Participate in workshops, webinars, and practical training to prepare your business for international trade."
+      },
+      "markets": {
+        "title": "Enter global markets",
+        "text": "Use market intelligence and export strategies to expand into international markets."
+      }
+    }
+  },
+
+  "academyCTA": {
+    "title": "Start your export journey",
+    "description": "Explore structured courses, expert webinars, and market intelligence designed to help African food exporters build the capabilities needed to succeed in international markets.",
+    "primaryCTA": "Begin with Export Essentials",
+    "secondaryCTA": "Join the Foodcast"
   }
 }
   
