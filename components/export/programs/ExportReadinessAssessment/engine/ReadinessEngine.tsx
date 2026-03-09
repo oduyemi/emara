@@ -3,10 +3,10 @@ import { IntelligenceMatrix } from "./IntelligenceMatrix";
 
 function fallbackResult(): GapAnalysisResult {
   return {
-    complianceScore: 0,
+    readinessScore: 0,
     riskScore: 100,
     missingCertifications: [],
-    readinessTier: "Not Ready",
+    readinessTier: "Emerging Exporter",
   };
 }
 
@@ -32,16 +32,16 @@ export function runGapAnalysis(
     (cert) => !profile.certifications.includes(cert)
   );
 
-  let complianceScore = 100;
+  let readinessScore = 100;
 
-  complianceScore -= missingCertifications.length * 15;
+  readinessScore -= missingCertifications.length * 15;
 
-  if (!profile.hasQualitySystem) complianceScore -= 10;
-  if (!profile.hasPreviousExports) complianceScore -= 5;
+  if (!profile.hasQualitySystem) readinessScore -= 10;
+  if (!profile.hasPreviousExports) readinessScore -= 5;
 
-  if (profile.annualVolume > 10000) complianceScore -= 5;
+  if (profile.annualVolume > 10000) readinessScore -= 5;
 
-  complianceScore = Math.max(0, complianceScore);
+  readinessScore = Math.max(0, readinessScore);
 
   const riskScore =
     rules.riskWeight +
@@ -49,14 +49,14 @@ export function runGapAnalysis(
     (profile.hasQualitySystem ? 0 : 5);
 
   let readinessTier: GapAnalysisResult["readinessTier"] =
-    "Not Ready";
+    "Emerging Exporter";
 
-  if (complianceScore >= 85) readinessTier = "Market Entry Ready";
-  else if (complianceScore >= 70) readinessTier = "Export Ready";
-  else if (complianceScore >= 50) readinessTier = "Developing";
+  if (readinessScore >= 85) readinessTier = "Global Market Ready";
+  else if (readinessScore >= 70) readinessTier = "Export Ready";
+  else if (readinessScore >= 50) readinessTier = "Developing Exporter";
 
   return {
-    complianceScore,
+    readinessScore,
     riskScore,
     missingCertifications,
     readinessTier,

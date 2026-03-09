@@ -1,5 +1,4 @@
 "use client";
-
 import { useTranslations } from "next-intl";
 
 interface NarrativeParams {
@@ -11,7 +10,7 @@ interface NarrativeParams {
 }
 
 export function useGenerateNarrative() {
-  const t = useTranslations("GapAnalysisInteractive");
+  const t = useTranslations("AssessmentInteractive");
 
   return ({
     industry,

@@ -1,5 +1,4 @@
 "use client";
-
 import { useGenerateNarrative } from "./GenerateNarrative";
 import { CompanyProfile, GapAnalysisResult } from "../engine/types";
 

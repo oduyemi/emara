@@ -36,5 +36,5 @@ export type GapAnalysisResult = {
   readinessScore: number;
   riskScore: number;
   missingCertifications: string[];
-  readinessTier: "Not Ready" | "Developing" | "Export Ready" | "Market Entry Ready";
+  readinessTier: "Emerging Exporter" | "Developing Exporter" | "Export Ready" | "Global Market Ready";
 };
