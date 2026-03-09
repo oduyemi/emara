@@ -11,7 +11,7 @@ export default function StepVolume({
   onChange: (value: number) => void;
   onNext: () => void;
 }) {
-  const t = useTranslations("GapAnalysisInteractive")
+  const t = useTranslations("AssessmentInteractive")
   const isValid = annualVolume > 0;
 
   function getVolumeTier(volume: number) {

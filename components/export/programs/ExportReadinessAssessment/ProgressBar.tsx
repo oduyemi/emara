@@ -5,7 +5,7 @@ import { Step } from "./engine/types";
 
 
 export default function ProgressBar({ current }: { current: number }) {
-  const t = useTranslations("GapAnalysisInteractive")
+  const t = useTranslations("AssessmentInteractive")
 
   const steps: Step[] = [
     "industry",

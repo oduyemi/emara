@@ -13,7 +13,7 @@ export default function StepMarket({
   onChange: (v: ExportMarket) => void;
   onNext: () => void;
 }) {
-  const t = useTranslations("GapAnalysisInteractive")
+  const t = useTranslations("AssessmentInteractive")
   const markets: ExportMarket[] = [
     "eu",
     "us",

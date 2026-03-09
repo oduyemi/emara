@@ -33,7 +33,7 @@ export type CompanyProfile = {
 };
 
 export type GapAnalysisResult = {
-  complianceScore: number;
+  readinessScore: number;
   riskScore: number;
   missingCertifications: string[];
   readinessTier: "Not Ready" | "Developing" | "Export Ready" | "Market Entry Ready";

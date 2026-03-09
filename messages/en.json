@@ -130,7 +130,7 @@
     "feature4_description": "Instantly connect buyers and suppliers for transparent, efficient transactions."
   },
   
-    "GapAnalysisInteractive": {
+    "AssessmentInteractive": {
     "section_label": "Compliance Intelligence",
     "section_title": "Instant Export Readiness Engine",
     "section_description": "Simulate your company’s compliance profile and receive a structured readiness evaluation across certifications, operational maturity, and regulatory alignment.",
@@ -1285,6 +1285,34 @@
     "description": "Explore structured courses, expert webinars, and market intelligence designed to help African food exporters build the capabilities needed to succeed in international markets.",
     "primaryCTA": "Begin with Export Essentials",
     "secondaryCTA": "Join the Foodcast"
+  },
+
+  "exportReadinessHero": {
+    "label": "Export Readiness Program",
+    "title": "How ready is your business to export?",
+    "description": "The Emara Export Readiness program evaluates your company’s capabilities across production, compliance, logistics, and international market preparation. Complete the assessment to understand your readiness level and receive guidance on the next steps to expand globally.",
+    "cta": "Start Readiness Assessment"
+  },
+
+  "exportReadinessIntro": {
+    "label": "Readiness Assessment",
+    "title": "Understand your export capabilities",
+    "description": "Exporting successfully requires preparation across multiple dimensions of your business. The Emara Export Readiness assessment evaluates key capabilities and identifies the actions needed to improve your ability to compete in international markets.",
+
+    "steps": {
+      "assessment": {
+        "title": "Complete the assessment",
+        "text": "Answer a series of questions about your production capacity, certifications, export experience, and operational capabilities."
+      },
+      "score": {
+        "title": "Receive your readiness score",
+        "text": "Our system analyzes your responses to determine your export readiness level across critical business areas."
+      },
+      "nextSteps": {
+        "title": "Get recommended next steps",
+        "text": "Based on your results, Emara will recommend specific programs, courses, and actions to strengthen your export readiness."
+      }
+    }
   }
 }
   

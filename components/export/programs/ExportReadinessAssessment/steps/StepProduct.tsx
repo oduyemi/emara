@@ -11,7 +11,7 @@ export default function StepProduct({
   onChange: (value: string) => void;
   onNext: () => void;
 }) {
-  const t = useTranslations("GapAnalysisInteractive")
+  const t = useTranslations("AssessmentInteractive")
   const isValid = productName.trim().length > 2;
 
   return (

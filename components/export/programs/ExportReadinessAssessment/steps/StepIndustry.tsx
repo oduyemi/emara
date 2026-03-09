@@ -11,7 +11,7 @@ export default function StepIndustry({
   onChange: (v: Industry) => void;
   onNext: () => void;
 }) {
-    const t = useTranslations("GapAnalysisInteractive")
+    const t = useTranslations("AssessmentInteractive")
     const industries: Industry[] = [
         "processed_food",
         "agriculture",

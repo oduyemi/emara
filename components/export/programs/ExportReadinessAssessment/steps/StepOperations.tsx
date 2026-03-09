@@ -12,7 +12,7 @@ export default function StepOperations({
   onChange: (field: string, value: boolean) => void;
   onRun: () => void;
 }) {
-  const t = useTranslations("GapAnalysisInteractive")
+  const t = useTranslations("AssessmentInteractive")
 
   return (
     <div className="space-y-8">

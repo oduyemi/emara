@@ -6,12 +6,12 @@ export default function MissingCertifications({
 }: {
   certifications: string[];
 }) {
-  const t = useTranslations("GapAnalysisInteractive");
+  const t = useTranslations("AssessmentInteractive");
 
   return (
     <div className="space-y-4">
       <h4 className="text-lg font-semibold">
-        {t("results_compliance_gaps")}
+        {t("results_readiness_gaps")}
       </h4>
 
       {certifications.length === 0 ? (

@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { useTranslations, useLocale } from "next-intl"
 import { AnimatePresence, motion } from "framer-motion";
-import { runGapAnalysis } from "./engine/ComplianceEngine";
+import { runGapAnalysis } from "./engine/ReadinessEngine";
 import { CompanyProfile, GapAnalysisResult } from "./engine/types";
 import ProgressBar from "./ProgressBar";
 import ResultsPanel from "./result/ResultPanel";
@@ -13,12 +13,12 @@ import StepVolume from "./steps/StepVolume";
 import StepCertifications from "./steps/StepCertifications";
 import StepOperations from "./steps/StepOperations";
 import ExecutiveSummary from "./result/ExecutiveSummary";
+import ExportReadinessReport from "./result/Report";
 
-export default function InstantGapAnalysis() {
-  const t = useTranslations("GapAnalysisInteractive")
+export default function ReadinessAssessment() {
+  const t = useTranslations("AssessmentInteractive")
   const [step, setStep] = useState(1);
   const [result, setResult] = useState<GapAnalysisResult | null>(null);
-
   const [profile, setProfile] = useState<CompanyProfile>({
     industry: "processed_food",
     productName: "",
@@ -108,17 +108,27 @@ export default function InstantGapAnalysis() {
           />
         );
 
-      case 7:
-        return result ? (
-          <>
-            <ResultsPanel result={result} />
+      // case 7:
+      //   return result ? (
+      //     <>
+      //       <ResultsPanel result={result} />
 
-            <ExecutiveSummary
-              profile={profile}
-              result={result}
-            />
-          </>
+      //       <ExecutiveSummary
+      //         profile={profile}
+      //         result={result}
+      //       />
+      //     </>
+      //   ) : null;
+      case 7:
+      return result ? (
+        <>
+          <ExportReadinessReport
+            profile={profile}
+            result={result}
+          />
+        </>
         ) : null;
+
 
       default:
         return null;

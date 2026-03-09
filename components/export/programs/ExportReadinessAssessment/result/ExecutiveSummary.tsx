@@ -16,14 +16,14 @@ export default function ExecutiveSummary({
     industry: profile.industry,
     market: profile.exportMarket,
     tier: result.readinessTier,
-    score: result.complianceScore,
+    score: result.readinessScore,
     gaps: result.missingCertifications,
   });
 
   return (
     <div className="mt-14 p-10 bg-red-950 border border-red-950 rounded-3xl">
       <h4 className="text-xl font-semibold mb-6 text-white">
-        Executive Compliance Summary
+        Executive Readiness Summary
       </h4>
       <p className="text-neutral-400 whitespace-pre-line leading-relaxed">
         {narrativeText}

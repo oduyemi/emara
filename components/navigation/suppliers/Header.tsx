@@ -130,7 +130,7 @@ export const SupplierHeader = () => {
           <ExploreMenu />
           {[
             // { href: "/suppliers/directory", label: t("directory") },
-            { href: "/suppliers/export-readiness", label: t("readiness") },
+            { href: "/suppliers/programs/export-readiness", label: t("readiness") },
             { href: "/suppliers/onboarding", label: t("onboarding") },
             { href: "/suppliers/academy", label: t("academy") },
             // { href: "/about", label: t("about") },

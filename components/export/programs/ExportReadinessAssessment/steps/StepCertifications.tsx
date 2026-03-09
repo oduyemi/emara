@@ -11,7 +11,7 @@ export default function StepCertifications({
   onToggle: (cert: string) => void;
   onNext: () => void;
 }) {
-  const t = useTranslations("GapAnalysisInteractive")
+  const t = useTranslations("AssessmentInteractive")
   // const commonCerts = [
   //   "HACCP",
   //   "ISO 22000",

@@ -153,7 +153,7 @@
     "feature4_description": "Connectez instantanément acheteurs et fournisseurs pour des transactions transparentes et efficaces."
   },
 
-  "GapAnalysisInteractive": {
+  "AssessmentInteractive": {
     "section_label": "Intelligence de Conformité",
     "section_title": "Moteur de Diagnostic Instantané de Préparation à l’Export",
     "section_description": "Simulez le profil de conformité de votre entreprise et obtenez un diagnostic structuré de votre niveau de préparation en matière de certifications, de maturité opérationnelle et d’exigences réglementaires du marché cible.",
@@ -1302,12 +1302,40 @@
       }
     }
   },
-  
+
   "academyCTA": {
     "title": "Commencez votre parcours d’exportation",
     "description": "Explorez des cours structurés, des webinaires animés par des experts et des analyses de marché conçus pour aider les exportateurs alimentaires africains à développer les compétences nécessaires pour réussir sur les marchés internationaux.",
     "primaryCTA": "Commencer avec les bases de l’export",
     "secondaryCTA": "Rejoindre le Foodcast"
+  },
+
+  "exportReadinessHero": {
+    "label": "Programme de préparation à l’export",
+    "title": "Dans quelle mesure votre entreprise est-elle prête à exporter ?",
+    "description": "Le programme de préparation à l’export d’Emara évalue les capacités de votre entreprise en matière de production, de conformité, de logistique et de préparation aux marchés internationaux. Complétez l’évaluation pour comprendre votre niveau de préparation et recevoir des recommandations sur les prochaines étapes pour vous développer à l’international.",
+    "cta": "Commencer l’évaluation de préparation"
+  },
+
+  "exportReadinessIntro": {
+    "label": "Évaluation de préparation",
+    "title": "Comprenez vos capacités d’exportation",
+    "description": "Exporter avec succès nécessite une préparation dans plusieurs dimensions de votre entreprise. L’évaluation de préparation à l’export d’Emara analyse les capacités clés et identifie les actions nécessaires pour améliorer votre compétitivité sur les marchés internationaux.",
+  
+    "steps": {
+      "assessment": {
+        "title": "Complétez l’évaluation",
+        "text": "Répondez à une série de questions sur votre capacité de production, vos certifications, votre expérience à l’export et vos capacités opérationnelles."
+      },
+      "score": {
+        "title": "Recevez votre score de préparation",
+        "text": "Notre système analyse vos réponses afin de déterminer votre niveau de préparation à l’export dans les principaux domaines de votre entreprise."
+      },
+      "nextSteps": {
+        "title": "Obtenez les prochaines étapes recommandées",
+        "text": "Selon vos résultats, Emara vous recommandera des programmes, des formations et des actions spécifiques pour renforcer votre préparation à l’export."
+      }
+    }
   }
 }
   

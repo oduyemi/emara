@@ -13,7 +13,7 @@ function getRiskLevel(score: number) {
 }
 
 export default function RiskIndicator({ score }: { score: number }) {
-  const t = useTranslations("GapAnalysisInteractive");
+  const t = useTranslations("AssessmentInteractive");
 
   const risk = getRiskLevel(score);
 
