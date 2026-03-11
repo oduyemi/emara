@@ -12,19 +12,19 @@ export default function UpcomingWebinars() {
       title: t("items.exportEU.title"),
       date: "April 5",
       duration: "45 min",
-      image: "/images/webinars/eu.jpg"
+      image: "/images/organic.jpg"
     },
     {
       title: t("items.compliance.title"),
       date: "April 12",
       duration: "60 min",
-      image: "/images/webinars/compliance.jpg"
+      image: "/images/compliance.jpg"
     },
     {
       title: t("items.supplyChain.title"),
       date: "April 20",
       duration: "50 min",
-      image: "/images/webinars/supply.jpg"
+      image: "/images/export.jpg"
     }
   ]
 

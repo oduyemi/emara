@@ -12,13 +12,13 @@ export default function WebinarLibrary() {
       title: t("items.docs.title"),
       date: "Recorded",
       duration: "52 min",
-      image: "/images/webinars/docs.jpg"
+      image: "/images/exportdoc.jpg"
     },
     {
       title: t("items.pricing.title"),
       date: "Recorded",
       duration: "40 min",
-      image: "/images/webinars/pricing.jpg"
+      image: "/images/org.jpg"
     }
   ]
 
