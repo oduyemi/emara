@@ -9,8 +9,11 @@ export default function Webinars() {
     <>
       <WebinarHero />
       <FeaturedWebinar />
-      <UpcomingWebinars />
+      <div id="webinars">
+        <UpcomingWebinars />
+      </div>
       <WebinarLibrary />
+      <div id="upcomingwebinars"></div>      
       <WebinarCTA />
     </>
   )

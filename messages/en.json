@@ -1347,7 +1347,7 @@
       "description": "Join expert-led webinars designed to help exporters navigate international markets, compliance requirements, and global trade opportunities.",
       
       "primaryCTA": "Browse Webinars",
-      "secondaryCTA": "View Recordings",
+      "secondaryCTA": "Subscribe Now",
 
       "nextWebinar": {
         "label": "Next Live Webinar",
@@ -1574,8 +1574,8 @@
 
     "book": {
       "comingSoon": "Coming Soon",
-      "title": "Exporting African Food Products to the U.S. Market",
-      "description": "A forthcoming book by Jacques Epangue that provides an in-depth guide to navigating the U.S. regulatory environment, building relationships with American importers, and developing successful export strategies for African food products.",
+      "title": "Exporting Food Products to European Market",
+      "description": "A forthcoming book that provides an in-depth guide to navigating the European regulatory environment, building relationships with European importers, and developing successful export strategies for food products.",
       "button": "Join the Mailing List"
     }
   }

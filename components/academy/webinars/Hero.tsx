@@ -1,6 +1,7 @@
 "use client"
 import { useTranslations } from "next-intl"
 import { Calendar, Video } from "lucide-react"
+import Link from "next/link"
 
 export default function WebinarHero() {
   const t = useTranslations("webinars.hero")
@@ -25,13 +26,17 @@ export default function WebinarHero() {
           </p>
 
           <div className="flex gap-4">
-            <button className="btn-primary px-7 py-3 rounded-lg">
-              {t("primaryCTA")}
-            </button>
+            <Link href="#webinars">
+              <button className="btn-primary px-7 py-3 rounded-lg">
+                {t("primaryCTA")}
+              </button>
+            </Link>
 
-            <button className="btn-secondary px-7 py-3 rounded-lg">
-              {t("secondaryCTA")}
-            </button>
+            <Link href="#upcomingwebinars">
+              <button className="btn-secondary px-7 py-3 rounded-lg">
+                {t("secondaryCTA")}
+              </button>
+            </Link>
           </div>
 
         </div>

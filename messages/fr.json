@@ -1347,7 +1347,7 @@
       "title": "Apprenez à exporter en toute confiance",
       "description": "Participez à des webinaires animés par des experts pour aider les exportateurs à naviguer sur les marchés internationaux, comprendre les exigences de conformité et saisir les opportunités commerciales mondiales.",
       "primaryCTA": "Parcourir les webinaires",
-      "secondaryCTA": "Voir les enregistrements",
+      "secondaryCTA": "S’abonner maintenant",
   
       "nextWebinar": {
         "label": "Prochain webinaire en direct",
@@ -1494,8 +1494,8 @@
     },
     "book": {
       "comingSoon": "Bientôt disponible",
-      "title": "Exporter des produits alimentaires africains vers le marché américain",
-      "description": "Un livre à paraître offrant des perspectives pratiques pour naviguer dans les cadres réglementaires, les stratégies d’entrée sur le marché et la réussite à l’export pour les producteurs alimentaires africains entrant sur le marché américain.",
+      "title": "Exporter des produits alimentaires vers le marché européen",
+      "description": "Un livre à paraître qui offre un guide approfondi pour comprendre l’environnement réglementaire européen, établir des relations avec des importateurs européens et développer des stratégies d’exportation réussies pour les produits alimentaires.",
       "button": "Rejoindre la liste de diffusion"
     }
   }
