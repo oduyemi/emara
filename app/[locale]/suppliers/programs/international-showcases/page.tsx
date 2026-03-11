@@ -1,6 +1,4 @@
 import NewExporters from "@/components/export/NewExporters";
-import { CalendlyBooking } from "@/components/programs/consultation/Booking";
-import { ConsultationTopics } from "@/components/programs/consultation/Topics";
 import { ConsultationTrust } from "@/components/programs/consultation/Trust";
 import { ShowcaseBenefits } from "@/components/programs/showcases/Benefits";
 import { ShowcaseCTA } from "@/components/programs/showcases/CTA";
