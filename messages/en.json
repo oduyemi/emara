@@ -1858,6 +1858,137 @@
     "title": "Showcase your products to global buyers",
     "description": "Join Emara international showcases and present your products to buyers, distributors, and retailers seeking new African suppliers.",
     "cta": "Apply for International Showcases"
+  },
+
+  "marketProfiles": {
+    "hero": {
+      "badge": "Market Intelligence",
+      "title": "Market & Country Profiles",
+      "subtitle": "Explore export opportunities across global markets through detailed country profiles, regulatory insights, and demand analysis designed to help exporters identify the right markets.",
+      "cta": "Explore Markets",
+      "marketsLabel": "Markets Covered",
+      "marketsCount": "50+ Global Markets"
+    },
+    "filters": {
+      "search": "Search countries or markets...",
+      "region": "Filter by region",
+      "sector": "Filter by product sector"
+    },
+    "countries": {
+      "usa": {
+        "name": "United States",
+        "desc": "The United States represents one of the world's largest import markets for agricultural and specialty food products, offering significant opportunities for exporters who meet strict regulatory standards."
+      },
+      "uk": {
+        "name": "United Kingdom",
+        "desc": "The UK remains a key gateway market for African food exports, driven by multicultural demand and strong retail distribution networks."
+      },
+      "germany": {
+        "name": "Germany",
+        "desc": "Germany is Europe's largest economy and a leading importer of organic and specialty food products, creating strong opportunities for certified exporters."
+      }
+    },
+    "insights": {
+      "title": "Key Market Insights",
+      "demand": "Demand for premium and organic food products continues to rise across developed markets, particularly within specialty grocery channels.",
+      "regulations": "Understanding regulatory frameworks such as FDA and EU food safety standards is essential for successful export market entry.",
+      "buyers": "Importers increasingly prioritize traceability, certifications, and sustainable sourcing when selecting suppliers."
+    },
+    "cta": {
+      "title": "Need Help Choosing the Right Market?",
+      "desc": "Our experts help exporters evaluate international opportunities and develop market entry strategies tailored to their products.",
+      "button": "Request Market Advisory"
+    }
+  },
+
+  "foodcast": {
+    "hero": {
+      "badge": "FoodCast",
+      "title": "FoodCast: Conversations Shaping the Future of Food & Agriculture",
+      "subtitle": "A monthly podcast featuring industry leaders, food innovators, and agricultural experts discussing global trade, food systems, and the future of agriculture.",
+      "cta": "Listen to Latest Episode",
+      "episodesLabel": "Episodes Available",
+      "episodesCount": "Monthly Podcast Series"
+    },
+    "about": {
+      "title": "Insights from Leaders in Food and Agriculture",
+      "description": "FoodCast is a monthly podcast dedicated to exploring the challenges, innovations, and opportunities shaping the global food and agricultural sectors. Through conversations with experts, policymakers, entrepreneurs, and exporters, FoodCast provides valuable insights into how food systems are evolving and how businesses can position themselves for success in global markets."
+    },
+    "featured": {
+      "badge": "Featured Episode",
+      "title": "The Future of African Food Exports",
+      "description": "In this episode, leading trade experts discuss how African food exporters can navigate regulatory frameworks, build global partnerships, and unlock opportunities in international markets.",
+      "listen": "Listen Now"
+    },
+    "episodes": {
+      "title": "Recent Episodes",
+      "ep1": {
+        "title": "Export Opportunities for African Agriculture",
+        "desc": "Exploring the global demand trends shaping export opportunities for African agricultural products."
+      },
+      "ep2": {
+        "title": "Food Safety and Global Compliance",
+        "desc": "Understanding regulatory frameworks that exporters must navigate when entering international markets."
+      },
+      "ep3": {
+        "title": "Building Sustainable Food Supply Chains",
+        "desc": "How sustainability and traceability are reshaping the future of global food trade."
+      }
+    },
+    "subscribe": {
+      "title": "Never Miss an Episode",
+      "desc": "Subscribe to FoodCast to receive updates whenever a new episode featuring food and agriculture experts is released.",
+      "button": "Subscribe for Updates"
+    }
+  },
+
+  "roadmap": {
+    "hero": {
+      "badge": "Export Journey",
+      "title": "Your Export Roadmap",
+      "subtitle": "A structured pathway designed to guide businesses from their first export steps to scaling sustainable global trade operations."
+    },
+    "paths": {
+      "new": {
+        "title": "New Exporters",
+        "desc": "Start your export journey with step-by-step guidance covering export readiness, compliance, and market entry."
+      },
+      "exp": {
+        "title": "Experienced Exporters",
+        "desc": "Scale your export operations, expand into new markets, and strengthen your global trade strategy."
+      }
+    },
+    "new": {
+      "hero": {
+        "title": "Roadmap for New Exporters",
+        "subtitle": "A step-by-step framework to help businesses prepare for international markets, navigate compliance, and build sustainable export operations."
+      },
+      "checklist": {
+        "title": "Export Readiness Checklist",
+        "item1": "Product quality meets international standards",
+        "item2": "Production capacity can meet international demand",
+        "item3": "Export documentation processes are understood",
+        "item4": "Target markets and buyers have been identified"
+      }
+    },
+    "exp": {
+      "hero": {
+        "title": "Roadmap for Experienced Exporters",
+        "subtitle": "Strategies and insights to help established exporters expand globally, strengthen supply chains, and scale international operations."
+      },
+      "strategy": {
+        "title": "Advanced Export Strategies",
+        "item1": "Diversify into multiple international markets to reduce risk.",
+        "item2": "Strengthen supply chain resilience through partnerships and logistics planning.",
+        "item3": "Invest in product certifications and traceability systems.",
+        "item4": "Develop long-term relationships with global distributors and retailers."
+      }
+    },
+    "cta": {
+      "title": "Need Guidance on Your Export Journey?",
+      "desc": "Our advisors help businesses navigate international markets and develop effective export strategies.",
+      "button": "Request Export Advisory"
+    }
   }
 }
   

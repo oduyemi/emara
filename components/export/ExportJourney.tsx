@@ -9,13 +9,13 @@ const stepsData = [
     id: 1,
     key: "newExporters",
     icon: <Compass size={20} />,
-    link: "/suppliers/roadmap/new-exporters",
+    link: "/suppliers/academy/roadmap/new-exporters",
   },
   {
     id: 2,
     key: "experiencedExporters",
     icon: <TrendingUp size={20} />,
-    link: "/suppliers/roadmap/exporters",
+    link: "/suppliers/academy/roadmap/exporters",
   },
 ]
 

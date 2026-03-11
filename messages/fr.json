@@ -1777,6 +1777,137 @@
     "title": "Présentez vos produits aux acheteurs internationaux",
     "description": "Rejoignez les vitrines internationales Emara et présentez vos produits à des acheteurs, distributeurs et détaillants à la recherche de nouveaux fournisseurs africains.",
     "cta": "Postuler aux vitrines internationales"
+  },
+
+  "marketProfiles": {
+    "hero": {
+      "badge": "Intelligence des marchés",
+      "title": "Profils de marchés et de pays",
+      "subtitle": "Explorez les opportunités d’exportation sur les marchés mondiaux grâce à des profils pays détaillés, des analyses réglementaires et des études de la demande conçues pour aider les exportateurs à identifier les marchés les plus adaptés.",
+      "cta": "Explorer les marchés",
+      "marketsLabel": "Marchés couverts",
+      "marketsCount": "50+ marchés mondiaux"
+    },
+    "filters": {
+      "search": "Rechercher des pays ou des marchés...",
+      "region": "Filtrer par région",
+      "sector": "Filtrer par secteur de produits"
+    },
+    "countries": {
+      "usa": {
+        "name": "États-Unis",
+        "desc": "Les États-Unis représentent l’un des plus grands marchés d’importation au monde pour les produits agricoles et les aliments spécialisés, offrant d’importantes opportunités aux exportateurs qui respectent des normes réglementaires strictes."
+      },
+      "uk": {
+        "name": "Royaume-Uni",
+        "desc": "Le Royaume-Uni demeure un marché passerelle clé pour les exportations alimentaires africaines, soutenu par une demande multiculturelle et de solides réseaux de distribution au détail."
+      },
+      "germany": {
+        "name": "Allemagne",
+        "desc": "L’Allemagne est la plus grande économie d’Europe et un importateur majeur de produits alimentaires biologiques et spécialisés, créant de fortes opportunités pour les exportateurs certifiés."
+      }
+    },
+    "insights": {
+      "title": "Principales perspectives du marché",
+      "demand": "La demande de produits alimentaires premium et biologiques continue d’augmenter sur les marchés développés, en particulier dans les circuits d’épiceries spécialisées.",
+      "regulations": "Comprendre les cadres réglementaires tels que les normes de sécurité alimentaire de la FDA et de l’UE est essentiel pour réussir l’entrée sur les marchés d’exportation.",
+      "buyers": "Les importateurs privilégient de plus en plus la traçabilité, les certifications et l’approvisionnement durable lors du choix de leurs fournisseurs."
+    },
+    "cta": {
+      "title": "Besoin d’aide pour choisir le bon marché ?",
+      "desc": "Nos experts aident les exportateurs à évaluer les opportunités internationales et à développer des stratégies d’entrée sur le marché adaptées à leurs produits.",
+      "button": "Demander un conseil de marché"
+    }
+  },
+
+  "foodcast": {
+    "hero": {
+      "badge": "FoodCast",
+      "title": "FoodCast : Conversations qui façonnent l’avenir de l’alimentation et de l’agriculture",
+      "subtitle": "Un podcast mensuel mettant en avant des leaders de l’industrie, des innovateurs du secteur alimentaire et des experts agricoles qui discutent du commerce mondial, des systèmes alimentaires et de l’avenir de l’agriculture.",
+      "cta": "Écouter le dernier épisode",
+      "episodesLabel": "Épisodes disponibles",
+      "episodesCount": "Série de podcasts mensuelle"
+    },
+    "about": {
+      "title": "Perspectives de leaders de l’alimentation et de l’agriculture",
+      "description": "FoodCast est un podcast mensuel consacré à l’exploration des défis, des innovations et des opportunités qui façonnent les secteurs mondiaux de l’alimentation et de l’agriculture. À travers des conversations avec des experts, des décideurs, des entrepreneurs et des exportateurs, FoodCast offre des perspectives précieuses sur l’évolution des systèmes alimentaires et sur la manière dont les entreprises peuvent se positionner pour réussir sur les marchés internationaux."
+    },
+    "featured": {
+      "badge": "Épisode à la une",
+      "title": "L’avenir des exportations alimentaires africaines",
+      "description": "Dans cet épisode, des experts du commerce international discutent de la manière dont les exportateurs alimentaires africains peuvent naviguer dans les cadres réglementaires, établir des partenariats mondiaux et saisir les opportunités des marchés internationaux.",
+      "listen": "Écouter maintenant"
+    },
+    "episodes": {
+      "title": "Épisodes récents",
+      "ep1": {
+        "title": "Opportunités d’exportation pour l’agriculture africaine",
+        "desc": "Explorer les tendances mondiales de la demande qui façonnent les opportunités d’exportation pour les produits agricoles africains."
+      },
+      "ep2": {
+        "title": "Sécurité alimentaire et conformité internationale",
+        "desc": "Comprendre les cadres réglementaires que les exportateurs doivent maîtriser lorsqu’ils entrent sur les marchés internationaux."
+      },
+      "ep3": {
+        "title": "Construire des chaînes d’approvisionnement alimentaires durables",
+        "desc": "Comment la durabilité et la traçabilité transforment l’avenir du commerce alimentaire mondial."
+      }
+    },
+    "subscribe": {
+      "title": "Ne manquez jamais un épisode",
+      "desc": "Abonnez-vous à FoodCast pour recevoir des mises à jour chaque fois qu’un nouvel épisode mettant en vedette des experts de l’alimentation et de l’agriculture est publié.",
+      "button": "S’abonner aux mises à jour"
+    }
+  },
+
+  "roadmap": {
+    "hero": {
+      "badge": "Parcours d’Exportation",
+      "title": "Votre Feuille de Route pour l’Export",
+      "subtitle": "Un parcours structuré conçu pour accompagner les entreprises depuis leurs premières étapes d’exportation jusqu’au développement d’opérations commerciales internationales durables."
+    },
+    "paths": {
+      "new": {
+        "title": "Nouveaux Exportateurs",
+        "desc": "Commencez votre parcours d’exportation avec un accompagnement étape par étape couvrant la préparation à l’export, la conformité et l’entrée sur les marchés internationaux."
+      },
+      "exp": {
+        "title": "Exportateurs Expérimentés",
+        "desc": "Développez vos opérations d’exportation, pénétrez de nouveaux marchés et renforcez votre stratégie de commerce international."
+      }
+    },
+    "new": {
+      "hero": {
+        "title": "Feuille de Route pour les Nouveaux Exportateurs",
+        "subtitle": "Un cadre étape par étape pour aider les entreprises à se préparer aux marchés internationaux, comprendre les exigences réglementaires et construire des opérations d’exportation durables."
+      },
+      "checklist": {
+        "title": "Liste de Vérification de la Préparation à l’Export",
+        "item1": "La qualité du produit répond aux normes internationales",
+        "item2": "La capacité de production peut répondre à la demande internationale",
+        "item3": "Les processus de documentation d’exportation sont maîtrisés",
+        "item4": "Les marchés cibles et les acheteurs ont été identifiés"
+      }
+    },
+    "exp": {
+      "hero": {
+        "title": "Feuille de Route pour les Exportateurs Expérimentés",
+        "subtitle": "Des stratégies et des analyses pour aider les exportateurs établis à se développer à l’international, renforcer leurs chaînes d’approvisionnement et étendre leurs opérations mondiales."
+      },
+      "strategy": {
+        "title": "Stratégies Avancées d’Exportation",
+        "item1": "Se diversifier sur plusieurs marchés internationaux afin de réduire les risques.",
+        "item2": "Renforcer la résilience de la chaîne d’approvisionnement grâce à des partenariats et une planification logistique efficace.",
+        "item3": "Investir dans les certifications de produits et les systèmes de traçabilité.",
+        "item4": "Développer des relations durables avec des distributeurs et détaillants internationaux."
+      }
+    },
+    "cta": {
+      "title": "Besoin d’accompagnement dans votre parcours d’exportation ?",
+      "desc": "Nos conseillers aident les entreprises à naviguer sur les marchés internationaux et à développer des stratégies d’exportation efficaces.",
+      "button": "Demander un Conseil à l’Export"
+    }
   }
 }
   
