@@ -1578,6 +1578,286 @@
       "description": "A forthcoming book that provides an in-depth guide to navigating the European regulatory environment, building relationships with European importers, and developing successful export strategies for food products.",
       "button": "Join the Mailing List"
     }
+  },
+
+  "ProgramsHero": {
+    "label": "Emara Export Programs",
+    "headline": "Programs that help African exporters",
+    "headlineHighlight": "reach global markets",
+    "description": "From export readiness assessments and expert consultations to trade missions and international showcases, Emara programs support African food producers as they scale internationally and connect with global buyers.",
+    "ctaReadiness": "Start Export Readiness",
+    "ctaTradeMissions": "Explore Trade Missions",
+    "credibility": "Supporting African producers entering international markets"
+  },
+
+  "ProgramsIntro": {
+    "title": "Programs designed to help exporters grow internationally",
+    "description": "Emara programs support African food producers at different stages of their export journey. From readiness assessments and consultations to trade missions and international showcases, our initiatives help exporters strengthen capabilities and connect with global markets."
+  },
+
+  "ProgramsGrid": {
+    "learnMore": "Learn more",
+
+    "exportReadiness": {
+      "title": "Export Readiness",
+      "description": "Evaluate your company's readiness to export and receive tailored recommendations to prepare for international markets."
+    },
+
+    "virtualConsultation": {
+      "title": "Virtual Consultation",
+      "description": "Speak with export advisors to receive personalized guidance on certifications, compliance, logistics, and market entry."
+    },
+
+    "tradeMissions": {
+      "title": "Trade Missions",
+      "description": "Participate in targeted trade missions designed to connect African suppliers with international buyers and distributors."
+    },
+
+    "internationalShowcases": {
+      "title": "International Showcases",
+      "description": "Present your products at international exhibitions and curated showcases where buyers actively source new suppliers."
+    }
+  },
+
+  "ProgramsApproach": {
+    "label": "Our Approach",
+    "title": "How Emara programs support exporters",
+    "description": "Emara programs are designed as a structured pathway that helps African exporters move from readiness assessment to global market participation.",
+
+    "step1": {
+      "title": "Assess export readiness",
+      "description": "Evaluate your business capabilities and identify the steps required to prepare for international markets."
+    },
+
+    "step2": {
+      "title": "Strengthen capabilities",
+      "description": "Participate in consultations and targeted programs designed to build export capacity."
+    },
+
+    "step3": {
+      "title": "Connect with buyers",
+      "description": "Engage in trade missions and international showcases where global buyers discover African suppliers."
+    }
+  },
+
+  "ConsultationHero": {
+    "label": "Virtual Consultation",
+    "headline": "Get expert guidance on",
+    "headlineHighlight": "exporting your products globally",
+    "description": "Book a 30-minute session with the Emara team to discuss export readiness, certifications, market entry strategy, and how to position your products for international buyers.",
+    "ctaBook": "Book a 30-minute session",
+    "ctaReadiness": "Check Export Readiness",
+    "highlights": {
+      "call": "30-minute strategy call",
+      "advisory": "Export advisory",
+      "market": "Market guidance"
+    }
+  },
+
+  "ConsultationBenefits": {
+    "label": "Why book a consultation",
+    "title": "Get practical guidance for",
+    "titleHighlight": "entering global markets",
+    "description": "During your consultation, the Emara team provides strategic guidance tailored to your products, target markets, and export readiness.",
+
+    "item1": {
+      "title": "Export readiness guidance",
+      "description": "Understand what international buyers expect and how prepared your business is for export."
+    },
+
+    "item2": {
+      "title": "Certification roadmap",
+      "description": "Learn which certifications are required for markets such as the EU, UK, and Middle East."
+    },
+
+    "item3": {
+      "title": "Market entry strategy",
+      "description": "Receive practical advice on positioning your products for international markets."
+    }
+  },
+
+  "ConsultationTopics": {
+    "title": "Topics we can discuss",
+    "topics": [
+      "Export readiness evaluation",
+      "Food safety and certification requirements",
+      "Packaging and labeling for export markets",
+      "Finding international buyers",
+      "Trade missions and international showcases",
+      "Preparing for global distribution"
+    ]
+  },
+
+  "CalendlyBooking": {
+    "title": "Book your consultation",
+    "description": "Select a convenient time to meet with the Emara team. The session lasts approximately 30 minutes."
+  },
+
+  "ConsultationTrust": {
+    "title": "Who should book a consultation?",
+    "description": "African food producers, processors, and agribusinesses looking to expand into international markets and understand export requirements."
+  },
+
+  "TradeMissionsHero": {
+    "label": "Global Trade Programs",
+    "title": "Trade Missions Connecting",
+    "titleHighlight": "African Exporters With Global Buyers",
+    "description": "Emara trade missions help African suppliers engage directly with international buyers, distributors, and retail partners across priority global markets."
+  },
+
+  "TradeMissionsIntro": {
+    "title": "What are Emara Trade Missions?",
+    "description": "Emara organizes focused international trade missions where African suppliers connect with global buyers, distributors, and retail networks. These missions provide structured market entry opportunities through curated meetings, product showcases, and commercial introductions."
+  },
+
+  "TradeMissionProcess": {
+    "title": "How Trade Missions Work",
+    "step1": {
+      "title": "Supplier selection",
+      "description": "Qualified exporters are selected based on readiness, product quality, and market demand."
+    },
+    "step2": {
+      "title": "Market preparation",
+      "description": "Suppliers receive guidance on market expectations, documentation, and buyer requirements."
+    },
+    "step3": {
+      "title": "Buyer meetings",
+      "description": "Participate in curated meetings with distributors, retailers, and importers."
+    },
+    "step4": {
+      "title": "Market expansion",
+      "description": "Build long-term relationships that lead to export contracts and distribution partnerships."
+    }
+  },
+
+  "TradeMissionBenefits": {
+    "title": "What exporters gain",
+    "description": "Trade missions are designed to help exporters move beyond theory into real commercial opportunities with international buyers.",
+    "benefits": [
+      "Direct access to international buyers",
+      "Market intelligence and export insights",
+      "Opportunities for distribution partnerships",
+      "Brand exposure in global markets",
+      "Connections with retail and foodservice buyers",
+      "Support navigating export compliance"
+    ],
+    "imageAlt": "Trade mission meeting"
+  },
+
+  "FeaturedTradeMission": {
+    "label": "Featured Trade Mission",
+    "title": "Focused Trade Mission to Taiwan for Retail and Foodservice",
+    "date": "August 18—20, 2026",
+    "description": "Kenya offers significant market opportunities for exporters of U.S. agricultural and food products.",
+    "cta": "Learn More"
+  },
+
+  "UpcomingTradeMissions": {
+    "title": "Upcoming Missions",
+    "missions": [
+      {
+        "title": "EU Retail Buyers Mission",
+        "date": "October 2026",
+        "location": "Amsterdam"
+      },
+      {
+        "title": "Middle East Food Importers Mission",
+        "date": "January 2027",
+        "location": "Dubai"
+      },
+      {
+        "title": "Asia Specialty Foods Mission",
+        "date": "March 2027",
+        "location": "Singapore"
+      }
+    ]
+  },
+
+  "TradeMissionCTA": {
+    "title": "Ready to expand into international markets?",
+    "description": "Apply to participate in upcoming Emara trade missions and connect with international buyers seeking African suppliers.",
+    "cta": "Apply for Trade Missions"
+  },
+
+  "InternationalShowcasesHero": {
+    "label": "Global Exposure",
+    "title": "International Showcases for",
+    "titleHighlight": "African Export Brands",
+    "description": "Present your products to international buyers, retailers, and distributors through curated showcases organized by Emara in key global markets."
+  },
+
+  "InternationalShowcasesIntro": {
+    "title": "What are International Showcases?",
+    "description": "Emara International Showcases highlight African export-ready products in curated events where global buyers, distributors, and retailers discover new suppliers. These showcases create opportunities for visibility, product sampling, and commercial partnerships."
+  },
+
+  "ShowcaseProcess": {
+    "title": "How International Showcases Work",
+    "step1": {
+      "title": "Supplier selection",
+      "description": "Export-ready suppliers are selected based on product quality and market demand."
+    },
+    "step2": {
+      "title": "Product preparation",
+      "description": "Suppliers prepare samples, branding materials, and export documentation."
+    },
+    "step3": {
+      "title": "International showcase",
+      "description": "Products are displayed at curated events attended by buyers and distributors."
+    },
+    "step4": {
+      "title": "Buyer engagement",
+      "description": "Interested buyers connect with suppliers for potential partnerships."
+    }
+  },
+
+  "ShowcaseBenefits": {
+    "title": "Why participate in a showcase",
+    "description": "International showcases allow suppliers to present their products directly to global buyers and industry professionals seeking new African brands.",
+    "benefits": [
+      "Global visibility for African brands",
+      "Product discovery by international buyers",
+      "Brand exposure in priority export markets",
+      "Sampling and product demonstrations",
+      "Connections with retail and distribution networks",
+      "Market insights and buyer feedback"
+    ],
+    "imageAlt": "International showcase event"
+  },
+
+  "FeaturedShowcase": {
+    "label": "Featured Showcase",
+    "title": "African Specialty Foods Showcase",
+    "date": "November 2026 — London",
+    "description": "A curated event presenting premium African food and beverage brands to UK retailers, distributors, and hospitality buyers.",
+    "cta": "Learn More"
+  },
+
+  "UpcomingShowcases": {
+    "title": "Upcoming Showcases",
+    "showcases": [
+      {
+        "title": "African Natural Products Showcase",
+        "location": "Berlin",
+        "date": "February 2027"
+      },
+      {
+        "title": "Premium African Food Brands",
+        "location": "Dubai",
+        "date": "May 2027"
+      },
+      {
+        "title": "African Specialty Coffee & Cocoa",
+        "location": "Tokyo",
+        "date": "September 2027"
+      }
+    ]
+  },
+
+  "ShowcaseCTA": {
+    "title": "Showcase your products to global buyers",
+    "description": "Join Emara international showcases and present your products to buyers, distributors, and retailers seeking new African suppliers.",
+    "cta": "Apply for International Showcases"
   }
 }
   

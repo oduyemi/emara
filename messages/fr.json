@@ -1498,6 +1498,285 @@
       "description": "Un livre à paraître qui offre un guide approfondi pour comprendre l’environnement réglementaire européen, établir des relations avec des importateurs européens et développer des stratégies d’exportation réussies pour les produits alimentaires.",
       "button": "Rejoindre la liste de diffusion"
     }
+  },
+
+  "ProgramsHero": {
+    "label": "Programmes d’exportation Emara",
+    "headline": "Des programmes qui aident les exportateurs africains",
+    "headlineHighlight": "à accéder aux marchés mondiaux",
+    "description": "Des évaluations de préparation à l’export aux consultations d’experts, en passant par les missions commerciales et les vitrines internationales, les programmes Emara soutiennent les producteurs alimentaires africains dans leur expansion internationale et leur connexion avec des acheteurs mondiaux.",
+    "ctaReadiness": "Commencer l’évaluation de préparation à l’export",
+    "ctaTradeMissions": "Explorer les missions commerciales",
+    "credibility": "Soutenir les producteurs africains entrant sur les marchés internationaux"
+  },
+  
+  "ProgramsIntro": {
+    "title": "Des programmes conçus pour aider les exportateurs à se développer à l’international",
+    "description": "Les programmes Emara soutiennent les producteurs alimentaires africains à différentes étapes de leur parcours d’exportation. Des évaluations de préparation aux consultations, missions commerciales et vitrines internationales, nos initiatives aident les exportateurs à renforcer leurs capacités et à se connecter aux marchés mondiaux."
+  },
+  
+  "ProgramsGrid": {
+    "learnMore": "En savoir plus",
+  
+    "exportReadiness": {
+      "title": "Préparation à l’export",
+      "description": "Évaluez la capacité de votre entreprise à exporter et recevez des recommandations personnalisées pour vous préparer aux marchés internationaux."
+    },
+  
+    "virtualConsultation": {
+      "title": "Consultation virtuelle",
+      "description": "Échangez avec des conseillers en exportation pour recevoir des conseils personnalisés sur les certifications, la conformité, la logistique et l’entrée sur les marchés."
+    },
+  
+    "tradeMissions": {
+      "title": "Missions commerciales",
+      "description": "Participez à des missions commerciales ciblées conçues pour connecter les fournisseurs africains avec des acheteurs et distributeurs internationaux."
+    },
+  
+    "internationalShowcases": {
+      "title": "Vitrines internationales",
+      "description": "Présentez vos produits lors d’expositions internationales et de vitrines sélectionnées où les acheteurs recherchent activement de nouveaux fournisseurs."
+    }
+  },
+  
+  "ProgramsApproach": {
+    "label": "Notre approche",
+    "title": "Comment les programmes Emara soutiennent les exportateurs",
+    "description": "Les programmes Emara sont conçus comme un parcours structuré qui aide les exportateurs africains à passer de l’évaluation de préparation à la participation aux marchés mondiaux.",
+  
+    "step1": {
+      "title": "Évaluer la préparation à l’export",
+      "description": "Évaluez les capacités de votre entreprise et identifiez les étapes nécessaires pour vous préparer aux marchés internationaux."
+    },
+  
+    "step2": {
+      "title": "Renforcer les capacités",
+      "description": "Participez à des consultations et à des programmes ciblés conçus pour développer vos capacités d’exportation."
+    },
+  
+    "step3": {
+      "title": "Se connecter avec les acheteurs",
+      "description": "Participez à des missions commerciales et à des vitrines internationales où les acheteurs mondiaux découvrent les fournisseurs africains."
+    }
+  },
+  
+  "ConsultationHero": {
+    "label": "Consultation virtuelle",
+    "headline": "Obtenez des conseils d’experts pour",
+    "headlineHighlight": "exporter vos produits à l’international",
+    "description": "Réservez une session de 30 minutes avec l’équipe Emara pour discuter de la préparation à l’export, des certifications, de la stratégie d’entrée sur le marché et du positionnement de vos produits auprès des acheteurs internationaux.",
+    "ctaBook": "Réserver une session de 30 minutes",
+    "ctaReadiness": "Vérifier la préparation à l’export",
+    "highlights": {
+      "call": "Appel stratégique de 30 minutes",
+      "advisory": "Conseil en exportation",
+      "market": "Orientation sur les marchés"
+    }
+  },
+  
+  "ConsultationBenefits": {
+    "label": "Pourquoi réserver une consultation",
+    "title": "Obtenez des conseils pratiques pour",
+    "titleHighlight": "entrer sur les marchés mondiaux",
+    "description": "Lors de votre consultation, l’équipe Emara fournit des conseils stratégiques adaptés à vos produits, vos marchés cibles et votre niveau de préparation à l’export.",
+  
+    "item1": {
+      "title": "Conseils sur la préparation à l’export",
+      "description": "Comprenez ce que les acheteurs internationaux attendent et dans quelle mesure votre entreprise est prête à exporter."
+    },
+  
+    "item2": {
+      "title": "Feuille de route des certifications",
+      "description": "Découvrez quelles certifications sont nécessaires pour des marchés comme l’UE, le Royaume-Uni et le Moyen-Orient."
+    },
+  
+    "item3": {
+      "title": "Stratégie d’entrée sur le marché",
+      "description": "Recevez des conseils pratiques pour positionner vos produits sur les marchés internationaux."
+    }
+  },
+  
+  "ConsultationTopics": {
+    "title": "Sujets que nous pouvons aborder",
+    "topics": [
+      "Évaluation de la préparation à l’export",
+      "Exigences en matière de sécurité alimentaire et de certifications",
+      "Emballage et étiquetage pour les marchés d’exportation",
+      "Trouver des acheteurs internationaux",
+      "Missions commerciales et vitrines internationales",
+      "Préparation à la distribution mondiale"
+    ]
+  },
+  
+  "CalendlyBooking": {
+    "title": "Réservez votre consultation",
+    "description": "Sélectionnez un horaire qui vous convient pour rencontrer l’équipe Emara. La session dure environ 30 minutes."
+  },
+  
+  "ConsultationTrust": {
+    "title": "Qui devrait réserver une consultation ?",
+    "description": "Les producteurs alimentaires africains, transformateurs et entreprises agroalimentaires souhaitant se développer sur les marchés internationaux et comprendre les exigences d’exportation."
+  },
+  "TradeMissionsHero": {
+    "label": "Programmes de commerce international",
+    "title": "Des missions commerciales qui connectent",
+    "titleHighlight": "les exportateurs africains aux acheteurs mondiaux",
+    "description": "Les missions commerciales Emara permettent aux fournisseurs africains d’interagir directement avec des acheteurs internationaux, des distributeurs et des partenaires de distribution dans des marchés mondiaux prioritaires."
+  },
+  
+  "TradeMissionsIntro": {
+    "title": "Qu’est-ce que les missions commerciales Emara ?",
+    "description": "Emara organise des missions commerciales internationales ciblées où les fournisseurs africains rencontrent des acheteurs mondiaux, des distributeurs et des réseaux de distribution. Ces missions offrent des opportunités structurées d’entrée sur les marchés grâce à des réunions organisées, des présentations de produits et des introductions commerciales."
+  },
+  
+  "TradeMissionProcess": {
+    "title": "Comment fonctionnent les missions commerciales",
+    "step1": {
+      "title": "Sélection des fournisseurs",
+      "description": "Les exportateurs qualifiés sont sélectionnés en fonction de leur niveau de préparation, de la qualité de leurs produits et de la demande du marché."
+    },
+    "step2": {
+      "title": "Préparation au marché",
+      "description": "Les fournisseurs reçoivent des conseils sur les attentes du marché, la documentation et les exigences des acheteurs."
+    },
+    "step3": {
+      "title": "Rencontres avec les acheteurs",
+      "description": "Participez à des réunions organisées avec des distributeurs, des détaillants et des importateurs."
+    },
+    "step4": {
+      "title": "Expansion du marché",
+      "description": "Établissez des relations durables pouvant mener à des contrats d’exportation et à des partenariats de distribution."
+    }
+  },
+  
+  "TradeMissionBenefits": {
+    "title": "Ce que les exportateurs gagnent",
+    "description": "Les missions commerciales sont conçues pour aider les exportateurs à passer de la théorie à de véritables opportunités commerciales avec des acheteurs internationaux.",
+    "benefits": [
+      "Accès direct aux acheteurs internationaux",
+      "Informations de marché et perspectives d’exportation",
+      "Opportunités de partenariats de distribution",
+      "Visibilité de la marque sur les marchés internationaux",
+      "Connexions avec des acheteurs du commerce de détail et de la restauration",
+      "Accompagnement pour naviguer dans les exigences de conformité à l’export"
+    ],
+    "imageAlt": "Réunion lors d’une mission commerciale"
+  },
+  
+  "FeaturedTradeMission": {
+    "label": "Mission commerciale à la une",
+    "title": "Mission commerciale ciblée à Taïwan pour les secteurs de la distribution et de la restauration",
+    "date": "18—20 août 2026",
+    "description": "Le Kenya offre d’importantes opportunités de marché pour les exportateurs de produits agricoles et alimentaires américains.",
+    "cta": "En savoir plus"
+  },
+  
+  "UpcomingTradeMissions": {
+    "title": "Missions à venir",
+    "missions": [
+      {
+        "title": "Mission acheteurs du commerce de détail de l’UE",
+        "date": "Octobre 2026",
+        "location": "Amsterdam"
+      },
+      {
+        "title": "Mission importateurs alimentaires du Moyen-Orient",
+        "date": "Janvier 2027",
+        "location": "Dubaï"
+      },
+      {
+        "title": "Mission produits alimentaires spécialisés en Asie",
+        "date": "Mars 2027",
+        "location": "Singapour"
+      }
+    ]
+  },
+  
+  "TradeMissionCTA": {
+    "title": "Prêt à vous développer sur les marchés internationaux ?",
+    "description": "Postulez pour participer aux prochaines missions commerciales Emara et connectez-vous avec des acheteurs internationaux à la recherche de fournisseurs africains.",
+    "cta": "Postuler aux missions commerciales"
+  },
+
+  "InternationalShowcasesHero": {
+    "label": "Visibilité mondiale",
+    "title": "Vitrines internationales pour",
+    "titleHighlight": "les marques exportatrices africaines",
+    "description": "Présentez vos produits à des acheteurs, détaillants et distributeurs internationaux grâce à des vitrines organisées par Emara dans des marchés mondiaux stratégiques."
+  },
+  
+  "InternationalShowcasesIntro": {
+    "title": "Qu’est-ce que les vitrines internationales ?",
+    "description": "Les vitrines internationales Emara mettent en avant des produits africains prêts à l’export lors d’événements sélectionnés où des acheteurs, distributeurs et détaillants internationaux découvrent de nouveaux fournisseurs. Ces vitrines créent des opportunités de visibilité, de dégustation de produits et de partenariats commerciaux."
+  },
+  
+  "ShowcaseProcess": {
+    "title": "Comment fonctionnent les vitrines internationales",
+    "step1": {
+      "title": "Sélection des fournisseurs",
+      "description": "Les fournisseurs prêts à l’export sont sélectionnés en fonction de la qualité de leurs produits et de la demande du marché."
+    },
+    "step2": {
+      "title": "Préparation des produits",
+      "description": "Les fournisseurs préparent des échantillons, des supports de marque et la documentation d’exportation."
+    },
+    "step3": {
+      "title": "Vitrine internationale",
+      "description": "Les produits sont présentés lors d’événements organisés réunissant acheteurs et distributeurs."
+    },
+    "step4": {
+      "title": "Engagement des acheteurs",
+      "description": "Les acheteurs intéressés entrent en contact avec les fournisseurs pour explorer des partenariats potentiels."
+    }
+  },
+  
+  "ShowcaseBenefits": {
+    "title": "Pourquoi participer à une vitrine",
+    "description": "Les vitrines internationales permettent aux fournisseurs de présenter leurs produits directement à des acheteurs mondiaux et à des professionnels du secteur à la recherche de nouvelles marques africaines.",
+    "benefits": [
+      "Visibilité mondiale pour les marques africaines",
+      "Découverte des produits par des acheteurs internationaux",
+      "Exposition de la marque sur des marchés d’exportation prioritaires",
+      "Dégustations et démonstrations de produits",
+      "Connexions avec des réseaux de distribution et de vente au détail",
+      "Informations sur le marché et retours des acheteurs"
+    ],
+    "imageAlt": "Événement de vitrine internationale"
+  },
+  
+  "FeaturedShowcase": {
+    "label": "Vitrine à la une",
+    "title": "Vitrine des spécialités alimentaires africaines",
+    "date": "Novembre 2026 — Londres",
+    "description": "Un événement sélectionné présentant des marques africaines premium de produits alimentaires et de boissons aux détaillants, distributeurs et acheteurs du secteur de l’hôtellerie au Royaume-Uni.",
+    "cta": "En savoir plus"
+  },
+  
+  "UpcomingShowcases": {
+    "title": "Vitrines à venir",
+    "showcases": [
+      {
+        "title": "Vitrine des produits naturels africains",
+        "location": "Berlin",
+        "date": "Février 2027"
+      },
+      {
+        "title": "Marques alimentaires africaines premium",
+        "location": "Dubaï",
+        "date": "Mai 2027"
+      },
+      {
+        "title": "Café et cacao de spécialité africains",
+        "location": "Tokyo",
+        "date": "Septembre 2027"
+      }
+    ]
+  },
+  
+  "ShowcaseCTA": {
+    "title": "Présentez vos produits aux acheteurs internationaux",
+    "description": "Rejoignez les vitrines internationales Emara et présentez vos produits à des acheteurs, distributeurs et détaillants à la recherche de nouveaux fournisseurs africains.",
+    "cta": "Postuler aux vitrines internationales"
   }
 }
   

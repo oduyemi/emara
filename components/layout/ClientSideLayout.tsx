@@ -1,11 +1,10 @@
 "use client";
+
 import { TopHeader } from "../navigation/TopHeader";
 import Footer from "../navigation/Footer";
 import { usePathname } from "next/navigation";
 import { SupplierHeader } from "../navigation/suppliers/Header";
 import { SupplierTopHeader } from "../navigation/suppliers/TopHeader";
-
-
 
 export default function ClientSideLayout({
   children,
@@ -24,6 +23,11 @@ export default function ClientSideLayout({
     pathname === "/buyers/register" ||
     pathname === "/suppliers/onboarding";
 
+  const hideFooter =
+    pathname === "/" ||
+    pathname === "/en" ||
+    pathname === "/fr";
+
   if (hideAllLayout) {
     return <>{children}</>;
   }
@@ -38,7 +42,8 @@ export default function ClientSideLayout({
 
       {children}
 
-      <Footer />
+      {/* Footer */}
+      {!hideFooter && <Footer />}
     </div>
   );
 }
