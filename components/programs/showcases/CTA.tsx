@@ -2,37 +2,28 @@
 import { useTranslations } from "next-intl";
 
 
-export const UpcomingShowcases = () => {
-  const t = useTranslations("UpcomingShowcases");
-  const showcases = t.raw("showcases") as { title: string; date: string; location: string }[];
+export const ShowcaseCTA = () => {
+  const t = useTranslations("ShowcaseCTA");
 
   return (
-    <section className="py-24 px-6 bg-white">
-      <div className="max-w-6xl mx-auto">
+    <section className="py-28 px-6 bg-[#0F233F] text-white text-center">
 
-        <h2 className="text-3xl font-semibold text-[#0F233F] mb-12 text-center">
+      <div className="max-w-3xl mx-auto">
+
+        <h2 className="text-3xl md:text-4xl font-semibold mb-6">
           {t("title")}
         </h2>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {showcases.map((showcase, i) => (
-            <div key={i} className="p-6 border border-gray-200 rounded-xl">
-              <h3 className="font-semibold text-[#0F233F] mb-2">
-                {showcase.title}
-              </h3>
+        <p className="text-gray-300 mb-8">
+          {t("description")}
+        </p>
 
-              <p className="text-gray-500 text-sm">
-                {showcase.date}
-              </p>
-
-              <p className="text-gray-600 text-sm">
-                {showcase.location}
-              </p>
-            </div>
-          ))}
-        </div>
+        <button className="px-8 py-4 btn-primary text-white rounded-xl font-semibold hover:opacity-90 transition">
+          {t("cta")}
+        </button>
 
       </div>
+
     </section>
   );
 };
