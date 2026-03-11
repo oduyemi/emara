@@ -5,10 +5,10 @@ import Image from "next/image"
 import clsx from "clsx"
 import { Menu, Search } from "lucide-react"
 import { useTranslations } from "next-intl"
-import { MobileDrawer } from "../MobileDrawer"
 import { MobileSearch } from "../MobileSearch"
-import { LanguageSwitcher } from "../LanguageSwitcher"
 import dynamic from "next/dynamic"
+import { SupplierMobileDrawer } from "./MobileDrawer"
+import { LanguageSwitcher } from "../LanguageSwitcher"
 
 const ExploreMenu = dynamic(() => import("./ExploreMenu"), { ssr: false })
 
@@ -152,7 +152,7 @@ export const SupplierHeader = () => {
       </div>
 
       {/* Mobile Drawers */}
-      <MobileDrawer open={mobileMenuOpen} setOpen={setMobileMenuOpen} />
+      <SupplierMobileDrawer open={mobileMenuOpen} setOpen={setMobileMenuOpen} />
       <MobileSearch open={mobileSearchOpen} setOpen={setMobileSearchOpen} />
     </header>
   )

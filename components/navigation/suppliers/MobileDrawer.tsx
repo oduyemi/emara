@@ -3,10 +3,10 @@ import { Dialog, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
-import { LanguageSwitcher } from "./LanguageSwitcher";
+import { LanguageSwitcher } from "../LanguageSwitcher";
 import { X } from "lucide-react";
 
-export function MobileDrawer({ open, setOpen }: any) {
+export function SupplierMobileDrawer({ open, setOpen }: any) {
   const t = useTranslations("Header")
 
   const close = () => setOpen(false)
@@ -55,39 +55,39 @@ export function MobileDrawer({ open, setOpen }: any) {
             <nav className="flex flex-col gap-6 text-sm">
 
               <div className="flex flex-col gap-4">
-                <Link href="/buyers" onClick={close} className="hover:text-accent transition">
-                  {t("buyers")}
+                <Link href="/suppliers/programs/export-readiness" onClick={close} className="hover:text-accent transition">
+                  {t("readiness")}
                 </Link>
 
-                <Link href="/supliers" onClick={close} className="hover:text-accent transition">
-                  {t("suppliers")}
+                <Link href="/suppliers/onboarding" onClick={close} className="hover:text-accent transition">
+                  {t("onboarding")}
                 </Link>
 
-                <Link href="/verified-suppliers" onClick={close} className="hover:text-accent transition">
-                  {t("verifiedSuppliers")}
-                </Link>
-
-                <Link href="/directory" onClick={close} className="hover:text-accent transition">
-                  {t("supplier_directory")}
+                <Link href="/suppliers/academy" onClick={close} className="hover:text-accent transition">
+                  {t("academy")}
                 </Link>
 
                 <Link href="/about" onClick={close} className="hover:text-accent transition">
                   {t("about")}
                 </Link>
 
+                <Link href="/support" onClick={close} className="hover:text-accent transition">
+                  {t("support")}
+                </Link>
+
               </div>
 
               <div className="border-t border-white/10 pt-6 flex flex-col gap-4">
-                <Link href="/login" onClick={close} className="hover:text-accent transition">
+                <Link href="/suppliers/login" onClick={close} className="hover:text-accent transition">
                   {t("signIn")}
                 </Link>
 
                 <Link
-                  href="/get-verified"
+                  href="/suppliers/register"
                   onClick={close}
                   className="btn-primary px-4 py-2 rounded-md text-center"
                 >
-                  {t("getVerified")}
+                  {t("start_journey")}
                 </Link>
               </div>
 

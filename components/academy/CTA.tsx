@@ -48,7 +48,7 @@ export const AcademyCTA = () => {
           <div className="relative flex flex-col sm:flex-row justify-center gap-4">
 
             <Link
-              href="/suppliers/academy/export-essentials"
+              href="/suppliers/academy/export-essentials-online"
               className="group inline-flex items-center justify-center px-8 py-3 rounded-lg btn-primary text-sm font-medium transition hover:shadow-lg"
             >
               {t("primaryCTA")}

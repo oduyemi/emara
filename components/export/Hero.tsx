@@ -55,14 +55,14 @@ export default function ExportHero() {
           <div className="flex flex-col sm:flex-row gap-4 pt-2">
 
             <Link
-              href="/suppliers/export-readiness"
+              href="/suppliers/programs/export-readiness"
               className="btn-primary px-8 py-4 rounded-xl shadow-xl text-center"
             >
               {t("checkReadiness")}
             </Link>
 
             <Link
-              href="/suppliers/demo"
+              href="/suppliers/academy"
               className="px-8 py-4 rounded-xl border border-white/40 text-white hover:bg-white hover:text-[var(--color-secondary)] transition-all text-center"
             >
               {t("secondaryCta")}
