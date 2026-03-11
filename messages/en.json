@@ -1224,9 +1224,9 @@
   },
 
   "academyHero": {
-    "label": "Emara Export Academy",
+    "label": "Export Learning Programs",
     "title": "Learn how to export successfully",
-    "description": "The Emara Academy equips African food producers with the knowledge, tools, and market insights required to enter international markets. Explore webinars, workshops, market intelligence, and structured learning pathways designed to help exporters grow globally.",
+    "description": "Enhance your export expertise with ongoing education programs for all experience levels, whether you’ve never exported or you’re already exporting.",
 
     "primaryCTA": "Check Your Export Readiness",
     "secondaryCTA": "Export Essentials Online",
@@ -1248,9 +1248,12 @@
   },
 
   "academyPrograms": {
-    "label": "Export Learning Programs",
-    "title": "Explore the Emara Academy",
-    "description": "The Emara Export Academy provides practical learning resources designed to help producers understand international trade, build export readiness, and expand into global markets.",
+    "label": "Academy Overview",
+    "title": "Ready to Export? Start Here",
+    "description": "Discover what export opportunities are available for your food and agricultural products. The right education and preparation can significantly enhance your export readiness and help produce greater results. With 24/7 access to our digital training suite, you can prepare for export success at your own pace, from anywhere at any time.",
+    "sub": "All programs require an Emara account. If you're a first-time visitor, please complete our",
+    "link": "New User Registration",
+    "subcontd": "to get started",
 
     "explore": "Explore →",
 
@@ -1261,23 +1264,23 @@
       },
       "workshops": {
         "title": "Workshops",
-        "desc": "Interactive learning programs designed to strengthen export capabilities through hands-on guidance."
+        "desc": "Hands-on workshops throughout the year held at a variety of locations on export industry topics."
       },
       "exportEssentials": {
         "title": "Export Essentials Online",
-        "desc": "Structured courses guiding exporters from foundational knowledge to advanced trade strategies."
+        "desc": "Tailored answers to both basic and intricate questions related to exporting."
       },
       "marketProfiles": {
         "title": "Market & Country Profiles",
-        "desc": "Explore market intelligence and country-specific export insights for global trade."
+        "desc": "In-depth, research-driven reports designed to help you evaluate the viability of your products in specific global regions."
       },
       "foodcast": {
         "title": "Foodcast",
-        "desc": "Industry conversations and interviews with exporters, buyers, and global trade experts."
+        "desc": "A monthly podcast for food and agricultural exporters."
       },
       "roadmap": {
         "title": "Export Roadmap",
-        "desc": "A structured step-by-step framework to prepare, launch, and scale your export journey."
+        "desc": "A complete digital curriculum covering the exporting process step-by-step."
       }
     }
   },

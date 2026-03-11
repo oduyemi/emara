@@ -51,7 +51,7 @@ export const AcademyHero = () => {
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
+        {/* <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
             <Link href="/suppliers/programs/export-readiness">
                 <button className="btn-primary px-6 py-3 rounded-lg font-medium hover:opacity-90 transition">
                     {t("primaryCTA")}
@@ -63,10 +63,10 @@ export const AcademyHero = () => {
                     {t("secondaryCTA")}
                 </button>
           </Link>
-        </div>
+        </div> */}
 
         {/* Stats */}
-        <div className="grid grid-cols-3 gap-6 max-w-xl mx-auto">
+        {/* <div className="grid grid-cols-3 gap-6 max-w-xl mx-auto">
 
           <div className="bg-white/10 backdrop-blur-md border border-white/10 rounded-xl py-4">
             <div className="text-xl font-semibold">{t("stats.resources.value")}</div>
@@ -83,7 +83,7 @@ export const AcademyHero = () => {
             <p className="text-xs text-white/80">{t("stats.insights.label")}</p>
           </div>
 
-        </div>
+        </div> */}
       </motion.div>
     </section>
   );

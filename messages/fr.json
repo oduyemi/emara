@@ -1225,12 +1225,12 @@
   },
 
   "academyHero": {
-    "label": "Académie d’exportation Emara",
+    "label": "Programmes de formation à l’export",
     "title": "Apprenez à exporter avec succès",
-    "description": "L’Académie Emara offre aux producteurs alimentaires africains les connaissances, les outils et les analyses de marché nécessaires pour accéder aux marchés internationaux. Découvrez des webinaires, des ateliers, des analyses de marché et des parcours d’apprentissage structurés conçus pour aider les exportateurs à se développer à l’échelle mondiale.",
+    "description": "Développez votre expertise en exportation grâce à des programmes de formation continue adaptés à tous les niveaux d’expérience, que vous n’ayez jamais exporté ou que vous exportiez déjà.",
   
-    "primaryCTA": "Vérifiez votre préparation à l’export",
-    "secondaryCTA": "Les bases de l’export en ligne",
+    "primaryCTA": "Évaluez votre préparation à l’export",
+    "secondaryCTA": "Export Essentials en ligne",
   
     "stats": {
       "resources": {
@@ -1239,46 +1239,49 @@
       },
       "topics": {
         "value": "10+",
-        "label": "Sujets d’exportation"
+        "label": "Thèmes d’exportation"
       },
       "insights": {
-        "value": "Global",
+        "value": "Mondial",
         "label": "Analyses de marché"
       }
     }
   },
-
+  
   "academyPrograms": {
-    "label": "Programmes de formation à l’export",
-    "title": "Explorez l’Académie Emara",
-    "description": "L’Académie d’Export Emara propose des ressources d’apprentissage pratiques conçues pour aider les producteurs à comprendre le commerce international, renforcer leur préparation à l’export et se développer sur les marchés mondiaux.",
+    "label": "Présentation de l’Académie",
+    "title": "Prêt à exporter ? Commencez ici",
+    "description": "Découvrez les opportunités d’exportation disponibles pour vos produits alimentaires et agricoles. Une formation et une préparation appropriées peuvent considérablement améliorer votre capacité à exporter et produire de meilleurs résultats. Grâce à un accès 24h/24 et 7j/7 à notre suite de formation numérique, vous pouvez vous préparer au succès à l’export à votre propre rythme, où que vous soyez et à tout moment.",
+    "sub": "Tous les programmes nécessitent un compte Emara. Si vous êtes un nouvel utilisateur, veuillez compléter notre",
+    "link": "Inscription nouvel utilisateur",
+    "subcontd": "pour commencer",
   
     "explore": "Explorer →",
   
     "items": {
       "webinars": {
         "title": "Webinaires",
-        "desc": "Sessions animées par des experts couvrant la conformité à l’export, la logistique et les opportunités sur les marchés internationaux."
+        "desc": "Sessions animées par des experts couvrant la conformité à l’export, la logistique et les opportunités des marchés internationaux."
       },
       "workshops": {
         "title": "Ateliers",
-        "desc": "Programmes d’apprentissage interactifs conçus pour renforcer les capacités d’export grâce à un accompagnement pratique."
+        "desc": "Ateliers pratiques organisés tout au long de l’année dans différents lieux sur des thématiques liées à l’export."
       },
       "exportEssentials": {
-        "title": "Les bases de l’export en ligne",
-        "desc": "Cours structurés guidant les exportateurs des connaissances fondamentales aux stratégies commerciales avancées."
+        "title": "Export Essentials en ligne",
+        "desc": "Des réponses adaptées aux questions simples comme aux problématiques plus complexes liées à l’exportation."
       },
       "marketProfiles": {
         "title": "Profils de marchés et de pays",
-        "desc": "Explorez des analyses de marché et des informations spécifiques par pays pour le commerce international."
+        "desc": "Rapports approfondis basés sur la recherche pour vous aider à évaluer la viabilité de vos produits dans différentes régions du monde."
       },
       "foodcast": {
         "title": "Foodcast",
-        "desc": "Conversations et interviews avec des exportateurs, acheteurs et experts du commerce international."
+        "desc": "Un podcast mensuel destiné aux exportateurs de produits alimentaires et agricoles."
       },
       "roadmap": {
-        "title": "Feuille de route pour l’export",
-        "desc": "Un cadre structuré étape par étape pour préparer, lancer et développer votre parcours à l’export."
+        "title": "Feuille de route de l’export",
+        "desc": "Un programme numérique complet couvrant le processus d’exportation étape par étape."
       }
     }
   },

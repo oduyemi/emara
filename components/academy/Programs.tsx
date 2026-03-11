@@ -66,6 +66,18 @@ export const AcademyPrograms = () => {
           <p className="text-gray-600 leading-relaxed">
             {t("description")}
           </p>
+
+          <p className="text-black/85 max-w-2xl mx-auto leading-relaxed mb-10 mt-4">
+          <i>
+            {t("sub")} {" "}
+            <span>
+              <Link href="/suppliers/register" className="text-blue-600">
+                {t("link")} {" "}
+              </Link>
+            </span>
+            {t("subcontd")}
+          </i>
+        </p>
         </div>
 
         {/* Program grid */}
