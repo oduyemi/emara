@@ -3,10 +3,10 @@ import { CalendlyBooking } from "@/components/programs/consultation/Booking";
 import { ConsultationTopics } from "@/components/programs/consultation/Topics";
 import { ConsultationTrust } from "@/components/programs/consultation/Trust";
 import { ShowcaseBenefits } from "@/components/programs/showcases/Benefits";
+import { ShowcaseCTA } from "@/components/programs/showcases/CTA";
 import { InternationalShowcasesHero } from "@/components/programs/showcases/Hero";
 import { InternationalShowcasesIntro } from "@/components/programs/showcases/Intro";
 import { ShowcaseProcess } from "@/components/programs/showcases/Process";
-import { ShowcaseCTA } from "@/components/programs/showcases/Upcoming";
 
 
 
