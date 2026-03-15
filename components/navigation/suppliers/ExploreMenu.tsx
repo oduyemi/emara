@@ -89,7 +89,7 @@ function Category({
 }) {
   return (
     <div className="group">
-      <h3 className="font-semibold mb-4 text-gray-900 tracking-tight">
+      <h3 className="font-semibold mb-4 text-gray-900 tracking-tight hover:text-accent">
         {title}
       </h3>
 

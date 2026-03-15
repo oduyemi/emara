@@ -102,7 +102,7 @@ export const SupplierHeader = () => {
 
             <Link
               href="/suppliers/login"
-              className="text-accent hover:text-black transition-colors"
+              className="text-accent hover:text-yellow-800 transition-colors"
             >
               {t("signIn")}
             </Link>
@@ -116,7 +116,7 @@ export const SupplierHeader = () => {
 
             <Link
               href="/suppliers/dashboard"
-              className="text-black/80 hover:text-accent transition-colors"
+              className="text-black/80 hover:text-yellow-800 transition-colors"
             >
               {t("dashboard")}
             </Link>
@@ -139,10 +139,10 @@ export const SupplierHeader = () => {
               key={item.href}
               href={item.href}
               className="
-                relative transition-colors hover:text-accent
+                relative transition-colors
                 after:absolute after:-bottom-1 after:left-0
                 after:h-[2px] after:w-0 after:bg-accent
-                after:transition-all hover:after:w-full
+                after:transition-all hover:after:w-full hover:text-yellow-800
               "
             >
               {item.label}

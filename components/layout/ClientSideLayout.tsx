@@ -1,5 +1,4 @@
 "use client";
-
 import { TopHeader } from "../navigation/TopHeader";
 import Footer from "../navigation/Footer";
 import { usePathname } from "next/navigation";
@@ -13,7 +12,7 @@ export default function ClientSideLayout({
 }) {
   const pathname = usePathname();
 
-  const isSupplierRoute = pathname.startsWith("/suppliers");
+  const isSupplierRoute = pathname.includes("/suppliers");
 
   const hideAllLayout =
     pathname === "/login" ||

@@ -1,5 +1,4 @@
 "use client";
-
 import { useState, useTransition, useRef, useEffect } from "react";
 import { useLocale } from "next-intl";
 import { useRouter, usePathname } from "@/i18n/navigation";
@@ -66,8 +65,8 @@ export function LanguageSwitcher() {
         disabled={isPending}
         className={clsx(
           "flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium",
-          "bg-white/5 border border-white/10",
-          "hover:bg-white/10",
+          "bg-white/10 border border-white/20",
+          "hover:bg-white/200",
           "transition-all duration-200",
           "focus:outline-none focus:ring-2 focus:ring-accent/50"
         )}
@@ -89,7 +88,7 @@ export function LanguageSwitcher() {
         onClick={(e) => e.stopPropagation()}
         className={clsx(
           "absolute right-0 mt-12 w-44 rounded-2xl overflow-hidden",
-          "bg-surface-dark/95 backdrop-blur-xl",
+          "bg-surface-dark/30 backdrop-blur-xl",
           "border border-white/10 shadow-2xl",
           "transition-all duration-200 origin-top",
           open
@@ -109,10 +108,10 @@ export function LanguageSwitcher() {
               onClick={() => switchLanguage(lang.code)}
               className={clsx(
                 "w-full flex items-center justify-between px-4 py-3 text-sm",
-                "transition-all duration-150",
+                "transition-all duration-150 text-blue-400",
                 isActive
                   ? "bg-accent/10 text-accent"
-                  : "hover:bg-white/10"
+                  : "hover:bg-white/90"
               )}
             >
               <span>{lang.label}</span>
