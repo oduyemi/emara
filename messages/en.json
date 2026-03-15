@@ -1989,6 +1989,36 @@
       "desc": "Our advisors help businesses navigate international markets and develop effective export strategies.",
       "button": "Request Export Advisory"
     }
+  },
+
+  "auth": {
+    "login": {
+      "title": "Welcome Back",
+      "subtitle": "Sign in to access your supplier dashboard.",
+      "email": "Email Address",
+      "emailPlaceholder": "Enter your email",
+      "password": "Password",
+      "passwordPlaceholder": "Enter your password",
+      "forgot": "Forgot password?",
+      "loginButton": "Sign In",
+      "noAccount": "Don't have an account?",
+      "register": "Create one"
+    },
+    "register": {
+      "title": "Create Your Account",
+      "subtitle": "Join the platform and start your export journey.",
+      "name": "Full Name",
+      "namePlaceholder": "Enter your full name",
+      "company": "Company Name",
+      "companyPlaceholder": "Enter your company name",
+      "email": "Email Address",
+      "emailPlaceholder": "Enter your email",
+      "password": "Password",
+      "passwordPlaceholder": "Create a password",
+      "registerButton": "Create Account",
+      "haveAccount": "Already have an account?",
+      "login": "Sign in"
+    }
   }
 }
   

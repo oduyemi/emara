@@ -1908,6 +1908,36 @@
       "desc": "Nos conseillers aident les entreprises à naviguer sur les marchés internationaux et à développer des stratégies d’exportation efficaces.",
       "button": "Demander un Conseil à l’Export"
     }
+  },
+
+  "auth": {
+    "login": {
+      "title": "Bon retour",
+      "subtitle": "Connectez-vous pour accéder à votre tableau de bord fournisseur.",
+      "email": "Adresse e-mail",
+      "emailPlaceholder": "Entrez votre e-mail",
+      "password": "Mot de passe",
+      "passwordPlaceholder": "Entrez votre mot de passe",
+      "forgot": "Mot de passe oublié ?",
+      "loginButton": "Se connecter",
+      "noAccount": "Vous n’avez pas de compte ?",
+      "register": "Créer un compte"
+    },
+    "register": {
+      "title": "Créez votre compte",
+      "subtitle": "Rejoignez la plateforme et commencez votre parcours d’exportation.",
+      "name": "Nom complet",
+      "namePlaceholder": "Entrez votre nom complet",
+      "company": "Nom de l’entreprise",
+      "companyPlaceholder": "Entrez le nom de votre entreprise",
+      "email": "Adresse e-mail",
+      "emailPlaceholder": "Entrez votre e-mail",
+      "password": "Mot de passe",
+      "passwordPlaceholder": "Créer un mot de passe",
+      "registerButton": "Créer un compte",
+      "haveAccount": "Vous avez déjà un compte ?",
+      "login": "Se connecter"
+    }
   }
 }
   
