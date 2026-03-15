@@ -2,46 +2,15 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import {
-  Video,
-  Presentation,
-  BookOpen,
-  Globe,
-  Mic,
-  Map
-} from "lucide-react";
+
 
 const programs = [
-  {
-    key: "webinars",
-    icon: <Video size={22} />,
-    link: "/suppliers/academy/webinars"
-  },
-  {
-    key: "workshops",
-    icon: <Presentation size={22} />,
-    link: "/suppliers/academy/workshops"
-  },
-  {
-    key: "exportEssentials",
-    icon: <BookOpen size={22} />,
-    link: "/suppliers/academy/export-essentials-online"
-  },
-  {
-    key: "marketProfiles",
-    icon: <Globe size={22} />,
-    link: "/suppliers/academy/market-country-profiles"
-  },
-  {
-    key: "foodcast",
-    icon: <Mic size={22} />,
-    link: "/suppliers/academy/foodcast"
-  },
-  {
-    key: "roadmap",
-    icon: <Map size={22} />,
-    link: "/suppliers/academy/roadmap"
-  }
+  { key: "webinars", img: "/images/webinars.jpg", link: "/suppliers/academy/webinars" },
+  { key: "workshops", img: "/images/workshops.jpg", link: "/suppliers/academy/workshops" },
+  { key: "exportEssentials", img: "/images/essentials.jpg", link: "/suppliers/academy/export-essentials-online" },
+  { key: "marketProfiles", img: "/images/country.jpg", link: "/suppliers/academy/market-country-profiles" },
+  { key: "foodcast", img: "/images/foodcasts.jpg", link: "/suppliers/academy/foodcast" },
+  { key: "roadmap", img: "/images/roadmaps.jpg", link: "/suppliers/academy/roadmap" }
 ];
 
 
@@ -49,9 +18,13 @@ export const AcademyPrograms = () => {
   const t = useTranslations("academyPrograms");
 
   return (
-    <section className="py-24 px-6 bg-white">
+    <section className="relative py-28 px-6 bg-gradient-to-b from-neutral-50 to-white overflow-hidden">
 
-      <div className="max-w-7xl mx-auto">
+      {/* Ambient gradients */}
+      <div className="absolute -top-32 left-[-120px] w-[400px] h-[400px] bg-[var(--color-accent-soft)]/10 rounded-full blur-[120px] animate-[float_12s_ease-in-out_infinite]" />
+      <div className="absolute -bottom-32 right-[-120px] w-[400px] h-[400px] bg-[var(--color-primary)]/10 rounded-full blur-[120px] animate-[float_14s_ease-in-out_infinite]" />
+
+      <div className="relative max-w-7xl mx-auto">
 
         {/* Section header */}
         <div className="text-center mb-16 max-w-2xl mx-auto">
@@ -59,7 +32,7 @@ export const AcademyPrograms = () => {
             {t("label")}
           </p>
 
-          <h2 className="text-3xl md:text-4xl font-semibold text-[#0F233F] mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#0F233F] mb-4">
             {t("title")}
           </h2>
 
@@ -67,66 +40,59 @@ export const AcademyPrograms = () => {
             {t("description")}
           </p>
 
-          <p className="text-black/85 max-w-2xl mx-auto leading-relaxed mb-10 mt-4">
-          <i>
-            {t("sub")} {" "}
-            <span>
-              <Link href="/suppliers/register" className="text-blue-600">
-                {t("link")} {" "}
-              </Link>
-            </span>
+          <p className="text-black/85 max-w-2xl mx-auto leading-relaxed mt-4 italic">
+            {t("sub")}{" "}
+            <Link href="/suppliers/register" className="text-blue-600 font-medium underline">
+              {t("link")}
+            </Link>{" "}
             {t("subcontd")}
-          </i>
-        </p>
+          </p>
         </div>
 
-        {/* Program grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
+        {/* Programs grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
           {programs.map((p, i) => (
             <motion.div
               key={p.key}
-              initial={{ opacity: 0, y: 25 }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.08 }}
+              transition={{ delay: i * 0.1, duration: 0.6 }}
               viewport={{ once: true }}
             >
-
               <Link
                 href={p.link}
-                className="group relative block rounded-2xl border border-gray-200 bg-[#F9FBFD] p-8 hover:shadow-lg transition duration-300 overflow-hidden"
+                className="group relative block rounded-3xl border border-gray-200 bg-white overflow-hidden shadow-md hover:shadow-xl transition-all duration-400 h-full flex flex-col"
               >
+                {/* Hover glow */}
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-700 bg-gradient-to-br from-accent/5 via-transparent to-primary/10 rounded-3xl" />
 
-                {/* subtle hover glow */}
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition bg-gradient-to-br from-accent/5 to-transparent" />
-
-                {/* icon */}
-                <div className="relative w-12 h-12 rounded-xl bg-white border flex items-center justify-center mb-6 text-[#0F233F] group-hover:scale-105 transition">
-                  {p.icon}
+                {/* Image */}
+                <div className="relative w-full h-52 md:h-56 overflow-hidden rounded-t-3xl flex-shrink-0 group-hover:scale-105 group-hover:rotate-1 transition-transform duration-300">
+                  <img
+                    src={p.img}
+                    alt={t(`items.${p.key}.title`)}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
 
-                {/* title */}
-                <h3 className="relative text-lg font-semibold text-[#0F233F] mb-2">
-                  {t(`items.${p.key}.title`)}
-                </h3>
-
-                {/* description */}
-                <p className="relative text-sm text-gray-600 mb-5 leading-relaxed">
-                  {t(`items.${p.key}.desc`)}
-                </p>
-
-                {/* link */}
-                <span className="relative text-sm text-accent font-medium group-hover:underline">
-                  {t("explore")}
-                </span>
-
+                {/* Content */}
+                <div className="p-6 flex-1 flex flex-col justify-between">
+                  <div>
+                    <h3 className="text-lg md:text-xl font-semibold text-[#0F233F] mb-2 group-hover:text-accent transition-colors duration-300">
+                      {t(`items.${p.key}.title`)}
+                    </h3>
+                    <p className="text-sm text-gray-600 mb-4 leading-relaxed">
+                      {t(`items.${p.key}.desc`)}
+                    </p>
+                  </div>
+                  <span className="text-sm text-accent font-medium group-hover:underline transition duration-300">
+                    {t("explore")}
+                  </span>
+                </div>
               </Link>
-
             </motion.div>
           ))}
-
         </div>
-
       </div>
     </section>
   );
