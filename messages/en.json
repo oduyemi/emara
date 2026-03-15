@@ -1133,7 +1133,7 @@
 
   "upcomingEvents": {
     "label": "Upcoming Learning Events",
-    "cta": "Register",
+    "cta": "Veiw Details",
     "events": [
       {
         "title": "Export Documentation Masterclass",

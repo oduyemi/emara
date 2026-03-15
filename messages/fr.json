@@ -1134,7 +1134,7 @@
 
   "upcomingEvents": {
     "label": "Événements de formation à venir",
-    "cta": "S’inscrire",
+    "cta": "Voir les détails",
     "events": [
       {
         "title": "Masterclass sur la documentation d’exportation",

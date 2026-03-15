@@ -18,11 +18,12 @@ export default function Exporters() {
   return (
     <div>
       <ExportHero />
-      <SuppliersIntro />
       <SuppliersPathways />
+      <SuppliersIntro />
       <FeaturedEvent />
-      <UpcomingEvents />
       <ExportJourney />
+      <UpcomingEvents />
+      
       <SuccessStories />
       <FAQ />
       <NewExporters />

@@ -1,9 +1,9 @@
-"use client"
-
-import { motion } from "framer-motion"
-import { CalendarDays, Video } from "lucide-react"
-import Link from "next/link"
-import { useTranslations } from "next-intl"
+"use client";
+import { motion } from "framer-motion";
+import { CalendarDays, Video, ArrowRight } from "lucide-react";
+import Link from "next/link";
+import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 type Event = {
   title: string
@@ -12,74 +12,96 @@ type Event = {
   link: string
 }
 
+const eventImages = [
+  "/images/organic.jpg",
+  "/images/export.jpg",
+  "/images/grain.jpg",
+];
+
 export const UpcomingEvents = () => {
 
-  const t = useTranslations("upcomingEvents")
+  const t = useTranslations("upcomingEvents");
 
-  const events = t.raw("events") as Event[]
+  const events = t.raw("events") as Event[];
 
   return (
-    <section className="relative py-24 px-6 bg-[var(--color-bg)] overflow-hidden">
+    <section className="relative py-28 px-6 bg-[var(--color-bg)] overflow-hidden">
 
-      <div className="max-w-6xl mx-auto relative">
+      <div className="max-w-7xl mx-auto relative">
 
         {/* Section header */}
         <div className="mb-16 max-w-xl">
-
-          <p className="text-xs uppercase tracking-[0.2em] text-accent mb-4">
+          <p className="text-xs uppercase tracking-[0.25em] text-accent mb-4">
             {t("label")}
           </p>
-
         </div>
 
-        {/* Event cards */}
-        <div className="grid md:grid-cols-3 gap-8">
+        {/* Events */}
+        <div className="grid md:grid-cols-3 gap-10">
 
           {events.map((event, i) => (
 
             <motion.div
               key={i}
-              initial={{ opacity: 0, y: 25 }}
+              initial={{ opacity: 0, y: 35 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: i * 0.12, duration: 0.6 }}
               viewport={{ once: true }}
-              whileHover={{ y: -8 }}
-              className="group relative rounded-xl border border-[var(--color-surface-border)] bg-[var(--color-surface)] p-7 shadow-sm hover:shadow-lg transition-all duration-500 overflow-hidden"
+              whileHover={{ y: -10 }}
+              className="group relative rounded-2xl border border-[var(--color-surface-border)] bg-white overflow-hidden shadow-sm hover:shadow-[0_30px_70px_-25px_rgba(0,0,0,0.25)] transition-all duration-500"
             >
 
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-700 bg-gradient-to-br from-[var(--color-accent-soft)]/10 to-transparent" />
+              {/* Accent bar */}
+              <div className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-[var(--color-accent-soft)] via-[var(--color-accent)] to-[var(--color-primary)]"/>
 
-              <div className="relative">
+              {/* Image */}
+              <div className="relative h-[180px] overflow-hidden">
 
-                {/* Event type */}
-                <div className="flex items-center gap-2 text-xs text-accent mb-3 uppercase tracking-wide">
+                <Image
+                  src={eventImages[i]}
+                  alt={event.title}
+                  fill
+                  className="object-cover transition duration-[1400ms] group-hover:scale-110"
+                />
 
-                  <Video size={14}/>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"/>
 
+                {/* Event type badge */}
+                <div className="absolute top-4 left-4 bg-white/90 backdrop-blur text-secondary text-xs px-3 py-1 rounded-full flex items-center gap-1 shadow-sm">
+                  <Video size={12}/>
                   {event.type}
-
                 </div>
 
+              </div>
+
+              <div className="p-7">
+
                 {/* Title */}
-                <h3 className="text-secondary font-semibold mb-4 leading-snug">
+                <h3 className="text-secondary font-semibold mb-4 leading-snug text-[17px]">
                   {event.title}
                 </h3>
 
                 {/* Date */}
                 <div className="flex items-center text-sm text-muted mb-6">
-                  <CalendarDays size={16} className="mr-2"/>
+                  <CalendarDays size={16} className="mr-2 text-accent"/>
                   {event.date}
                 </div>
 
                 {/* CTA */}
                 <Link
                   href={event.link}
-                  className="inline-flex items-center text-sm font-medium text-accent group-hover:translate-x-1 transition"
+                  className="inline-flex items-center gap-2 text-sm font-medium text-accent"
                 >
                   {t("cta")}
-                  <span className="ml-2 transition group-hover:translate-x-1">
-                    →
-                  </span>
+
+                  <motion.span
+                    initial={{ x: 0 }}
+                    whileHover={{ x: 6 }}
+                    transition={{ type: "spring", stiffness: 260 }}
+                  >
+                    <ArrowRight size={16}/>
+                  </motion.span>
+
                 </Link>
 
               </div>
@@ -93,5 +115,5 @@ export const UpcomingEvents = () => {
       </div>
 
     </section>
-  )
-}
+  );
+};

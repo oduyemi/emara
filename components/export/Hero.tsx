@@ -63,7 +63,7 @@ export default function ExportHero() {
 
             <Link
               href="/suppliers/academy"
-              className="px-8 py-4 rounded-xl border border-white/40 text-white hover:bg-white hover:text-[var(--color-secondary)] transition-all text-center"
+              className="px-8 py-4 mb-4 rounded-xl border border-white/40 text-white hover:bg-white hover:text-[var(--color-secondary)] transition-all text-center"
             >
               {t("secondaryCta")}
             </Link>

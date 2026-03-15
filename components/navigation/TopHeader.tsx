@@ -47,13 +47,13 @@ export function TopHeader() {
         {/* RIGHT SIDE – Utility */}
         <div
           className={`
-            flex items-center gap-6 text-white
+            flex items-center gap-6 text-white 
             ${isRTL ? "flex-row-reverse" : ""}
           `}
         >
           <Link
             href={`/${locale}/about`}
-            className="hover:text-[#ccc] text-accent transition"
+            className="active:text-red-600 hover:text-red-800 text-accent transition"
           >
             {t("about")}
           </Link>
@@ -61,7 +61,7 @@ export function TopHeader() {
           <Link
             href={`/${locale}/support`}
             className={`
-              flex items-center gap-1 hover:text-accent transition
+              flex items-center gap-1 hover:text-accent transition active:text-red-600 hover:text-red-800
               ${isRTL ? "flex-row-reverse" : ""}
             `}
           >
@@ -71,7 +71,7 @@ export function TopHeader() {
 
           <Link
             href={`/${locale}/login`}
-            className="hover:text-accent transition"
+            className="hover:text-accent transition active:text-red-600 hover:text-red-800"
           >
             {t("signIn")}
           </Link>
