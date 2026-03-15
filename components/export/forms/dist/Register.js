@@ -7,9 +7,9 @@ var lucide_react_1 = require("lucide-react");
 var image_1 = require("next/image");
 function RegisterForm() {
     var t = next_intl_1.useTranslations("auth.register");
-    return (React.createElement("div", { className: "max-w-md mx-auto w-full mt-10" },
+    return (React.createElement("div", { className: "max-w-md mx-auto w-full mt-" },
         React.createElement("div", { className: "bg-white border border-[var(--color-surface-border)] rounded-3xl shadow-xl p-10" },
-            React.createElement("div", { className: "flex justify-center mb-8" },
+            React.createElement("div", { className: "flex justify-center mb-2" },
                 React.createElement(link_1["default"], { href: "/suppliers" },
                     React.createElement(image_1["default"], { src: "/images/logo/logofix.png", alt: "Emara", height: 120, width: 120, className: "object-contain", priority: true }))),
             React.createElement("div", { className: "text-center mb-10" },

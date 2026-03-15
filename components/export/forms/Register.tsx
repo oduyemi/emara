@@ -8,10 +8,10 @@ export default function RegisterForm() {
   const t = useTranslations("auth.register");
 
   return (
-    <div className="max-w-md mx-auto w-full mt-10">
+    <div className="max-w-md mx-auto w-full mt-4">
 
       <div className="bg-white border border-[var(--color-surface-border)] rounded-3xl shadow-xl p-10">
-      <div className="flex justify-center mb-8">
+      <div className="flex justify-center mb-2">
         <Link href="/suppliers">
             <Image
             src="/images/logo/logofix.png"
