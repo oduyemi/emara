@@ -75,7 +75,7 @@ export const SupplierHeader = () => {
               placeholder={t("search_placeholder")}
               className="
                 w-full pl-12 pr-4 py-2.5
-                rounded-full
+                rounded-full 
                 bg-white/5
                 border border-white/10
                 text-black
@@ -140,8 +140,8 @@ export const SupplierHeader = () => {
               href={item.href}
               className="
                 relative transition-colors hover:text-accent
-                after:absolute after:-bottom-1 after:left-0 
-                after:h-[2px] after:w-0 after:bg-accent 
+                after:absolute after:-bottom-1 after:left-0 active:text-accent
+                after:h-[2px] after:w-0 after:bg-accent hover:text-blue-400
                 after:transition-all hover:after:w-full
               "
             >

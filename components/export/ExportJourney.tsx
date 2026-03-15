@@ -1,9 +1,21 @@
-"use client"
+"use client";
+import { useTranslations } from "next-intl";
+import Link from "next/link";
+import { CheckCircle2, Compass, TrendingUp } from "lucide-react";
+import { motion, Variants } from "framer-motion";
 
-import { useTranslations } from "next-intl"
-import Link from "next/link"
-import { CheckCircle2, Compass, TrendingUp } from "lucide-react"
-import { motion } from "framer-motion"
+const item: Variants = {
+  hidden: { opacity: 0, y: 20 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: [0.22, 1, 0.36, 1] as [number, number, number, number],
+    },
+  },
+};
+
 
 const stepsData = [
   {
@@ -23,15 +35,12 @@ const stepsData = [
 export const ExportJourney = () => {
   const t = useTranslations("exportJourney")
 
-  const container = {
+  const container: Variants = {
     hidden: {},
-    show: { transition: { staggerChildren: 0.15 } }
-  }
-
-  const item = {
-    hidden: { opacity: 0, y: 20 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22,1,0.36,1] } }
-  }
+    show: {
+      transition: { staggerChildren: 0.15 },
+    },
+  };
 
   return (
     <section className="py-20 px-6 bg-gray-50 relative overflow-hidden">
