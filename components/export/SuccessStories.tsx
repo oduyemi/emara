@@ -43,7 +43,7 @@ export const SuccessStories = () => {
 
       {/* ambient lighting */}
       <div className="absolute -top-40 left-[-100px] w-[700px] h-[700px] bg-[var(--color-accent-soft)]/15 blur-[180px] rounded-full"/>
-      <div className="absolute bottom-[-200px] right-[-100px] w-[700px] h-[700px] bg-[var(--color-accent)]/10 blur-[180px] rounded-full"/>
+      <div className="absolute bottom-[-200px] right-[-100px] w-[700px] h-[700px] bg-[var(--color-surface)]/10 blur-[180px] rounded-full"/>
 
       <div className="max-w-7xl mx-auto">
 

@@ -23,7 +23,6 @@ export default function Exporters() {
       <FeaturedEvent />
       <ExportJourney />
       <UpcomingEvents />
-      
       <SuccessStories />
       <FAQ />
       <NewExporters />
