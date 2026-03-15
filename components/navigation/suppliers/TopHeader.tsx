@@ -53,13 +53,13 @@ export function SupplierTopHeader() {
         >
             <Link
                 href={`/`}
-                className="hover:text-accent transition"
+                className="text-white hover:text-accent transition"
             >
                 {t("home")}
           </Link>
           <Link
             href={`/${locale}/about`}
-            className="hover:text-accent transition"
+            className="text-white hover:text-accent transition"
           >
             {t("about")}
           </Link>
@@ -67,7 +67,7 @@ export function SupplierTopHeader() {
           <Link
             href={`/${locale}/support`}
             className={`
-              flex items-center gap-1 hover:text-accent transition
+              flex items-center gap-1 text-white hover:text-accent transition
               ${isRTL ? "flex-row-reverse" : ""}
             `}
           >

@@ -28,7 +28,7 @@ export default function ExploreMenu() {
         <>
           <Popover.Button
             className={`font-semibold transition-colors duration-200 
-            ${open ? "text-blue-500" : "hover:text-blue-400"}`}
+            ${open ? "text-accent" : "hover:text-accent"}`}
           >
             {t("explore")}
           </Popover.Button>

@@ -140,8 +140,8 @@ export const SupplierHeader = () => {
               href={item.href}
               className="
                 relative transition-colors hover:text-accent
-                after:absolute after:-bottom-1 after:left-0 active:text-accent
-                after:h-[2px] after:w-0 after:bg-accent hover:text-blue-400
+                after:absolute after:-bottom-1 after:left-0
+                after:h-[2px] after:w-0 after:bg-accent
                 after:transition-all hover:after:w-full
               "
             >
