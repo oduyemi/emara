@@ -1,8 +1,6 @@
 "use client";
+
 import { useTranslations } from "next-intl";
-
-
-
 
 export const CalendlyBooking = () => {
   const t = useTranslations("CalendlyBooking");
@@ -22,12 +20,12 @@ export const CalendlyBooking = () => {
           {t("description")}
         </p>
 
-        <div className="rounded-2xl border border-gray-200 overflow-hidden">
+        <div className="rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition">
 
           <iframe
-            src="https://calendly.com/YOUR-LINK"
+            src="https://calendly.com/care-trademara/30min"
             width="100%"
-            height="700"
+            height="720"
             className="border-0"
           />
 
