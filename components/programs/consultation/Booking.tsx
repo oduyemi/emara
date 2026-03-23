@@ -1,15 +1,12 @@
 "use client";
-
+import { InlineWidget } from "react-calendly";
 import { useTranslations } from "next-intl";
 
 export const CalendlyBooking = () => {
   const t = useTranslations("CalendlyBooking");
 
   return (
-    <section
-      id="book-session"
-      className="py-28 px-6 bg-white"
-    >
+    <section className="py-28 px-6 bg-white">
       <div className="max-w-5xl mx-auto text-center">
 
         <h2 className="text-3xl font-semibold text-[#0F233F] mb-6">
@@ -20,13 +17,11 @@ export const CalendlyBooking = () => {
           {t("description")}
         </p>
 
-        <div className="rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-md transition">
+        <div className="rounded-2xl border border-gray-200 shadow-lg overflow-hidden">
 
-          <iframe
-            src="https://calendly.com/care-trademara/30min"
-            width="100%"
-            height="720"
-            className="border-0"
+          <InlineWidget
+            url="https://calendly.com/care-trademara/30min?primary_color=6f1a07"
+            styles={{ height: "720px" }}
           />
 
         </div>
