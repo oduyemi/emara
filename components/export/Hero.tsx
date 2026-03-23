@@ -48,6 +48,7 @@ export default function ExportHero() {
 
           {/* Subheadline */}
           <p className="text-lg md:text-xl text-white/85 leading-relaxed">
+            {t("subhead")} <br />
             {t("subheadline")}
           </p>
 

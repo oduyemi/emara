@@ -612,17 +612,18 @@
   },
 
   "exportHero": {
-    "badge": "البوابة نحو التميز في التصدير",
-    "headline": "البوابة نحو المصدرين الأفارقة المُتحقق منهم",
-    "subheadline": "انضم إلى منظومة مدعومة بالبيانات ومصممة لنقلك من الإنتاج المحلي إلى التجارة العالمية.",
-    "primaryCta": "التقدم للتحقق",
+    "badge": "طريقك السريع إلى التجارة العالمية",
+    "headline": "مصداقيتك على مستوى عالمي",
+    "subhead": "سرّع وصولك إلى الأسواق الدولية",
+    "subheadline": "انضم إلى نظام موثوق ومُعتمد لنقل منتجاتك عبر جميع الحدود.",
+    "primaryCta": "التقديم للتحقق",
     "secondaryCta": "تعلّم كيفية التصدير بنجاح",
-    "verificationStrip": "مدقق. موثق. مُتحقق منه.",
+    "verificationStrip": "مدقق. موثّق. معتمد.",
     "bronze": "برونزي",
     "silver": "فضي",
     "gold": "ذهبي",
-    "gold_elite": "ذهبي النخبة",
-    "checkReadiness": "تحقق من جاهزية التصدير"
+    "gold_elite": "ذهبي نخبة",
+    "checkReadiness": "تحقق من جاهزيتك للتصدير"
   },
 
   "trust_gap": {
@@ -1159,26 +1160,26 @@
   },
 
   "suppliersPathways": {
-    "label": "مسارات الموردين",
-    "title": "ثلاث طرق لبدء رحلة التصدير الخاصة بك",
-    "description": "سواء كنت تبني جاهزيتك للتصدير، أو تستكشف الفرص العالمية، أو تتعرف على منصة إيمارا، فإن هذه المسارات تساعدك على اتخاذ الخطوة التالية نحو التجارة الدولية.",
+    "label": "Parcours fournisseurs",
+    "title": "Trois façons de commencer votre parcours d’exportation",
+    "description": "Que vous développiez votre préparation à l’export, exploriez des opportunités mondiales ou découvriez la plateforme Emara, ces parcours vous aident à franchir la prochaine étape vers le commerce international.",
   
     "academy": {
-      "title": "تعلّم التصدير",
-      "desc": "طوّر المعرفة اللازمة لدخول الأسواق الدولية من خلال تعليم التصدير، والإرشادات التنظيمية، والاستعداد للتجارة.",
-      "cta": "زيارة أكاديمية التصدير"
+      "title": "Commencer avec votre feuille de route export",
+      "desc": "Pour débuter votre parcours, explorez les ressources disponibles dans notre plateforme de formation digitale. Que vous recherchiez votre première opportunité d’exportation ou souhaitiez développer votre présence à l’international.",
+      "cta": "En savoir plus"
     },
   
     "events": {
-      "title": "ابحث عن فعالية",
-      "desc": "شارك في البعثات التجارية والمعارض والفعاليات المتخصصة في التصدير المصممة لربط المنتجين الأفارقة بالمشترين العالميين.",
-      "cta": "استكشاف الفعاليات"
+      "title": "Commencez à rencontrer des acheteurs internationaux",
+      "desc": "Emara identifie des événements conçus pour vous connecter avec des acheteurs internationaux qualifiés et vous donner un accès direct aux principaux marchés mondiaux.",
+      "cta": "Explorer les événements"
     },
   
     "platform": {
-      "title": "اكتشف كيف تعمل إيمارا",
-      "desc": "تعرّف على كيفية بناء الموردين لمصداقيتهم، وعرض منتجاتهم، والتواصل مع المشترين الدوليين الموثوقين من خلال المنصة.",
-      "cta": "تعرّف على المنصة"
+      "title": "Soyez découvert par des acheteurs internationaux",
+      "desc": "Inscrivez votre entreprise dès aujourd’hui pour gagner en visibilité auprès de notre réseau d’acheteurs et de distributeurs internationaux préqualifiés.",
+      "cta": "Créer votre profil"
     }
   },
 
@@ -1227,8 +1228,8 @@
 
   "academyHero": {
     "label": "برامج تعلم التصدير",
-    "title": "تعلّم كيفية التصدير بنجاح",
-    "description": "طوّر خبرتك في مجال التصدير من خلال برامج تعليمية مستمرة تناسب جميع مستويات الخبرة، سواء لم يسبق لك التصدير من قبل أو كنت تقوم بالتصدير بالفعل.",
+    "title": "ابدأ بخارطة طريق التصدير الخاصة بك",
+    "description": "طوّر خبرتك في التصدير من خلال برامج تعليمية مستمرة تناسب جميع مستويات الخبرة، سواء كنت جديدًا في التصدير أو لديك خبرة سابقة في الأسواق الدولية.",
   
     "primaryCTA": "تحقق من جاهزيتك للتصدير",
     "secondaryCTA": "أساسيات التصدير عبر الإنترنت",

@@ -610,9 +610,10 @@
   },
 
   "exportHero": {
-    "badge": "The Gateway to Export Excellence",
-    "headline": "The Gateway to Verified African Exporters",
-    "subheadline": "Join a data-backed ecosystem engineered to move you from local production to global trade.",
+    "badge": "Your Fast-Track to Global Trade",
+    "headline": "Your Credibility, Globalized",
+    "subhead": "Accelerate your international reach",
+    "subheadline": "Join the verified ecosystem built to move your products across every border.",
     "primaryCta": "Apply for Verification",
     "secondaryCta": "Learn How to Export Succesfully",
     "verificationStrip": "Audited. Documented. Verified.",
@@ -1162,21 +1163,21 @@
     "description": "Whether you are building export readiness, exploring global opportunities, or understanding the Emara platform, these pathways help you take the next step toward international trade.",
 
     "academy": {
-      "title": "Learn About Exporting",
-      "desc": "Develop the knowledge required to enter international markets through export education, regulatory guidance, and trade preparation.",
-      "cta": "Visit Export Academy"
+      "title": "Getting Started with Your Export Roadmap",
+      "desc": "To begin your journey, explore the resources within our digital training suite. Whether you are looking for your first export opportunity or scaling your export presence.",
+      "cta": "Learn more"
     },
 
     "events": {
-      "title": "Find an Event",
-      "desc": "Participate in trade missions, exhibitions, and export-focused gatherings designed to connect African producers with global buyers.",
+      "title": "Start Meeting International Buyers",
+      "desc": "Emara identifies events designed to connect you with qualified international buyers and provide direct access to key global markets.",
       "cta": "Explore Events"
     },
 
     "platform": {
-      "title": "See How Emara Works",
-      "desc": "Understand how suppliers build credibility, present products, and connect with verified international buyers through the platform.",
-      "cta": "Learn the Platform"
+      "title": "Get Discovered by Global Buyers",
+      "desc": "List your company today to gain visibility with our network of pre-screened global buyers and distributors.",
+      "cta": "Register Your Profile"
     }
   },
 
@@ -1225,7 +1226,7 @@
 
   "academyHero": {
     "label": "Export Learning Programs",
-    "title": "Learn how to export successfully",
+    "title": "Getting Started with Your Export Roadmap",
     "description": "Enhance your export expertise with ongoing education programs for all experience levels, whether you’ve never exported or you’re already exporting.",
 
     "primaryCTA": "Check Your Export Readiness",
@@ -1248,8 +1249,8 @@
   },
 
   "academyPrograms": {
-    "label": "Academy Overview",
-    "title": "Ready to Export? Start Here",
+    "label": "Master the Global Market",
+    "title": "Ready to Export with confidence? Start Here",
     "description": "Discover what export opportunities are available for your food and agricultural products. The right education and preparation can significantly enhance your export readiness and help produce greater results. With 24/7 access to our digital training suite, you can prepare for export success at your own pace, from anywhere at any time.",
     "sub": "All programs require an Emara account. If you're a first-time visitor, please complete our",
     "link": "New User Registration",

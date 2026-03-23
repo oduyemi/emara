@@ -1,4 +1,5 @@
 import NewExporters from "@/components/export/NewExporters";
+import { ProgramsMap } from "@/components/export/programs/Map";
 import { ProgramsApproach } from "@/components/programs/Approach";
 import { ProgramsGrid } from "@/components/programs/Grid";
 import { ProgramsHero } from "@/components/programs/Hero";
@@ -13,6 +14,7 @@ export default function Programs() {
         <ProgramsGrid />
         <ProgramsApproach />
         <NewExporters />
+        <ProgramsMap />
     </main>
   );
 }

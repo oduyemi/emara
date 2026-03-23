@@ -611,17 +611,18 @@
   },
 
   "exportHero": {
-    "badge": "La passerelle vers l’excellence à l’exportation",
-    "headline": "La passerelle vers des exportateurs africains vérifiés",
-    "subheadline": "Rejoignez un écosystème fondé sur les données, conçu pour vous faire passer de la production locale au commerce mondial.",
-    "primaryCta": "Demander la vérification",
-    "secondaryCta": "Apprenez à exporter avec succès",
+    "badge": "Votre accélérateur vers le commerce mondial",
+    "headline": "Votre crédibilité, à l’échelle mondiale",
+    "subhead": "Accélérez votre portée internationale",
+    "subheadline": "Rejoignez un écosystème vérifié conçu pour faire circuler vos produits à travers toutes les frontières.",
+    "primaryCta": "Postuler pour vérification",
+    "secondaryCta": "Apprendre à exporter avec succès",
     "verificationStrip": "Audité. Documenté. Vérifié.",
     "bronze": "Bronze",
     "silver": "Argent",
     "gold": "Or",
     "gold_elite": "Or Élite",
-    "checkReadiness": "Vérifier la préparation à l’export"
+    "checkReadiness": "Évaluer votre préparation à l’export"
   },
 
   "trust_gap": {
@@ -1160,24 +1161,24 @@
   "suppliersPathways": {
     "label": "Parcours fournisseurs",
     "title": "Trois façons de commencer votre parcours d’exportation",
-    "description": "Que vous développiez votre préparation à l’export, exploriez des opportunités internationales ou découvriez la plateforme Emara, ces parcours vous aident à franchir la prochaine étape vers le commerce international.",
+    "description": "Que vous développiez votre préparation à l’export, exploriez des opportunités mondiales ou découvriez la plateforme Emara, ces parcours vous aident à franchir la prochaine étape vers le commerce international.",
   
     "academy": {
-      "title": "Apprendre l’exportation",
-      "desc": "Développez les connaissances nécessaires pour accéder aux marchés internationaux grâce à la formation à l’export, aux orientations réglementaires et à la préparation commerciale.",
-      "cta": "Visiter l’Académie de l’export"
+      "title": "Commencer avec votre feuille de route export",
+      "desc": "Pour débuter votre parcours, explorez les ressources disponibles dans notre plateforme de formation digitale. Que vous recherchiez votre première opportunité d’exportation ou souhaitiez développer votre présence à l’international.",
+      "cta": "En savoir plus"
     },
   
     "events": {
-      "title": "Trouver un événement",
-      "desc": "Participez à des missions commerciales, des expositions et des rencontres dédiées à l’export pour connecter les producteurs africains avec des acheteurs internationaux.",
+      "title": "Commencez à rencontrer des acheteurs internationaux",
+      "desc": "Emara identifie des événements conçus pour vous connecter avec des acheteurs internationaux qualifiés et vous donner un accès direct aux principaux marchés mondiaux.",
       "cta": "Explorer les événements"
     },
   
     "platform": {
-      "title": "Découvrir comment fonctionne Emara",
-      "desc": "Comprenez comment les fournisseurs renforcent leur crédibilité, présentent leurs produits et se connectent avec des acheteurs internationaux vérifiés grâce à la plateforme.",
-      "cta": "Découvrir la plateforme"
+      "title": "Soyez découvert par des acheteurs internationaux",
+      "desc": "Inscrivez votre entreprise dès aujourd’hui pour gagner en visibilité auprès de notre réseau d’acheteurs et de distributeurs internationaux préqualifiés.",
+      "cta": "Créer votre profil"
     }
   },
 
@@ -1226,10 +1227,10 @@
 
   "academyHero": {
     "label": "Programmes de formation à l’export",
-    "title": "Apprenez à exporter avec succès",
-    "description": "Développez votre expertise en exportation grâce à des programmes de formation continue adaptés à tous les niveaux d’expérience, que vous n’ayez jamais exporté ou que vous exportiez déjà.",
+    "title": "Commencer avec votre feuille de route export",
+    "description": "Développez votre expertise en exportation grâce à des programmes de formation continue adaptés à tous les niveaux d’expérience, que vous n’ayez jamais exporté ou que vous soyez déjà actif à l’international.",
   
-    "primaryCTA": "Évaluez votre préparation à l’export",
+    "primaryCTA": "Évaluer votre préparation à l’export",
     "secondaryCTA": "Export Essentials en ligne",
   
     "stats": {
@@ -1239,10 +1240,10 @@
       },
       "topics": {
         "value": "10+",
-        "label": "Thèmes d’exportation"
+        "label": "Thématiques d’export"
       },
       "insights": {
-        "value": "Mondial",
+        "value": "Global",
         "label": "Analyses de marché"
       }
     }
