@@ -50,7 +50,7 @@ export const DirectoryHero = () => {
           alt={t("imageAlt")}
           fill
           priority
-          className="object-cover scale-110 blur-[10px] brightness-[0.45]"
+          className="object-cover scale-110 blur-[10px] brightness-[0.97]"
         />
       </div>
 

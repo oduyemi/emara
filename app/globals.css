@@ -148,3 +148,8 @@ body {
     color: var(--color-primary);
   }
 }
+
+
+.input {
+  @apply w-full border rounded-lg p-3 mb-4;
+}
