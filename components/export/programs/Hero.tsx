@@ -10,8 +10,6 @@ export const ExportReadinessHero = () => {
 
   return (
     <section className="relative min-h-[520px] flex items-center px-6 overflow-hidden">
-
-      {/* background image */}
       <div
         className="absolute inset-0 bg-cover bg-center scale-105"
         style={{

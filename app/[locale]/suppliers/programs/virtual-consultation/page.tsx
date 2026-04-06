@@ -14,8 +14,8 @@ export default function Consultations() {
         <ConsultationBenefits />
         <ConsultationTopics />
         <CalendlyBooking />
-        <ConsultationTrust />
-        <NewExporters />
+        {/* <ConsultationTrust /> */}
+        {/* <NewExporters /> */}
     </main>
   );
 }

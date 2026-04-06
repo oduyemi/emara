@@ -133,7 +133,7 @@ export const SupplierHeader = () => {
             { href: "/suppliers/programs/export-readiness", label: t("readiness") },
             { href: "/suppliers/onboarding", label: t("onboarding") },
             { href: "/suppliers/academy", label: t("academy") },
-            // { href: "/about", label: t("about") },
+            { href: "/suppliers/events", label: t("events") },
           ].map((item) => (
             <Link
               key={item.href}

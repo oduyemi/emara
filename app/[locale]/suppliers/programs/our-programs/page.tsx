@@ -10,11 +10,11 @@ export default function Programs() {
   return (
     <main className="bg-white">
         <ProgramsHero />
-        <ProgramsIntro />
-        <ProgramsGrid />
         <ProgramsApproach />
-        <NewExporters />
         <ProgramsMap />
+        {/* <ProgramsIntro /> */}
+        {/* <ProgramsGrid /> */}
+        <NewExporters />
     </main>
   );
 }

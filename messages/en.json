@@ -26,7 +26,8 @@
     "support": "Support",
     "dashboard": "Dashboard",
     "start_journey": "Start Your Export Journey",
-    "readiness": "Export Readiness"
+    "readiness": "Export Readiness",
+    "events": "Events"
   },
   
   "MegaMenu": {
@@ -1226,7 +1227,7 @@
 
   "academyHero": {
     "label": "Export Learning Programs",
-    "title": "Getting Started with Your Export Roadmap",
+    "title": "Getting Started with Your Export",
     "description": "Enhance your export expertise with ongoing education programs for all experience levels, whether you’ve never exported or you’re already exporting.",
 
     "primaryCTA": "Check Your Export Readiness",
@@ -1315,9 +1316,10 @@
 
   "exportReadinessHero": {
     "label": "Export Readiness Program",
-    "title": "How ready is your business to export?",
-    "description": "The Emara Export Readiness program evaluates your company’s capabilities across production, compliance, logistics, and international market preparation. Complete the assessment to understand your readiness level and receive guidance on the next steps to expand globally.",
-    "cta": "Start Readiness Assessment"
+    "title": "Is Your Business Ready for Global Markets?",
+    "description": "Evaluate your export readiness across key areas including product quality, compliance, pricing, and operations. Get a clear score and actionable next steps to expand internationally.",
+    "cta": "Start Assessment",
+    "trustStrip": "Structured. Data-Driven. Actionable."
   },
 
   "exportReadinessIntro": {
@@ -2020,6 +2022,77 @@
       "haveAccount": "Already have an account?",
       "login": "Sign in"
     }
+  },
+
+  "ReadinessForm": {
+    "header": {
+      "title": "Export Readiness"
+    },
+    "intro": {
+      "title": "Take Your Business Global",
+      "cta": "Start →"
+    },
+    "navigation": {
+      "back": "← Back",
+      "continue": "Continue →"
+    },
+    "result": {
+      "title": "Your Export Readiness Score",
+      "description": "You're on your way to becoming a global exporter."
+    },
+    "stepLayout": {
+      "step": "Step {current} of {total}",
+      "instruction": "Answer all questions to continue",
+      "questionLabel": "Question",
+      "answered": "✓ Answered"
+    },
+    "scale": {
+      "veryHigh": "Very High",
+      "high": "High",
+      "indifferent": "Indifferent",
+      "low": "Low",
+      "veryLow": "Very Low"
+    },
+    "step1": {
+      "fullName": "Full Name",
+      "email": "Email",
+      "companyName": "Company Name",
+      "companyAddress": "Company Address",
+      "city": "City",
+      "state": "State / Province",
+      "country": "Country",
+      "selectCountry": "Select country",
+      "phonePlaceholder": "Phone number"
+    },
+    "steps": {
+      "promoters": {
+        "title": "Promoters (Owners)",
+        "questions": {
+          "promoters_leadership_commitment": "How committed is your leadership team to exporting packaged or processed food products internationally?",
+          "promoters_export_ambition": "How strong is your company’s ambition to supply food products to supermarkets, distributors, or restaurants abroad?",
+          "promoters_regulation_familiarity": "How familiar is your leadership with food export regulations (e.g. EU, UK, Middle East standards)?",
+          "promoters_management_capability": "How capable is your management team in handling international food trade operations (logistics, compliance, payments)?"
+        }
+      },
+      "products": {
+        "title": "Products",
+        "questions": {
+          "products_value": "How clearly defined is your product’s unique value (e.g. organic, natural, ethnic specialty) compared to global competitors?",
+          "products_quality": "How well can your food product maintain quality under long shipping durations and varying temperatures?",
+          "products_usability": "How easy is it for international consumers to understand and use your product without explanation?",
+          "products_adaptability": "How adaptable is your product formulation to meet foreign regulatory or taste preferences?",
+          "products_packaging": "How durable and export-compliant is your packaging for international shipping and retail display?"
+        }
+      }
+    }
+  },
+
+  "EventsHero": {
+    "label": "Global Events & Opportunities",
+    "title": "Connect African Food Brands",
+    "highlight": "to Global Markets",
+    "description": "Discover trade missions, international showcases, and curated events where African suppliers meet global buyers, distributors, and partners across key export markets.",
+    "cta": "Explore Events"
   }
 }
   

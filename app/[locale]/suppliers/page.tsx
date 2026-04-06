@@ -19,13 +19,14 @@ export default function Exporters() {
     <div>
       <ExportHero />
       <SuppliersPathways />
-      <SuppliersIntro />
-      <FeaturedEvent />
-      <ExportJourney />
-      <UpcomingEvents />
-      <SuccessStories />
       <FAQ />
-      <NewExporters />
+      <SuppliersIntro />
+      {/* <SuccessStories /> */}
+      {/* <FeaturedEvent /> */}
+      {/* <ExportJourney /> */}
+      {/* <UpcomingEvents /> */}
+      
+      {/* <NewExporters /> */}
     </div>
   );
 }

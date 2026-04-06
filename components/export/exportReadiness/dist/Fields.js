@@ -1,3 +1,4 @@
+"use client";
 "use strict";
 var __assign = (this && this.__assign) || function () {
     __assign = Object.assign || function(t) {
@@ -12,22 +13,52 @@ var __assign = (this && this.__assign) || function () {
 };
 exports.__esModule = true;
 exports.StepOneFields = void 0;
+var countries_1 = require("@/data/countries");
+var react_1 = require("react");
+var next_intl_1 = require("next-intl");
 exports.StepOneFields = function (_a) {
     var data = _a.data, setData = _a.setData;
-    var fields = [
-        "Full Name",
-        "Email",
-        "Company Name",
-        "Company Address",
-        "City",
-        "State",
-        "Country",
-        "Phone Number",
-    ];
-    return (React.createElement("div", { className: "space-y-6" },
-        React.createElement("h2", { className: "text-3xl font-semibold mb-6 text-gray-900" }, "Basic Information"),
-        React.createElement("div", { className: "grid md:grid-cols-2 gap-4" }, fields.map(function (field) { return (React.createElement("input", { key: field, placeholder: field, value: data[field] || "", onChange: function (e) {
-                var _a;
-                return setData(__assign(__assign({}, data), (_a = {}, _a[field] = e.target.value, _a)));
-            }, className: "bg-white border border-gray-200 p-3 rounded-lg focus:ring-2 focus:ring-green-400 focus:outline-none transition" })); }))));
+    var t = next_intl_1.useTranslations("ReadinessForm.step1");
+    var countries = react_1.useMemo(function () {
+        return Object.entries(countries_1.africaRegions);
+    }, []);
+    var handleChange = function (field, value) {
+        setData(function (prev) {
+            var _a;
+            return (__assign(__assign({}, prev), (_a = {}, _a[field] = value, _a)));
+        });
+    };
+    react_1.useEffect(function () {
+        var country = data["Country"];
+        if (!country)
+            return;
+        var code = countries_1.countryCallingCodes[country];
+        if (code && data["Phone Code"] !== code) {
+            setData(function (prev) { return (__assign(__assign({}, prev), { "Phone Code": code })); });
+        }
+    }, [data["Country"]]);
+    return (React.createElement("div", { className: "grid grid-cols-1 sm:grid-cols-2 gap-5" },
+        React.createElement(Input, { label: t("fullName"), value: data["Full Name"] || "", onChange: function (v) { return handleChange("Full Name", v); } }),
+        React.createElement(Input, { label: t("email"), value: data["Email"] || "", onChange: function (v) { return handleChange("Email", v); } }),
+        React.createElement(Input, { label: t("companyName"), value: data["Company Name"] || "", onChange: function (v) { return handleChange("Company Name", v); } }),
+        React.createElement(Input, { label: t("companyAddress"), value: data["Company Address"] || "", onChange: function (v) { return handleChange("Company Address", v); } }),
+        React.createElement(Input, { label: t("city"), value: data["City"] || "", onChange: function (v) { return handleChange("City", v); } }),
+        React.createElement(Input, { label: t("state"), value: data["State"] || "", onChange: function (v) { return handleChange("State", v); } }),
+        React.createElement("div", { className: "col-span-2" },
+            React.createElement("label", { className: "text-sm text-gray-600 mb-1 block" }, t("country")),
+            React.createElement("select", { value: data["Country"] || "", onChange: function (e) { return handleChange("Country", e.target.value); }, className: "w-full px-4 py-3 rounded-xl border border-gray-200" },
+                React.createElement("option", { value: "" }, t("selectCountry")),
+                countries.map(function (_a) {
+                    var region = _a[0], list = _a[1];
+                    return (React.createElement("optgroup", { key: region, label: region }, list.map(function (country) { return (React.createElement("option", { key: country, value: country }, country)); })));
+                }))),
+        React.createElement("div", { className: "col-span-2 flex gap-3" },
+            React.createElement("input", { value: data["Phone Code"] || "", readOnly: true, className: "w-28 px-3 py-3 rounded-xl border bg-gray-100" }),
+            React.createElement("input", { type: "tel", placeholder: t("phonePlaceholder"), value: data["Phone Number"] || "", onChange: function (e) { return handleChange("Phone Number", e.target.value); }, className: "flex-1 px-4 py-3 rounded-xl border" }))));
+};
+var Input = function (_a) {
+    var label = _a.label, value = _a.value, onChange = _a.onChange;
+    return (React.createElement("div", null,
+        React.createElement("label", { className: "text-sm text-gray-600 mb-1 block" }, label),
+        React.createElement("input", { value: value, onChange: function (e) { return onChange(e.target.value); }, className: "w-full px-4 py-3 rounded-xl border" })));
 };

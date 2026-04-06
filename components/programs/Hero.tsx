@@ -58,12 +58,12 @@ export const ProgramsHero = () => {
             {t("ctaReadiness")}
           </Link>
 
-          <Link
+          {/* <Link
             href="/suppliers/programs/trade-missions"
             className="px-8 py-3 border border-white/30 text-white rounded-lg text-sm font-medium hover:bg-white/10 transition backdrop-blur"
           >
             {t("ctaTradeMissions")}
-          </Link>
+          </Link> */}
 
         </div>
 

@@ -10,8 +10,6 @@ export const ConsultationHero = () => {
 
   return (
     <section className="relative min-h-[720px] flex items-center justify-center px-6 overflow-hidden">
-
-      {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
@@ -61,23 +59,23 @@ export const ConsultationHero = () => {
             {t("ctaBook")}
           </Link>
 
-          <Link
+          {/* <Link
             href="/suppliers/programs/export-readiness"
             className="px-8 py-3 border border-white/30 text-white rounded-lg text-sm font-medium hover:bg-white/10 transition backdrop-blur"
           >
             {t("ctaReadiness")}
-          </Link>
+          </Link> */}
 
         </div>
 
         {/* Highlights */}
-        <div className="mt-12 flex flex-wrap justify-center gap-6 text-sm text-white/70">
+        {/* <div className="mt-12 flex flex-wrap justify-center gap-6 text-sm text-white/70">
 
           <div>{t("highlights.call")}</div>
           <div>{t("highlights.advisory")}</div>
           <div>{t("highlights.market")}</div>
 
-        </div>
+        </div> */}
 
       </motion.div>
     </section>

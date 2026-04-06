@@ -9,7 +9,7 @@ export default function Academy() {
     <main className="bg-white">
       <AcademyHero />
       <AcademyPrograms />
-      <AcademyMap />
+      {/* <AcademyMap /> */}
       {/* <AcademyCTA /> */}
     </main>
   );

@@ -11,22 +11,23 @@
 
   "Header": {
     "signIn": "Se connecter",
-    "getVerified": "Obtenir la vérification",
+    "getVerified": "Se faire vérifier",
     "buyers": "Pour les acheteurs",
     "suppliers": "Pour les fournisseurs",
     "verifiedSuppliers": "Fournisseurs vérifiés",
-    "supplier_directory": "Répertoire des exportateurs",
+    "supplier_directory": "Annuaire des exportateurs",
     "about": "À propos d’Emara",
     "search_placeholder": "Rechercher un fournisseur, un pays ou une catégorie",
     "buyerCta": "Pour les fournisseurs",
-    "directory": "Répertoire",
+    "directory": "Annuaire",
     "onboarding": "Intégration",
     "academy": "Académie",
     "analytics": "Analytique",
     "support": "Support",
     "dashboard": "Tableau de bord",
-    "start_journey": "Commencez votre parcours d’exportation",
-    "readiness": "Préparation à l’export"
+    "start_journey": "Commencer votre parcours d’exportation",
+    "readiness": "Préparation à l’export",
+    "events": "Événements"
   },
 
   "MegaMenu": {
@@ -1227,7 +1228,7 @@
 
   "academyHero": {
     "label": "Programmes de formation à l’export",
-    "title": "Commencer avec votre feuille de route export",
+    "title": "Bien démarrer votre parcours à l’export",
     "description": "Développez votre expertise en exportation grâce à des programmes de formation continue adaptés à tous les niveaux d’expérience, que vous n’ayez jamais exporté ou que vous soyez déjà actif à l’international.",
   
     "primaryCTA": "Évaluer votre préparation à l’export",
@@ -1938,7 +1939,78 @@
       "registerButton": "Créer un compte",
       "haveAccount": "Vous avez déjà un compte ?",
       "login": "Se connecter"
+    },
+
+    "ReadinessForm": {
+      "header": {
+        "title": "Préparation à l’export"
+      },
+      "intro": {
+        "title": "Développez votre activité à l’international",
+        "cta": "Commencer →"
+      },
+      "navigation": {
+        "back": "← Retour",
+        "continue": "Continuer →"
+      },
+      "result": {
+        "title": "Votre score de préparation à l’export",
+        "description": "Vous êtes sur la bonne voie pour devenir un exportateur international."
+      },
+      "stepLayout": {
+        "step": "Étape {current} sur {total}",
+        "instruction": "Répondez à toutes les questions pour continuer",
+        "questionLabel": "Question",
+        "answered": "✓ Répondu"
+      },
+      "scale": {
+        "veryHigh": "Très élevé",
+        "high": "Élevé",
+        "indifferent": "Neutre",
+        "low": "Faible",
+        "veryLow": "Très faible"
+      },
+      "step1": {
+        "fullName": "Nom complet",
+        "email": "Email",
+        "companyName": "Nom de l’entreprise",
+        "companyAddress": "Adresse de l’entreprise",
+        "city": "Ville",
+        "state": "État / Province",
+        "country": "Pays",
+        "selectCountry": "Sélectionner un pays",
+        "phonePlaceholder": "Numéro de téléphone"
+      },
+      "steps": {
+        "promoters": {
+          "title": "Dirigeants (Propriétaires)",
+          "questions": {
+            "promoters_leadership_commitment": "Dans quelle mesure votre équipe dirigeante est-elle engagée dans l’exportation de produits alimentaires transformés à l’international ?",
+            "promoters_export_ambition": "Quelle est l’ambition de votre entreprise à fournir des produits alimentaires aux supermarchés, distributeurs ou restaurants à l’étranger ?",
+            "promoters_regulation_familiarity": "Dans quelle mesure votre équipe dirigeante maîtrise-t-elle les réglementations d’exportation alimentaire (UE, Royaume-Uni, Moyen-Orient, etc.) ?",
+            "promoters_management_capability": "Dans quelle mesure votre équipe de gestion est-elle capable de gérer les opérations de commerce alimentaire international (logistique, conformité, paiements) ?"
+          }
+        },
+        "products": {
+          "title": "Produits",
+          "questions": {
+            "products_value": "Dans quelle mesure la proposition de valeur unique de votre produit (bio, naturel, spécialité locale) est-elle clairement définie par rapport aux concurrents internationaux ?",
+            "products_quality": "Dans quelle mesure votre produit alimentaire peut-il maintenir sa qualité pendant de longues durées de transport et des variations de température ?",
+            "products_usability": "Dans quelle mesure votre produit est-il facile à comprendre et à utiliser pour les consommateurs internationaux sans explication ?",
+            "products_adaptability": "Dans quelle mesure la formulation de votre produit peut-elle être adaptée aux exigences réglementaires ou aux préférences gustatives des marchés étrangers ?",
+            "products_packaging": "Dans quelle mesure votre emballage est-il durable et conforme aux exigences d’exportation pour le transport et la vente internationale ?"
+          }
+        }
+      }
     }
+  },
+  
+  "EventsHero": {
+    "label": "Événements et opportunités internationales",
+    "title": "Connecter les marques alimentaires africaines",
+    "highlight": "aux marchés mondiaux",
+    "description": "Découvrez des missions commerciales, des vitrines internationales et des événements sélectionnés où les fournisseurs africains rencontrent des acheteurs, distributeurs et partenaires à travers les principaux marchés d’exportation.",
+    "cta": "Explorer les événements"
   }
 }
   

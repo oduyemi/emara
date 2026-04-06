@@ -28,7 +28,7 @@ export const SuppliersPathways = () => {
               image="/images/learnexport.jpg"
               title={t("academy.title")}
               desc={t("academy.desc")}
-              link="/suppliers/academy"
+              link="/suppliers/academy/roadmap"
               cta={t("academy.cta")}
               accent="var(--color-accent-soft)"
             />
@@ -47,7 +47,7 @@ export const SuppliersPathways = () => {
               image="/images/how.jpg"
               title={t("platform.title")}
               desc={t("platform.desc")}
-              link="/suppliers/how-it-works"
+              link="/suppliers/register"
               cta={t("platform.cta")}
               accent="var(--color-primary)"
             />
