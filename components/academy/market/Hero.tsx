@@ -1,6 +1,7 @@
 "use client";
 import { useTranslations } from "next-intl";
 import { Globe } from "lucide-react";
+import Link from "next/link";
 
 
 
@@ -25,9 +26,11 @@ export default function MarketProfilesHero() {
             {t("subtitle")}
           </p>
 
-          <button className="btn-primary px-7 py-3 rounded-lg">
-            {t("cta")}
-          </button>
+          <Link href="#markets">
+            <button className="btn-primary px-7 py-3 rounded-lg">
+              {t("cta")}
+            </button>
+          </Link>
         </div>
 
         <div className="surface p-8 rounded-xl shadow-xl text-center">

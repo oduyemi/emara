@@ -1870,7 +1870,7 @@
       "subtitle": "Explore export opportunities across global markets through detailed country profiles, regulatory insights, and demand analysis designed to help exporters identify the right markets.",
       "cta": "Explore Markets",
       "marketsLabel": "Markets Covered",
-      "marketsCount": "50+ Global Markets"
+      "marketsCount": "7+ Global Markets"
     },
     "filters": {
       "search": "Search countries or markets...",
@@ -2093,7 +2093,128 @@
     "highlight": "to Global Markets",
     "description": "Discover trade missions, international showcases, and curated events where African suppliers meet global buyers, distributors, and partners across key export markets.",
     "cta": "Explore Events"
-  }
+  },
+
+  "marketCountryProfiles": {
+    "title": "Market & Country Profiles",
+    "countryProfiles": "Country Profiles",
+    "marketProfiles": "Market Profiles",
+    "exploreMarkets": "Explore Global Markets",
+    "exploreCountries": "Explore Countries",
+
+    "filters": {
+      "search": "Search country...",
+      "searchMarket": "Search markets...",
+      "country": "Select Country",
+      "region": "Select Region",
+      "market": "Select Market"
+    },
+
+    "countries": {
+      "US": {
+        "name": "United States",
+        "desc": "A large and diverse food market with high demand for packaged, organic, and ethnic food products. Strong regulatory standards apply."
+      },
+      "UK": {
+        "name": "United Kingdom",
+        "desc": "A mature market with demand for convenience foods, private label products, and sustainable sourcing."
+      },
+      "DE": {
+        "name": "Germany",
+        "desc": "Germany offers strong opportunities in organic foods, health-conscious products, and eco-friendly packaging."
+      },
+      "BS": {
+        "name": "Bahamas",
+        "desc": "A tourism-driven market with demand for imported food products, especially packaged and ready-to-eat goods."
+      },
+      "BH": {
+        "name": "Bahrain",
+        "desc": "A high-income market with strong demand for premium and imported food products, especially halal-certified goods."
+      },
+      "AU": {
+        "name": "Australia",
+        "desc": "A competitive market with demand for organic, natural, and sustainably sourced food products."
+      },
+      "DZ": {
+        "name": "Algeria",
+        "desc": "An emerging market with increasing demand for staple food imports and processed food products."
+      },
+      "BE": {
+        "name": "Belgium",
+        "desc": "A strategic entry point into Europe with strong demand for gourmet and specialty food products."
+      },
+      "FR": {
+        "name": "France",
+        "desc": "A sophisticated market with high standards and demand for premium, organic, and artisanal food products."
+      },
+      "BR": {
+        "name": "Brazil",
+        "desc": "A large consumer market with demand for processed foods and growing interest in imported products."
+      },
+      "CA": {
+        "name": "Canada",
+        "desc": "A diverse market with strong demand for international cuisines, organic foods, and health-focused products."
+      },
+      "CN": {
+        "name": "China",
+        "desc": "A massive and fast-growing market with demand for safe, high-quality imported food products."
+      },
+      "IN": {
+        "name": "India",
+        "desc": "A large and diverse market with growing demand for packaged and processed foods."
+      },
+      "JP": {
+        "name": "Japan",
+        "desc": "A highly regulated market with demand for high-quality, safe, and well-packaged food products."
+      },
+      "NL": {
+        "name": "Netherlands",
+        "desc": "A key logistics hub in Europe with demand for innovative and sustainable food products."
+      },
+      "SA": {
+        "name": "Saudi Arabia",
+        "desc": "A major import-dependent market with strong demand for halal-certified food products."
+      },
+      "SG": {
+        "name": "Singapore",
+        "desc": "A global trade hub with high demand for premium and imported food products."
+      },
+      "AE": {
+        "name": "United Arab Emirates",
+        "desc": "A major re-export hub with strong demand for premium and imported food products."
+      }
+    },
+
+    "markets": {
+      "central-america": {
+        "desc": "Emerging trade region with demand for packaged and processed foods."
+      },
+      "caribbean": {
+        "desc": "Tourism-driven import market with strong demand for ready-to-consume goods."
+      },
+      "europe": {
+        "desc": "Highly regulated and premium-focused market with sustainability standards."
+      },
+      "gcc": {
+        "desc": "High-income region with strong demand for halal-certified imports."
+      },
+      "north-africa": {
+        "desc": "Developing market with rising demand for staple and processed foods."
+      },
+      "south-america": {
+        "desc": "Large consumer base with growing appetite for international products."
+      },
+      "sea": {
+        "desc": "Fast-growing economies with strong demand for convenience foods."
+      }
+    },
+
+    "cta": "View Profile",
+    "noCountry": "No countries found.",
+    "nomarket": "No markets found." ,
+    "previous": "Prev",
+    "next": "Next"
+  }   
 }
   
   

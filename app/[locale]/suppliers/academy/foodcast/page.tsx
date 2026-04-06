@@ -3,7 +3,7 @@ import EpisodesGrid from "@/components/academy/foodcast/Episodes";
 import FeaturedEpisode from "@/components/academy/foodcast/Featured";
 import FoodCastHero from "@/components/academy/foodcast/Hero";
 import SubscribeSection from "@/components/academy/foodcast/Subscription";
-import CountryProfilesGrid from "@/components/academy/market/ProfilesGrid";
+import CountryProfiles from "@/components/academy/market/CountryProfiles";
 
 
 
@@ -13,7 +13,7 @@ export default function FoodCast() {
     <>
       <FoodCastHero />
       <FoodCastAbout />
-      <CountryProfilesGrid />
+      <CountryProfiles />
       <FeaturedEpisode />
       <EpisodesGrid />
       <SubscribeSection />

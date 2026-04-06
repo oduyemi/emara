@@ -1,56 +1,43 @@
 "use client";
 import { useMemo, useState, useEffect } from "react";
-import CountryCard from "./CountryCard";
+import MarketCard from "./MarketCard";
 import { useTranslations } from "next-intl";
-import { marketCountries } from "@/data/marketcountries";
+import { markets } from "@/data/markets";
 
 type Props = {
-  search: string
-  country: string
-  region: string
-}
+  search: string;
+  market: string;
+};
 
-const ITEMS_PER_PAGE = 6
+const ITEMS_PER_PAGE = 6;
 
-export default function CountryProfilesGrid({
+export default function MarketProfilesGrid({
   search,
-  country,
-  region,
+  market,
 }: Props) {
-  const t = useTranslations("marketCountryProfiles")
-  const [page, setPage] = useState(1)
+  const t = useTranslations("marketCountryProfiles");
+  const [page, setPage] = useState(1);
 
-  // ✅ FIXED FILTER LOGIC
   const filtered = useMemo(() => {
-    // 1. Country override
-    if (country) {
-      return marketCountries.filter((c) => c.code === country)
+    if (market) {
+      return markets.filter((m) => m.id === market);
     }
+  
+    return markets.filter((m) =>
+      m.name.toLowerCase().includes(search.toLowerCase())
+    );
+  }, [search, market]);
 
-    // 2. Search + Region
-    return marketCountries.filter((c) => {
-      const matchesSearch =
-        !search ||
-        c.name.toLowerCase().includes(search.toLowerCase())
-
-      const matchesRegion =
-        !region || c.region === region
-
-      return matchesSearch && matchesRegion
-    })
-  }, [search, country, region])
-
-  // Reset page when filters change
   useEffect(() => {
-    setPage(1)
-  }, [search, country, region])
+    setPage(1);
+  }, [search, market]);
 
-  const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE)
+  const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
 
   const paginated = filtered.slice(
     (page - 1) * ITEMS_PER_PAGE,
     page * ITEMS_PER_PAGE
-  )
+  );
 
   return (
     <section className="surface py-24">
@@ -59,25 +46,25 @@ export default function CountryProfilesGrid({
         {/* GRID */}
         {paginated.length > 0 ? (
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {paginated.map((c) => (
-              <CountryCard
-                key={c.code}
-                name={c.name}
-                code={c.code}
-                desc={t(`countries.${c.code}.desc`)}
-              />
+            {paginated.map((m) => (
+                <MarketCard
+                    key={m.id}
+                    name={m.name}
+                    desc={t(`markets.${m.id}.desc`)}
+                    color={m.color}
+                    icon={m.icon}
+                />
             ))}
           </div>
         ) : (
           <div className="text-center py-20 text-muted">
-            {t("noCountry")}
+            {t("nomarket")}
           </div>
         )}
 
-        {/* PAGINATION */}
+        {/* PAGINATION (same as yours) */}
         {totalPages > 1 && (
           <div className="flex justify-center items-center gap-2 mt-16 flex-wrap">
-
             <button
               onClick={() => setPage((p) => Math.max(p - 1, 1))}
               disabled={page === 1}
@@ -87,8 +74,8 @@ export default function CountryProfilesGrid({
             </button>
 
             {Array.from({ length: totalPages }).map((_, i) => {
-              const pageNumber = i + 1
-              const isActive = pageNumber === page
+              const pageNumber = i + 1;
+              const isActive = pageNumber === page;
 
               return (
                 <button
@@ -102,7 +89,7 @@ export default function CountryProfilesGrid({
                 >
                   {pageNumber}
                 </button>
-              )
+              );
             })}
 
             <button
@@ -112,11 +99,9 @@ export default function CountryProfilesGrid({
             >
               {t("next")}
             </button>
-
           </div>
         )}
-
       </div>
     </section>
-  )
+  );
 }

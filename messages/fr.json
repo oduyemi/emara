@@ -2004,13 +2004,134 @@
       }
     }
   },
-  
+
   "EventsHero": {
     "label": "Événements et opportunités internationales",
     "title": "Connecter les marques alimentaires africaines",
     "highlight": "aux marchés mondiaux",
     "description": "Découvrez des missions commerciales, des vitrines internationales et des événements sélectionnés où les fournisseurs africains rencontrent des acheteurs, distributeurs et partenaires à travers les principaux marchés d’exportation.",
     "cta": "Explorer les événements"
+  },
+  
+  "marketCountryProfiles": {
+    "title": "Profils des marchés et des pays",
+    "countryProfiles": "Profils des pays",
+    "marketProfiles": "Profils des marchés",
+    "exploreMarkets": "Explorer les marchés mondiaux",
+    "exploreCountries": "Explorer les pays",
+
+    "filters": {
+      "search": "Rechercher un pays...",
+      "searchMarket": "Rechercher des marchés...",
+      "country": "Sélectionner un pays",
+      "region": "Sélectionner une région",
+      "market": "Sélectionner un marché"
+    },
+
+    "countries": {
+      "US": {
+        "name": "États-Unis",
+        "desc": "Un marché alimentaire vaste et diversifié avec une forte demande pour les produits emballés, biologiques et ethniques. Des normes réglementaires strictes s'appliquent."
+      },
+      "UK": {
+        "name": "Royaume-Uni",
+        "desc": "Un marché mature avec une demande pour les aliments pratiques, les marques de distributeur et l'approvisionnement durable."
+      },
+      "DE": {
+        "name": "Allemagne",
+        "desc": "L'Allemagne offre de fortes opportunités dans les produits biologiques, les aliments axés sur la santé et les emballages écologiques."
+      },
+      "BS": {
+        "name": "Bahamas",
+        "desc": "Un marché influencé par le tourisme avec une demande pour les produits alimentaires importés, notamment les produits emballés et prêts à consommer."
+      },
+      "BH": {
+        "name": "Bahreïn",
+        "desc": "Un marché à revenu élevé avec une forte demande pour les produits alimentaires premium et importés, notamment certifiés halal."
+      },
+      "AU": {
+        "name": "Australie",
+        "desc": "Un marché compétitif avec une demande pour les produits biologiques, naturels et issus de sources durables."
+      },
+      "DZ": {
+        "name": "Algérie",
+        "desc": "Un marché émergent avec une demande croissante pour les importations alimentaires de base et les produits transformés."
+      },
+      "BE": {
+        "name": "Belgique",
+        "desc": "Un point d'entrée stratégique vers l'Europe avec une forte demande pour les produits alimentaires gastronomiques et spécialisés."
+      },
+      "FR": {
+        "name": "France",
+        "desc": "Un marché sophistiqué avec des normes élevées et une demande pour les produits premium, biologiques et artisanaux."
+      },
+      "BR": {
+        "name": "Brésil",
+        "desc": "Un grand marché de consommation avec une demande pour les aliments transformés et un intérêt croissant pour les produits importés."
+      },
+      "CA": {
+        "name": "Canada",
+        "desc": "Un marché diversifié avec une forte demande pour les cuisines internationales, les produits biologiques et les aliments axés sur la santé."
+      },
+      "CN": {
+        "name": "Chine",
+        "desc": "Un marché immense et en forte croissance avec une demande pour des produits alimentaires importés sûrs et de haute qualité."
+      },
+      "IN": {
+        "name": "Inde",
+        "desc": "Un marché vaste et diversifié avec une demande croissante pour les produits alimentaires emballés et transformés."
+      },
+      "JP": {
+        "name": "Japon",
+        "desc": "Un marché hautement réglementé avec une forte demande pour des produits alimentaires sûrs, de haute qualité et bien emballés."
+      },
+      "NL": {
+        "name": "Pays-Bas",
+        "desc": "Un hub logistique clé en Europe avec une demande pour des produits alimentaires innovants et durables."
+      },
+      "SA": {
+        "name": "Arabie Saoudite",
+        "desc": "Un marché fortement dépendant des importations avec une forte demande pour les produits alimentaires certifiés halal."
+      },
+      "SG": {
+        "name": "Singapour",
+        "desc": "Un hub commercial mondial avec une forte demande pour les produits alimentaires premium et importés."
+      },
+      "AE": {
+        "name": "Émirats arabes unis",
+        "desc": "Un important hub de réexportation avec une forte demande pour les produits alimentaires premium et importés."
+      }
+    },
+
+    "markets": {
+      "central-america": {
+        "desc": "Région commerciale émergente avec une demande pour les produits alimentaires emballés et transformés."
+      },
+      "caribbean": {
+        "desc": "Marché d'importation influencé par le tourisme avec une forte demande pour les produits prêts à consommer."
+      },
+      "europe": {
+        "desc": "Marché hautement réglementé et axé sur le premium avec des normes de durabilité."
+      },
+      "gcc": {
+        "desc": "Région à revenu élevé avec une forte demande pour les produits importés certifiés halal."
+      },
+      "north-africa": {
+        "desc": "Marché en développement avec une demande croissante pour les produits de base et transformés."
+      },
+      "south-america": {
+        "desc": "Grande base de consommateurs avec un intérêt croissant pour les produits internationaux."
+      },
+      "sea": {
+        "desc": "Économies à croissance rapide avec une forte demande pour les aliments pratiques."
+      }
+    },
+
+    "cta": "Voir le profil",
+    "noCountry": "Aucun pays trouvé.",
+    "nomarket": "Aucun marché trouvé.",
+    "previous": "Précédent",
+    "next": "Suivant"
   }
 }
   
