@@ -3,14 +3,13 @@ import { useTranslations } from "next-intl";
 
 
 export default function RoadmapSteps() {
-  const t = useTranslations("roadmap.new.steps")
+  const t = useTranslations("roadmap.new.checklist")
 
   const steps = [
-    t("step1"),
-    t("step2"),
-    t("step3"),
-    t("step4"),
-    t("step5")
+    t("item1"),
+    t("item2"),
+    t("item3"),
+    t("item4"),
   ]
 
   return (

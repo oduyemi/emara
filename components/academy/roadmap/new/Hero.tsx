@@ -6,7 +6,7 @@ export default function NewExportersHero() {
   const t = useTranslations("roadmap.new.hero")
 
   return (
-    <section className="py-24">
+    <section className="py-24 surface-dark">
       <div className="max-w-5xl mx-auto px-6 text-center">
 
         <h1 className="text-4xl font-semibold mb-6">
