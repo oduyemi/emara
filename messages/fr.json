@@ -2078,11 +2078,25 @@
       },
 
   "EventsHero": {
-    "label": "Événements et opportunités internationales",
+    "label": "Événements et opportunités mondiales",
     "title": "Connecter les marques alimentaires africaines",
     "highlight": "aux marchés mondiaux",
-    "description": "Découvrez des missions commerciales, des vitrines internationales et des événements sélectionnés où les fournisseurs africains rencontrent des acheteurs, distributeurs et partenaires à travers les principaux marchés d’exportation.",
-    "cta": "Explorer les événements"
+    "description": "Découvrez des missions commerciales, des vitrines internationales et des événements sélectionnés où les fournisseurs africains rencontrent des acheteurs, distributeurs et partenaires internationaux sur des marchés d’exportation clés.",
+    "cta": "Explorer les événements",
+
+    "featuredBadge": "Opportunité en vedette • ZLECAf",
+    "featuredTitle": "Programme d’expansion des exportations pour les PME agroalimentaires",
+    "featuredDescription": "Postulez à un programme de mise en relation commerciale conçu pour aider les entreprises agroalimentaires africaines à se développer en Afrique et sur les marchés mondiaux dans le cadre de la ZLECAf.",
+
+    "featuredBenefits": {
+      "b1": "Formation sur les opportunités de la ZLECAf",
+      "b2": "Accès aux acheteurs et aux salons commerciaux",
+      "b3": "Appui à l’emballage et à l’étiquetage",
+      "b4": "Mise en relation d’affaires"
+    },
+
+    "featuredCta": "Postuler maintenant",
+    "featuredNote": "Les entreprises dirigées par des femmes et des jeunes sont fortement encouragées à postuler."
   },
   
   "marketCountryProfiles": {
