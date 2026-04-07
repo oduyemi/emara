@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Check, Crown } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { saveOnboardingStep } from "@/lib/api/onboarding";
 
 type Props = {
   onNext: () => void
@@ -10,9 +11,9 @@ type Props = {
 
 export const StepFiveSubscriptionPlan = ({ onNext, onBack }: Props) => {
   const t = useTranslations("stepFive")
-
   const [selectedPlan, setSelectedPlan] = useState("Silver")
 
+  const isValid = !!selectedPlan;
   const plans = [
     {
       name: "Bronze",
@@ -52,6 +53,18 @@ export const StepFiveSubscriptionPlan = ({ onNext, onBack }: Props) => {
       tierColor: "border-yellow-300 bg-yellow-50"
     }
   ]
+  
+  const handleNext = async () => {
+    try {
+      await saveOnboardingStep(5, {
+        plan: selectedPlan,
+      });
+  
+      onNext();
+    } catch (err) {
+      alert("Failed to save plan");
+    }
+  };
 
   return (
     <div className="space-y-12">
@@ -141,7 +154,8 @@ export const StepFiveSubscriptionPlan = ({ onNext, onBack }: Props) => {
         </button>
 
         <button
-          onClick={onNext}
+          onClick={handleNext}
+          disabled={!isValid}
           className="btn-primary px-8 py-3 rounded-2xl text-sm font-medium shadow-sm hover:shadow-md transition-all"
         >
           {t("continue")}

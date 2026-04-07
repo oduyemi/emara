@@ -34,13 +34,7 @@ var supplierProfileSchema = new mongoose_1.Schema({
         },
     ],
     compliance: {
-        certifications: [
-            {
-                name: { type: String, required: true },
-                issuer: String,
-                year: Number
-            },
-        ],
+        certifications: [{ type: String }],
         documents: [{ type: String }]
     },
     operations: {
@@ -49,11 +43,11 @@ var supplierProfileSchema = new mongoose_1.Schema({
         workforce: String,
         facility: {
             type: String,
-            "enum": ["ownedFactory", "leasedFactory", "cooperative", "homeProduction"]
+            "enum": ["owned", "leased", "cooperative", "home"]
         },
         exportExperience: {
             type: String,
-            "enum": ["noExport", "regionalExport", "internationalExport"]
+            "enum": ["none", "regional", "international"]
         },
         logistics: Boolean
     },

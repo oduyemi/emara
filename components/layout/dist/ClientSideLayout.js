@@ -6,19 +6,28 @@ var Footer_1 = require("../navigation/Footer");
 var navigation_1 = require("next/navigation");
 var Header_1 = require("../navigation/suppliers/Header");
 var TopHeader_2 = require("../navigation/suppliers/TopHeader");
+var LOCALES = ["en", "fr", "ar"];
+function stripLocale(pathname) {
+    var segments = pathname.split("/");
+    var firstSegment = segments[1];
+    if (LOCALES.includes(firstSegment)) {
+        return "/" + segments.slice(2).join("/");
+    }
+    return pathname;
+}
 function ClientSideLayout(_a) {
     var children = _a.children;
     var pathname = navigation_1.usePathname();
-    var isSupplierRoute = pathname.includes("/suppliers");
-    var hideAllLayout = pathname === "/login" ||
-        pathname === "/suppliers/login" ||
-        pathname === "/suppliers/register" ||
-        pathname === "/buyers/login" ||
-        pathname === "/buyers/register" ||
-        pathname === "/suppliers/onboarding";
-    var hideFooter = pathname === "/" ||
-        pathname === "/en" ||
-        pathname === "/fr";
+    // Normalize path (remove locale prefix)
+    var normalizedPath = stripLocale(pathname);
+    var isSupplierRoute = normalizedPath.includes("/suppliers");
+    var hideAllLayout = normalizedPath === "/login" ||
+        normalizedPath === "/suppliers/login" ||
+        normalizedPath === "/suppliers/register" ||
+        normalizedPath === "/buyers/login" ||
+        normalizedPath === "/buyers/register" ||
+        normalizedPath === "/suppliers/onboarding";
+    var hideFooter = normalizedPath === "/";
     if (hideAllLayout) {
         return React.createElement(React.Fragment, null, children);
     }

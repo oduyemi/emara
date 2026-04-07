@@ -24,20 +24,19 @@ export interface ISupplierProfile extends Document {
   }[];
 
   compliance: {
-    certifications: {
-      name: string;
-      issuer?: string;
-      year?: number;
-    }[];
-    documents: string[];
+    certifications: string[];
+    documents: string[]; // URLs
   };
 
   operations: {
     capacity?: string;
     leadTime?: string;
     workforce?: string;
-    facility?: "ownedFactory" | "leasedFactory" | "cooperative" | "homeProduction";
-    exportExperience?: "noExport" | "regionalExport" | "internationalExport";
+
+    facility?: "owned" | "leased" | "cooperative" | "home"; 
+
+    exportExperience?: "none" | "regional" | "international"; 
+
     logistics?: boolean;
   };
 
@@ -111,13 +110,7 @@ const supplierProfileSchema = new Schema<ISupplierProfile>(
     ],
 
     compliance: {
-      certifications: [
-        {
-          name: { type: String, required: true },
-          issuer: String,
-          year: Number,
-        },
-      ],
+      certifications: [{ type: String }], 
       documents: [{ type: String }],
     },
 
@@ -128,12 +121,12 @@ const supplierProfileSchema = new Schema<ISupplierProfile>(
 
       facility: {
         type: String,
-        enum: ["ownedFactory", "leasedFactory", "cooperative", "homeProduction"],
+        enum: ["owned", "leased", "cooperative", "home"], 
       },
 
       exportExperience: {
         type: String,
-        enum: ["noExport", "regionalExport", "internationalExport"],
+        enum: ["none", "regional", "international"], 
       },
 
       logistics: Boolean,
@@ -148,7 +141,7 @@ const supplierProfileSchema = new Schema<ISupplierProfile>(
         accountName: String,
         accountNumber: {
           type: String,
-          select: false, 
+          select: false,
         },
         supportsUSD: Boolean,
       },

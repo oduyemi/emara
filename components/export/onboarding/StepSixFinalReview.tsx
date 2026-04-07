@@ -2,6 +2,7 @@
 import { useMemo } from "react";
 import { CheckCircle2, AlertTriangle, Sparkles } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { saveOnboardingStep } from "@/lib/api/onboarding";
 
 type Props = {
   onBack: () => void;
@@ -26,6 +27,17 @@ export const StepSixFinalReview = ({ onBack, onSubmit }: Props) => {
   };
 
   const progressWidth = `${profileScore}%`;
+
+  const handleSubmit = async () => {
+    try {
+      await saveOnboardingStep(6, {});
+  
+      // redirect or success screen
+      window.location.href = "/dashboard";
+    } catch (err) {
+      alert("Submission failed");
+    }
+  };
 
   return (
     <div className="space-y-12">
@@ -124,7 +136,7 @@ export const StepSixFinalReview = ({ onBack, onSubmit }: Props) => {
           </button>
 
           <button
-            onClick={onSubmit}
+            onClick={handleSubmit}
             className="bg-red-900 hover:bg-red-800 text-white px-8 py-3 rounded-xl font-medium hover:shadow-lg hover:-translate-y-0.5 transition-all"
           >
             {t("actions.submit")}

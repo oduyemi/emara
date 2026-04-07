@@ -8,6 +8,7 @@ import {
   Image as ImageIcon
 } from "lucide-react"
 import { useTranslations } from "next-intl"
+import { saveOnboardingStep } from "@/lib/api/onboarding";
 
 type Props = {
   onNext: () => void
@@ -19,11 +20,11 @@ const ACCEPTED_TYPES = ["application/pdf", "image/png", "image/jpeg"]
 
 export const StepTwoCompliance = ({ onNext, onBack }: Props) => {
   const t = useTranslations("stepTwo")
-
   const [selectedCerts, setSelectedCerts] = useState<string[]>([])
   const [documents, setDocuments] = useState<File[]>([])
   const [isDragging, setIsDragging] = useState(false)
   const [error, setError] = useState<string | null>(null)
+  const [loading, setLoading] = useState(false);
 
   const certifications = [
     "ISO 9001",
@@ -44,6 +45,7 @@ export const StepTwoCompliance = ({ onNext, onBack }: Props) => {
     )
   }
 
+  const isValid = selectedCerts.length > 0 || documents.length > 0;
   const validateFiles = (files: File[]) => {
     const validFiles: File[] = []
 
@@ -75,6 +77,23 @@ export const StepTwoCompliance = ({ onNext, onBack }: Props) => {
     }
   }
 
+  const uploadDocs = async () => {
+    const formData = new FormData();
+  
+    documents.forEach((file) => {
+      formData.append("files", file);
+    });
+  
+    const res = await fetch("/api/uploads/supplier/docs", {
+      method: "POST",
+      body: formData,
+    });
+  
+    if (!res.ok) throw new Error("Upload failed");
+  
+    return res.json();
+  };
+
   const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (!e.target.files) return
     addFiles(Array.from(e.target.files))
@@ -97,6 +116,25 @@ export const StepTwoCompliance = ({ onNext, onBack }: Props) => {
     if (file.type.startsWith("image")) return <ImageIcon size={18} />
     return <FileText size={18} />
   }
+
+  const handleNext = async () => {
+    setLoading(true);
+    try {
+      if (documents.length > 0) {
+        await uploadDocs();
+      }
+  
+      await saveOnboardingStep(2, {
+        certifications: selectedCerts,
+      });
+  
+      onNext();
+    } catch (err) {
+      alert("Error saving compliance");
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <div className="space-y-12">
@@ -237,10 +275,11 @@ export const StepTwoCompliance = ({ onNext, onBack }: Props) => {
         </button>
 
         <button
-          onClick={onNext}
+          onClick={handleNext}
+          disabled={!isValid || loading}
           className="btn-primary px-8 py-3 rounded-2xl text-sm font-medium shadow-sm hover:shadow-md transition-all"
         >
-          {t("actions.continue")}
+          {loading ? "Saving..." : t("actions.continue")}
         </button>
       </div>
     </div>

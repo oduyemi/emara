@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { useTranslations } from "next-intl"
+import { saveOnboardingStep } from "@/lib/api/onboarding"
 
 type Props = {
   onNext: () => void
@@ -16,6 +17,30 @@ export const StepThreeOperations = ({ onNext, onBack }: Props) => {
   const [facilityType, setFacilityType] = useState("")
   const [exportExperience, setExportExperience] = useState("")
   const [logisticsSupport, setLogisticsSupport] = useState(false)
+
+  const isValid =
+  capacity &&
+  leadTime &&
+  workforce &&
+  facilityType &&
+  exportExperience;
+
+  const handleNext = async () => {
+    try {
+      await saveOnboardingStep(3, {
+        capacity,
+        leadTime,
+        workforce,
+        facility: facilityType,
+        exportExperience,
+        logistics: logisticsSupport,
+      });
+  
+      onNext();
+    } catch (err) {
+      alert("Failed to save operations");
+    }
+  };
 
   return (
     <div className="space-y-12">
@@ -156,7 +181,8 @@ export const StepThreeOperations = ({ onNext, onBack }: Props) => {
         </button>
 
         <button
-          onClick={onNext}
+          onClick={handleNext}
+          disabled={!isValid}
           className="btn-primary px-8 py-3 rounded-2xl text-sm font-medium shadow-sm hover:shadow-md transition-all"
         >
           {t("actions.continue")}

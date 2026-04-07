@@ -5,6 +5,8 @@ import { SelectField } from "./SelectField"
 import { InputField } from "./InputField"
 import { useTranslations } from "next-intl"
 import { motion } from "framer-motion"
+import { saveOnboardingStep } from "@/lib/api/onboarding";
+
 
 const regions = Object.keys(africaRegions)
 
@@ -29,9 +31,45 @@ export const StepOneCompanyInfo = ({ onNext }: { onNext: () => void }) => {
     address: "",
   })
 
+  const isValid =
+  form.companyName.trim() &&
+  form.registrationNumber.trim() &&
+  form.yearEstablished &&
+  selectedRegion &&
+  selectedCountry &&
+  form.city.trim() &&
+  form.address.trim();
+
   const updateField = (field: string, value: string) => {
     setForm((prev) => ({ ...prev, [field]: value }))
+
   }
+
+  const handleNext = async () => {
+    try {
+      if (!isValid) {
+        alert("Please fill all required fields");
+        return;
+      }
+
+      await saveOnboardingStep(1, {
+        companyName: form.companyName,
+        tradingName: form.tradingName,
+        registrationNumber: form.registrationNumber,
+        yearEstablished: form.yearEstablished,
+        website: form.website,
+        region: selectedRegion,
+        country: selectedCountry,
+        city: form.city,
+        address: form.address,
+      });
+  
+      onNext();
+    } catch (err) {
+      console.error(err);
+      alert("Failed to save. Try again.");
+    }
+  };
 
   return (
     <motion.div
@@ -159,7 +197,8 @@ export const StepOneCompanyInfo = ({ onNext }: { onNext: () => void }) => {
         </button>
 
         <button
-          onClick={onNext}
+          onClick={handleNext}
+          disabled={!isValid}
           className="btn-primary px-8 py-3 rounded-2xl text-sm font-medium shadow-sm hover:shadow-md transition-all"
         >
           {t("actions.continue")}

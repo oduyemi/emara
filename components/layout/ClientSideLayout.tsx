@@ -5,6 +5,19 @@ import { usePathname } from "next/navigation";
 import { SupplierHeader } from "../navigation/suppliers/Header";
 import { SupplierTopHeader } from "../navigation/suppliers/TopHeader";
 
+const LOCALES = ["en", "fr", "ar"];
+
+function stripLocale(pathname: string) {
+  const segments = pathname.split("/");
+  const firstSegment = segments[1];
+
+  if (LOCALES.includes(firstSegment)) {
+    return "/" + segments.slice(2).join("/");
+  }
+
+  return pathname;
+}
+
 export default function ClientSideLayout({
   children,
 }: {
@@ -12,20 +25,21 @@ export default function ClientSideLayout({
 }) {
   const pathname = usePathname();
 
-  const isSupplierRoute = pathname.includes("/suppliers");
+  // Normalize path (remove locale prefix)
+  const normalizedPath = stripLocale(pathname);
+
+  const isSupplierRoute = normalizedPath.includes("/suppliers");
 
   const hideAllLayout =
-    pathname === "/login" ||
-    pathname === "/suppliers/login" ||
-    pathname === "/suppliers/register" ||
-    pathname === "/buyers/login" ||
-    pathname === "/buyers/register" ||
-    pathname === "/suppliers/onboarding";
+    normalizedPath === "/login" ||
+    normalizedPath === "/suppliers/login" ||
+    normalizedPath === "/suppliers/register" ||
+    normalizedPath === "/buyers/login" ||
+    normalizedPath === "/buyers/register" ||
+    normalizedPath === "/suppliers/onboarding";
 
   const hideFooter =
-    pathname === "/" ||
-    pathname === "/en" ||
-    pathname === "/fr";
+    normalizedPath === "/" ;
 
   if (hideAllLayout) {
     return <>{children}</>;

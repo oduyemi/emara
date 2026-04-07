@@ -1,8 +1,8 @@
 "use client"
-
 import { useState } from "react"
 import { UploadCloud, Trash2, Image as ImageIcon } from "lucide-react"
 import { useTranslations } from "next-intl"
+import { saveOnboardingStep } from "@/lib/api/onboarding"
 
 type Props = {
   onNext: () => void
@@ -14,14 +14,13 @@ export const StepFourMarketReadiness = ({
   onBack,
 }: Props) => {
   const t = useTranslations("stepFour")
-
   const [logo, setLogo] = useState<File | null>(null)
   const [productImage, setProductImage] = useState<File | null>(null)
-
   const [bankName, setBankName] = useState("")
   const [accountName, setAccountName] = useState("")
   const [accountNumber, setAccountNumber] = useState("")
   const [supportsUSD, setSupportsUSD] = useState(false)
+
 
   const handleFile = (
     e: React.ChangeEvent<HTMLInputElement>,
@@ -35,6 +34,57 @@ export const StepFourMarketReadiness = ({
 
   const preview = (file: File | null) =>
     file ? URL.createObjectURL(file) : null
+
+    const uploadLogo = async () => {
+      if (!logo) return;
+    
+      const formData = new FormData();
+      formData.append("file", logo);
+    
+      await fetch("/api/images/logo", {
+        method: "POST",
+        body: formData,
+      });
+    };
+
+    const isValid =
+      (logo || productImage) &&
+      bankName &&
+      accountName &&
+      accountNumber;
+
+      
+    const uploadProduct = async () => {
+      if (!productImage) return;
+    
+      const formData = new FormData();
+      formData.append("file", productImage);
+    
+      await fetch("/api/images/product", {
+        method: "POST",
+        body: formData,
+      });
+    };
+
+    const handleNext = async () => {
+      try {
+        await Promise.all([
+          uploadLogo(),
+          uploadProduct(),
+        ]);
+    
+        await saveOnboardingStep(4, {
+          bankName,
+          accountName,
+          accountNumber,
+          supportsUSD,
+        });
+    
+        onNext();
+      } catch (err) {
+        alert("Failed to save market info");
+      }
+    };
 
   return (
     <div className="space-y-12">
@@ -252,7 +302,8 @@ export const StepFourMarketReadiness = ({
         </button>
 
         <button
-          onClick={onNext}
+          onClick={handleNext}
+          disabled={!isValid}
           className="btn-primary px-8 py-3 rounded-2xl text-sm font-medium shadow-sm hover:shadow-md transition-all"
         >
           {t("actions.continue")}
