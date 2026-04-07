@@ -13,7 +13,6 @@ export default function FoodCast() {
     <>
       <FoodCastHero />
       <FoodCastAbout />
-      <CountryProfiles />
       <FeaturedEpisode />
       <EpisodesGrid />
       <SubscribeSection />
