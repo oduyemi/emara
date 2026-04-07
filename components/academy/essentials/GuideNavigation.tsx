@@ -1,15 +1,13 @@
 "use client";
-
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
+
 export const GuideNavigation = () => {
   const t = useTranslations("essentials.navigation");
   const modules = t.raw("modules");
-
   const [active, setActive] = useState<number>(0);
-
   return (
     <section className="py-32 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-accent/10" />

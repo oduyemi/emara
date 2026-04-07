@@ -17,7 +17,7 @@
     "verifiedSuppliers": "Verified Suppliers",
     "supplier_directory": "Exporter Directory",
     "about": "About Emara",
-    "search_placeholder": "Search supplier, country and category",
+    "search_placeholder": "Search country or market profiles",
     "buyerCta": "For Suppliers",
     "directory": "Directory",
     "onboarding": "Onboarding",
@@ -2105,7 +2105,21 @@
     "title": "Connect African Food Brands",
     "highlight": "to Global Markets",
     "description": "Discover trade missions, international showcases, and curated events where African suppliers meet global buyers, distributors, and partners across key export markets.",
-    "cta": "Explore Events"
+    "cta": "Explore Events",
+  
+    "featuredBadge": "Featured Opportunity • AfCFTA",
+    "featuredTitle": "Export Expansion Program for Agribusiness SMEs",
+    "featuredDescription": "Apply for a business matchmaking program designed to help African agribusinesses expand across Africa and global markets under AfCFTA.",
+  
+    "featuredBenefits": {
+      "b1": "Training on AfCFTA opportunities",
+      "b2": "Access to buyers & trade fairs",
+      "b3": "Packaging & labelling support",
+      "b4": "Business matchmaking"
+    },
+  
+    "featuredCta": "Apply Now",
+    "featuredNote": "Women- and youth-led businesses are strongly encouraged to apply."
   },
 
   "marketCountryProfiles": {
