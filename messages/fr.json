@@ -1939,11 +1939,12 @@
       "registerButton": "Créer un compte",
       "haveAccount": "Vous avez déjà un compte ?",
       "login": "Se connecter"
-    },
+    }
+  },
 
     "ReadinessForm": {
       "header": {
-        "title": "Préparation à l’export"
+        "title": "Préparation à l’exportation"
       },
       "intro": {
         "title": "Développez votre activité à l’international",
@@ -1981,29 +1982,30 @@
         "selectCountry": "Sélectionner un pays",
         "phonePlaceholder": "Numéro de téléphone"
       },
+      
       "steps": {
         "promoters": {
-          "title": "Dirigeants (Propriétaires)",
+          "title": "Promoteurs (Propriétaires)",
           "questions": {
-            "promoters_leadership_commitment": "Dans quelle mesure votre équipe dirigeante est-elle engagée dans l’exportation de produits alimentaires transformés à l’international ?",
-            "promoters_export_ambition": "Quelle est l’ambition de votre entreprise à fournir des produits alimentaires aux supermarchés, distributeurs ou restaurants à l’étranger ?",
-            "promoters_regulation_familiarity": "Dans quelle mesure votre équipe dirigeante maîtrise-t-elle les réglementations d’exportation alimentaire (UE, Royaume-Uni, Moyen-Orient, etc.) ?",
-            "promoters_management_capability": "Dans quelle mesure votre équipe de gestion est-elle capable de gérer les opérations de commerce alimentaire international (logistique, conformité, paiements) ?"
+            "promoters_leadership_commitment": "Dans quelle mesure votre équipe dirigeante est-elle engagée dans l’exportation de produits alimentaires emballés ou transformés à l’international ?",
+            "promoters_export_ambition": "Quelle est l’ambition de votre entreprise de fournir des produits alimentaires aux supermarchés, distributeurs ou restaurants à l’étranger ?",
+            "promoters_regulation_familiarity": "Dans quelle mesure votre direction est-elle familiarisée avec les réglementations d’exportation alimentaire (ex : UE, Royaume-Uni, Moyen-Orient) ?",
+            "promoters_management_capability": "Quelle est la capacité de votre équipe de gestion à gérer les opérations de commerce international (logistique, conformité, paiements) ?"
           }
-        },
+        }
+      },
+
         "products": {
           "title": "Produits",
           "questions": {
-            "products_value": "Dans quelle mesure la proposition de valeur unique de votre produit (bio, naturel, spécialité locale) est-elle clairement définie par rapport aux concurrents internationaux ?",
+            "products_value": "Dans quelle mesure la proposition de valeur unique de votre produit (ex : biologique, naturel, spécialité ethnique) est-elle clairement définie par rapport aux concurrents internationaux ?",
             "products_quality": "Dans quelle mesure votre produit alimentaire peut-il maintenir sa qualité pendant de longues durées de transport et des variations de température ?",
             "products_usability": "Dans quelle mesure votre produit est-il facile à comprendre et à utiliser pour les consommateurs internationaux sans explication ?",
-            "products_adaptability": "Dans quelle mesure la formulation de votre produit peut-elle être adaptée aux exigences réglementaires ou aux préférences gustatives des marchés étrangers ?",
-            "products_packaging": "Dans quelle mesure votre emballage est-il durable et conforme aux exigences d’exportation pour le transport et la vente internationale ?"
+            "products_adaptability": "Dans quelle mesure votre formulation produit peut-elle être adaptée aux exigences réglementaires ou aux préférences gustatives des marchés étrangers ?",
+            "products_packaging": "Dans quelle mesure votre emballage est-il durable et conforme aux normes d’exportation pour le transport international et la vente au détail ?"
           }
         }
-      }
-    }
-  },
+      },
 
   "EventsHero": {
     "label": "Événements et opportunités internationales",
