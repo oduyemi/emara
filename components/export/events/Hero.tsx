@@ -35,7 +35,7 @@ export const EventsHero = () => {
 
           <h1 className="text-4xl md:text-6xl font-semibold leading-tight mb-6">
             {t("title")}
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-accent to-[#4FD1C5]">
+            <span className="block text-green-400 bg-clip-text bg-gradient-to-r from-accent to-[#4FD1C5]">
               {t("highlight")}
             </span>
           </h1>

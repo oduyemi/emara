@@ -17,7 +17,7 @@ exports.EventsHero = function () {
                 React.createElement("p", { className: "text-xs uppercase tracking-[0.3em] text-accent mb-6" }, t("label")),
                 React.createElement("h1", { className: "text-4xl md:text-6xl font-semibold leading-tight mb-6" },
                     t("title"),
-                    React.createElement("span", { className: "block text-transparent bg-clip-text bg-gradient-to-r from-accent to-[#4FD1C5]" }, t("highlight"))),
+                    React.createElement("span", { className: "block text-green-400 bg-clip-text bg-gradient-to-r from-accent to-[#4FD1C5]" }, t("highlight"))),
                 React.createElement("p", { className: "text-lg text-blue-100/90 mb-10 leading-relaxed max-w-xl" }, t("description")),
                 React.createElement(link_1["default"], { href: "#events" },
                     React.createElement("button", { className: "px-8 py-4 btn-primary rounded-xl font-medium shadow-xl shadow-accent/30" }, t("cta")))),
