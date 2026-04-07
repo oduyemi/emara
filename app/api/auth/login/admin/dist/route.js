@@ -37,47 +37,17 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 exports.__esModule = true;
 exports.POST = void 0;
-var server_1 = require("next/server");
-var jsonwebtoken_1 = require("jsonwebtoken");
 var auth_1 = require("@/utils/auth");
+var db_1 = require("@/utils/db");
 function POST(req) {
-    var _a;
     return __awaiter(this, void 0, void 0, function () {
-        var cookie, token, decoded, newToken, res;
-        return __generator(this, function (_b) {
-            try {
-                cookie = req.headers.get("cookie") || "";
-                token = (_a = cookie.match(/token=([^;]+)/)) === null || _a === void 0 ? void 0 : _a[1];
-                if (!token) {
-                    return [2 /*return*/, server_1.NextResponse.json({ error: "Unauthorized" }, { status: 401 })];
-                }
-                decoded = auth_1.verifyToken(token);
-                if (!decoded) {
-                    return [2 /*return*/, server_1.NextResponse.json({ error: "Unauthorized" }, { status: 401 })];
-                }
-                if (decoded.role !== "admin") {
-                    return [2 /*return*/, server_1.NextResponse.json({ error: "Forbidden" }, { status: 403 })];
-                }
-                if (!decoded.impersonating) {
-                    return [2 /*return*/, server_1.NextResponse.json({ error: "Not impersonating" }, { status: 400 })];
-                }
-                newToken = jsonwebtoken_1["default"].sign({
-                    userId: decoded.userId,
-                    role: "admin"
-                }, process.env.JWT_SECRET, { expiresIn: "7d" });
-                res = server_1.NextResponse.json({ success: true });
-                res.cookies.set("token", newToken, {
-                    httpOnly: true,
-                    path: "/",
-                    secure: process.env.NODE_ENV === "production",
-                    sameSite: "lax"
-                });
-                return [2 /*return*/, res];
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0: return [4 /*yield*/, db_1.dbConnect()];
+                case 1:
+                    _a.sent();
+                    return [2 /*return*/, auth_1.handleLogin(req, "admin")];
             }
-            catch (_c) {
-                return [2 /*return*/, server_1.NextResponse.json({ error: "Error" }, { status: 500 })];
-            }
-            return [2 /*return*/];
         });
     });
 }

@@ -45,11 +45,11 @@ var user_model_1 = require("@/models/user.model");
 function POST(req) {
     var _a;
     return __awaiter(this, void 0, void 0, function () {
-        var _b, fname, lname, email, password, role, existingUser, adminExists, isAdmin, token, decoded, hashedPassword, error_1;
+        var _b, fname, lname, email, password, role, existingUser, isAdmin, token, decoded, hashedPassword, error_1;
         return __generator(this, function (_c) {
             switch (_c.label) {
                 case 0:
-                    _c.trys.push([0, 11, , 12]);
+                    _c.trys.push([0, 8, , 9]);
                     return [4 /*yield*/, db_1.dbConnect()];
                 case 1:
                     _c.sent();
@@ -65,9 +65,6 @@ function POST(req) {
                     if (existingUser) {
                         return [2 /*return*/, server_1.NextResponse.json({ error: "Email exists" }, { status: 400 })];
                     }
-                    return [4 /*yield*/, user_model_1["default"].findOne({ role: "admin" })];
-                case 4:
-                    adminExists = _c.sent();
                     isAdmin = false;
                     token = (_a = req.cookies.get("token")) === null || _a === void 0 ? void 0 : _a.value;
                     if (token) {
@@ -79,21 +76,9 @@ function POST(req) {
                         catch (_d) { }
                     }
                     return [4 /*yield*/, bcryptjs_1["default"].hash(password, 10)];
-                case 5:
+                case 4:
                     hashedPassword = _c.sent();
-                    if (!!adminExists) return [3 /*break*/, 7];
-                    return [4 /*yield*/, user_model_1["default"].create({
-                            fname: fname,
-                            lname: lname,
-                            email: email,
-                            password: hashedPassword,
-                            role: "admin"
-                        })];
-                case 6:
-                    _c.sent();
-                    return [2 /*return*/, server_1.NextResponse.json({ message: "First admin created" }, { status: 201 })];
-                case 7:
-                    if (!isAdmin) return [3 /*break*/, 9];
+                    if (!isAdmin) return [3 /*break*/, 6];
                     return [4 /*yield*/, user_model_1["default"].create({
                             fname: fname,
                             lname: lname,
@@ -101,11 +86,11 @@ function POST(req) {
                             password: hashedPassword,
                             role: role || "buyer"
                         })];
-                case 8:
+                case 5:
                     _c.sent();
                     return [2 /*return*/, server_1.NextResponse.json({ success: true }, { status: 201 })];
-                case 9:
-                    // Public registration (ONLY buyer or supplier)
+                case 6:
+                    // Public registration (strict roles)
                     if (!["buyer", "supplier"].includes(role)) {
                         return [2 /*return*/, server_1.NextResponse.json({ error: "Invalid role" }, { status: 400 })];
                     }
@@ -116,14 +101,14 @@ function POST(req) {
                             password: hashedPassword,
                             role: role
                         })];
-                case 10:
+                case 7:
                     _c.sent();
                     return [2 /*return*/, server_1.NextResponse.json({ success: true }, { status: 201 })];
-                case 11:
+                case 8:
                     error_1 = _c.sent();
                     console.error("REGISTER ERROR:", error_1);
                     return [2 /*return*/, server_1.NextResponse.json({ error: "Server error" }, { status: 500 })];
-                case 12: return [2 /*return*/];
+                case 9: return [2 /*return*/];
             }
         });
     });

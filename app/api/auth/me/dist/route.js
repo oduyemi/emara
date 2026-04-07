@@ -41,27 +41,44 @@ var server_1 = require("next/server");
 var db_1 = require("@/utils/db");
 var user_model_1 = require("@/models/user.model");
 var auth_1 = require("@/utils/auth");
-function GET(req) {
+var headers_1 = require("next/headers");
+function GET() {
     var _a;
     return __awaiter(this, void 0, void 0, function () {
-        var cookie, token, user, buyer;
+        var cookieStore, token, decoded, user, error_1;
         return __generator(this, function (_b) {
             switch (_b.label) {
                 case 0: return [4 /*yield*/, db_1.dbConnect()];
                 case 1:
                     _b.sent();
-                    cookie = req.headers.get("cookie") || "";
-                    token = (_a = cookie.match(/token=([^;]+)/)) === null || _a === void 0 ? void 0 : _a[1];
-                    if (!token)
-                        return [2 /*return*/, server_1.NextResponse.json({ error: "Unauthorized" }, { status: 401 })];
-                    user = auth_1.getAuthUser(token);
-                    if (user.role !== "buyer") {
-                        return [2 /*return*/, server_1.NextResponse.json({ error: "Forbidden" }, { status: 403 })];
-                    }
-                    return [4 /*yield*/, user_model_1["default"].findById(user.userId).lean()];
+                    _b.label = 2;
                 case 2:
-                    buyer = _b.sent();
-                    return [2 /*return*/, server_1.NextResponse.json({ buyer: buyer })];
+                    _b.trys.push([2, 5, , 6]);
+                    return [4 /*yield*/, headers_1.cookies()];
+                case 3:
+                    cookieStore = _b.sent();
+                    token = (_a = cookieStore.get("token")) === null || _a === void 0 ? void 0 : _a.value;
+                    if (!token) {
+                        return [2 /*return*/, server_1.NextResponse.json({ error: "Unauthorized" }, { status: 401 })];
+                    }
+                    decoded = auth_1.getAuthUser(token);
+                    if (!(decoded === null || decoded === void 0 ? void 0 : decoded.userId)) {
+                        return [2 /*return*/, server_1.NextResponse.json({ error: "Invalid token" }, { status: 401 })];
+                    }
+                    return [4 /*yield*/, user_model_1["default"].findById(decoded.userId)
+                            .select("_id fname lname email role")
+                            .lean()];
+                case 4:
+                    user = _b.sent();
+                    if (!user) {
+                        return [2 /*return*/, server_1.NextResponse.json({ error: "User not found" }, { status: 404 })];
+                    }
+                    return [2 /*return*/, server_1.NextResponse.json({ user: user })];
+                case 5:
+                    error_1 = _b.sent();
+                    console.error("ME route error:", error_1);
+                    return [2 /*return*/, server_1.NextResponse.json({ error: "Server error" }, { status: 500 })];
+                case 6: return [2 /*return*/];
             }
         });
     });

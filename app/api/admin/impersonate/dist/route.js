@@ -55,9 +55,13 @@ function POST(req) {
                     _b.sent();
                     cookie = req.headers.get("cookie") || "";
                     token = (_a = cookie.match(/token=([^;]+)/)) === null || _a === void 0 ? void 0 : _a[1];
-                    if (!token)
+                    if (!token) {
                         return [2 /*return*/, server_1.NextResponse.json({ error: "Unauthorized" }, { status: 401 })];
+                    }
                     decoded = auth_1.verifyToken(token);
+                    if (!decoded) {
+                        return [2 /*return*/, server_1.NextResponse.json({ error: "Unauthorized" }, { status: 401 })];
+                    }
                     if (decoded.role !== "admin") {
                         return [2 /*return*/, server_1.NextResponse.json({ error: "Forbidden" }, { status: 403 })];
                     }
@@ -74,10 +78,10 @@ function POST(req) {
                         return [2 /*return*/, server_1.NextResponse.json({ error: "Cannot impersonate admin" }, { status: 400 })];
                     }
                     newToken = jsonwebtoken_1["default"].sign({
-                        id: decoded.id,
+                        userId: decoded.userId,
                         role: "admin",
                         impersonating: {
-                            id: target._id.toString(),
+                            userId: target._id.toString(),
                             role: target.role
                         }
                     }, process.env.JWT_SECRET, { expiresIn: "1d" });

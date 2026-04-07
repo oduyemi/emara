@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import { Lato } from "next/font/google";
+import { AuthProvider } from "@/app/context/auth.context";
 import "./globals.css";
 
 const lato = Lato({
@@ -12,7 +13,11 @@ const lato = Lato({
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html suppressHydrationWarning className={lato.variable}>
-      <body>{children}</body>
+      <body>
+        <AuthProvider>
+          {children}
+        </AuthProvider>
+      </body>
     </html>
   );
 }

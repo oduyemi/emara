@@ -1,3 +1,4 @@
+"use client";
 "use strict";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
@@ -36,34 +37,71 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 exports.__esModule = true;
-exports.GET = void 0;
-var server_1 = require("next/server");
-var db_1 = require("@/utils/db");
-var user_model_1 = require("@/models/user.model");
-var auth_1 = require("@/utils/auth");
-function GET(req) {
-    var _a;
-    return __awaiter(this, void 0, void 0, function () {
-        var cookie, token, user, supplier;
+exports.useAuth = exports.AuthProvider = void 0;
+var react_1 = require("react");
+var axios_1 = require("axios");
+var navigation_1 = require("next/navigation");
+var AuthContext = react_1.createContext(undefined);
+function AuthProvider(_a) {
+    var _this = this;
+    var children = _a.children;
+    var _b = react_1.useState(null), user = _b[0], setUser = _b[1];
+    var _c = react_1.useState(true), loading = _c[0], setLoading = _c[1];
+    var router = navigation_1.useRouter();
+    var fetchUser = react_1.useCallback(function () { return __awaiter(_this, void 0, void 0, function () {
+        var res, _a;
         return __generator(this, function (_b) {
             switch (_b.label) {
-                case 0: return [4 /*yield*/, db_1.dbConnect()];
+                case 0:
+                    _b.trys.push([0, 2, 3, 4]);
+                    return [4 /*yield*/, axios_1["default"].get("/api/auth/me", {
+                            withCredentials: true
+                        })];
                 case 1:
-                    _b.sent();
-                    cookie = req.headers.get("cookie") || "";
-                    token = (_a = cookie.match(/token=([^;]+)/)) === null || _a === void 0 ? void 0 : _a[1];
-                    if (!token)
-                        return [2 /*return*/, server_1.NextResponse.json({ error: "Unauthorized" }, { status: 401 })];
-                    user = auth_1.getAuthUser(token);
-                    if (user.role !== "supplier") {
-                        return [2 /*return*/, server_1.NextResponse.json({ error: "Forbidden" }, { status: 403 })];
-                    }
-                    return [4 /*yield*/, user_model_1["default"].findById(user.userId).lean()];
+                    res = _b.sent();
+                    setUser(res.data.user);
+                    return [2 /*return*/, res.data.user];
                 case 2:
-                    supplier = _b.sent();
-                    return [2 /*return*/, server_1.NextResponse.json({ supplier: supplier })];
+                    _a = _b.sent();
+                    setUser(null);
+                    return [2 /*return*/, null];
+                case 3:
+                    setLoading(false);
+                    return [7 /*endfinally*/];
+                case 4: return [2 /*return*/];
             }
         });
-    });
+    }); }, []);
+    var logout = function () { return __awaiter(_this, void 0, void 0, function () {
+        var err_1;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    _a.trys.push([0, 2, , 3]);
+                    return [4 /*yield*/, axios_1["default"].post("/api/auth/logout", {}, { withCredentials: true })];
+                case 1:
+                    _a.sent();
+                    setUser(null);
+                    router.push("/login");
+                    return [3 /*break*/, 3];
+                case 2:
+                    err_1 = _a.sent();
+                    console.error("Logout failed:", err_1);
+                    return [3 /*break*/, 3];
+                case 3: return [2 /*return*/];
+            }
+        });
+    }); };
+    react_1.useEffect(function () {
+        fetchUser();
+    }, []);
+    return (React.createElement(AuthContext.Provider, { value: { user: user, loading: loading, refreshUser: fetchUser, logout: logout, setUser: setUser } }, children));
 }
-exports.GET = GET;
+exports.AuthProvider = AuthProvider;
+function useAuth() {
+    var context = react_1.useContext(AuthContext);
+    if (!context)
+        throw new Error("useAuth must be used inside AuthProvider");
+    return context;
+}
+exports.useAuth = useAuth;

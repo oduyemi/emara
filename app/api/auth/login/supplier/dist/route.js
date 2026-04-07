@@ -36,34 +36,19 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 exports.__esModule = true;
-exports.GET = void 0;
-var server_1 = require("next/server");
-var db_1 = require("@/utils/db");
-var user_model_1 = require("@/models/user.model");
+exports.POST = void 0;
 var auth_1 = require("@/utils/auth");
-function GET(req) {
-    var _a;
+var db_1 = require("@/utils/db");
+function POST(req) {
     return __awaiter(this, void 0, void 0, function () {
-        var cookie, token, user, admin;
-        return __generator(this, function (_b) {
-            switch (_b.label) {
+        return __generator(this, function (_a) {
+            switch (_a.label) {
                 case 0: return [4 /*yield*/, db_1.dbConnect()];
                 case 1:
-                    _b.sent();
-                    cookie = req.headers.get("cookie") || "";
-                    token = (_a = cookie.match(/token=([^;]+)/)) === null || _a === void 0 ? void 0 : _a[1];
-                    if (!token)
-                        return [2 /*return*/, server_1.NextResponse.json({ error: "Unauthorized" }, { status: 401 })];
-                    user = auth_1.getAuthUser(token);
-                    if (user.role !== "admin") {
-                        return [2 /*return*/, server_1.NextResponse.json({ error: "Forbidden" }, { status: 403 })];
-                    }
-                    return [4 /*yield*/, user_model_1["default"].findById(user.userId).lean()];
-                case 2:
-                    admin = _b.sent();
-                    return [2 /*return*/, server_1.NextResponse.json({ admin: admin })];
+                    _a.sent();
+                    return [2 /*return*/, auth_1.handleLogin(req, "supplier")];
             }
         });
     });
 }
-exports.GET = GET;
+exports.POST = POST;
