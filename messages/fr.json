@@ -52,42 +52,42 @@
 
   "ExploreMenu": {
     "explore": "Explorer",
-    "industry": {
+    "programs": {
       "title": "Programmes",
       "items": [
-        "Nos programmes",
-        "Préparation à l’export",
-        "Consultation virtuelle",
-        "Missions commerciales",
-        "Vitrines internationales"
+        { "label": "Nos programmes", "slug": "our-programs" },
+        { "label": "Préparation à l’export", "slug": "export-readiness" },
+        { "label": "Consultation virtuelle", "slug": "virtual-consultation" },
+        { "label": "Missions commerciales", "slug": "trade-missions" },
+        { "label": "Salons internationaux", "slug": "international-showcases" }
       ]
     },
-    "country": {
+    "academy": {
       "title": "Académie",
       "items": [
-        "Webinaires",
-        "Ateliers",
-        "Les bases de l’export en ligne",
-        "Profils de marchés et de pays",
-        "Foodcast",
-        "Feuille de route pour l’export"
+        { "label": "Webinaires", "slug": "webinars" },
+        { "label": "Ateliers", "slug": "workshops" },
+        { "label": "Export Essentials en ligne", "slug": "export-essentials-online" },
+        { "label": "Profils des marchés et des pays", "slug": "market-country-profiles" },
+        { "label": "Foodcast", "slug": "foodcast" },
+        { "label": "Feuille de route export", "slug": "export-roadmap" }
       ]
     },
     "verification": {
       "title": "Vérification",
       "items": [
-        "Exportateurs vérifiés",
-        "Rapports d’audit",
-        "Historique commercial",
-        "Données de conformité"
+        { "label": "Exportateurs vérifiés", "slug": "verified-exporters" },
+        { "label": "Rapports d’audit", "slug": "audit-reports" },
+        { "label": "Historique commercial", "slug": "trade-history" },
+        { "label": "Données de conformité", "slug": "compliance-data" }
       ]
     },
     "resources": {
       "title": "Ressources",
       "items": [
-        "Analyses commerciales",
-        "Rapports de marché",
-        "FAQ"
+        { "label": "Insights commerciaux", "slug": "trade-insights" },
+        { "label": "Rapports de marché", "slug": "market-reports" },
+        { "label": "FAQs", "slug": "faqs" }
       ]
     }
   },
@@ -1456,48 +1456,118 @@
 
   "essentials": {
     "hero": {
-      "badge": "Centre de connaissances sur l’export",
-      "title": "Les bases de l’export",
-      "subtitle": "Un guide complet pour les exportateurs qui naviguent sur les marchés internationaux — des fondamentaux de la préparation à l’export aux stratégies avancées du commerce mondial."
+      "badge": "Centre de connaissances sur l’exportation",
+      "title": "Les essentiels de l’exportation",
+      "subtitle": "Un guide complet conçu pour aider les exportateurs à comprendre les fondamentaux du commerce international, à naviguer dans des systèmes réglementaires complexes et à construire des opérations d’exportation durables à l’échelle mondiale."
     },
+
     "navigation": {
       "title": "Parcours d’exportation",
-      "basics": "Fondamentaux de l’export",
+      "basics": "Fondamentaux de l’exportation",
       "marketResearch": "Étude de marché et analyse des opportunités",
       "compliance": "Conformité réglementaire",
       "logistics": "Expédition et logistique",
       "buyers": "Trouver des acheteurs internationaux",
-      "scaling": "Développer le commerce mondial"
+      "scaling": "Développer le commerce international",
+      "modules": [
+        "Les opportunités abondent – Accès et ressources pour réussir",
+        "Classifier vos produits pour l’exportation",
+        "Utiliser les études de marché pour un avantage concurrentiel",
+        "Tirer parti des accords de libre-échange",
+        "Fixer le prix de vos produits pour les marchés d’exportation",
+        "Utiliser les conditions internationales de vente et de commerce",
+        "Expédition et logistique internationales",
+        "Naviguer dans les réglementations d’exportation alimentaire",
+        "Documentation commerciale et procédures d’exportation",
+        "Se faire payer pour ses ventes à l’export",
+        "Votre boîte à outils pour l’exportation"
+      ]
     },
+
     "sections": {
       "fundamentals": {
-        "title": "Comprendre les fondamentaux de l’export",
-        "desc": "Exporter commence par la compréhension des cadres réglementaires, des exigences documentaires et des dynamiques de marché qui façonnent le commerce international."
+        "title": "Comprendre les fondamentaux de l’exportation",
+        "intro": "Exporter ne se limite pas à expédier des produits à l’étranger. Cela nécessite une compréhension claire des systèmes commerciaux internationaux, des exigences du marché, des normes de documentation et de la préparation opérationnelle nécessaire pour répondre à la demande mondiale.",
+        "content": [
+          "À la base, l’exportation commence par l’évaluation de la préparation réelle d’un produit à l’export. Cela inclut la capacité de production, la constance de la qualité, les normes d’emballage et la capacité à répondre aux exigences réglementaires internationales.",
+          "Les exportateurs doivent également comprendre les cadres juridiques du commerce international. Chaque marché possède ses propres réglementations d’importation, tarifs et exigences de conformité.",
+          "Il est tout aussi essentiel de développer une stratégie d’exportation claire afin d’identifier les marchés prioritaires et de positionner ses produits de manière compétitive."
+        ]
       },
+
+      "marketResearch": {
+        "title": "Étude de marché et analyse des opportunités",
+        "intro": "Avant d’entrer sur un marché étranger, les exportateurs doivent comprendre où se situe la demande et comment leurs produits s’y intègrent.",
+        "content": [
+          "L’étude de marché permet d’identifier les marchés prometteurs en analysant la demande, les données commerciales et les tendances d’importation.",
+          "Les exportateurs doivent également analyser la concurrence, les prix et les attentes des acheteurs.",
+          "Les barrières logistiques et réglementaires influencent fortement la faisabilité d’un marché.",
+          "Une étude efficace permet de prioriser les marchés de manière stratégique."
+        ]
+      },
+
       "compliance": {
-        "title": "Naviguer dans la conformité et la certification",
-        "desc": "Les exportateurs performants comprennent l’importance des certifications, de la traçabilité et de l’assurance qualité exigées par les marchés internationaux."
+        "title": "Naviguer dans la conformité réglementaire et la certification",
+        "intro": "La conformité est un élément clé du commerce international.",
+        "content": [
+          "Les exportateurs doivent respecter des normes strictes de sécurité alimentaire, traçabilité et étiquetage.",
+          "Les certifications comme HACCP et GlobalG.A.P. renforcent la crédibilité.",
+          "La documentation douanière est essentielle pour éviter retards et pénalités.",
+          "Investir tôt dans la conformité réduit les risques."
+        ]
       },
+
       "logistics": {
-        "title": "Gérer la logistique et la distribution",
-        "desc": "De la gestion de la chaîne du froid au transport international, la logistique joue un rôle essentiel pour garantir que les produits arrivent en toute sécurité et efficacement."
+        "title": "Gestion de la logistique et de la distribution internationales",
+        "intro": "La logistique est le pilier opérationnel de l’exportation.",
+        "content": [
+          "Elle implique plusieurs acteurs comme les transitaires et transporteurs.",
+          "La chaîne du froid est essentielle pour les produits périssables.",
+          "Les Incoterms définissent les responsabilités entre acheteurs et vendeurs.",
+          "Une bonne planification réduit les coûts et les retards."
+        ]
+      },
+
+      "buyers": {
+        "title": "Identifier et engager des acheteurs internationaux",
+        "intro": "Trouver des acheteurs crédibles est un défi majeur.",
+        "content": [
+          "Les acheteurs incluent distributeurs, détaillants et importateurs.",
+          "La confiance et la fiabilité sont essentielles.",
+          "Les salons et missions commerciales facilitent les connexions.",
+          "La vérification des partenaires est cruciale."
+        ]
+      },
+
+      "scaling": {
+        "title": "Développer et pérenniser la croissance des exportations",
+        "intro": "Après l’entrée sur le marché, il faut assurer une croissance durable.",
+        "content": [
+          "Renforcer la chaîne d’approvisionnement et la production.",
+          "Diversifier les marchés pour réduire les risques.",
+          "Gérer les risques financiers et les devises.",
+          "Maintenir qualité et relations commerciales."
+        ]
       }
     },
+
     "insights": {
-      "title": "Principales perspectives d’exportation",
-      "documentation": "Comprendre la documentation d’export et les procédures douanières.",
-      "buyers": "Identifier des acheteurs et distributeurs internationaux crédibles.",
-      "pricing": "Développer des stratégies de prix compétitives pour les marchés internationaux.",
-      "tradeFinance": "Comprendre le financement des exportations et la protection des paiements."
+      "title": "Principaux enseignements",
+      "documentation": "La documentation est essentielle pour le passage en douane.",
+      "buyers": "Les acheteurs recherchent fiabilité et qualité constante.",
+      "pricing": "Le prix doit inclure transport, taxes et marges.",
+      "tradeFinance": "Les instruments financiers réduisent les risques de paiement."
     },
+
     "expert": {
-      "title": "Analyses d’experts du commerce international",
-      "description": "Export Essentials s’appuie sur des décennies d’expérience de praticiens du commerce international et de conseillers en exportation travaillant sur les marchés africains et mondiaux."
+      "title": "Perspectives d’experts du commerce international",
+      "description": "Les essentiels de l’exportation s’appuient sur des décennies d’expérience de professionnels du commerce international."
     },
+
     "book": {
       "comingSoon": "Bientôt disponible",
       "title": "Exporter des produits alimentaires vers le marché européen",
-      "description": "Un livre à paraître qui offre un guide approfondi pour comprendre l’environnement réglementaire européen, établir des relations avec des importateurs européens et développer des stratégies d’exportation réussies pour les produits alimentaires.",
+      "description": "Un guide approfondi pour naviguer dans la réglementation européenne et réussir son entrée sur le marché.",
       "button": "Rejoindre la liste de diffusion"
     }
   },
